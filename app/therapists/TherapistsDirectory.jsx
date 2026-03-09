@@ -472,7 +472,7 @@ export default function TherapistsDirectory() {
         <div className="dir-phil-inner">
           <p className="eyebrow">Our Philosophy</p>
           <h2 style={{ fontSize: "clamp(var(--t-md), 3vw, var(--t-xl))", marginBottom: "var(--s-xs)" }}>
-            We built a practice where therapists can do the only thing they actually want to do.
+            Our therapists focus on you.
           </h2>
           <div className="dir-phil-cols">
             {[
