@@ -182,7 +182,7 @@ const dirStyles = `
 
   /* PHILOSOPHY SECTION */
   .dir-phil {
-    padding: var(--s-xl) var(--s-lg);
+    padding: var(--s-md) var(--s-lg);
     background: var(--mist);
     border-bottom: 0.0618rem solid var(--divider);
   }
@@ -190,12 +190,21 @@ const dirStyles = `
   .dir-phil-inner {
     max-width: var(--max-w);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--s-xl);
+    align-items: start;
+  }
+
+  .dir-phil-title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3xs);
   }
 
   .dir-phil-cols {
     display: flex;
-    gap: var(--s-lg);
-    margin-top: var(--s-md);
+    gap: var(--s-md);
   }
 
   .dir-phil-col {
@@ -203,17 +212,18 @@ const dirStyles = `
   }
 
   .dir-phil-icon {
-    font-size: var(--t-md);
-    margin-bottom: var(--s-xs);
+    font-size: var(--t-base);
+    margin-bottom: var(--s-3xs);
     opacity: var(--alpha-phi);
   }
 
   .dir-phil-head {
     font-family: var(--font-display);
-    font-size: var(--t-base);
+    font-size: var(--t-xs);
     font-weight: 900;
-    margin-bottom: var(--s-2xs);
+    margin-bottom: var(--s-3xs);
     line-height: 1.1;
+    letter-spacing: -0.0382em;
   }
 
   .dir-phil-body {
@@ -387,8 +397,10 @@ const dirStyles = `
   }
 
   @media (max-width: 61.8rem) {
-    .dir-grid { grid-template-columns: 1fr 1fr; gap: var(--s-md); }
+    .dir-hero h1 { font-size: clamp(var(--t-xl), 8vw, var(--t-2xl)); }
+    .dir-phil-inner { grid-template-columns: 1fr; gap: var(--s-sm); }
     .dir-phil-cols { flex-direction: column; }
+    .dir-grid { grid-template-columns: 1fr 1fr; gap: var(--s-md); }
   }
 
   @media (max-width: 42.36rem) {
@@ -425,6 +437,31 @@ export default function TherapistsDirectory() {
         <p className="eyebrow">Our Therapists</p>
         <h1>Find your therapist.</h1>
       </section>
+
+      {/* ── PHILOSOPHY (compact band) ── */}
+      <div className="dir-phil">
+        <div className="dir-phil-inner">
+          <div className="dir-phil-title">
+            <p className="eyebrow">Our Philosophy</p>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-0.0382em", whiteSpace: "nowrap" }}>
+              Our therapists focus on you.
+            </h2>
+          </div>
+          <div className="dir-phil-cols">
+            {[
+              { icon: "⟡", head: "Therapists here just help people.", body: "Handpicked for their values, their work ethic, and the way they think about care." },
+              { icon: "◈", head: "Their needs matter as much as yours.", body: "A supported, fairly paid therapist is a fundamentally better therapist." },
+              { icon: "◇", head: "Matched to your actual needs.", body: "Every match is intentional: specialty, schedule, personality, approach." },
+            ].map(({ icon, head, body }) => (
+              <div key={head} className="dir-phil-col">
+                <p className="dir-phil-icon">{icon}</p>
+                <p className="dir-phil-head">{head}</p>
+                <p className="dir-phil-body">{body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* ── STICKY FILTER ── */}
       <div className="dir-filter">
@@ -465,29 +502,6 @@ export default function TherapistsDirectory() {
             </div>
           </div>
         )}
-      </div>
-
-      {/* ── PHILOSOPHY ── */}
-      <div className="dir-phil">
-        <div className="dir-phil-inner">
-          <p className="eyebrow">Our Philosophy</p>
-          <h2 style={{ fontSize: "clamp(var(--t-md), 3vw, var(--t-xl))", marginBottom: "var(--s-xs)" }}>
-            Our therapists focus on you.
-          </h2>
-          <div className="dir-phil-cols">
-            {[
-              { icon: "⟡", head: "Therapists here just help people.", body: "Every therapist at NGU was handpicked. Not just for their resume — for their values, their work ethic, and the way they think about care. They show up and help people." },
-              { icon: "◈", head: "Their needs matter as much as yours.", body: "A therapist who is supported, fairly paid, and not burned out is a fundamentally better therapist. NGU is built around that belief." },
-              { icon: "◇", head: "Matched to your actual needs.", body: "Every match is intentional: specialty, schedule, personality, approach. If someone isn't the right fit, we'll tell you and help you find who is." },
-            ].map(({ icon, head, body }) => (
-              <div key={head} className="dir-phil-col">
-                <p className="dir-phil-icon">{icon}</p>
-                <p className="dir-phil-head">{head}</p>
-                <p className="dir-phil-body">{body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* ── GRID ── */}
