@@ -67,22 +67,42 @@ const STATUS = {
 /* ── STYLES ──────────────────────────────────────────────── */
 const dirStyles = `
   .dir-hero {
-    padding: var(--s-2xl) var(--s-lg) var(--s-xl);
+    padding: var(--s-md) var(--s-lg) var(--s-xl);
     max-width: var(--max-w);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.618fr 1fr;
+    gap: var(--s-xl);
+    align-items: end;
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
+  .dir-hero-left {}
+
   .dir-hero h1 {
-    font-size: clamp(var(--t-xl), 5vw, var(--t-2xl));
-    margin-bottom: var(--s-sm);
+    font-size: clamp(var(--t-2xl), 6.18vw, var(--t-3xl));
+    margin-bottom: 0;
+    line-height: 1.0;
+  }
+
+  .dir-hero-info {
+    background: var(--mist);
+    padding: var(--s-md);
+    border: 0.0618rem solid var(--divider);
+  }
+
+  .dir-hero-info p {
+    font-size: var(--t-base);
+    font-weight: 300;
+    color: var(--earth);
+    line-height: 1.618;
+    margin-bottom: var(--s-md);
   }
 
   .dir-hero-meta {
     display: flex;
     gap: var(--s-xs);
     flex-wrap: wrap;
-    margin-top: var(--s-md);
   }
 
   .dir-loc-pill {
@@ -91,6 +111,7 @@ const dirStyles = `
     padding: var(--s-3xs) var(--s-xs);
     border: 0.0618rem solid var(--divider);
     color: var(--earth);
+    background: var(--paper);
   }
 
   /* STICKY FILTER BAR */
@@ -401,6 +422,7 @@ const dirStyles = `
   }
 
   @media (max-width: 61.8rem) {
+    .dir-hero { grid-template-columns: 1fr; gap: var(--s-md); }
     .dir-grid { grid-template-columns: 1fr 1fr; gap: var(--s-md); }
     .dir-phil-cols { flex-direction: column; }
   }
@@ -436,15 +458,17 @@ export default function TherapistsDirectory() {
 
       {/* ── HERO ── */}
       <section className="dir-hero">
-        <p className="eyebrow">Our Therapists</p>
-        <h1>Find your therapist.</h1>
-        <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
-          {THERAPISTS.length} therapists. Two locations. All of Ohio via telehealth. Each one handpicked, trained, and trusted.
-        </p>
-        <div className="dir-hero-meta">
-          {["Dayton, OH","Rocky River, OH","All of Ohio (Telehealth)"].map(l => (
-            <span key={l} className="dir-loc-pill">{l}</span>
-          ))}
+        <div className="dir-hero-left">
+          <p className="eyebrow">Our Therapists</p>
+          <h1>Find your therapist.</h1>
+        </div>
+        <div className="dir-hero-info">
+          <p>{THERAPISTS.length} therapists. Two locations. All of Ohio via telehealth. Each one handpicked, trained, and trusted.</p>
+          <div className="dir-hero-meta">
+            {["Dayton, OH","Rocky River, OH","All of Ohio (Telehealth)"].map(l => (
+              <span key={l} className="dir-loc-pill">{l}</span>
+            ))}
+          </div>
         </div>
       </section>
 
