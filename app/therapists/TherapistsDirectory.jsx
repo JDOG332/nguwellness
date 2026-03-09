@@ -304,13 +304,20 @@ const dirStyles = `
 
   .th-avatar svg { opacity: var(--alpha-phi); }
 
-  .th-photo-bar {
+  .th-photo-fade {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 0.236rem;
-    background: var(--rose);
+    height: 23.6%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(240,235,229,0) 38.2%,
+      rgba(240,235,229,0.382) 61.8%,
+      rgba(240,235,229,0.854) 100%
+    );
+    pointer-events: none;
   }
 
   .th-status {
@@ -522,7 +529,7 @@ export default function TherapistsDirectory() {
                   </svg>
                 </div>
               )}
-              <div className="th-photo-bar" />
+              <div className="th-photo-fade" />
             </div>
 
             <p className="th-status" style={{ color: STATUS[t.status].color }}>

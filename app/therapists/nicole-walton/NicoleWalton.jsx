@@ -177,7 +177,20 @@ const nStyles = `
   .nic-sidebar { position: sticky; top: var(--s-md); border-right: 0.0618rem solid var(--divider); padding-right: var(--s-xl); }
   .nic-photo-wrap { position: relative; overflow: hidden; background: var(--n-tint); margin-bottom: var(--s-sm); }
   .nic-photo { width: 100%; aspect-ratio: 1 / 1.618; object-fit: cover; object-position: top center; display: block; }
-  .nic-photo-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 0.236rem; background: linear-gradient(90deg, var(--n-dark), var(--n-primary), var(--n-light)); }
+  .nic-photo-fade {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 38.2%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(239,248,242,0) 23.6%,
+      rgba(239,248,242,0.236) 38.2%,
+      rgba(239,248,242,0.618) 61.8%,
+      rgba(239,248,242,1) 100%
+    );
+    pointer-events: none;
+  }
   .nic-badges { display: flex; gap: var(--s-2xs); flex-wrap: wrap; margin-bottom: var(--s-sm); }
   .nic-badge { font-size: var(--t-xs); font-weight: 400; letter-spacing: 0.236em; text-transform: uppercase; padding: 0.236rem var(--s-2xs); border: 0.0618rem solid var(--n-primary); color: var(--n-primary); }
   .nic-badge.primary { background: var(--n-primary); color: var(--paper); border-color: var(--n-primary); }
@@ -250,7 +263,7 @@ export default function NicoleWalton() {
         <aside className="nic-sidebar">
           <div className="nic-photo-wrap">
             <img className="nic-photo" src="/images/therapists/Nicole_Walton_bio3.jpg" alt="Dr. Nicole Walton" />
-            <div className="nic-photo-bar" />
+            <div className="nic-photo-fade" />
           </div>
           <div className="nic-badges">
             <span className="nic-badge primary">PhD</span>
