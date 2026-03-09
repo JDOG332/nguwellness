@@ -218,7 +218,7 @@ const dirStyles = `
 
   .dir-phil-head {
     font-family: var(--font-display);
-    font-size: var(--t-xs);
+    font-size: var(--t-md);
     font-weight: 900;
     margin-bottom: var(--s-3xs);
     line-height: 1.1;
@@ -226,7 +226,7 @@ const dirStyles = `
   }
 
   .dir-phil-body {
-    font-size: var(--t-xs);
+    font-size: var(--t-base);
     font-weight: 300;
     color: var(--earth);
     line-height: 1.618;
@@ -442,15 +442,15 @@ export default function TherapistsDirectory() {
         <div className="dir-phil-inner">
           <div className="dir-phil-title">
             <p className="eyebrow">Our Philosophy</p>
-            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-0.0382em", whiteSpace: "nowrap" }}>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-xl)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-0.0382em", whiteSpace: "nowrap" }}>
               Our therapists focus on you.
             </h2>
           </div>
           <div className="dir-phil-cols">
             {[
-              { icon: "⟡", head: "Therapists here just help people.", body: "Handpicked for their values, their work ethic, and the way they think about care." },
-              { icon: "◈", head: "Their needs matter as much as yours.", body: "A supported, fairly paid therapist is a fundamentally better therapist." },
-              { icon: "◇", head: "Matched to your actual needs.", body: "Every match is intentional: specialty, schedule, personality, approach." },
+              { icon: "⟡", head: "Excellent therapists help people.", body: "Handpicked for their values, work ethic, and the way they think about care." },
+              { icon: "◈", head: "Therapists' needs matter too.", body: "Well supported, fairly paid therapists can better meet the needs of their clients." },
+              { icon: "◇", head: "Matched to your needs.", body: "Every match is intentional based on specialty, schedule, personality and approach." },
             ].map(({ icon, head, body }) => (
               <div key={head} className="dir-phil-col">
                 <p className="dir-phil-head"><span className="dir-phil-icon">{icon}</span>{head}</p>
