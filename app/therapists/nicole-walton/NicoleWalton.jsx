@@ -177,16 +177,17 @@ const nStyles = `
   .nic-sidebar { position: sticky; top: var(--s-md); border-right: 0.0618rem solid var(--divider); padding-right: var(--s-xl); }
   .nic-photo-wrap { position: relative; overflow: hidden; background: var(--paper); margin-bottom: var(--s-sm); }
   .nic-photo { width: 100%; aspect-ratio: 1 / 1.618; object-fit: cover; object-position: top center; display: block; }
-  .nic-photo-fade {
+  .nic-photo-vignette {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 23.6%;
-    background: linear-gradient(
-      to bottom,
+    inset: 0;
+    background: radial-gradient(
+      ellipse 61.8% 61.8% at 50% 35%,
       transparent 0%,
-      rgba(250,248,245,0.236) 38.2%,
-      rgba(250,248,245,0.618) 61.8%,
-      rgba(250,248,245,0.854) 100%
+      transparent 50%,
+      rgba(250,248,245,0.0618) 61.8%,
+      rgba(250,248,245,0.146) 76.4%,
+      rgba(250,248,245,0.236) 85%,
+      rgba(250,248,245,0.382) 100%
     );
     pointer-events: none;
   }
@@ -268,7 +269,7 @@ export default function NicoleWalton() {
         <aside className="nic-sidebar">
           <div className="nic-photo-wrap">
             <img className="nic-photo" src="/images/therapists/Nicole_Walton_bio3.jpg" alt="Dr. Nicole Walton" />
-            <div className="nic-photo-fade" />
+            <div className="nic-photo-vignette" />
             <div className="nic-photo-line" />
           </div>
           <div className="nic-badges">

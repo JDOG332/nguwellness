@@ -175,16 +175,17 @@ const kimStyles = `
   .kim-sidebar { position: sticky; top: var(--s-md); border-right: 0.0618rem solid var(--divider); padding-right: var(--s-xl); }
   .kim-photo-wrap { position: relative; overflow: hidden; background: var(--paper); margin-bottom: var(--s-sm); }
   .kim-photo { width: 100%; aspect-ratio: 1 / 1.618; object-fit: cover; object-position: top center; display: block; }
-  .kim-photo-fade {
+  .kim-photo-vignette {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 23.6%;
-    background: linear-gradient(
-      to bottom,
+    inset: 0;
+    background: radial-gradient(
+      ellipse 61.8% 61.8% at 50% 38.2%,
       transparent 0%,
-      rgba(250,248,245,0.236) 38.2%,
-      rgba(250,248,245,0.618) 61.8%,
-      rgba(250,248,245,0.854) 100%
+      transparent 50%,
+      rgba(250,248,245,0.0618) 61.8%,
+      rgba(250,248,245,0.146) 76.4%,
+      rgba(250,248,245,0.236) 85%,
+      rgba(250,248,245,0.382) 100%
     );
     pointer-events: none;
   }
@@ -279,7 +280,7 @@ export default function KimBrant() {
         <aside className="kim-sidebar">
           <div className="kim-photo-wrap">
             <img className="kim-photo" src="/images/therapists/Kim_Brant_bio.png" alt="Kim Brant, LPCC" />
-            <div className="kim-photo-fade" />
+            <div className="kim-photo-vignette" />
             <div className="kim-photo-line" />
           </div>
           <div className="kim-badges">

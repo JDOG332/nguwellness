@@ -304,18 +304,16 @@ const dirStyles = `
 
   .th-avatar svg { opacity: var(--alpha-phi); }
 
-  .th-photo-fade {
+  .th-photo-vignette {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 23.6%;
-    background: linear-gradient(
-      to bottom,
+    inset: 0;
+    background: radial-gradient(
+      ellipse 61.8% 61.8% at 50% 38.2%,
       transparent 0%,
-      rgba(250,248,245,0.236) 38.2%,
-      rgba(250,248,245,0.618) 61.8%,
-      rgba(250,248,245,0.854) 100%
+      transparent 61.8%,
+      rgba(250,248,245,0.0618) 76.4%,
+      rgba(250,248,245,0.146) 85%,
+      rgba(250,248,245,0.236) 100%
     );
     pointer-events: none;
   }
@@ -539,7 +537,7 @@ export default function TherapistsDirectory() {
                   </svg>
                 </div>
               )}
-              <div className="th-photo-fade" />
+              <div className="th-photo-vignette" />
               <div className="th-photo-line" />
             </div>
 
