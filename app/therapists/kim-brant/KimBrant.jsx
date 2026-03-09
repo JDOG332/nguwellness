@@ -191,8 +191,8 @@ const kimStyles = `
   }
   .kim-photo-line {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 0.236rem;
+    top: 0; left: 0; right: 0;
+    height: 0.382rem;
     background: linear-gradient(90deg, var(--k-dark), var(--k-primary), var(--k-light));
   }
   .kim-badges { display: flex; gap: var(--s-2xs); flex-wrap: wrap; margin-bottom: var(--s-sm); }

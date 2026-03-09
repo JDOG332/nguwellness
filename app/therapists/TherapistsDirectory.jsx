@@ -320,10 +320,10 @@ const dirStyles = `
 
   .th-photo-line {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    height: 0.236rem;
+    height: 0.382rem;
     background: var(--rose);
     opacity: var(--alpha-phi);
   }
