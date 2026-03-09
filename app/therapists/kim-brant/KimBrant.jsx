@@ -173,21 +173,26 @@ const kimStyles = `
 
   .kim-layout { display: grid; grid-template-columns: 38.2% 1fr; gap: var(--s-xl); max-width: var(--max-w); margin: 0 auto; padding: var(--s-xl) var(--s-lg) var(--s-2xl); align-items: start; }
   .kim-sidebar { position: sticky; top: var(--s-md); border-right: 0.0618rem solid var(--divider); padding-right: var(--s-xl); }
-  .kim-photo-wrap { position: relative; overflow: hidden; background: var(--k-tint); margin-bottom: var(--s-sm); }
+  .kim-photo-wrap { position: relative; overflow: hidden; background: var(--paper); margin-bottom: var(--s-sm); }
   .kim-photo { width: 100%; aspect-ratio: 1 / 1.618; object-fit: cover; object-position: top center; display: block; }
   .kim-photo-fade {
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    height: 38.2%;
+    height: 23.6%;
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(239,244,251,0) 23.6%,
-      rgba(239,244,251,0.236) 38.2%,
-      rgba(239,244,251,0.618) 61.8%,
-      rgba(239,244,251,1) 100%
+      rgba(250,248,245,0.236) 38.2%,
+      rgba(250,248,245,0.618) 61.8%,
+      rgba(250,248,245,0.854) 100%
     );
     pointer-events: none;
+  }
+  .kim-photo-line {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 0.236rem;
+    background: linear-gradient(90deg, var(--k-dark), var(--k-primary), var(--k-light));
   }
   .kim-badges { display: flex; gap: var(--s-2xs); flex-wrap: wrap; margin-bottom: var(--s-sm); }
   .kim-badge { font-size: var(--t-xs); font-weight: 400; letter-spacing: 0.236em; text-transform: uppercase; padding: 0.236rem var(--s-2xs); border: 0.0618rem solid var(--k-primary); color: var(--k-primary); }
@@ -275,6 +280,7 @@ export default function KimBrant() {
           <div className="kim-photo-wrap">
             <img className="kim-photo" src="/images/therapists/Kim_Brant_bio.png" alt="Kim Brant, LPCC" />
             <div className="kim-photo-fade" />
+            <div className="kim-photo-line" />
           </div>
           <div className="kim-badges">
             <span className="kim-badge primary">CCATP Certified</span>

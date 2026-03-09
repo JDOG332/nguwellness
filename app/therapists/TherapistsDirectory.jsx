@@ -313,11 +313,21 @@ const dirStyles = `
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(240,235,229,0) 38.2%,
-      rgba(240,235,229,0.382) 61.8%,
-      rgba(240,235,229,0.854) 100%
+      rgba(250,248,245,0.236) 38.2%,
+      rgba(250,248,245,0.618) 61.8%,
+      rgba(250,248,245,0.854) 100%
     );
     pointer-events: none;
+  }
+
+  .th-photo-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.236rem;
+    background: var(--rose);
+    opacity: var(--alpha-phi);
   }
 
   .th-status {
@@ -530,6 +540,7 @@ export default function TherapistsDirectory() {
                 </div>
               )}
               <div className="th-photo-fade" />
+              <div className="th-photo-line" />
             </div>
 
             <p className="th-status" style={{ color: STATUS[t.status].color }}>
