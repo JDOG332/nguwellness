@@ -279,7 +279,7 @@ export default function KimBrant() {
         {/* ── SIDEBAR ── */}
         <aside className="kim-sidebar">
           <div className="kim-photo-wrap">
-            <img className="kim-photo" src="/images/therapists/Kim_Brant_bio.png" alt="Kim Brant, LPCC" />
+            <img className="kim-photo" src="/images/therapists/Kim_Brant.png" alt="Kim Brant, LPCC" />
             <div className="kim-photo-vignette" />
             <div className="kim-photo-line" />
           </div>

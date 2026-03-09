@@ -268,7 +268,7 @@ export default function NicoleWalton() {
         {/* SIDEBAR */}
         <aside className="nic-sidebar">
           <div className="nic-photo-wrap">
-            <img className="nic-photo" src="/images/therapists/Nicole_Walton_bio3.jpg" alt="Dr. Nicole Walton" />
+            <img className="nic-photo" src="/images/therapists/Nicole_Walton.jpg" alt="Dr. Nicole Walton" />
             <div className="nic-photo-vignette" />
             <div className="nic-photo-line" />
           </div>

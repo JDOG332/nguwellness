@@ -502,7 +502,7 @@ export default function AboutPage() {
           <p className="eyebrow" style={{ marginBottom: "var(--s-lg)" }}>The Founder</p>
           <div className="bio-grid">
             <div className="bio-photo-wrap">
-              <img className="bio-photo" src="/images/therapists/Nicole_Walton_bio3.jpg" alt="Dr. Nicole Walton" onError={e => { e.target.style.background = "var(--mist)"; e.target.style.minHeight = "23.54rem"; }} />
+              <img className="bio-photo" src="/images/therapists/Nicole_Walton.jpg" alt="Dr. Nicole Walton" onError={e => { e.target.style.background = "var(--mist)"; e.target.style.minHeight = "23.54rem"; }} />
               <div className="bio-photo-bar" />
             </div>
             <div>
@@ -548,7 +548,7 @@ export default function AboutPage() {
           <p className="eyebrow" style={{ marginBottom: "var(--s-lg)" }}>The Team</p>
           <div className="bio-grid">
             <div className="bio-photo-wrap" style={{ background: "#d8dfe2" }}>
-              <img className="bio-photo" src="/images/therapists/Jeff_Sellers_bio.jpg" alt="Jeffrey Sellers" onError={e => { e.target.style.background = "#d8dfe2"; e.target.style.minHeight = "23.54rem"; }} />
+              <img className="bio-photo" src="/images/therapists/Jeffrey_Sellers.jpeg" alt="Jeffrey Sellers" onError={e => { e.target.style.background = "#d8dfe2"; e.target.style.minHeight = "23.54rem"; }} />
               <div className="bio-photo-bar" style={{ background: "var(--earth)" }} />
             </div>
             <div>
