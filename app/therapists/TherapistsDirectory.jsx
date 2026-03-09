@@ -212,8 +212,7 @@ const dirStyles = `
   }
 
   .dir-phil-icon {
-    font-size: var(--t-base);
-    margin-bottom: var(--s-3xs);
+    margin-right: var(--s-3xs);
     opacity: var(--alpha-phi);
   }
 
@@ -454,8 +453,7 @@ export default function TherapistsDirectory() {
               { icon: "◇", head: "Matched to your actual needs.", body: "Every match is intentional: specialty, schedule, personality, approach." },
             ].map(({ icon, head, body }) => (
               <div key={head} className="dir-phil-col">
-                <p className="dir-phil-icon">{icon}</p>
-                <p className="dir-phil-head">{head}</p>
+                <p className="dir-phil-head"><span className="dir-phil-icon">{icon}</span>{head}</p>
                 <p className="dir-phil-body">{body}</p>
               </div>
             ))}
