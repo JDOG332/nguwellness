@@ -240,7 +240,7 @@ const dirStyles = `
     gap: var(--s-lg);
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-xl) var(--s-lg) var(--s-2xl);
+    padding: var(--s-md) var(--s-lg) var(--s-2xl);
   }
 
   .dir-grid-label {
@@ -250,7 +250,7 @@ const dirStyles = `
     letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--warm-gray);
-    margin-bottom: var(--s-xs);
+    margin-bottom: 0;
   }
 
   /* CARD */
