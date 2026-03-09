@@ -129,7 +129,7 @@ const dirStyles = `
 
   .dir-search::placeholder {
     color: var(--warm-gray);
-    opacity: var(--alpha-half);
+    opacity: var(--alpha-ghost);
   }
 
   .dir-grid {
@@ -164,7 +164,7 @@ const dirStyles = `
 
   .th-photo {
     width: 100%;
-    aspect-ratio: 1 / 1.236;
+    aspect-ratio: 1 / 1.618;
     background: var(--mist);
     overflow: hidden;
     position: relative;
@@ -184,15 +184,16 @@ const dirStyles = `
   }
 
   .th-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
     font-family: var(--font-display);
     font-size: var(--t-xl);
     font-weight: 900;
     color: var(--divider);
-    letter-spacing: 0.0618em;
+    letter-spacing: -0.0382em;
   }
 
   .th-body {
@@ -201,8 +202,8 @@ const dirStyles = `
 
   .th-status {
     font-size: var(--t-xs);
-    font-weight: 500;
-    letter-spacing: 0.146em;
+    font-weight: 400;
+    letter-spacing: 0.236em;
     text-transform: uppercase;
     margin-bottom: var(--s-2xs);
   }
@@ -213,7 +214,7 @@ const dirStyles = `
   .th-name {
     font-family: var(--font-display);
     font-size: var(--t-lg);
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.1;
     margin-bottom: var(--s-3xs);
     letter-spacing: -0.0382em;
@@ -292,7 +293,7 @@ export default function TherapistsDirectory() {
       <section className="dir-hero">
         <p className="eyebrow">Our Therapists</p>
         <h1>Find your fit.</h1>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "38.2ch" }}>
+        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
           Every therapist at NGU Wellness is licensed, vetted, and committed to evidence-based care.
         </p>
       </section>
@@ -350,7 +351,7 @@ export default function TherapistsDirectory() {
         <div className="phi-wrap" style={{ textAlign: "center" }}>
           <p className="eyebrow">Not sure who to see?</p>
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", marginBottom: "var(--s-md)" }}>We will help you find the right match.</h2>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "38.2ch", margin: "0 auto var(--s-lg)" }}>
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-lg)" }}>
             Call, text, or email us. We will match you with the therapist best suited to your needs.
           </p>
           <div style={{ display: "flex", gap: "var(--s-sm)", justifyContent: "center", flexWrap: "wrap" }}>

@@ -23,7 +23,7 @@ const profileStyles = `
 
   .profile-photo {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1.618;
     object-fit: cover;
     object-position: top center;
     display: block;
@@ -40,7 +40,7 @@ const profileStyles = `
 
   .profile-role {
     font-size: var(--t-xs);
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--rose);
@@ -58,7 +58,7 @@ const profileStyles = `
 
   .profile-creds {
     font-size: var(--t-sm);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--warm-gray);
     letter-spacing: 0.0618em;
     margin-bottom: var(--s-md);
@@ -90,8 +90,8 @@ const profileStyles = `
 
   .detail-label {
     font-size: var(--t-xs);
-    font-weight: 500;
-    letter-spacing: 0.146em;
+    font-weight: 400;
+    letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--warm-gray);
     min-width: 6.18rem;

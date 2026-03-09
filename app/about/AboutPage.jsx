@@ -22,7 +22,7 @@ const aboutStyles = `
 
   .about-aside-label {
     font-size: var(--t-xs);
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--warm-gray);
@@ -40,7 +40,7 @@ const aboutStyles = `
 
   .about-attr {
     font-size: var(--t-xs);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--warm-gray);
     letter-spacing: 0.0618em;
   }
@@ -86,7 +86,7 @@ const aboutStyles = `
   .timeline::before {
     content: '';
     position: absolute;
-    left: 1.236rem;
+    left: 1.618rem;
     top: 0.618rem;
     bottom: 0.618rem;
     width: 0.0618rem;
@@ -106,14 +106,14 @@ const aboutStyles = `
   .tl-dot {
     width: 2.618rem;
     height: 2.618rem;
-    border-radius: 50%;
+    border-radius: 6.854rem;
     background: var(--paper);
     border: 0.0618rem solid var(--divider);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: var(--t-xs);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--warm-gray);
     position: relative;
     z-index: 1;
@@ -128,8 +128,8 @@ const aboutStyles = `
 
   .tl-year {
     font-size: var(--t-xs);
-    font-weight: 500;
-    letter-spacing: 0.146em;
+    font-weight: 400;
+    letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--warm-gray);
     margin-bottom: var(--s-3xs);
@@ -139,7 +139,7 @@ const aboutStyles = `
   .tl-title {
     font-family: var(--font-display);
     font-size: var(--t-base);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-3xs);
   }
 
@@ -180,7 +180,7 @@ const aboutStyles = `
   .pillar-title {
     font-family: var(--font-display);
     font-size: var(--t-base);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-2xs);
   }
 
@@ -208,7 +208,7 @@ const aboutStyles = `
 
   .bio-photo {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1.618;
     object-fit: cover;
     object-position: top center;
     display: block;
@@ -234,7 +234,7 @@ const aboutStyles = `
 
   .bio-creds {
     font-size: var(--t-sm);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--warm-gray);
     margin-bottom: var(--s-md);
   }
@@ -277,8 +277,8 @@ const aboutStyles = `
 
   .bio-detail-label {
     font-size: var(--t-xs);
-    font-weight: 500;
-    letter-spacing: 0.146em;
+    font-weight: 400;
+    letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--warm-gray);
     min-width: 6.18rem;
@@ -307,7 +307,7 @@ const aboutStyles = `
   .community-dot {
     width: 0.618rem;
     height: 0.618rem;
-    border-radius: 50%;
+    border-radius: 6.854rem;
     background: var(--gold);
     flex-shrink: 0;
     margin-top: 0.382rem;
@@ -318,11 +318,11 @@ const aboutStyles = `
     font-weight: 300;
     color: var(--paper);
     line-height: 1.618;
-    opacity: 0.854;
+    opacity: 0.618;
   }
 
   .community-text strong {
-    font-weight: 500;
+    font-weight: 400;
     color: var(--paper);
   }
 
@@ -355,7 +355,7 @@ export default function AboutPage() {
           <h1 style={{ fontSize: "clamp(var(--t-xl), 5vw, var(--t-2xl))", marginBottom: "var(--s-md)" }}>
             A practice built on one belief.
           </h1>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "38.2ch", marginBottom: "var(--s-lg)" }}>
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
             NGU Wellness was founded in Dayton, Ohio with a simple conviction: that everyone deserves access to exceptional, compassionate mental health care. No matter what they are facing.
           </p>
           <div style={{ display: "flex", gap: "var(--s-sm)", flexWrap: "wrap" }}>
@@ -388,10 +388,10 @@ export default function AboutPage() {
 
       {/* NGU PROMISE */}
       <section className="dark-strip">
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-half)", marginBottom: "var(--s-2xs)" }}>
+        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-ghost)", marginBottom: "var(--s-2xs)" }}>
           Three letters. One promise.
         </p>
-        <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 500, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--paper)", opacity: "var(--alpha-ghost)", marginBottom: "var(--s-md)" }}>
+        <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 400, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--paper)", opacity: "var(--alpha-ghost)", marginBottom: "var(--s-md)" }}>
           NGU Wellness
         </p>
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-sm)" }}>
@@ -466,7 +466,7 @@ export default function AboutPage() {
         <div className="phi-wrap" style={{ textAlign: "center" }}>
           <p className="eyebrow">What Drives Us</p>
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Our mission and values.</h2>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch", margin: "0 auto" }}>
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto" }}>
             Everyone deserves access to exceptional, compassionate mental health care. No matter what they are facing.
           </p>
         </div>
@@ -601,7 +601,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div>
-            <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--paper)", opacity: 0.7, lineHeight: 1.618, marginBottom: "var(--s-lg)" }}>
+            <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--paper)", opacity: 0.618, lineHeight: 1.618, marginBottom: "var(--s-lg)" }}>
               NGU Wellness is proud to be an active part of the communities we serve — not just as a therapy practice, but as neighbors, advocates, and supporters.
             </p>
             <div className="community-items">
@@ -627,7 +627,7 @@ export default function AboutPage() {
         <div className="phi-wrap">
           <p className="eyebrow">Take the First Step</p>
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-md)" }}>Ready to take the first step?</h2>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "38.2ch", margin: "0 auto var(--s-lg)" }}>
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-lg)" }}>
             Never give up on yourself. We are here to help you figure out the rest.
           </p>
           <div style={{ display: "flex", gap: "var(--s-sm)", justifyContent: "center", flexWrap: "wrap" }}>

@@ -98,14 +98,14 @@ const svcStyles = `
 
   .mod-card:hover {
     border-color: var(--rose);
-    transform: translateY(-0.146rem);
+    transform: translateY(-0.236rem);
   }
 
   .mod-abbr {
     font-family: var(--font-display);
     font-size: var(--t-xs);
-    font-weight: 700;
-    letter-spacing: 0.146em;
+    font-weight: 900;
+    letter-spacing: 0.236em;
     color: var(--rose);
     margin-bottom: var(--s-3xs);
   }
@@ -113,7 +113,7 @@ const svcStyles = `
   .mod-name {
     font-family: var(--font-display);
     font-size: var(--t-md);
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.1;
     margin-bottom: var(--s-2xs);
   }
@@ -192,7 +192,7 @@ const svcStyles = `
   .format-title {
     font-family: var(--font-display);
     font-size: var(--t-md);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-2xs);
   }
 
@@ -223,7 +223,7 @@ export default function ServicesPage() {
       <section className="svc-hero">
         <p className="eyebrow">Our Services</p>
         <h1>Real help. <em>Real tools.</em> Real change.</h1>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch" }}>
+        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
           Individual therapy for children, teens, and adults ready for real support.
           In-person in Dayton and Rocky River. Telehealth across all of Ohio.
         </p>
@@ -231,13 +231,13 @@ export default function ServicesPage() {
 
       {/* PROMISE STRIP */}
       <section className="dark-strip">
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-lg)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-sm)", maxWidth: "42.36ch", margin: "0 auto var(--s-sm)" }}>
+        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-lg)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-sm)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-sm)" }}>
           No matter what happens. No matter how difficult life gets. No matter how alone you feel.
         </p>
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", color: "var(--paper)", marginBottom: "var(--s-xs)" }}>
           Never give up.
         </h2>
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-half)" }}>
+        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-ghost)" }}>
           Let us help.
         </p>
       </section>
@@ -277,7 +277,7 @@ export default function ServicesPage() {
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
             Concerns we specialize in.
           </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch" }}>
+          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
             Our team covers a broad range of concerns. If you do not see yours listed, reach out — we can likely help or refer you to someone who can.
           </p>
           <div className="spec-grid">
@@ -293,7 +293,7 @@ export default function ServicesPage() {
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
             Evidence-based modalities.
           </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch" }}>
+          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
             Every therapist at NGU is trained in proven, research-backed approaches. Your therapist will tailor the approach to fit you.
           </p>
           <div className="mod-grid">
@@ -315,7 +315,7 @@ export default function ServicesPage() {
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
             We work with your plan.
           </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch", marginBottom: "var(--s-lg)" }}>
+          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
             NGU Wellness accepts most major insurance, Medicaid, and EAP plans. Not sure about your coverage? We will verify it for you — free.
           </p>
           <div className="ins-tabs">
@@ -339,7 +339,7 @@ export default function ServicesPage() {
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-md)" }}>
             Your first step is the hardest. We will take it with you.
           </h2>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "38.2ch", margin: "0 auto var(--s-lg)" }}>
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-lg)" }}>
             Complete our brief intake survey and we will match you with the right therapist for your needs.
           </p>
           <div style={{ display: "flex", gap: "var(--s-sm)", justifyContent: "center", flexWrap: "wrap" }}>

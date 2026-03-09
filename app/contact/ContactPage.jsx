@@ -52,7 +52,7 @@ const contactStyles = `
   .step-title {
     font-family: var(--font-display);
     font-size: var(--t-md);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-2xs);
   }
 
@@ -94,7 +94,7 @@ const contactStyles = `
   .info-title {
     font-family: var(--font-display);
     font-size: var(--t-md);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-3xs);
   }
 
@@ -129,9 +129,9 @@ const contactStyles = `
     text-align: left;
     font-family: var(--font-display);
     font-size: var(--t-base);
-    font-weight: 700;
+    font-weight: 900;
     color: var(--ink);
-    line-height: 1.236;
+    line-height: 1.1;
   }
 
   .faq-q:hover { color: var(--rose-deep); }
@@ -175,7 +175,7 @@ export default function ContactPage() {
       <section className="contact-hero">
         <p className="eyebrow">Get Started</p>
         <h1>We are here when you are ready.</h1>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch" }}>
+        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
           Taking the first step is the hardest part. We make everything after that as simple as possible.
         </p>
       </section>
@@ -245,15 +245,15 @@ export default function ContactPage() {
           <p className="eyebrow">Our Locations</p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "var(--s-md)", marginTop: "var(--s-md)" }}>
             <div style={{ padding: "var(--s-lg)", border: "0.0618rem solid var(--divider)", background: "var(--paper)" }}>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 500, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--rose)", marginBottom: "var(--s-xs)" }}>Dayton</p>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 700, marginBottom: "var(--s-xs)" }}>Patterson Road</p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 400, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--rose)", marginBottom: "var(--s-xs)" }}>Dayton</p>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, marginBottom: "var(--s-xs)" }}>Patterson Road</p>
               <p style={{ fontSize: "var(--t-sm)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
                 453 Patterson Rd., Suite A<br />Dayton, OH 45419
               </p>
             </div>
             <div style={{ padding: "var(--s-lg)", border: "0.0618rem solid var(--divider)", background: "var(--paper)" }}>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 500, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--rose)", marginBottom: "var(--s-xs)" }}>Rocky River</p>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 700, marginBottom: "var(--s-xs)" }}>Center Ridge Road</p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 400, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--rose)", marginBottom: "var(--s-xs)" }}>Rocky River</p>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, marginBottom: "var(--s-xs)" }}>Center Ridge Road</p>
               <p style={{ fontSize: "var(--t-sm)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
                 20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116
               </p>

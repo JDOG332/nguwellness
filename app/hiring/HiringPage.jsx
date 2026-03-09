@@ -31,7 +31,7 @@ const hiringStyles = `
   .hire-value-title {
     font-family: var(--font-display);
     font-size: var(--t-md);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-2xs);
   }
 
@@ -87,7 +87,7 @@ export default function HiringPage() {
       <section className="hire-hero">
         <p className="eyebrow">Careers</p>
         <h1>Join us.</h1>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch" }}>
+        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
           NGU Wellness is always interested in connecting with skilled, compassionate therapists who share our commitment to quality care.
         </p>
       </section>
@@ -123,7 +123,7 @@ export default function HiringPage() {
           <h2 style={{ fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
             Requirements.
           </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch" }}>
+          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
             We are always looking for licensed therapists who are passionate about their work and committed to evidence-based care.
           </p>
           <div className="hire-reqs">
@@ -152,7 +152,7 @@ export default function HiringPage() {
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", color: "var(--paper)", marginBottom: "var(--s-md)" }}>
           Send us your CV.
         </h2>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-lg)", maxWidth: "42.36ch", margin: "0 auto var(--s-lg)" }}>
+        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-lg)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-lg)" }}>
           Email your resume and a brief introduction to info@nguwellness.com. We review every application personally.
         </p>
         <button className="btn-rose" onClick={() => window.open("mailto:info@nguwellness.com?subject=Therapist%20Application%20-%20NGU%20Wellness")}>

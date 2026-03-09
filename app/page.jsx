@@ -42,7 +42,7 @@ const homeStyles = `
     font-weight: 300;
     color: var(--earth);
     line-height: 1.618;
-    max-width: 38.2ch;
+    max-width: var(--max-w-narrow);
     margin-bottom: var(--s-xl);
   }
 
@@ -108,7 +108,7 @@ const homeStyles = `
     font-style: italic;
     color: var(--paper);
     opacity: var(--alpha-phi);
-    max-width: 42.36ch;
+    max-width: var(--max-w-narrow);
     margin: 0 auto;
   }
 
@@ -141,7 +141,7 @@ const homeStyles = `
   .why-title {
     font-family: var(--font-display);
     font-size: var(--t-md);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-xs);
   }
 
@@ -218,8 +218,8 @@ const homeStyles = `
     font-family: var(--font-body);
     font-size: var(--t-xs);
     font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.146em;
+    font-weight: 400;
+    letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--warm-gray);
   }
@@ -244,7 +244,7 @@ const homeStyles = `
   .loc-label {
     font-family: var(--font-body);
     font-size: var(--t-xs);
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.236em;
     text-transform: uppercase;
     color: var(--rose);
@@ -254,7 +254,7 @@ const homeStyles = `
   .loc-name {
     font-family: var(--font-display);
     font-size: var(--t-lg);
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: var(--s-xs);
   }
 
@@ -280,7 +280,7 @@ const homeStyles = `
     font-size: var(--t-md);
     font-weight: 300;
     color: var(--earth);
-    max-width: 38.2ch;
+    max-width: var(--max-w-narrow);
     margin: 0 auto var(--s-xl);
   }
 
@@ -362,7 +362,7 @@ export default function HomePage() {
             A practice built differently.
           </h2>
           <hr className="phi-rule anim-2" />
-          <p className="anim-3" style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "42.36ch" }}>
+          <p className="anim-3" style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
             We built NGU Wellness with a team-based model so more people get matched with
             the right therapist, the right approach, and the right fit — faster.
           </p>
