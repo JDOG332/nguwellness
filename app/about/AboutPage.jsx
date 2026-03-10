@@ -10,7 +10,7 @@ const aboutStyles = `
     gap: var(--s-xl);
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-2xl) var(--s-lg) var(--s-xl);
+    padding: var(--s-md) var(--s-lg) var(--s-xl);
     align-items: start;
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
