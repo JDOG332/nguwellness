@@ -356,7 +356,7 @@ export default function AboutPage() {
             A practice built on one belief.
           </h1>
           <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
-            NGU Wellness was founded in Dayton, Ohio with a simple conviction: that everyone deserves access to exceptional, compassionate mental health care. No matter what they are facing.
+            NGU Wellness was founded with a simple conviction: everyone deserves access to exceptional, compassionate mental health care. No matter where they've been or what they're facing.
           </p>
           <div style={{ display: "flex", gap: "var(--s-sm)", flexWrap: "wrap" }}>
             <button className="btn-primary" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
