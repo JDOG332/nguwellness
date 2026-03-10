@@ -355,7 +355,7 @@ export default function AboutPage() {
         <div>
           <p className="eyebrow">Our Story</p>
           <h1 style={{ fontSize: "clamp(var(--t-xl), 5vw, var(--t-2xl))", marginBottom: "var(--s-md)" }}>
-            A practice built on one belief.
+            A practice built on belief.
           </h1>
           <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
             Everyone deserves to be supported and feel accepted. Everyone deserves a second chance. Everyone deserves to have hope for a better life.
