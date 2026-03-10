@@ -79,7 +79,7 @@ const homeStyles = `
   /* ── PROMISE STRIP ── */
   .promise {
     background: var(--ink);
-    padding: var(--s-2xl) var(--s-lg);
+    padding: var(--s-lg) var(--s-lg);
     text-align: center;
     animation: fadeIn 0.618s 0.236s var(--ease-phi) both;
   }
@@ -347,7 +347,7 @@ export default function HomePage() {
 
       {/* ── PROMISE STRIP ── */}
       <section className="promise">
-        <p className="promise-accent">Three letters. One promise.</p>
+        <p className="promise-accent">3 letters. one big message.</p>
         <h2>Never Give Up.</h2>
         <p className="promise-sub">
           Never give up on hope. Never give up on life. Never Give Up Wellness.
