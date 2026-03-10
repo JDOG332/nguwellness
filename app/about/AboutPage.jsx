@@ -392,14 +392,14 @@ export default function AboutPage() {
 
       {/* NGU PROMISE */}
       <section className="dark-strip">
-        <div className="phi-wrap" style={{ textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-ghost)", marginBottom: "var(--s-3xs)", maxWidth: "none" }}>
+        <div className="phi-wrap">
+          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-md)", maxWidth: "none", textAlign: "left" }}>
             3 letters. one big message.
           </p>
-          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-3xs)" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-md)", textAlign: "center" }}>
             Never Give Up.
           </h2>
-          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", maxWidth: "none" }}>
+          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", maxWidth: "none", textAlign: "right" }}>
             Never give up on hope. Never give up on life. Never Give Up Wellness.
           </p>
         </div>
