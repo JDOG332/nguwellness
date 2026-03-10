@@ -358,7 +358,7 @@ export default function AboutPage() {
             A practice built on one belief.
           </h1>
           <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
-            NGU Wellness was founded with a simple conviction: everyone deserves access to exceptional, compassionate mental health care. No matter where they've been or what they're facing.
+            Everyone deserves to be supported and feel accepted. Everyone deserves a second chance. Everyone deserves to have hope for a better life.
           </p>
           <div style={{ display: "flex", gap: "var(--s-sm)", flexWrap: "wrap" }}>
             <button className="btn-primary" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
