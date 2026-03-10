@@ -375,8 +375,8 @@ export default function AboutPage() {
               <p className="about-stat-label">Founded</p>
             </div>
             <div>
-              <p className="about-stat-num">20+</p>
-              <p className="about-stat-label">Years experience</p>
+              <p className="about-stat-num">595+</p>
+              <p className="about-stat-label">Years of life experience</p>
             </div>
             <div>
               <p className="about-stat-num">2</p>

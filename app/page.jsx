@@ -335,8 +335,8 @@ export default function HomePage() {
             <p className="stat-label">Ohio Locations</p>
           </div>
           <div>
-            <p className="stat-num">20+</p>
-            <p className="stat-label">Years Combined Experience</p>
+            <p className="stat-num">595+</p>
+            <p className="stat-label">Years of Life Experience</p>
           </div>
           <div>
             <p className="stat-num">14+</p>
