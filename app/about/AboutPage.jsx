@@ -33,12 +33,11 @@ const aboutStyles = `
   }
 
   .about-quote {
-    font-family: var(--font-accent);
-    font-size: var(--t-lg);
-    font-style: italic;
+    font-size: var(--t-base);
+    font-weight: 300;
     line-height: 1.618;
     color: var(--ink);
-    margin-bottom: var(--s-md);
+    margin-bottom: var(--s-sm);
   }
 
   .about-attr {
@@ -369,9 +368,14 @@ export default function AboutPage() {
           <div>
             <p className="about-aside-label">Founded on a vision</p>
             <p className="about-quote">
-              "We started NGU Wellness because we envision a world where all people can experience healing and transformation with the right help and support."
+              Dr. Nicole Walton spent more than 20 years working in community mental health, pediatric social work, outpatient therapy, research, management and clinical supervision before founding NGU Wellness. She had seen firsthand, how difficult it can be for people to find quality care. And she believed all people deserve to find hope and the support they need.
             </p>
-            <p className="about-attr">Dr. Nicole Walton, Founder & Owner</p>
+            <p className="about-quote">
+              She opened NGU Wellness in 2021 in Dayton, Ohio and has grown it into a team-based approach: a group of skilled, vetted therapists committed to high-quality, collaborative, evidence-based care. Therapists that also take care of themselves as well.
+            </p>
+            <p className="about-quote">
+              In 2023, that vision expanded to a second location in Rocky River, Ohio, bringing the same standard of care to the greater Cleveland area.
+            </p>
           </div>
           <div className="about-stats">
             <div>
