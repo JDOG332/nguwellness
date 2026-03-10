@@ -409,7 +409,7 @@ a:hover { color: var(--rose); }
 .dark-strip {
   background: var(--ink);
   color: var(--paper);
-  padding: var(--s-2xl) var(--s-lg);
+  padding: var(--s-lg) var(--s-lg);
   text-align: center;
 }
 
