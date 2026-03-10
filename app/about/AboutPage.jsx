@@ -11,13 +11,16 @@ const aboutStyles = `
     max-width: var(--max-w);
     margin: 0 auto;
     padding: var(--s-md) var(--s-lg) var(--s-xl);
-    align-items: start;
+    align-items: stretch;
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
   .about-aside {
     border-left: 0.0618rem solid var(--divider);
     padding-left: var(--s-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .about-aside-label {
@@ -48,7 +51,6 @@ const aboutStyles = `
   .about-stats {
     display: flex;
     gap: var(--s-xl);
-    margin-top: var(--s-xl);
     padding-top: var(--s-lg);
     border-top: 0.0618rem solid var(--divider);
   }
@@ -364,11 +366,13 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="about-aside">
-          <p className="about-aside-label">Founded on a vision</p>
-          <p className="about-quote">
-            "We started NGU Wellness because we envision a world where all people can experience healing and transformation with the right help and support."
-          </p>
-          <p className="about-attr">Dr. Nicole Walton, Founder & Owner</p>
+          <div>
+            <p className="about-aside-label">Founded on a vision</p>
+            <p className="about-quote">
+              "We started NGU Wellness because we envision a world where all people can experience healing and transformation with the right help and support."
+            </p>
+            <p className="about-attr">Dr. Nicole Walton, Founder & Owner</p>
+          </div>
           <div className="about-stats">
             <div>
               <p className="about-stat-num">2021</p>
