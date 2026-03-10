@@ -10,8 +10,8 @@ const aboutStyles = `
     gap: var(--s-xl);
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-md) var(--s-lg) var(--s-xl);
-    align-items: stretch;
+    padding: var(--s-xl) var(--s-lg);
+    align-items: start;
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
@@ -20,7 +20,7 @@ const aboutStyles = `
     padding-left: var(--s-xl);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: var(--s-xl);
   }
 
   .about-aside-label {
@@ -391,16 +391,18 @@ export default function AboutPage() {
       </section>
 
       {/* NGU PROMISE */}
-      <section className="dark-strip" style={{ padding: "var(--s-lg) var(--s-lg)" }}>
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-ghost)", marginBottom: "var(--s-3xs)" }}>
-          3 letters. one big message.
-        </p>
-        <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-3xs)" }}>
-          Never Give Up.
-        </h2>
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)" }}>
-          Never give up on hope. Never give up on life. Never Give Up Wellness.
-        </p>
+      <section className="dark-strip">
+        <div className="phi-wrap" style={{ textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-ghost)", marginBottom: "var(--s-3xs)", maxWidth: "none" }}>
+            3 letters. one big message.
+          </p>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-3xs)" }}>
+            Never Give Up.
+          </h2>
+          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-base)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", maxWidth: "none" }}>
+            Never give up on hope. Never give up on life. Never Give Up Wellness.
+          </p>
+        </div>
       </section>
 
       {/* ORIGIN STORY */}
