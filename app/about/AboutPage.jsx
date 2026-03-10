@@ -468,36 +468,65 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* MISSION */}
+      {/* VISION, MISSION & VALUES */}
       <section className="phi-section" style={{ background: "var(--mist)" }}>
         <div className="phi-wrap" style={{ textAlign: "center" }}>
           <p className="eyebrow">What Drives Us</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Our mission and values.</h2>
+          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Vision</h2>
           <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto" }}>
-            Everyone deserves access to exceptional, compassionate mental health care. No matter what they are facing.
+            Never Give Up is our guiding message of hope. We envision a world where all people can experience healing and transformation. Our practice strives to inspire long-term holistic wellness for both our staff and the clients we serve because we all help each other on our journey of wellness.
           </p>
+        </div>
+        <div className="phi-wrap" style={{ textAlign: "center", marginTop: "var(--s-lg)" }}>
+          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Mission</h2>
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto" }}>
+            Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.
+          </p>
+        </div>
+        <div className="phi-wrap" style={{ textAlign: "center", marginTop: "var(--s-lg)" }}>
+          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Values</h2>
         </div>
         <div className="phi-wrap">
           <div className="pillar-grid">
             <div className="pillar">
               <span className="pillar-icon">⟡</span>
-              <p className="pillar-title">Service</p>
-              <p className="pillar-desc">Guided by service. We want to give back, make a difference, and model caring for others.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">◈</span>
-              <p className="pillar-title">Collaboration</p>
-              <p className="pillar-desc">We work with clients, not at them. Together we identify goals, learn skills, and address challenges.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">◇</span>
-              <p className="pillar-title">Excellence</p>
-              <p className="pillar-desc">Every therapist is licensed, vetted, and trained in evidence-based approaches. Quality is non-negotiable.</p>
+              <p className="pillar-title">Serve</p>
+              <p className="pillar-desc">Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.</p>
             </div>
             <div className="pillar">
               <span className="pillar-icon">○</span>
-              <p className="pillar-title">Connection</p>
-              <p className="pillar-desc">Being part of something greater contributes to resiliency, achievement, and adds meaning to life.</p>
+              <p className="pillar-title">Community</p>
+              <p className="pillar-desc">Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-icon">◈</span>
+              <p className="pillar-title">Embrace</p>
+              <p className="pillar-desc">We believe in welcoming all people. We realize we can be different from other people and still appreciate and respect them, learn from them and work together.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-icon">◇</span>
+              <p className="pillar-title">Support</p>
+              <p className="pillar-desc">We demonstrate support through acceptance, belief in a person's ability to change and by providing encouragement.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-icon">⟡</span>
+              <p className="pillar-title">Collaboration</p>
+              <p className="pillar-desc">Working together and sharing ideas increases the chance of reaching identified goals.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-icon">○</span>
+              <p className="pillar-title">Creativity</p>
+              <p className="pillar-desc">Creativity provides stress relief and enhances our ability to solve problems, change perspectives and express our thoughts and feelings.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-icon">◈</span>
+              <p className="pillar-title">Skill Building</p>
+              <p className="pillar-desc">Learning and implementing new skills is essential to change. We can learn new skills to cope with stress, to manage mental health symptoms, to repair our relationships and to take care of ourselves.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-icon">◇</span>
+              <p className="pillar-title">Wellness</p>
+              <p className="pillar-desc">We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.</p>
             </div>
           </div>
         </div>
