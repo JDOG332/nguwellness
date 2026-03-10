@@ -20,7 +20,7 @@ const aboutStyles = `
     padding-left: var(--s-xl);
     display: flex;
     flex-direction: column;
-    gap: var(--s-xl);
+    gap: var(--s-md);
   }
 
   .about-aside-label {
@@ -51,7 +51,7 @@ const aboutStyles = `
   .about-stats {
     display: flex;
     gap: var(--s-xl);
-    padding-top: var(--s-lg);
+    padding-top: var(--s-sm);
     border-top: 0.0618rem solid var(--divider);
   }
 
