@@ -368,7 +368,7 @@ export default function AboutPage() {
           <div>
             <p className="about-aside-label">Founded on a vision</p>
             <p className="about-quote">
-              Dr. Nicole Walton spent more than 20 years working in community mental health, pediatric social work, outpatient therapy, research, management and clinical supervision before founding NGU Wellness. She had seen firsthand, how difficult it can be for people to find quality care. And she believed all people deserve to find hope and the support they need.
+              Dr. Nicole Walton spent more than 20 years working in community mental health, pediatric social work, outpatient therapy, research, and clinical supervision before founding NGU Wellness. She had seen, firsthand, how difficult it can be for people to find quality care.
             </p>
             <p className="about-quote">
               She opened NGU Wellness in 2021 in Dayton, Ohio and has grown it into a team-based approach: a group of skilled, vetted therapists committed to high-quality, collaborative, evidence-based care. Therapists that also take care of themselves as well.
