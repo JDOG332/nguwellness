@@ -100,86 +100,167 @@ const aboutStyles = `
     font-size: var(--t-sm);
   }
 
-  /* ORIGIN */
-  .origin-grid {
-    display: grid;
-    grid-template-columns: 38.2% 1fr;
-    gap: var(--s-xl);
-    align-items: start;
+  /* ORIGIN / JOURNEY */
+  .origin-intro {
+    text-align: center;
+    max-width: 42.36rem;
+    margin: 0 auto var(--s-xl);
   }
 
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  .journey-timeline {
     position: relative;
+    padding: var(--s-lg) 0;
   }
 
-  .timeline::before {
+  .journey-timeline::before {
     content: '';
     position: absolute;
-    left: 1.618rem;
-    top: 0.618rem;
-    bottom: 0.618rem;
-    width: 0.0618rem;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0.125rem;
     background: var(--divider);
+    transform: translateX(-50%);
   }
 
-  .tl-item {
+  .tl-year-group {
+    position: relative;
+    margin-bottom: var(--s-xl);
+  }
+
+  .tl-year-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .tl-year-marker {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--s-md);
+  }
+
+  .tl-year-badge {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--font-display);
+    font-size: var(--t-base);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: var(--s-2xs) var(--s-md);
+    border-radius: 6.854rem;
+  }
+
+  .tl-year-badge.milestone {
+    background: var(--rose-deep);
+  }
+
+  .tl-entries {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-sm);
+  }
+
+  .tl-entry {
     display: grid;
-    grid-template-columns: 2.618rem 1fr;
-    gap: var(--s-md);
-    padding-bottom: var(--s-lg);
+    grid-template-columns: 1fr 2.618rem 1fr;
+    gap: 0;
+    align-items: start;
     position: relative;
   }
 
-  .tl-item:last-child { padding-bottom: 0; }
+  .tl-entry-left {
+    text-align: right;
+    padding-right: var(--s-md);
+  }
 
-  .tl-dot {
-    width: 2.618rem;
-    height: 2.618rem;
-    border-radius: 6.854rem;
-    background: var(--paper);
-    border: 0.0618rem solid var(--divider);
+  .tl-entry-right {
+    text-align: left;
+    padding-left: var(--s-md);
+  }
+
+  .tl-entry-dot-col {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: var(--t-xs);
-    font-weight: 400;
-    color: var(--warm-gray);
     position: relative;
     z-index: 1;
-    flex-shrink: 0;
   }
 
-  .tl-dot.active {
+  .tl-entry-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 0.125rem solid var(--rose);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+
+  .tl-entry-dot.major {
+    width: 1rem;
+    height: 1rem;
     background: var(--rose-deep);
     border-color: var(--rose-deep);
-    color: var(--paper);
+    margin-top: 0.125rem;
   }
 
-  .tl-year {
+  .tl-entry-date {
     font-size: var(--t-xs);
     font-weight: 400;
-    letter-spacing: 0.236em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--warm-gray);
     margin-bottom: var(--s-3xs);
-    padding-top: var(--s-2xs);
   }
 
-  .tl-title {
+  .tl-entry-title {
     font-family: var(--font-display);
     font-size: var(--t-base);
-    font-weight: 900;
+    font-weight: 700;
+    color: var(--ink);
     margin-bottom: var(--s-3xs);
   }
 
-  .tl-desc {
+  .tl-entry-desc {
     font-size: var(--t-sm);
     font-weight: 300;
     color: var(--earth);
     line-height: 1.618;
+  }
+
+  .tl-entry-person {
+    font-size: var(--t-sm);
+    font-weight: 400;
+    color: var(--ink);
+  }
+
+  .tl-entry-role {
+    font-size: var(--t-xs);
+    font-weight: 300;
+    color: var(--warm-gray);
+  }
+
+  @media (max-width: 42.36rem) {
+    .journey-timeline::before {
+      left: 1rem;
+    }
+    .tl-entry {
+      grid-template-columns: 2rem 1fr;
+    }
+    .tl-entry-left {
+      display: none;
+    }
+    .tl-entry-right {
+      text-align: left;
+      padding-left: var(--s-sm);
+    }
+    .tl-entry-dot-col {
+      justify-content: center;
+    }
+    .tl-year-marker {
+      justify-content: flex-start;
+      padding-left: 0;
+    }
   }
 
   /* PILLARS */
@@ -438,8 +519,7 @@ const aboutStyles = `
 
   @media (max-width: 61.8rem) {
     .about-hero { grid-template-columns: 1fr; }
-    .origin-grid { grid-template-columns: 1fr; }
-    .vmv-top-row { grid-template-columns: 1fr; }
+.vmv-top-row { grid-template-columns: 1fr; }
     .founders-header { flex-direction: column; text-align: center; }
     .founders-divider { width: 3rem; height: 0.236rem; align-self: auto; }
     .founders-row { grid-template-columns: 1fr; }
@@ -650,61 +730,217 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ORIGIN STORY */}
-      <section className="phi-section">
+      {/* OUR JOURNEY — Full-width timeline */}
+      <section className="phi-section" style={{ background: "var(--mist)" }}>
         <div className="phi-wrap">
-          <div className="origin-grid">
-            <div>
-              <p className="eyebrow">The Origin</p>
-              <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Where it began.</h2>
-              <hr className="phi-rule" />
-              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618, marginBottom: "var(--s-md)" }}>
-                Dr. Nicole Walton spent 20 years working in community mental health, pediatric social work, outpatient therapy, research, and clinical supervision before founding NGU Wellness. She had seen, firsthand, how difficult it can be for people to find quality care.
-              </p>
-              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618, marginBottom: "var(--s-md)" }}>
-                She opened NGU Wellness in 2021 in Dayton, Ohio with a team-based approach: a group of skilled, vetted therapists committed to high-quality, collaborative, evidence-based care.
-              </p>
-              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
-                In 2023, that vision expanded. NGU Wellness opened a second location in Rocky River, Ohio, bringing the same standard of care to the greater Cleveland area.
-              </p>
+          <div className="origin-intro">
+            <p className="eyebrow">Our Journey</p>
+            <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Where it all began.</h2>
+            <hr className="phi-rule" style={{ margin: "var(--s-sm) auto var(--s-md)" }} />
+            <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
+              Dr. Nicole Walton spent 20 years working in community mental health, pediatric social work, outpatient therapy, research, and clinical supervision before founding NGU Wellness. What started as one therapist and a vision in Dayton has grown into a team of dedicated clinicians serving families across Ohio.
+            </p>
+          </div>
+
+          <div className="journey-timeline">
+
+            {/* ── 2021 ── */}
+            <div className="tl-year-group">
+              <div className="tl-year-marker">
+                <span className="tl-year-badge milestone">2021</span>
+              </div>
+              <div className="tl-entries">
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">Summer 2021</p>
+                    <p className="tl-entry-title">NGU Wellness founded</p>
+                    <p className="tl-entry-desc">Doors open at 453 Patterson Rd., Suite A, Dayton, Ohio. A multi-therapist practice built on collaborative, evidence-based care.</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">August 23, 2021</p>
+                    <p className="tl-entry-person">Dr. Nicole Walton</p>
+                    <p className="tl-entry-role">Founder &amp; Clinical Director sees her first NGU client</p>
+                  </div>
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">December 3, 2021</p>
+                    <p className="tl-entry-person">Charlotte Wells</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+              </div>
             </div>
-            <div>
-              <p className="eyebrow">Our Journey</p>
-              <div className="timeline">
-                <div className="tl-item">
-                  <div className="tl-dot">PhD</div>
-                  <div>
-                    <p className="tl-year">Background</p>
-                    <p className="tl-title">20 years of clinical experience</p>
-                    <p className="tl-desc">Community mental health, pediatric social work, outpatient therapy, teaching, research, and clinical supervision.</p>
-                  </div>
-                </div>
-                <div className="tl-item">
-                  <div className="tl-dot active">21</div>
-                  <div>
-                    <p className="tl-year">Founded</p>
-                    <p className="tl-title">NGU Wellness opens in Dayton</p>
-                    <p className="tl-desc">453 Patterson Rd., Suite A. A multi-therapist practice built on collaborative, evidence-based care.</p>
-                  </div>
-                </div>
-                <div className="tl-item">
-                  <div className="tl-dot active">23</div>
-                  <div>
-                    <p className="tl-year">Expanded</p>
-                    <p className="tl-title">Rocky River location opens</p>
-                    <p className="tl-desc">20525 Center Ridge Rd., Suite 604. Quality therapy now accessible across Ohio.</p>
-                  </div>
-                </div>
-                <div className="tl-item">
-                  <div className="tl-dot active">→</div>
-                  <div>
-                    <p className="tl-year">Today</p>
-                    <p className="tl-title">Growing team. Same standard.</p>
-                    <p className="tl-desc">Licensed therapists serving adults, teens, children, couples, and families across Dayton and Cleveland.</p>
+
+            {/* ── 2022 ── */}
+            <div className="tl-year-group">
+              <div className="tl-year-marker">
+                <span className="tl-year-badge">2022</span>
+              </div>
+              <div className="tl-entries">
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">July 14, 2022</p>
+                    <p className="tl-entry-person">Danielle Washington</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* ── 2023 ── */}
+            <div className="tl-year-group">
+              <div className="tl-year-marker">
+                <span className="tl-year-badge milestone">2023</span>
+              </div>
+              <div className="tl-entries">
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">February 21, 2023</p>
+                    <p className="tl-entry-person">Pam Gibson</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">March 23, 2023</p>
+                    <p className="tl-entry-person">Natalie Woodson-Booska</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">Spring 2023</p>
+                    <p className="tl-entry-title">Dr. Walton earns her PhD</p>
+                    <p className="tl-entry-desc">Doctorate in Counselor Education &amp; Supervision from Regent University.</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">September 27, 2023</p>
+                    <p className="tl-entry-person">Kelly Salada</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">October 10, 2023</p>
+                    <p className="tl-entry-person">Katie Grier</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">2023</p>
+                    <p className="tl-entry-title">Rocky River location opens</p>
+                    <p className="tl-entry-desc">20525 Center Ridge Rd., Suite 604. NGU expands to serve the greater Cleveland area.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ── 2024 ── */}
+            <div className="tl-year-group">
+              <div className="tl-year-marker">
+                <span className="tl-year-badge">2024</span>
+              </div>
+              <div className="tl-entries">
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">June 12, 2024</p>
+                    <p className="tl-entry-person">Lisa Freeman</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">June 26, 2024</p>
+                    <p className="tl-entry-person">Anna Espy</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ── 2025 ── */}
+            <div className="tl-year-group">
+              <div className="tl-year-marker">
+                <span className="tl-year-badge">2025</span>
+              </div>
+              <div className="tl-entries">
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">January 11, 2025</p>
+                    <p className="tl-entry-person">Kelley Boole</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">September 19, 2025</p>
+                    <p className="tl-entry-person">Jackie Penny</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-date">October 7, 2025</p>
+                    <p className="tl-entry-person">Kim Brant</p>
+                    <p className="tl-entry-role">Joins the team — first client at NGU</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+              </div>
+            </div>
+
+            {/* ── Today ── */}
+            <div className="tl-year-group">
+              <div className="tl-year-marker">
+                <span className="tl-year-badge milestone">Today</span>
+              </div>
+              <div className="tl-entries">
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
+                    <p className="tl-entry-title">Growing team. Same standard.</p>
+                    <p className="tl-entry-desc">Licensed therapists serving adults, teens, children, couples, and families across Dayton and Cleveland.</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
