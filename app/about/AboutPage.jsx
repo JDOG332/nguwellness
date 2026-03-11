@@ -364,11 +364,6 @@ const aboutStyles = `
     align-items: start;
   }
 
-  .founder-card {
-    display: flex;
-    flex-direction: column;
-  }
-
   .founder-card .bio-photo-wrap {
     margin-bottom: var(--s-md);
   }
@@ -377,9 +372,20 @@ const aboutStyles = `
     aspect-ratio: 1 / 1.2;
   }
 
+  .founder-card {
+    display: flex;
+    flex-direction: column;
+  }
+
   .founder-info {
     display: flex;
     flex-direction: column;
+    flex: 1;
+  }
+
+  .founder-actions {
+    margin-top: auto;
+    padding-top: var(--s-md);
   }
 
   .founder-name {
@@ -597,9 +603,8 @@ export default function AboutPage() {
                     <span className="bio-detail-value">20+ years clinical practice, teaching, research & supervision</span>
                   </div>
                 </div>
-                <div style={{ marginTop: "var(--s-md)", display: "flex", gap: "var(--s-sm)", flexWrap: "wrap" }}>
+                <div className="founder-actions">
                   <button className="btn-rose" onClick={() => router.push("/therapists/nicole-walton")}>Full Profile</button>
-                  <button className="btn-outline" onClick={() => router.push("/contact")}>Request Appointment</button>
                 </div>
               </div>
             </div>
@@ -640,6 +645,9 @@ export default function AboutPage() {
                     <span className="bio-detail-label">Community</span>
                     <span className="bio-detail-value">That Day in May · Oakwood suicide prevention & awareness</span>
                   </div>
+                </div>
+                <div className="founder-actions">
+                  <a className="btn-rose" href="mailto:jeffrey@nguwellness.com">Email Jeffrey</a>
                 </div>
               </div>
             </div>
