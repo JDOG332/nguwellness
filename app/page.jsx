@@ -9,7 +9,7 @@ const homeStyles = `
     grid-template-columns: 1fr 1fr;
     gap: var(--s-xl);
     align-items: center;
-    padding: var(--s-lg) var(--s-lg) var(--s-lg);
+    padding: var(--s-sm) var(--s-lg) var(--s-md);
     max-width: var(--max-w);
     margin: 0 auto;
     animation: fadeIn 0.618s var(--ease-phi) both;
@@ -56,7 +56,7 @@ const homeStyles = `
 
   .hero-change {
     display: block;
-    background: linear-gradient(90deg, var(--ink) 0%, var(--earth) 23.6%, var(--rose) 50%, var(--pink) 72.4%, var(--gold) 100%);
+    background: linear-gradient(90deg, var(--ink) 0%, var(--earth) 10%, var(--rose) 38.2%, var(--pink) 61.8%, var(--gold) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -70,7 +70,7 @@ const homeStyles = `
     color: var(--earth);
     line-height: 1.618;
     margin-bottom: var(--s-md);
-    max-width: none;
+    max-width: 38.2ch;
   }
 
   .hero-ctas {
@@ -88,13 +88,13 @@ const homeStyles = `
   .hero-stats {
     display: flex;
     gap: var(--s-2xl);
-    padding-top: var(--s-xl);
+    padding-top: var(--s-md);
     border-top: 0.0618rem solid var(--divider);
     max-width: var(--max-w);
     margin: 0 auto;
     padding-left: var(--s-lg);
     padding-right: var(--s-lg);
-    padding-bottom: var(--s-xl);
+    padding-bottom: var(--s-md);
   }
 
   .stat-num {
