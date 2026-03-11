@@ -622,7 +622,7 @@ export default function AboutPage() {
                   Jeffrey Sellers brings 17 years of experience in education to his role as Business Manager at NGU Wellness. As a former teacher, he understands firsthand how circumstance, support, and the right environment shape what people are able to become.
                 </p>
                 <p className="bio-p">
-                  Jeffrey manages client intake, insurance verification, provider matching, and the day-to-day administrative coordination that keeps NGU running smoothly across both locations. He also serves as a fierce advocate for clients navigating the insurance process.
+                  Jeffrey manages client intake and provider match, insurance and billing, and the day-to-day administrative coordination that keeps NGU running smoothly across both locations. He also serves as a fierce advocate for clients navigating the insurance process.
                 </p>
                 <div className="bio-details">
                   <div className="bio-detail">
