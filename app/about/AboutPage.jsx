@@ -738,7 +738,7 @@ export default function AboutPage() {
             <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Where it all began.</h2>
             <hr className="phi-rule" style={{ margin: "var(--s-sm) auto var(--s-md)" }} />
             <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
-              Dr. Nicole Walton spent 20 years working in community mental health, pediatric social work, outpatient therapy, research, and clinical supervision before founding NGU Wellness. What started as one therapist and a vision in Dayton has grown into a team of dedicated clinicians serving families across Ohio.
+              What started as one therapist and a vision in Dayton has grown into a team of dedicated clinicians serving families across Ohio.
             </p>
           </div>
 
