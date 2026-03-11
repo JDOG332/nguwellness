@@ -360,9 +360,6 @@ export default function HomePage() {
         <div className="hero-content">
           <p className="hero-eyebrow">Therapy that fits your life</p>
           <h1>Real help.<br/><span className="hero-change">Real change.</span></h1>
-          <p className="hero-sub">
-            Individual, couples & family therapy in Dayton and Cleveland, Ohio. Telehealth across Ohio. Everyone deserves exceptional care.
-          </p>
           <div className="hero-ctas">
             <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
               Start the Process
