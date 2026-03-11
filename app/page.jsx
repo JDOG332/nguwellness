@@ -36,7 +36,7 @@ const homeStyles = `
   }
 
   .hero h1 {
-    font-size: clamp(2.618rem, 4.236vw, 4.236rem);
+    font-size: clamp(2.618rem, 6.18vw, 6.854rem);
     font-weight: 900;
     line-height: 1.0;
     letter-spacing: -0.0382em;
@@ -332,7 +332,6 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <div className="hero-content">
         <h1>Real help. <span className="hero-change">Real change.</span></h1>
-        <p className="hero-eyebrow">Therapy that fits your life</p>
       </div>
 
       {/* ── PROMISE STRIP ── */}
