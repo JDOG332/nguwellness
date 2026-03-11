@@ -98,12 +98,53 @@ const homeStyles = `
     margin: 0 auto;
   }
 
+  /* ── WHY SECTION ── */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-md);
+    margin-top: var(--s-xl);
+  }
+
+  .why-card {
+    padding: var(--s-lg);
+    border: 0.0618rem solid var(--divider);
+    transition: all var(--duration) var(--ease-phi);
+  }
+
+  .why-card:hover {
+    border-color: var(--rose);
+    transform: translateY(-0.236rem);
+  }
+
+  .why-icon {
+    font-size: var(--t-xl);
+    margin-bottom: var(--s-md);
+    display: block;
+    opacity: var(--alpha-phi);
+  }
+
+  .why-title {
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 900;
+    margin-bottom: var(--s-xs);
+  }
+
+  .why-desc {
+    font-size: var(--t-sm);
+    font-weight: 300;
+    color: var(--earth);
+    line-height: 1.618;
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .hero-logo img { max-width: 26.18rem; }
     .hero h1 { font-size: clamp(4.236rem, 18vw, 29.03rem); }
     .promise { padding: var(--s-sm) var(--s-md); }
     .promise h2 { margin-bottom: var(--s-3xs); }
+    .why-grid { grid-template-columns: 1fr; }
   }
 `;
 
@@ -132,6 +173,45 @@ export default function HomePage() {
         <p className="promise-sub">
           Never give up hope. Never give up on life. Never Give Up Wellness.
         </p>
+      </section>
+
+      {/* ── WHY NGU ── */}
+      <section className="phi-section">
+        <div className="phi-wrap">
+          <p className="eyebrow">Why NGU Wellness</p>
+          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-2xl))", marginBottom: "var(--s-sm)" }}>
+            A practice built differently.
+          </h2>
+          <hr className="phi-rule" />
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
+            We built NGU Wellness with a team-based model so more people get matched with
+            the right therapist, the right approach, and the right fit — faster.
+          </p>
+
+          <div className="why-grid">
+            <div className="why-card">
+              <span className="why-icon">⟡</span>
+              <p className="why-title">Evidence-Based Care</p>
+              <p className="why-desc">
+                Every therapist is licensed, vetted, and trained in proven approaches — CBT, EMDR, DBT, ACT, and more.
+              </p>
+            </div>
+            <div className="why-card">
+              <span className="why-icon">◈</span>
+              <p className="why-title">Collaborative Approach</p>
+              <p className="why-desc">
+                We work with you, not at you. Together, we identify goals, build skills, and address challenges creatively.
+              </p>
+            </div>
+            <div className="why-card">
+              <span className="why-icon">◇</span>
+              <p className="why-title">Flexible Access</p>
+              <p className="why-desc">
+                Two Ohio locations, statewide telehealth, evenings available. We accept most major insurance and Medicaid.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <Footer />
