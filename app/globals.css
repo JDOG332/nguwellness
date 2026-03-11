@@ -426,7 +426,6 @@ a:hover { color: var(--rose); }
   .nav-links { gap: var(--s-md); }
   .phi-wrap, .phi-wrap-narrow { padding-left: var(--s-md); padding-right: var(--s-md); }
   .footer-grid { grid-template-columns: 1fr; gap: var(--s-lg); }
-  .nav-link { display: none; }
   .dark-strip { padding: var(--s-sm) var(--s-md); }
 }
 
