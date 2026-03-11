@@ -322,7 +322,41 @@ const aboutStyles = `
     color: var(--earth);
   }
 
-  /* FOUNDERS SIDE-BY-SIDE */
+  /* FOUNDERS */
+  .founders-header {
+    display: flex;
+    align-items: center;
+    gap: var(--s-lg);
+    margin-bottom: var(--s-xl);
+  }
+
+  .founders-title {
+    font-family: var(--font-display);
+    font-size: clamp(var(--t-lg), 3.82vw, var(--t-xl));
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    color: var(--ink);
+    flex-shrink: 0;
+  }
+
+  .founders-divider {
+    width: 0.236rem;
+    align-self: stretch;
+    background: var(--rose);
+    border-radius: 1rem;
+    flex-shrink: 0;
+  }
+
+  .founders-quote {
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-size: clamp(var(--t-base), 2vw, var(--t-md));
+    color: var(--earth);
+    line-height: 1.618;
+    opacity: var(--alpha-phi);
+  }
+
   .founders-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -397,6 +431,8 @@ const aboutStyles = `
     .about-hero { grid-template-columns: 1fr; }
     .origin-grid { grid-template-columns: 1fr; }
     .vmv-top-row { grid-template-columns: 1fr; }
+    .founders-header { flex-direction: column; text-align: center; }
+    .founders-divider { width: 3rem; height: 0.236rem; align-self: auto; }
     .founders-row { grid-template-columns: 1fr; }
     .vmv-values-grid { grid-template-columns: 1fr; }
     .bio-grid { grid-template-columns: 1fr; }
@@ -520,10 +556,13 @@ export default function AboutPage() {
       {/* THE FOUNDERS */}
       <section className="phi-section">
         <div className="phi-wrap">
-          <p className="eyebrow" style={{ marginBottom: "var(--s-sm)", textAlign: "center", fontSize: "var(--t-base)", letterSpacing: "0.18em" }}>The Founders</p>
-          <p className="bio-blockquote" style={{ textAlign: "center", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-xl)" }}>
-            "Circumstances and the support we receive in life shape who we become. The right support at the right time changes everything."
-          </p>
+          <div className="founders-header">
+            <h2 className="founders-title">The Founders</h2>
+            <div className="founders-divider" />
+            <p className="founders-quote">
+              "Circumstances and the support we receive in life shape who we become. The right support at the right time changes everything."
+            </p>
+          </div>
           <div className="founders-row">
             <div className="founder-card">
               <div className="bio-photo-wrap">
