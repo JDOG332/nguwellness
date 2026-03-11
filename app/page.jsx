@@ -121,14 +121,14 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* ── LOGO ── */}
-      <div className="hero-logo">
-        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
-      </div>
-
       {/* ── TAGLINE ── */}
       <div className="hero-content">
         <h1>Real help. <span className="hero-change">Real change.</span></h1>
+      </div>
+
+      {/* ── LOGO ── */}
+      <div className="hero-logo">
+        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
       </div>
 
       {/* ── NAV ── */}
