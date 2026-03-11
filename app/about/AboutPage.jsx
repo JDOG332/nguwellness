@@ -969,7 +969,7 @@ export default function AboutPage() {
           <div>
             <p className="eyebrow" style={{ color: "var(--gold)", opacity: "var(--alpha-phi)" }}>In the Community</p>
             <p style={{ fontFamily: "var(--font-accent)", fontSize: "clamp(var(--t-lg), 2.618vw, var(--t-xl))", fontStyle: "italic", color: "var(--paper)", lineHeight: 1.382 }}>
-              "Mental health doesn't stop at our door."
+              "Mental health doesn't stop at the door."
             </p>
           </div>
           <div>
