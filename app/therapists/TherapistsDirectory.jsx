@@ -306,9 +306,9 @@ const dirStyles = `
       ellipse 61.8% 61.8% at 50% 38.2%,
       transparent 0%,
       transparent 61.8%,
-      rgba(250,248,245,0.0618) 76.4%,
-      rgba(250,248,245,0.146) 85%,
-      rgba(250,248,245,0.236) 100%
+      rgba(255,255,255,0.0618) 76.4%,
+      rgba(255,255,255,0.146) 85%,
+      rgba(255,255,255,0.236) 100%
     );
     pointer-events: none;
   }
@@ -360,8 +360,8 @@ const dirStyles = `
     font-weight: 400;
     color: var(--rose);
     padding: 0.236rem var(--s-2xs);
-    background: rgba(181,112,107,0.0618);
-    border: 0.0618rem solid rgba(181,112,107,0.236);
+    background: rgba(245,10,84,0.0618);
+    border: 0.0618rem solid rgba(245,10,84,0.236);
   }
 
   .th-chips {
@@ -378,8 +378,8 @@ const dirStyles = `
     color: var(--warm-gray);
   }
 
-  .th-chip.faith { background: rgba(184,150,90,0.1); color: var(--gold); }
-  .th-chip.couples { background: rgba(181,112,107,0.0618); color: var(--rose); }
+  .th-chip.faith { background: rgba(245,145,63,0.1); color: var(--gold); }
+  .th-chip.couples { background: rgba(245,10,84,0.0618); color: var(--rose); }
 
   .dir-empty {
     grid-column: 1 / -1;

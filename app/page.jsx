@@ -97,7 +97,10 @@ const homeStyles = `
     font-family: var(--font-display);
     font-size: clamp(var(--t-xl), 4.236vw, var(--t-3xl));
     font-weight: 900;
-    color: var(--paper);
+    background: var(--brand-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     letter-spacing: -0.0382em;
     margin-bottom: var(--s-md);
   }

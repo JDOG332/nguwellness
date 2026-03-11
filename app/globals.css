@@ -43,18 +43,20 @@
   --font-body:    'Inter', sans-serif;
   --font-accent:  'Cormorant Garamond', serif;
 
-  /* ─── COLORS ─── */
-  --paper:     #FAF8F5;
+  /* ─── COLORS: WHITE FOUNDATION + NGU BRAND ─── */
+  --paper:     #FFFFFF;
   --ink:       #1A1714;
-  --rose:      #B5706B;
-  --rose-deep: #96524D;
-  --gold:      #B8965A;
+  --rose:      #F50A54;
+  --rose-deep: #C40844;
+  --pink:      #E627A0;
+  --gold:      #F5913F;
   --sage:      #7A8B7A;
-  --earth:     #8B7B6B;
-  --warm-gray: #A69E95;
-  --light:     #F0EBE5;
-  --divider:   #E5DDD4;
-  --mist:      #F5F1EC;
+  --earth:     #87827F;
+  --warm-gray: #A8A4A0;
+  --light:     #F5F5F5;
+  --divider:   #EBEBEB;
+  --mist:      #FAFAFA;
+  --brand-grad: linear-gradient(90deg, #F50A54, #E627A0, #F5913F);
 
   /* ─── THE ONLY 3 OPACITY VALUES ─── */
   --alpha-full:  1.0;
@@ -268,7 +270,7 @@ a:hover { color: var(--rose); }
   letter-spacing: 0.0618em;
   text-transform: uppercase;
   color: var(--paper);
-  background: var(--rose-deep);
+  background: var(--brand-grad);
   border: none;
   padding: var(--s-sm) var(--s-lg);
   cursor: pointer;
@@ -277,7 +279,7 @@ a:hover { color: var(--rose); }
 }
 
 .btn-rose:hover {
-  background: var(--rose);
+  opacity: var(--alpha-phi);
   color: var(--paper);
   transform: translateY(-0.236rem);
 }
@@ -297,7 +299,7 @@ a:hover { color: var(--rose); }
 .phi-rule {
   width: var(--s-xl);
   height: 0.236rem;
-  background: var(--rose);
+  background: var(--brand-grad);
   opacity: var(--alpha-phi);
   margin-bottom: var(--s-md);
   border: none;

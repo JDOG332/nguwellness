@@ -106,7 +106,7 @@ const svcStyles = `
     font-size: var(--t-xs);
     font-weight: 900;
     letter-spacing: 0.236em;
-    color: var(--rose);
+    color: var(--gold);
     margin-bottom: var(--s-3xs);
   }
 

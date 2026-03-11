@@ -182,10 +182,10 @@ const kimStyles = `
       ellipse 61.8% 61.8% at 50% 38.2%,
       transparent 0%,
       transparent 50%,
-      rgba(250,248,245,0.0618) 61.8%,
-      rgba(250,248,245,0.146) 76.4%,
-      rgba(250,248,245,0.236) 85%,
-      rgba(250,248,245,0.382) 100%
+      rgba(255,255,255,0.0618) 61.8%,
+      rgba(255,255,255,0.146) 76.4%,
+      rgba(255,255,255,0.236) 85%,
+      rgba(255,255,255,0.382) 100%
     );
     pointer-events: none;
   }
@@ -298,7 +298,7 @@ export default function KimBrant() {
           </div>
           <div className="kim-meta-row">
             <span className="kim-meta-label">Availability</span>
-            <span style={{ display: "inline-block", fontSize: "var(--t-xs)", fontWeight: 400, letterSpacing: "0.236em", textTransform: "uppercase", padding: "0.236rem var(--s-2xs)", background: "rgba(184,150,90,0.1)", color: "var(--gold)", border: "0.0618rem solid var(--gold)", marginTop: "0.236rem" }}>Currently Waitlisting</span>
+            <span style={{ display: "inline-block", fontSize: "var(--t-xs)", fontWeight: 400, letterSpacing: "0.236em", textTransform: "uppercase", padding: "0.236rem var(--s-2xs)", background: "rgba(245,145,63,0.1)", color: "var(--gold)", border: "0.0618rem solid var(--gold)", marginTop: "0.236rem" }}>Currently Waitlisting</span>
           </div>
           <div className="kim-meta-row">
             <span className="kim-meta-label">Session Format</span>
@@ -393,7 +393,7 @@ export default function KimBrant() {
                   <div key={d} className="k-sched-na"><p className="k-sched-na-day">{d}</p><p className="k-sched-na-text">Not available</p></div>
                 ))}
               </div>
-              <p style={{ marginTop: "var(--s-sm)", padding: "var(--s-xs) var(--s-sm)", background: "rgba(184,150,90,0.1)", border: "0.0618rem solid var(--gold)", fontSize: "var(--t-xs)", color: "var(--earth)", lineHeight: 1.618 }}>
+              <p style={{ marginTop: "var(--s-sm)", padding: "var(--s-xs) var(--s-sm)", background: "rgba(245,145,63,0.1)", border: "0.0618rem solid var(--gold)", fontSize: "var(--t-xs)", color: "var(--earth)", lineHeight: 1.618 }}>
                 Kim is currently waitlisting. Join the waitlist and we will contact you when an opening is available.
               </p>
             </Acc>
