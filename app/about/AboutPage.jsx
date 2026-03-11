@@ -752,7 +752,7 @@ export default function AboutPage() {
               <div className="tl-entries">
                 <div className="tl-entry">
                   <div className="tl-entry-left">
-                    <p className="tl-entry-date">Summer 2021</p>
+                    <p className="tl-entry-date">August 1, 2021</p>
                     <p className="tl-entry-title">NGU Wellness founded</p>
                     <p className="tl-entry-desc">Doors open at 453 Patterson Rd., Suite A, Dayton, Ohio. A multi-therapist practice built on collaborative, evidence-based care.</p>
                   </div>
