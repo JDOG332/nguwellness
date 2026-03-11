@@ -4,21 +4,12 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 
 const homeStyles = `
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--s-xl);
-    align-items: center;
-    padding: var(--s-sm) var(--s-lg) var(--s-md);
-    max-width: var(--max-w);
-    margin: 0 auto;
-    animation: fadeIn 0.618s var(--ease-phi) both;
-  }
-
   .hero-logo {
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: var(--s-xl) var(--s-lg) var(--s-md);
+    max-width: var(--max-w);
+    margin: 0 auto;
   }
 
   .hero-logo img {
@@ -27,7 +18,13 @@ const homeStyles = `
     height: auto;
   }
 
-  .hero-content {}
+  .hero-content {
+    text-align: center;
+    padding: 0 var(--s-lg) var(--s-md);
+    max-width: var(--max-w);
+    margin: 0 auto;
+    animation: fadeIn 0.618s var(--ease-phi) both;
+  }
 
   .hero-eyebrow {
     font-family: var(--font-accent);
@@ -64,25 +61,10 @@ const homeStyles = `
     font-weight: 900;
   }
 
-  .hero-sub {
-    font-size: var(--t-base);
-    font-weight: 300;
-    color: var(--earth);
-    line-height: 1.618;
-    margin-bottom: var(--s-md);
-    max-width: 38.2ch;
-  }
-
   .hero-ctas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: var(--s-sm);
-  }
-
-  .hero-ctas .btn-rose,
-  .hero-ctas .btn-outline {
-    text-align: center;
-    width: 100%;
+    justify-content: center;
   }
 
   .hero-stats {
@@ -333,9 +315,7 @@ const homeStyles = `
 
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
-    .hero { grid-template-columns: 1fr; }
-    .hero-logo { order: -1; }
-    .hero-logo img { max-width: 16.18rem; margin: 0 auto; }
+    .hero-logo img { max-width: 26.18rem; }
     .hero h1 { font-size: clamp(2.618rem, 8vw, 4.236rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
     .why-grid { grid-template-columns: 1fr; }
@@ -352,24 +332,24 @@ export default function HomePage() {
       <style>{homeStyles}</style>
       <Nav />
 
+      {/* ── LOGO ── */}
+      <div className="hero-logo">
+        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
+      </div>
+
       {/* ── HERO ── */}
-      <section className="hero">
-        <div className="hero-logo">
-          <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
+      <div className="hero-content">
+        <p className="hero-eyebrow">Therapy that fits your life</p>
+        <h1>Real help.<br/><span className="hero-change">Real change.</span></h1>
+        <div className="hero-ctas">
+          <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
+            Start the Process
+          </button>
+          <button className="btn-outline" onClick={() => router.push("/therapists")}>
+            Meet Our Therapists
+          </button>
         </div>
-        <div className="hero-content">
-          <p className="hero-eyebrow">Therapy that fits your life</p>
-          <h1>Real help.<br/><span className="hero-change">Real change.</span></h1>
-          <div className="hero-ctas">
-            <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
-              Start the Process
-            </button>
-            <button className="btn-outline" onClick={() => router.push("/therapists")}>
-              Meet Our Therapists
-            </button>
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* ── STATS ── */}
       <div className="hero-stats">
