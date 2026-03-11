@@ -41,11 +41,21 @@ const aboutStyles = `
     margin-bottom: var(--s-xs);
   }
 
-  .vmv-three-grid {
+  .vmv-top-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--s-lg);
-    align-items: start;
+    margin-bottom: var(--s-lg);
+  }
+
+  .vmv-values-block {
+    width: 100%;
+  }
+
+  .vmv-values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-sm) var(--s-lg);
   }
 
   .vmv-block {
@@ -67,12 +77,6 @@ const aboutStyles = `
     font-weight: 300;
     line-height: 1.618;
     color: var(--earth);
-  }
-
-  .vmv-values-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--s-sm);
   }
 
   .vmv-value-item {
@@ -357,7 +361,8 @@ const aboutStyles = `
   @media (max-width: 61.8rem) {
     .about-hero { grid-template-columns: 1fr; }
     .origin-grid { grid-template-columns: 1fr; }
-    .vmv-three-grid { grid-template-columns: 1fr; }
+    .vmv-top-row { grid-template-columns: 1fr; }
+    .vmv-values-grid { grid-template-columns: 1fr; }
     .bio-grid { grid-template-columns: 1fr; }
   }
 
@@ -406,7 +411,7 @@ export default function AboutPage() {
             <p className="eyebrow">What Drives Us</p>
             <h2 className="vmv-title">Our Vision, Mission &amp; Values</h2>
           </div>
-          <div className="vmv-three-grid">
+          <div className="vmv-top-row">
             <div className="vmv-block">
               <h3 className="vmv-heading">Vision</h3>
               <p className="vmv-text">
@@ -419,9 +424,10 @@ export default function AboutPage() {
                 Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.
               </p>
             </div>
-            <div className="vmv-block">
-              <h3 className="vmv-heading">Values</h3>
-              <div className="vmv-values-list">
+          </div>
+          <div className="vmv-block vmv-values-block">
+            <h3 className="vmv-heading">Our Values</h3>
+            <div className="vmv-values-grid">
                 <div className="vmv-value-item">
                   <span className="vmv-value-icon">⟡</span>
                   <div>
@@ -470,7 +476,6 @@ export default function AboutPage() {
                     <strong>Wellness</strong> — We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
