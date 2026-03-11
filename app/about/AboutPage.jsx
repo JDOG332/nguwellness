@@ -576,7 +576,7 @@ export default function AboutPage() {
                 <div className="bio-photo-bar" />
               </div>
               <div className="founder-info">
-                <p className="eyebrow">Founder & Owner</p>
+                <p className="eyebrow">Founder, Owner & Clinical Director</p>
                 <h2 className="founder-name">Dr. Nicole Walton</h2>
                 <p className="bio-creds">PhD · LISW-S · LPC &nbsp;·&nbsp; she / her</p>
                 <hr className="phi-rule" />
