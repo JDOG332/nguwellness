@@ -442,7 +442,7 @@ const aboutStyles = `
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--s-xl);
-    align-items: start;
+    align-items: stretch;
   }
 
   .founder-card .bio-photo-wrap {
