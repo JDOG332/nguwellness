@@ -5,29 +5,34 @@ import Footer from "./Footer";
 
 const homeStyles = `
   .hero {
-    padding: var(--s-3xl) var(--s-lg) var(--s-2xl);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-xl);
+    align-items: center;
+    padding: var(--s-xl) var(--s-lg) var(--s-xl);
     max-width: var(--max-w);
     margin: 0 auto;
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
+
+  .hero-content {}
 
   .hero-eyebrow {
     font-family: var(--font-accent);
     font-size: var(--t-base);
     font-style: italic;
     color: var(--rose);
-    margin-bottom: var(--s-md);
+    margin-bottom: var(--s-sm);
     opacity: var(--alpha-phi);
   }
 
   .hero h1 {
-    font-size: clamp(2.618rem, 6.18vw, 6.854rem);
+    font-size: clamp(2.618rem, 4.236vw, 4.236rem);
     font-weight: 900;
     line-height: 1.0;
     letter-spacing: -0.0382em;
     color: var(--ink);
-    margin-bottom: var(--s-xl);
-    max-width: 16ch;
+    margin-bottom: var(--s-md);
   }
 
   .hero h1 em {
@@ -38,19 +43,36 @@ const homeStyles = `
   }
 
   .hero-sub {
-    font-size: var(--t-md);
+    font-size: var(--t-base);
     font-weight: 300;
     color: var(--earth);
     line-height: 1.618;
-    max-width: var(--max-w-narrow);
-    margin-bottom: var(--s-xl);
+    margin-bottom: var(--s-md);
+    max-width: none;
   }
 
   .hero-ctas {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: var(--s-sm);
-    flex-wrap: wrap;
-    margin-bottom: var(--s-2xl);
+  }
+
+  .hero-ctas .btn-rose,
+  .hero-ctas .btn-outline {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-logo img {
+    width: 100%;
+    max-width: 26.18rem;
+    height: auto;
   }
 
   .hero-stats {
@@ -58,6 +80,11 @@ const homeStyles = `
     gap: var(--s-2xl);
     padding-top: var(--s-xl);
     border-top: 0.0618rem solid var(--divider);
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding-left: var(--s-lg);
+    padding-right: var(--s-lg);
+    padding-bottom: var(--s-xl);
   }
 
   .stat-num {
@@ -296,6 +323,9 @@ const homeStyles = `
 
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-logo { order: -1; }
+    .hero-logo img { max-width: 16.18rem; }
     .hero h1 { font-size: clamp(2.618rem, 8vw, 4.236rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
     .why-grid { grid-template-columns: 1fr; }
@@ -314,39 +344,45 @@ export default function HomePage() {
 
       {/* ── HERO ── */}
       <section className="hero">
-        <p className="hero-eyebrow">Therapy that fits your life</p>
-        <h1>Real help. <em>Real</em> change.</h1>
-        <p className="hero-sub">
-          Individual, couples, and family therapy in Dayton and Rocky River, Ohio.
-          Telehealth across the state. Because everyone deserves exceptional care.
-        </p>
-        <div className="hero-ctas">
-          <button className="btn-primary" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
-            Begin Intake
-          </button>
-          <button className="btn-outline" onClick={() => router.push("/therapists")}>
-            Meet Our Therapists
-          </button>
+        <div className="hero-content">
+          <p className="hero-eyebrow">Therapy that fits your life</p>
+          <h1>Real help. <em>Real</em> change.</h1>
+          <p className="hero-sub">
+            Individual, couples & family therapy in Dayton and Cleveland, Ohio. Telehealth across Ohio. Everyone deserves exceptional care.
+          </p>
+          <div className="hero-ctas">
+            <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
+              Start the Process
+            </button>
+            <button className="btn-outline" onClick={() => router.push("/therapists")}>
+              Meet Our Therapists
+            </button>
+          </div>
         </div>
-        <div className="hero-stats">
-          <div>
-            <p className="stat-num">2021</p>
-            <p className="stat-label">Founded</p>
-          </div>
-          <div>
-            <p className="stat-num">2</p>
-            <p className="stat-label">Ohio Locations</p>
-          </div>
-          <div>
-            <p className="stat-num">595+</p>
-            <p className="stat-label">Years of Life Experience</p>
-          </div>
-          <div>
-            <p className="stat-num">14+</p>
-            <p className="stat-label">Insurance Plans Accepted</p>
-          </div>
+        <div className="hero-logo">
+          <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
         </div>
       </section>
+
+      {/* ── STATS ── */}
+      <div className="hero-stats">
+        <div>
+          <p className="stat-num">2021</p>
+          <p className="stat-label">Founded</p>
+        </div>
+        <div>
+          <p className="stat-num">2</p>
+          <p className="stat-label">Ohio Locations</p>
+        </div>
+        <div>
+          <p className="stat-num">595+</p>
+          <p className="stat-label">Years of Life Experience</p>
+        </div>
+        <div>
+          <p className="stat-num">14+</p>
+          <p className="stat-label">Insurance Plans Accepted</p>
+        </div>
+      </div>
 
       {/* ── PROMISE STRIP ── */}
       <section className="promise">
