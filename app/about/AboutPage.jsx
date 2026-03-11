@@ -637,10 +637,6 @@ export default function AboutPage() {
                     <span className="bio-detail-label">Leadership</span>
                     <span className="bio-detail-value">Board of Directors, The Gem Project Dayton</span>
                   </div>
-                  <div className="bio-detail">
-                    <span className="bio-detail-label">Community</span>
-                    <span className="bio-detail-value">That Day in May · Oakwood suicide prevention & awareness</span>
-                  </div>
                 </div>
                 <div className="founder-actions">
                   <a className="btn-rose" href="mailto:jeffrey@nguwellness.com">Email Jeffrey</a>
