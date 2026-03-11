@@ -121,9 +121,6 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* ── NAV ── */}
-      <Nav hideLogo />
-
       {/* ── LOGO ── */}
       <div className="hero-logo">
         <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
@@ -133,6 +130,9 @@ export default function HomePage() {
       <div className="hero-content">
         <h1>Real help. <span className="hero-change">Real change.</span></h1>
       </div>
+
+      {/* ── NAV ── */}
+      <Nav hideLogo />
 
     </div>
   );
