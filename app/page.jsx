@@ -9,10 +9,22 @@ const homeStyles = `
     grid-template-columns: 1fr 1fr;
     gap: var(--s-xl);
     align-items: center;
-    padding: var(--s-xl) var(--s-lg) var(--s-xl);
+    padding: var(--s-lg) var(--s-lg) var(--s-lg);
     max-width: var(--max-w);
     margin: 0 auto;
     animation: fadeIn 0.618s var(--ease-phi) both;
+  }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-logo img {
+    width: 100%;
+    max-width: 42.36rem;
+    height: auto;
   }
 
   .hero-content {}
@@ -42,6 +54,16 @@ const homeStyles = `
     font-family: var(--font-display);
   }
 
+  .hero-change {
+    display: block;
+    background: linear-gradient(90deg, var(--ink) 0%, var(--earth) 23.6%, var(--rose) 50%, var(--pink) 72.4%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: normal;
+    font-weight: 900;
+  }
+
   .hero-sub {
     font-size: var(--t-base);
     font-weight: 300;
@@ -61,18 +83,6 @@ const homeStyles = `
   .hero-ctas .btn-outline {
     text-align: center;
     width: 100%;
-  }
-
-  .hero-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-logo img {
-    width: 100%;
-    max-width: 26.18rem;
-    height: auto;
   }
 
   .hero-stats {
@@ -325,7 +335,7 @@ const homeStyles = `
   @media (max-width: 61.8rem) {
     .hero { grid-template-columns: 1fr; }
     .hero-logo { order: -1; }
-    .hero-logo img { max-width: 16.18rem; }
+    .hero-logo img { max-width: 16.18rem; margin: 0 auto; }
     .hero h1 { font-size: clamp(2.618rem, 8vw, 4.236rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
     .why-grid { grid-template-columns: 1fr; }
@@ -344,9 +354,12 @@ export default function HomePage() {
 
       {/* ── HERO ── */}
       <section className="hero">
+        <div className="hero-logo">
+          <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
+        </div>
         <div className="hero-content">
           <p className="hero-eyebrow">Therapy that fits your life</p>
-          <h1>Real help. <em>Real</em> change.</h1>
+          <h1>Real help.<br/><span className="hero-change">Real change.</span></h1>
           <p className="hero-sub">
             Individual, couples & family therapy in Dayton and Cleveland, Ohio. Telehealth across Ohio. Everyone deserves exceptional care.
           </p>
@@ -358,9 +371,6 @@ export default function HomePage() {
               Meet Our Therapists
             </button>
           </div>
-        </div>
-        <div className="hero-logo">
-          <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
         </div>
       </section>
 
