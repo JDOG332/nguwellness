@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Nav from "./Nav";
-import Footer from "./Footer";
 
 const homeStyles = `
   .hero-logo {
@@ -135,7 +134,6 @@ export default function HomePage() {
         <h1>Real help. <span className="hero-change">Real change.</span></h1>
       </div>
 
-      <Footer />
     </div>
   );
 }
