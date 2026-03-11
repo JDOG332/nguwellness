@@ -69,6 +69,12 @@ const aboutStyles = `
     letter-spacing: 0.0618em;
   }
 
+  .ngu-box {
+    background: var(--ink);
+    padding: var(--s-lg) var(--s-xl);
+    border-radius: 0.382rem;
+  }
+
   .aside-values {
     display: flex;
     flex-direction: column;
@@ -388,9 +394,21 @@ export default function AboutPage() {
           <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
             Everyone deserves to be supported and feel accepted. Everyone deserves a second chance. Everyone deserves to have hope for a better life.
           </p>
-          <div style={{ display: "flex", gap: "var(--s-sm)", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "var(--s-sm)", flexWrap: "wrap", marginBottom: "var(--s-lg)" }}>
             <button className="btn-primary" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
             <button className="btn-outline" onClick={() => router.push("/contact")}>Get in Touch</button>
+          </div>
+          {/* NGU PROMISE BOX */}
+          <div className="ngu-box">
+            <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-md)", textAlign: "left" }}>
+              3 letters. one big message.
+            </p>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-md)", textAlign: "center" }}>
+              Never Give Up.
+            </h2>
+            <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", textAlign: "right" }}>
+              Never give up on hope. Never give up on life. Never Give Up Wellness.
+            </p>
           </div>
         </div>
         <div className="about-aside">
@@ -443,21 +461,6 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* NGU PROMISE */}
-      <section className="dark-strip">
-        <div className="phi-wrap">
-          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-md)", maxWidth: "none", textAlign: "left" }}>
-            3 letters. one big message.
-          </p>
-          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-md)", textAlign: "center" }}>
-            Never Give Up.
-          </h2>
-          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", maxWidth: "none", textAlign: "right" }}>
-            Never give up on hope. Never give up on life. Never Give Up Wellness.
-          </p>
         </div>
       </section>
 
