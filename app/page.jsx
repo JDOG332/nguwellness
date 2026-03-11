@@ -36,7 +36,7 @@ const homeStyles = `
   }
 
   .hero h1 {
-    font-size: clamp(4.236rem, 12vw, 17.94rem);
+    font-size: clamp(6.854rem, 15vw, 29.03rem);
     font-weight: 900;
     line-height: 1.0;
     letter-spacing: -0.0382em;
@@ -236,7 +236,7 @@ const homeStyles = `
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .hero-logo img { max-width: 26.18rem; }
-    .hero h1 { font-size: clamp(2.618rem, 12vw, 11.09rem); }
+    .hero h1 { font-size: clamp(4.236rem, 15vw, 17.94rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
     .promise { padding: var(--s-sm) var(--s-md); }
     .promise h2 { margin-bottom: var(--s-3xs); }
@@ -254,14 +254,14 @@ export default function HomePage() {
 
       <Nav hideLogo />
 
-      {/* ── LOGO — FIRST THING YOU SEE ── */}
-      <div className="hero-logo">
-        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
-      </div>
-
-      {/* ── TAGLINE ── */}
+      {/* ── TAGLINE — FIRST THING YOU SEE ── */}
       <div className="hero-content">
         <h1>Real help. <span className="hero-change">Real change.</span></h1>
+      </div>
+
+      {/* ── LOGO ── */}
+      <div className="hero-logo">
+        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
       </div>
 
       {/* ── NEVER GIVE UP ── */}
