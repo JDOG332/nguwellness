@@ -28,10 +28,10 @@ const homeStyles = `
 
   .hero-eyebrow {
     font-family: var(--font-accent);
-    font-size: var(--t-base);
+    font-size: var(--t-md);
     font-style: italic;
-    color: var(--rose);
-    margin-bottom: var(--s-sm);
+    color: var(--earth);
+    margin-top: var(--s-sm);
     opacity: var(--alpha-phi);
   }
 
@@ -41,7 +41,6 @@ const homeStyles = `
     line-height: 1.0;
     letter-spacing: -0.0382em;
     color: var(--ink);
-    margin-bottom: var(--s-md);
   }
 
   .hero h1 em {
@@ -52,19 +51,12 @@ const homeStyles = `
   }
 
   .hero-change {
-    display: block;
     background: linear-gradient(90deg, var(--ink) 0%, var(--earth) 10%, var(--rose) 38.2%, var(--pink) 61.8%, var(--gold) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-style: normal;
     font-weight: 900;
-  }
-
-  .hero-ctas {
-    display: flex;
-    gap: var(--s-sm);
-    justify-content: center;
   }
 
   .hero-stats {
@@ -330,7 +322,7 @@ export default function HomePage() {
   return (
     <div>
       <style>{homeStyles}</style>
-      <Nav />
+      <Nav hideLogo />
 
       {/* ── LOGO ── */}
       <div className="hero-logo">
@@ -339,17 +331,17 @@ export default function HomePage() {
 
       {/* ── HERO ── */}
       <div className="hero-content">
+        <h1>Real help. <span className="hero-change">Real change.</span></h1>
         <p className="hero-eyebrow">Therapy that fits your life</p>
-        <h1>Real help.<br/><span className="hero-change">Real change.</span></h1>
-        <div className="hero-ctas">
-          <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
-            Start the Process
-          </button>
-          <button className="btn-outline" onClick={() => router.push("/therapists")}>
-            Meet Our Therapists
-          </button>
-        </div>
       </div>
+
+      {/* ── PROMISE STRIP ── */}
+      <section className="promise">
+        <h2>Never Give Up.</h2>
+        <p className="promise-sub">
+          Never give up hope. Never give up on life. Never Give Up Wellness.
+        </p>
+      </section>
 
       {/* ── STATS ── */}
       <div className="hero-stats">
@@ -370,14 +362,6 @@ export default function HomePage() {
           <p className="stat-label">Insurance Plans Accepted</p>
         </div>
       </div>
-
-      {/* ── PROMISE STRIP ── */}
-      <section className="promise">
-        <h2>Never Give Up.</h2>
-        <p className="promise-sub">
-          Never give up hope. Never give up on life. Never Give Up Wellness.
-        </p>
-      </section>
 
       {/* ── WHY NGU ── */}
       <section className="phi-section">

@@ -209,7 +209,7 @@ a:hover { color: var(--rose); }
   letter-spacing: 0.0618em;
   text-transform: uppercase;
   color: var(--paper);
-  background: var(--ink);
+  background: var(--brand-grad);
   border: none;
   padding: var(--s-xs) var(--s-md);
   cursor: pointer;
