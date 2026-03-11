@@ -7,7 +7,7 @@ const homeStyles = `
   .hero-logo {
     display: flex;
     justify-content: center;
-    padding: var(--s-xl) var(--s-lg) var(--s-md);
+    padding: var(--s-md) var(--s-lg) var(--s-xs);
     max-width: var(--max-w);
     margin: 0 auto;
   }
@@ -20,7 +20,7 @@ const homeStyles = `
 
   .hero-content {
     text-align: center;
-    padding: 0 var(--s-lg) var(--s-md);
+    padding: 0 var(--s-lg) var(--s-xs);
     max-width: var(--max-w);
     margin: 0 auto;
     animation: fadeIn 0.618s var(--ease-phi) both;
@@ -90,7 +90,7 @@ const homeStyles = `
   /* ── PROMISE STRIP ── */
   .promise {
     background: var(--ink);
-    padding: var(--s-lg) var(--s-lg);
+    padding: var(--s-md) var(--s-lg);
     text-align: center;
     animation: fadeIn 0.618s 0.236s var(--ease-phi) both;
   }
@@ -113,12 +113,12 @@ const homeStyles = `
     -webkit-text-fill-color: transparent;
     background-clip: text;
     letter-spacing: -0.0382em;
-    margin-bottom: var(--s-md);
+    margin-bottom: var(--s-xs);
   }
 
   .promise-sub {
     font-family: var(--font-accent);
-    font-size: var(--t-lg);
+    font-size: var(--t-base);
     font-style: italic;
     color: var(--paper);
     opacity: var(--alpha-phi);
@@ -238,6 +238,8 @@ const homeStyles = `
     .hero-logo img { max-width: 26.18rem; }
     .hero h1 { font-size: clamp(2.618rem, 8vw, 4.236rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
+    .promise { padding: var(--s-sm) var(--s-md); }
+    .promise h2 { margin-bottom: var(--s-3xs); }
     .why-grid { grid-template-columns: 1fr; }
     .locations-grid { grid-template-columns: 1fr; }
   }
