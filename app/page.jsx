@@ -7,14 +7,14 @@ const homeStyles = `
   .hero-logo {
     display: flex;
     justify-content: center;
-    padding: var(--s-md) var(--s-lg) var(--s-xs);
+    padding: var(--s-md) var(--s-lg) 0;
     max-width: var(--max-w);
     margin: 0 auto;
   }
 
   .hero-logo img {
     width: 100%;
-    max-width: 42.36rem;
+    max-width: 68.54rem;
     height: auto;
   }
 
@@ -253,23 +253,23 @@ export default function HomePage() {
       <style>{homeStyles}</style>
       <Nav hideLogo />
 
-      {/* ── LOGO ── */}
-      <div className="hero-logo">
-        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
-      </div>
-
-      {/* ── HERO ── */}
-      <div className="hero-content">
-        <h1>Real help. <span className="hero-change">Real change.</span></h1>
-      </div>
-
-      {/* ── PROMISE STRIP ── */}
+      {/* ── NEVER GIVE UP — TOP OF PAGE ── */}
       <section className="promise">
         <h2>Never Give Up.</h2>
         <p className="promise-sub">
           Never give up hope. Never give up on life. Never Give Up Wellness.
         </p>
       </section>
+
+      {/* ── LOGO — AS WIDE AS POSSIBLE ── */}
+      <div className="hero-logo">
+        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
+      </div>
+
+      {/* ── TAGLINE ── */}
+      <div className="hero-content">
+        <h1>Real help. <span className="hero-change">Real change.</span></h1>
+      </div>
 
       {/* ── STATS ── */}
       <div className="hero-stats">
