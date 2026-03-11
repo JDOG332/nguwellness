@@ -27,6 +27,7 @@ const aboutStyles = `
   /* VISION MISSION VALUES */
   .vmv-section {
     background: var(--mist);
+    padding: var(--s-xl) var(--s-lg);
   }
 
   .vmv-header {
@@ -40,10 +41,11 @@ const aboutStyles = `
     margin-bottom: var(--s-xs);
   }
 
-  .vmv-grid {
+  .vmv-three-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--s-xl);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--s-lg);
+    align-items: start;
   }
 
   .vmv-block {
@@ -67,40 +69,31 @@ const aboutStyles = `
     color: var(--earth);
   }
 
-  .values-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--s-md);
+  .vmv-values-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-sm);
   }
 
-  .value-card {
-    padding: var(--s-md);
-    background: var(--paper);
-    border-radius: 0.382rem;
-    border: 0.0618rem solid var(--divider);
-    text-align: center;
-  }
-
-  .value-icon {
-    display: block;
-    font-size: var(--t-lg);
-    color: var(--gold);
-    margin-bottom: var(--s-xs);
-  }
-
-  .value-name {
-    font-family: var(--font-display);
+  .vmv-value-item {
+    display: flex;
+    gap: var(--s-xs);
+    align-items: baseline;
     font-size: var(--t-base);
-    font-weight: 700;
-    margin-bottom: var(--s-xs);
-    color: var(--ink);
-  }
-
-  .value-text {
-    font-size: var(--t-sm);
     font-weight: 300;
     line-height: 1.618;
     color: var(--earth);
+  }
+
+  .vmv-value-item strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .vmv-value-icon {
+    color: var(--gold);
+    flex-shrink: 0;
+    font-size: var(--t-sm);
   }
 
   /* ORIGIN */
@@ -364,13 +357,11 @@ const aboutStyles = `
   @media (max-width: 61.8rem) {
     .about-hero { grid-template-columns: 1fr; }
     .origin-grid { grid-template-columns: 1fr; }
-    .vmv-grid { grid-template-columns: 1fr; }
-    .values-grid { grid-template-columns: 1fr 1fr; }
+    .vmv-three-grid { grid-template-columns: 1fr; }
     .bio-grid { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 42.36rem) {
-    .values-grid { grid-template-columns: 1fr; }
   }
 `;
 
@@ -399,26 +390,23 @@ export default function AboutPage() {
         </div>
         {/* NGU PROMISE BOX */}
         <div className="ngu-box">
-          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-lg)", textAlign: "left" }}>
-            3 letters. one big message.
-          </p>
-          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-lg)", textAlign: "center" }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-md)", textAlign: "center" }}>
             Never Give Up.
           </h2>
-          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", textAlign: "right" }}>
+          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", textAlign: "center" }}>
             Never give up on hope. Never give up on life. Never Give Up Wellness.
           </p>
         </div>
       </section>
 
       {/* VISION, MISSION & VALUES */}
-      <section className="phi-section vmv-section">
+      <section className="vmv-section">
         <div className="phi-wrap">
           <div className="vmv-header">
             <p className="eyebrow">What Drives Us</p>
             <h2 className="vmv-title">Our Vision, Mission &amp; Values</h2>
           </div>
-          <div className="vmv-grid">
+          <div className="vmv-three-grid">
             <div className="vmv-block">
               <h3 className="vmv-heading">Vision</h3>
               <p className="vmv-text">
@@ -431,49 +419,58 @@ export default function AboutPage() {
                 Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.
               </p>
             </div>
-          </div>
-          <hr className="phi-rule" style={{ margin: "var(--s-lg) 0" }} />
-          <h3 className="vmv-heading" style={{ textAlign: "center", marginBottom: "var(--s-lg)" }}>Our Values</h3>
-          <div className="values-grid">
-            <div className="value-card">
-              <span className="value-icon">⟡</span>
-              <h4 className="value-name">Serve</h4>
-              <p className="value-text">Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">○</span>
-              <h4 className="value-name">Community</h4>
-              <p className="value-text">Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">◈</span>
-              <h4 className="value-name">Embrace</h4>
-              <p className="value-text">We believe in welcoming all people. We realize we can be different from other people and still appreciate and respect them, learn from them and work together.</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">◇</span>
-              <h4 className="value-name">Support</h4>
-              <p className="value-text">We demonstrate support through acceptance, belief in a person's ability to change and by providing encouragement.</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">⟡</span>
-              <h4 className="value-name">Collaboration</h4>
-              <p className="value-text">Working together and sharing ideas increases the chance of reaching identified goals.</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">○</span>
-              <h4 className="value-name">Creativity</h4>
-              <p className="value-text">Creativity provides stress relief and enhances our ability to solve problems, change perspectives and express our thoughts and feelings.</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">◈</span>
-              <h4 className="value-name">Skill Building</h4>
-              <p className="value-text">Learning and implementing new skills is essential to change. We can learn new skills to cope with stress, to manage mental health symptoms, to repair our relationships and to take care of ourselves.</p>
-            </div>
-            <div className="value-card">
-              <span className="value-icon">◇</span>
-              <h4 className="value-name">Wellness</h4>
-              <p className="value-text">We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.</p>
+            <div className="vmv-block">
+              <h3 className="vmv-heading">Values</h3>
+              <div className="vmv-values-list">
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">⟡</span>
+                  <div>
+                    <strong>Serve</strong> — Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.
+                  </div>
+                </div>
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">○</span>
+                  <div>
+                    <strong>Community</strong> — Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.
+                  </div>
+                </div>
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">◈</span>
+                  <div>
+                    <strong>Embrace</strong> — We believe in welcoming all people. We realize we can be different from other people and still appreciate and respect them, learn from them and work together.
+                  </div>
+                </div>
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">◇</span>
+                  <div>
+                    <strong>Support</strong> — We demonstrate support through acceptance, belief in a person's ability to change and by providing encouragement.
+                  </div>
+                </div>
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">⟡</span>
+                  <div>
+                    <strong>Collaboration</strong> — Working together and sharing ideas increases the chance of reaching identified goals.
+                  </div>
+                </div>
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">○</span>
+                  <div>
+                    <strong>Creativity</strong> — Creativity provides stress relief and enhances our ability to solve problems, change perspectives and express our thoughts and feelings.
+                  </div>
+                </div>
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">◈</span>
+                  <div>
+                    <strong>Skill Building</strong> — Learning and implementing new skills is essential to change. We can learn new skills to cope with stress, to manage mental health symptoms, to repair our relationships and to take care of ourselves.
+                  </div>
+                </div>
+                <div className="vmv-value-item">
+                  <span className="vmv-value-icon">◇</span>
+                  <div>
+                    <strong>Wellness</strong> — We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
