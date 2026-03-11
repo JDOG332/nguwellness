@@ -15,93 +15,92 @@ const aboutStyles = `
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
-  .about-aside {
-    border-left: 0.0618rem solid var(--divider);
-    padding-left: var(--s-xl);
+  .ngu-box {
+    background: var(--ink);
+    padding: var(--s-xl) var(--s-xl);
+    border-radius: 0.382rem;
     display: flex;
     flex-direction: column;
-    gap: var(--s-md);
+    justify-content: center;
   }
 
-  .about-aside-label {
-    font-size: var(--t-xs);
-    font-weight: 400;
-    letter-spacing: 0.236em;
-    text-transform: uppercase;
-    color: var(--warm-gray);
-    margin-bottom: var(--s-md);
+  /* VISION MISSION VALUES */
+  .vmv-section {
+    background: var(--mist);
   }
 
-  .about-quote {
+  .vmv-header {
+    text-align: center;
+    margin-bottom: var(--s-xl);
+  }
+
+  .vmv-title {
+    font-family: var(--font-display);
+    font-size: clamp(var(--t-lg), 3.82vw, var(--t-xl));
+    margin-bottom: var(--s-xs);
+  }
+
+  .vmv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-xl);
+  }
+
+  .vmv-block {
+    padding: var(--s-lg);
+    background: var(--paper);
+    border-radius: 0.382rem;
+    border: 0.0618rem solid var(--divider);
+  }
+
+  .vmv-heading {
+    font-family: var(--font-display);
+    font-size: clamp(var(--t-md), 2.618vw, var(--t-lg));
+    margin-bottom: var(--s-sm);
+    color: var(--ink);
+  }
+
+  .vmv-text {
     font-size: var(--t-base);
     font-weight: 300;
     line-height: 1.618;
-    color: var(--ink);
-    margin-bottom: var(--s-sm);
-  }
-
-  .about-attr {
-    font-size: var(--t-xs);
-    font-weight: 400;
-    color: var(--warm-gray);
-    letter-spacing: 0.0618em;
-  }
-
-  .about-stats {
-    display: flex;
-    gap: var(--s-xl);
-    padding-top: var(--s-sm);
-    border-top: 0.0618rem solid var(--divider);
-  }
-
-  .about-stat-num {
-    font-family: var(--font-display);
-    font-size: var(--t-xl);
-    font-weight: 900;
-    line-height: 1;
-    margin-bottom: var(--s-3xs);
-  }
-
-  .about-stat-label {
-    font-size: var(--t-xs);
-    font-weight: 400;
-    color: var(--warm-gray);
-    letter-spacing: 0.0618em;
-  }
-
-  .ngu-box {
-    background: var(--ink);
-    padding: var(--s-lg) var(--s-xl);
-    border-radius: 0.382rem;
-  }
-
-  .aside-values {
-    display: flex;
-    flex-direction: column;
-    gap: var(--s-xs);
-  }
-
-  .aside-value {
-    display: flex;
-    flex-direction: column;
-    padding: var(--s-xs) 0;
-    border-bottom: 0.0618rem solid var(--divider);
-  }
-
-  .aside-value:last-child { border-bottom: none; }
-
-  .aside-value-name {
-    font-size: var(--t-sm);
-    font-weight: 600;
-    color: var(--ink);
-    letter-spacing: 0.02em;
-  }
-
-  .aside-value-desc {
-    font-size: var(--t-xs);
-    font-weight: 300;
     color: var(--earth);
-    line-height: 1.5;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--s-md);
+  }
+
+  .value-card {
+    padding: var(--s-md);
+    background: var(--paper);
+    border-radius: 0.382rem;
+    border: 0.0618rem solid var(--divider);
+    text-align: center;
+  }
+
+  .value-icon {
+    display: block;
+    font-size: var(--t-lg);
+    color: var(--gold);
+    margin-bottom: var(--s-xs);
+  }
+
+  .value-name {
+    font-family: var(--font-display);
+    font-size: var(--t-base);
+    font-weight: 700;
+    margin-bottom: var(--s-xs);
+    color: var(--ink);
+  }
+
+  .value-text {
+    font-size: var(--t-sm);
+    font-weight: 300;
+    line-height: 1.618;
+    color: var(--earth);
   }
 
   /* ORIGIN */
@@ -364,15 +363,14 @@ const aboutStyles = `
 
   @media (max-width: 61.8rem) {
     .about-hero { grid-template-columns: 1fr; }
-    .about-aside { border-left: none; padding-left: 0; border-top: 0.0618rem solid var(--divider); padding-top: var(--s-lg); }
     .origin-grid { grid-template-columns: 1fr; }
-    .pillar-grid { grid-template-columns: 1fr 1fr; }
+    .vmv-grid { grid-template-columns: 1fr; }
+    .values-grid { grid-template-columns: 1fr 1fr; }
     .bio-grid { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 42.36rem) {
-    .pillar-grid { grid-template-columns: 1fr; }
-    .about-stats { flex-wrap: wrap; gap: var(--s-lg); }
+    .values-grid { grid-template-columns: 1fr; }
   }
 `;
 
@@ -394,71 +392,88 @@ export default function AboutPage() {
           <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
             Everyone deserves to be supported and feel accepted. Everyone deserves a second chance. Everyone deserves to have hope for a better life.
           </p>
-          <div style={{ display: "flex", gap: "var(--s-sm)", flexWrap: "wrap", marginBottom: "var(--s-lg)" }}>
+          <div style={{ display: "flex", gap: "var(--s-sm)", flexWrap: "wrap" }}>
             <button className="btn-primary" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
             <button className="btn-outline" onClick={() => router.push("/contact")}>Get in Touch</button>
           </div>
-          {/* NGU PROMISE BOX */}
-          <div className="ngu-box">
-            <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-md)", textAlign: "left" }}>
-              3 letters. one big message.
-            </p>
-            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-md)", textAlign: "center" }}>
-              Never Give Up.
-            </h2>
-            <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", textAlign: "right" }}>
-              Never give up on hope. Never give up on life. Never Give Up Wellness.
-            </p>
-          </div>
         </div>
-        <div className="about-aside">
-          <div>
-            <p className="about-aside-label">Our Vision</p>
-            <p className="about-quote">
-              Never Give Up is our guiding message of hope. We envision a world where all people can experience healing and transformation. Our practice strives to inspire long-term holistic wellness for both our staff and the clients we serve because we all help each other on our journey of wellness.
-            </p>
+        {/* NGU PROMISE BOX */}
+        <div className="ngu-box">
+          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-lg)", textAlign: "left" }}>
+            3 letters. one big message.
+          </p>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-xl), 4.236vw, var(--t-2xl))", color: "var(--paper)", marginBottom: "var(--s-lg)", textAlign: "center" }}>
+            Never Give Up.
+          </h2>
+          <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", textAlign: "right" }}>
+            Never give up on hope. Never give up on life. Never Give Up Wellness.
+          </p>
+        </div>
+      </section>
+
+      {/* VISION, MISSION & VALUES */}
+      <section className="phi-section vmv-section">
+        <div className="phi-wrap">
+          <div className="vmv-header">
+            <p className="eyebrow">What Drives Us</p>
+            <h2 className="vmv-title">Our Vision, Mission &amp; Values</h2>
           </div>
-          <div>
-            <p className="about-aside-label">Our Mission</p>
-            <p className="about-quote">
-              Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.
-            </p>
+          <div className="vmv-grid">
+            <div className="vmv-block">
+              <h3 className="vmv-heading">Vision</h3>
+              <p className="vmv-text">
+                Never Give Up is our guiding message of hope. We envision a world where all people can experience healing and transformation. Our practice strives to inspire long-term holistic wellness for both our staff and the clients we serve because we all help each other on our journey of wellness.
+              </p>
+            </div>
+            <div className="vmv-block">
+              <h3 className="vmv-heading">Mission</h3>
+              <p className="vmv-text">
+                Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.
+              </p>
+            </div>
           </div>
-          <div>
-            <p className="about-aside-label">Our Values</p>
-            <div className="aside-values">
-              <div className="aside-value">
-                <span className="aside-value-name">Serve</span>
-                <span className="aside-value-desc">Give back, make a difference, and model caring for others.</span>
-              </div>
-              <div className="aside-value">
-                <span className="aside-value-name">Community</span>
-                <span className="aside-value-desc">Connection and being part of something greater than ourselves.</span>
-              </div>
-              <div className="aside-value">
-                <span className="aside-value-name">Embrace</span>
-                <span className="aside-value-desc">Welcoming all people with appreciation and respect.</span>
-              </div>
-              <div className="aside-value">
-                <span className="aside-value-name">Support</span>
-                <span className="aside-value-desc">Acceptance, belief in change, and encouragement.</span>
-              </div>
-              <div className="aside-value">
-                <span className="aside-value-name">Collaboration</span>
-                <span className="aside-value-desc">Working together and sharing ideas to reach goals.</span>
-              </div>
-              <div className="aside-value">
-                <span className="aside-value-name">Creativity</span>
-                <span className="aside-value-desc">Stress relief, problem solving, and new perspectives.</span>
-              </div>
-              <div className="aside-value">
-                <span className="aside-value-name">Skill Building</span>
-                <span className="aside-value-desc">Learning new skills to cope, heal, and grow.</span>
-              </div>
-              <div className="aside-value">
-                <span className="aside-value-name">Wellness</span>
-                <span className="aside-value-desc">Daily healthy choices to thrive and live our best life.</span>
-              </div>
+          <hr className="phi-rule" style={{ margin: "var(--s-lg) 0" }} />
+          <h3 className="vmv-heading" style={{ textAlign: "center", marginBottom: "var(--s-lg)" }}>Our Values</h3>
+          <div className="values-grid">
+            <div className="value-card">
+              <span className="value-icon">⟡</span>
+              <h4 className="value-name">Serve</h4>
+              <p className="value-text">Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.</p>
+            </div>
+            <div className="value-card">
+              <span className="value-icon">○</span>
+              <h4 className="value-name">Community</h4>
+              <p className="value-text">Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.</p>
+            </div>
+            <div className="value-card">
+              <span className="value-icon">◈</span>
+              <h4 className="value-name">Embrace</h4>
+              <p className="value-text">We believe in welcoming all people. We realize we can be different from other people and still appreciate and respect them, learn from them and work together.</p>
+            </div>
+            <div className="value-card">
+              <span className="value-icon">◇</span>
+              <h4 className="value-name">Support</h4>
+              <p className="value-text">We demonstrate support through acceptance, belief in a person's ability to change and by providing encouragement.</p>
+            </div>
+            <div className="value-card">
+              <span className="value-icon">⟡</span>
+              <h4 className="value-name">Collaboration</h4>
+              <p className="value-text">Working together and sharing ideas increases the chance of reaching identified goals.</p>
+            </div>
+            <div className="value-card">
+              <span className="value-icon">○</span>
+              <h4 className="value-name">Creativity</h4>
+              <p className="value-text">Creativity provides stress relief and enhances our ability to solve problems, change perspectives and express our thoughts and feelings.</p>
+            </div>
+            <div className="value-card">
+              <span className="value-icon">◈</span>
+              <h4 className="value-name">Skill Building</h4>
+              <p className="value-text">Learning and implementing new skills is essential to change. We can learn new skills to cope with stress, to manage mental health symptoms, to repair our relationships and to take care of ourselves.</p>
+            </div>
+            <div className="value-card">
+              <span className="value-icon">◇</span>
+              <h4 className="value-name">Wellness</h4>
+              <p className="value-text">We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.</p>
             </div>
           </div>
         </div>
