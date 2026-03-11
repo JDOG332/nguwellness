@@ -36,7 +36,7 @@ const homeStyles = `
   }
 
   .hero h1 {
-    font-size: clamp(4.236rem, 10vw, 11.09rem);
+    font-size: clamp(4.236rem, 12vw, 17.94rem);
     font-weight: 900;
     line-height: 1.0;
     letter-spacing: -0.0382em;
@@ -236,7 +236,7 @@ const homeStyles = `
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .hero-logo img { max-width: 26.18rem; }
-    .hero h1 { font-size: clamp(2.618rem, 10vw, 6.854rem); }
+    .hero h1 { font-size: clamp(2.618rem, 12vw, 11.09rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
     .promise { padding: var(--s-sm) var(--s-md); }
     .promise h2 { margin-bottom: var(--s-3xs); }
@@ -251,6 +251,8 @@ export default function HomePage() {
   return (
     <div>
       <style>{homeStyles}</style>
+
+      <Nav hideLogo />
 
       {/* ── LOGO — FIRST THING YOU SEE ── */}
       <div className="hero-logo">
@@ -269,9 +271,6 @@ export default function HomePage() {
           Never give up hope. Never give up on life. Never Give Up Wellness.
         </p>
       </section>
-
-      {/* ── NAV — BELOW THE STRIP ── */}
-      <Nav hideLogo />
 
       {/* ── STATS ── */}
       <div className="hero-stats">
