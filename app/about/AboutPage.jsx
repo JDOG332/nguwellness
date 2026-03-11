@@ -383,8 +383,11 @@ const aboutStyles = `
     flex: 1;
   }
 
-  .founder-actions {
+  .founder-card .bio-details {
     margin-top: auto;
+  }
+
+  .founder-actions {
     padding-top: var(--s-md);
   }
 
@@ -604,7 +607,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="founder-actions">
-                  <button className="btn-rose" onClick={() => router.push("/therapists/nicole-walton")}>Full Profile</button>
+                  <button className="btn-rose" onClick={() => router.push("/therapists/nicole-walton")}>View Profile</button>
                 </div>
               </div>
             </div>
