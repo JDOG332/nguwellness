@@ -113,7 +113,7 @@ export default function HomePage() {
     <div>
       <style>{homeStyles}</style>
 
-      {/* ── NEVER GIVE UP — FIRST THING YOU SEE ── */}
+      {/* ── NEVER GIVE UP ── */}
       <section className="promise">
         <h2>Never Give Up.</h2>
         <p className="promise-sub">
@@ -121,18 +121,18 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* ── TAGLINE ── */}
-      <div className="hero-content">
-        <h1>Real help. <span className="hero-change">Real change.</span></h1>
-      </div>
+      {/* ── NAV ── */}
+      <Nav hideLogo />
 
       {/* ── LOGO ── */}
       <div className="hero-logo">
         <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
       </div>
 
-      {/* ── NAV ── */}
-      <Nav hideLogo />
+      {/* ── TAGLINE ── */}
+      <div className="hero-content">
+        <h1>Real help. <span className="hero-change">Real change.</span></h1>
+      </div>
 
     </div>
   );
