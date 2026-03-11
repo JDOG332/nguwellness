@@ -481,65 +481,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ORIGIN STORY */}
-      <section className="phi-section">
-        <div className="phi-wrap">
-          <div className="origin-grid">
-            <div>
-              <p className="eyebrow">The Origin</p>
-              <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Where it began.</h2>
-              <hr className="phi-rule" />
-              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618, marginBottom: "var(--s-md)" }}>
-                Dr. Nicole Walton spent 20 years working in community mental health, pediatric social work, outpatient therapy, research, and clinical supervision before founding NGU Wellness. She had seen, firsthand, how difficult it can be for people to find quality care.
-              </p>
-              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618, marginBottom: "var(--s-md)" }}>
-                She opened NGU Wellness in 2021 in Dayton, Ohio with a team-based approach: a group of skilled, vetted therapists committed to high-quality, collaborative, evidence-based care.
-              </p>
-              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
-                In 2023, that vision expanded. NGU Wellness opened a second location in Rocky River, Ohio, bringing the same standard of care to the greater Cleveland area.
-              </p>
-            </div>
-            <div>
-              <p className="eyebrow">Our Journey</p>
-              <div className="timeline">
-                <div className="tl-item">
-                  <div className="tl-dot">PhD</div>
-                  <div>
-                    <p className="tl-year">Background</p>
-                    <p className="tl-title">20 years of clinical experience</p>
-                    <p className="tl-desc">Community mental health, pediatric social work, outpatient therapy, teaching, research, and clinical supervision.</p>
-                  </div>
-                </div>
-                <div className="tl-item">
-                  <div className="tl-dot active">21</div>
-                  <div>
-                    <p className="tl-year">Founded</p>
-                    <p className="tl-title">NGU Wellness opens in Dayton</p>
-                    <p className="tl-desc">453 Patterson Rd., Suite A. A multi-therapist practice built on collaborative, evidence-based care.</p>
-                  </div>
-                </div>
-                <div className="tl-item">
-                  <div className="tl-dot active">23</div>
-                  <div>
-                    <p className="tl-year">Expanded</p>
-                    <p className="tl-title">Rocky River location opens</p>
-                    <p className="tl-desc">20525 Center Ridge Rd., Suite 604. Quality therapy now accessible across Ohio.</p>
-                  </div>
-                </div>
-                <div className="tl-item">
-                  <div className="tl-dot active">→</div>
-                  <div>
-                    <p className="tl-year">Today</p>
-                    <p className="tl-title">Growing team. Same standard.</p>
-                    <p className="tl-desc">Licensed therapists serving adults, teens, children, couples, and families across Dayton and Cleveland.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FOUNDER - NICOLE */}
       <section className="phi-section">
         <div className="phi-wrap">
@@ -628,6 +569,65 @@ export default function AboutPage() {
                 <div className="bio-detail">
                   <span className="bio-detail-label">Community</span>
                   <span className="bio-detail-value">That Day in May · Oakwood suicide prevention & awareness</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ORIGIN STORY */}
+      <section className="phi-section">
+        <div className="phi-wrap">
+          <div className="origin-grid">
+            <div>
+              <p className="eyebrow">The Origin</p>
+              <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Where it began.</h2>
+              <hr className="phi-rule" />
+              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618, marginBottom: "var(--s-md)" }}>
+                Dr. Nicole Walton spent 20 years working in community mental health, pediatric social work, outpatient therapy, research, and clinical supervision before founding NGU Wellness. She had seen, firsthand, how difficult it can be for people to find quality care.
+              </p>
+              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618, marginBottom: "var(--s-md)" }}>
+                She opened NGU Wellness in 2021 in Dayton, Ohio with a team-based approach: a group of skilled, vetted therapists committed to high-quality, collaborative, evidence-based care.
+              </p>
+              <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
+                In 2023, that vision expanded. NGU Wellness opened a second location in Rocky River, Ohio, bringing the same standard of care to the greater Cleveland area.
+              </p>
+            </div>
+            <div>
+              <p className="eyebrow">Our Journey</p>
+              <div className="timeline">
+                <div className="tl-item">
+                  <div className="tl-dot">PhD</div>
+                  <div>
+                    <p className="tl-year">Background</p>
+                    <p className="tl-title">20 years of clinical experience</p>
+                    <p className="tl-desc">Community mental health, pediatric social work, outpatient therapy, teaching, research, and clinical supervision.</p>
+                  </div>
+                </div>
+                <div className="tl-item">
+                  <div className="tl-dot active">21</div>
+                  <div>
+                    <p className="tl-year">Founded</p>
+                    <p className="tl-title">NGU Wellness opens in Dayton</p>
+                    <p className="tl-desc">453 Patterson Rd., Suite A. A multi-therapist practice built on collaborative, evidence-based care.</p>
+                  </div>
+                </div>
+                <div className="tl-item">
+                  <div className="tl-dot active">23</div>
+                  <div>
+                    <p className="tl-year">Expanded</p>
+                    <p className="tl-title">Rocky River location opens</p>
+                    <p className="tl-desc">20525 Center Ridge Rd., Suite 604. Quality therapy now accessible across Ohio.</p>
+                  </div>
+                </div>
+                <div className="tl-item">
+                  <div className="tl-dot active">→</div>
+                  <div>
+                    <p className="tl-year">Today</p>
+                    <p className="tl-title">Growing team. Same standard.</p>
+                    <p className="tl-desc">Licensed therapists serving adults, teens, children, couples, and families across Dayton and Cleveland.</p>
+                  </div>
                 </div>
               </div>
             </div>
