@@ -13,9 +13,9 @@ export default function Nav({ hideLogo = false }) {
       )}
       {hideLogo && <div />}
       <div className="nav-links">
-        <button className="nav-link" onClick={() => router.push("/therapists")}>Therapists</button>
-        <button className="nav-link" onClick={() => router.push("/services")}>Services</button>
         <button className="nav-link" onClick={() => router.push("/about")}>About</button>
+        <button className="nav-link" onClick={() => router.push("/services")}>Services</button>
+        <button className="nav-link" onClick={() => router.push("/therapists")}>Therapists</button>
         <button className="nav-link" onClick={() => router.push("/contact")}>Contact</button>
         <button className="nav-cta" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>Get Started</button>
       </div>

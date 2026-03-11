@@ -6,7 +6,7 @@ const homeStyles = `
   .hero-logo {
     display: flex;
     justify-content: center;
-    padding: var(--s-lg) var(--s-lg) var(--s-md);
+    padding: var(--s-xs) var(--s-lg) var(--s-md);
     max-width: var(--max-w);
     margin: 0 auto;
   }
@@ -61,7 +61,7 @@ const homeStyles = `
   /* ── PROMISE STRIP ── */
   .promise {
     background: var(--ink);
-    padding: var(--s-md) var(--s-lg);
+    padding: var(--s-sm) var(--s-lg);
     text-align: center;
     animation: fadeIn 0.618s 0.236s var(--ease-phi) both;
   }
