@@ -626,10 +626,6 @@ export default function AboutPage() {
                 </p>
                 <div className="bio-details">
                   <div className="bio-detail">
-                    <span className="bio-detail-label">Role</span>
-                    <span className="bio-detail-value">Business Manager, NGU Wellness</span>
-                  </div>
-                  <div className="bio-detail">
                     <span className="bio-detail-label">Education</span>
                     <span className="bio-detail-value">BA, Miami University · MA, University of Dayton</span>
                   </div>
