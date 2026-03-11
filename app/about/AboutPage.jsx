@@ -592,7 +592,7 @@ export default function AboutPage() {
                 <div className="bio-details">
                   <div className="bio-detail">
                     <span className="bio-detail-label">License</span>
-                    <span className="bio-detail-value">LISW-S, Ohio I.0700277-SUPV</span>
+                    <span className="bio-detail-value">LISW-S, Ohio I.0700277-SUPV · LPC</span>
                   </div>
                   <div className="bio-detail">
                     <span className="bio-detail-label">Education</span>
