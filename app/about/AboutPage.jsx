@@ -69,6 +69,35 @@ const aboutStyles = `
     letter-spacing: 0.0618em;
   }
 
+  .aside-values {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-xs);
+  }
+
+  .aside-value {
+    display: flex;
+    flex-direction: column;
+    padding: var(--s-xs) 0;
+    border-bottom: 0.0618rem solid var(--divider);
+  }
+
+  .aside-value:last-child { border-bottom: none; }
+
+  .aside-value-name {
+    font-size: var(--t-sm);
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+  }
+
+  .aside-value-desc {
+    font-size: var(--t-xs);
+    font-weight: 300;
+    color: var(--earth);
+    line-height: 1.5;
+  }
+
   /* ORIGIN */
   .origin-grid {
     display: grid;
@@ -366,29 +395,52 @@ export default function AboutPage() {
         </div>
         <div className="about-aside">
           <div>
-            <p className="about-aside-label">Founded on a vision</p>
+            <p className="about-aside-label">Our Vision</p>
             <p className="about-quote">
-              Dr. Nicole Walton spent more than 20 years working in community mental health, pediatric social work, outpatient therapy, research, and clinical supervision before founding NGU Wellness. She had seen, firsthand, how difficult it can be for people to find quality care.
-            </p>
-            <p className="about-quote">
-              She opened NGU Wellness in 2021 in Dayton, Ohio and has grown it into a team-based approach: a group of skilled, vetted therapists committed to high-quality, collaborative, evidence-based care. Therapists that also take care of themselves as well.
-            </p>
-            <p className="about-quote">
-              In 2023, that vision expanded to a second location in Rocky River, Ohio, bringing the same standard of care to the greater Cleveland area.
+              Never Give Up is our guiding message of hope. We envision a world where all people can experience healing and transformation. Our practice strives to inspire long-term holistic wellness for both our staff and the clients we serve because we all help each other on our journey of wellness.
             </p>
           </div>
-          <div className="about-stats">
-            <div>
-              <p className="about-stat-num">2021</p>
-              <p className="about-stat-label">Founded</p>
-            </div>
-            <div>
-              <p className="about-stat-num">595+</p>
-              <p className="about-stat-label">Years of life experience</p>
-            </div>
-            <div>
-              <p className="about-stat-num">2</p>
-              <p className="about-stat-label">Locations</p>
+          <div>
+            <p className="about-aside-label">Our Mission</p>
+            <p className="about-quote">
+              Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.
+            </p>
+          </div>
+          <div>
+            <p className="about-aside-label">Our Values</p>
+            <div className="aside-values">
+              <div className="aside-value">
+                <span className="aside-value-name">Serve</span>
+                <span className="aside-value-desc">Give back, make a difference, and model caring for others.</span>
+              </div>
+              <div className="aside-value">
+                <span className="aside-value-name">Community</span>
+                <span className="aside-value-desc">Connection and being part of something greater than ourselves.</span>
+              </div>
+              <div className="aside-value">
+                <span className="aside-value-name">Embrace</span>
+                <span className="aside-value-desc">Welcoming all people with appreciation and respect.</span>
+              </div>
+              <div className="aside-value">
+                <span className="aside-value-name">Support</span>
+                <span className="aside-value-desc">Acceptance, belief in change, and encouragement.</span>
+              </div>
+              <div className="aside-value">
+                <span className="aside-value-name">Collaboration</span>
+                <span className="aside-value-desc">Working together and sharing ideas to reach goals.</span>
+              </div>
+              <div className="aside-value">
+                <span className="aside-value-name">Creativity</span>
+                <span className="aside-value-desc">Stress relief, problem solving, and new perspectives.</span>
+              </div>
+              <div className="aside-value">
+                <span className="aside-value-name">Skill Building</span>
+                <span className="aside-value-desc">Learning new skills to cope, heal, and grow.</span>
+              </div>
+              <div className="aside-value">
+                <span className="aside-value-name">Wellness</span>
+                <span className="aside-value-desc">Daily healthy choices to thrive and live our best life.</span>
+              </div>
             </div>
           </div>
         </div>
@@ -463,70 +515,6 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VISION, MISSION & VALUES */}
-      <section className="phi-section" style={{ background: "var(--mist)" }}>
-        <div className="phi-wrap" style={{ textAlign: "center" }}>
-          <p className="eyebrow">What Drives Us</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Vision</h2>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto" }}>
-            Never Give Up is our guiding message of hope. We envision a world where all people can experience healing and transformation. Our practice strives to inspire long-term holistic wellness for both our staff and the clients we serve because we all help each other on our journey of wellness.
-          </p>
-        </div>
-        <div className="phi-wrap" style={{ textAlign: "center", marginTop: "var(--s-lg)" }}>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Mission</h2>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto" }}>
-            Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.
-          </p>
-        </div>
-        <div className="phi-wrap" style={{ textAlign: "center", marginTop: "var(--s-lg)" }}>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>Values</h2>
-        </div>
-        <div className="phi-wrap">
-          <div className="pillar-grid">
-            <div className="pillar">
-              <span className="pillar-icon">⟡</span>
-              <p className="pillar-title">Serve</p>
-              <p className="pillar-desc">Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">○</span>
-              <p className="pillar-title">Community</p>
-              <p className="pillar-desc">Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">◈</span>
-              <p className="pillar-title">Embrace</p>
-              <p className="pillar-desc">We believe in welcoming all people. We realize we can be different from other people and still appreciate and respect them, learn from them and work together.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">◇</span>
-              <p className="pillar-title">Support</p>
-              <p className="pillar-desc">We demonstrate support through acceptance, belief in a person's ability to change and by providing encouragement.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">⟡</span>
-              <p className="pillar-title">Collaboration</p>
-              <p className="pillar-desc">Working together and sharing ideas increases the chance of reaching identified goals.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">○</span>
-              <p className="pillar-title">Creativity</p>
-              <p className="pillar-desc">Creativity provides stress relief and enhances our ability to solve problems, change perspectives and express our thoughts and feelings.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">◈</span>
-              <p className="pillar-title">Skill Building</p>
-              <p className="pillar-desc">Learning and implementing new skills is essential to change. We can learn new skills to cope with stress, to manage mental health symptoms, to repair our relationships and to take care of ourselves.</p>
-            </div>
-            <div className="pillar">
-              <span className="pillar-icon">◇</span>
-              <p className="pillar-title">Wellness</p>
-              <p className="pillar-desc">We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.</p>
             </div>
           </div>
         </div>
