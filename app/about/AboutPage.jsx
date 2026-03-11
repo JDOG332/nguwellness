@@ -520,7 +520,10 @@ export default function AboutPage() {
       {/* THE FOUNDERS */}
       <section className="phi-section">
         <div className="phi-wrap">
-          <p className="eyebrow" style={{ marginBottom: "var(--s-lg)", textAlign: "center" }}>The Founders</p>
+          <p className="eyebrow" style={{ marginBottom: "var(--s-sm)", textAlign: "center", fontSize: "var(--t-base)", letterSpacing: "0.18em" }}>The Founders</p>
+          <p className="bio-blockquote" style={{ textAlign: "center", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-xl)" }}>
+            "Circumstances and the support we receive in life shape who we become. The right support at the right time changes everything."
+          </p>
           <div className="founders-row">
             <div className="founder-card">
               <div className="bio-photo-wrap">
@@ -576,9 +579,6 @@ export default function AboutPage() {
                 </p>
                 <p className="bio-p">
                   Jeffrey manages client intake, insurance verification, provider matching, and the day-to-day administrative coordination that keeps NGU running smoothly across both locations. He also serves as a fierce advocate for clients navigating the insurance process.
-                </p>
-                <p className="bio-blockquote">
-                  "Circumstances and the support we receive in life shape who we become. The right support at the right time changes everything."
                 </p>
                 <div className="bio-details">
                   <div className="bio-detail">
