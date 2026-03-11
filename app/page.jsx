@@ -98,33 +98,6 @@ const homeStyles = `
     margin: 0 auto;
   }
 
-  /* ── CTA BAND ── */
-  .cta-band {
-    text-align: center;
-    padding: var(--s-xl) var(--s-lg);
-    background: var(--mist);
-  }
-
-  .cta-band h2 {
-    font-size: clamp(var(--t-xl), 3.82vw, var(--t-2xl));
-    margin-bottom: var(--s-md);
-  }
-
-  .cta-desc {
-    font-size: var(--t-md);
-    font-weight: 300;
-    color: var(--earth);
-    max-width: var(--max-w-narrow);
-    margin: 0 auto var(--s-xl);
-  }
-
-  .cta-buttons {
-    display: flex;
-    gap: var(--s-sm);
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .hero-logo img { max-width: 26.18rem; }
@@ -141,19 +114,7 @@ export default function HomePage() {
     <div>
       <style>{homeStyles}</style>
 
-      <Nav hideLogo />
-
-      {/* ── TAGLINE — FIRST THING YOU SEE ── */}
-      <div className="hero-content">
-        <h1>Real help. <span className="hero-change">Real change.</span></h1>
-      </div>
-
-      {/* ── LOGO ── */}
-      <div className="hero-logo">
-        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
-      </div>
-
-      {/* ── NEVER GIVE UP ── */}
+      {/* ── NEVER GIVE UP — FIRST THING YOU SEE ── */}
       <section className="promise">
         <h2>Never Give Up.</h2>
         <p className="promise-sub">
@@ -161,22 +122,18 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="cta-band">
-        <p className="eyebrow">Take the first step</p>
-        <h2>Ready when you are.</h2>
-        <p className="cta-desc">
-          Never give up on yourself. We are here to help you figure out the rest.
-        </p>
-        <div className="cta-buttons">
-          <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
-            Begin Intake Survey
-          </button>
-          <button className="btn-outline" onClick={() => router.push("/therapists")}>
-            Browse Therapists
-          </button>
-        </div>
-      </section>
+      {/* ── NAV ── */}
+      <Nav hideLogo />
+
+      {/* ── LOGO ── */}
+      <div className="hero-logo">
+        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
+      </div>
+
+      {/* ── TAGLINE ── */}
+      <div className="hero-content">
+        <h1>Real help. <span className="hero-change">Real change.</span></h1>
+      </div>
 
       <Footer />
     </div>

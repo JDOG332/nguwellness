@@ -284,13 +284,20 @@ export default function ContactPage() {
       </section>
 
       {/* CTA */}
-      <section className="dark-strip">
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-lg)", fontStyle: "italic", color: "var(--paper)", marginBottom: "var(--s-md)" }}>
-          Never give up on yourself.
+      <section style={{ textAlign: "center", padding: "var(--s-xl) var(--s-lg)", background: "var(--mist)" }}>
+        <p className="eyebrow">Take the first step</p>
+        <h2 style={{ fontSize: "clamp(var(--t-xl), 3.82vw, var(--t-2xl))", marginBottom: "var(--s-md)" }}>Ready when you are.</h2>
+        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-xl)" }}>
+          Never give up on yourself. We are here to help you figure out the rest.
         </p>
-        <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")} style={{ background: "var(--rose)" }}>
-          Begin Intake Survey
-        </button>
+        <div style={{ display: "flex", gap: "var(--s-sm)", justifyContent: "center", flexWrap: "wrap" }}>
+          <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
+            Begin Intake Survey
+          </button>
+          <button className="btn-outline" onClick={() => router.push("/therapists")}>
+            Browse Therapists
+          </button>
+        </div>
       </section>
 
       <Footer />
