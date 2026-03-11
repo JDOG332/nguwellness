@@ -322,6 +322,41 @@ const aboutStyles = `
     color: var(--earth);
   }
 
+  /* FOUNDERS SIDE-BY-SIDE */
+  .founders-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-xl);
+    align-items: start;
+  }
+
+  .founder-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .founder-card .bio-photo-wrap {
+    margin-bottom: var(--s-md);
+  }
+
+  .founder-card .bio-photo {
+    aspect-ratio: 1 / 1.2;
+  }
+
+  .founder-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .founder-name {
+    font-family: var(--font-display);
+    font-size: clamp(var(--t-lg), 2.618vw, var(--t-xl));
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.0382em;
+    margin-bottom: var(--s-3xs);
+  }
+
   /* COMMUNITY */
   .community-items {
     display: flex;
@@ -362,6 +397,7 @@ const aboutStyles = `
     .about-hero { grid-template-columns: 1fr; }
     .origin-grid { grid-template-columns: 1fr; }
     .vmv-top-row { grid-template-columns: 1fr; }
+    .founders-row { grid-template-columns: 1fr; }
     .vmv-values-grid { grid-template-columns: 1fr; }
     .bio-grid { grid-template-columns: 1fr; }
   }
@@ -481,94 +517,90 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* FOUNDER - NICOLE */}
+      {/* THE FOUNDERS */}
       <section className="phi-section">
         <div className="phi-wrap">
-          <p className="eyebrow" style={{ marginBottom: "var(--s-lg)" }}>The Founder</p>
-          <div className="bio-grid">
-            <div className="bio-photo-wrap">
-              <img className="bio-photo" src="/images/therapists/Nicole_Walton.jpg" alt="Dr. Nicole Walton" onError={e => { e.target.style.background = "var(--mist)"; e.target.style.minHeight = "23.54rem"; }} />
-              <div className="bio-photo-bar" />
-            </div>
-            <div>
-              <p className="eyebrow">Founder & Owner</p>
-              <h2 className="bio-name">Dr. Nicole Walton</h2>
-              <p className="bio-creds">PhD · LISW-S · LPC &nbsp;·&nbsp; she / her</p>
-              <hr className="phi-rule" />
-              <p className="bio-p">
-                Nicole built NGU Wellness on 20 years of clinical experience spanning community mental health crisis work, pediatric medical social work, and outpatient therapy with individuals, couples, and families.
-              </p>
-              <p className="bio-p">
-                She holds a Master of Social Work from The Ohio State University and a Doctorate in Counselor Education and Supervision from Regent University (2023).
-              </p>
-              <p className="bio-p">
-                Nicole provides a nonjudgmental, warm, and collaborative environment, specializing in depression, anxiety, and relationship concerns across all life stages.
-              </p>
-              <div className="bio-details">
-                <div className="bio-detail">
-                  <span className="bio-detail-label">License</span>
-                  <span className="bio-detail-value">LISW-S, Ohio I.0700277-SUPV</span>
+          <p className="eyebrow" style={{ marginBottom: "var(--s-lg)", textAlign: "center" }}>The Founders</p>
+          <div className="founders-row">
+            <div className="founder-card">
+              <div className="bio-photo-wrap">
+                <img className="bio-photo" src="/images/therapists/Nicole_Walton.jpg" alt="Dr. Nicole Walton" onError={e => { e.target.style.background = "var(--mist)"; e.target.style.minHeight = "16rem"; }} />
+                <div className="bio-photo-bar" />
+              </div>
+              <div className="founder-info">
+                <p className="eyebrow">Founder & Owner</p>
+                <h2 className="founder-name">Dr. Nicole Walton</h2>
+                <p className="bio-creds">PhD · LISW-S · LPC &nbsp;·&nbsp; she / her</p>
+                <hr className="phi-rule" />
+                <p className="bio-p">
+                  Nicole built NGU Wellness on 20 years of clinical experience spanning community mental health crisis work, pediatric medical social work, and outpatient therapy with individuals, couples, and families.
+                </p>
+                <p className="bio-p">
+                  She holds a Master of Social Work from The Ohio State University and a Doctorate in Counselor Education and Supervision from Regent University (2023).
+                </p>
+                <p className="bio-p">
+                  Nicole provides a nonjudgmental, warm, and collaborative environment, specializing in depression, anxiety, and relationship concerns across all life stages.
+                </p>
+                <div className="bio-details">
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">License</span>
+                    <span className="bio-detail-value">LISW-S, Ohio I.0700277-SUPV</span>
+                  </div>
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">Education</span>
+                    <span className="bio-detail-value">MSW, Ohio State, 2005 · PhD, Regent University, 2023</span>
+                  </div>
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">Experience</span>
+                    <span className="bio-detail-value">20+ years clinical practice, teaching, research & supervision</span>
+                  </div>
                 </div>
-                <div className="bio-detail">
-                  <span className="bio-detail-label">Education</span>
-                  <span className="bio-detail-value">MSW, Ohio State, 2005 · PhD, Regent University, 2023</span>
-                </div>
-                <div className="bio-detail">
-                  <span className="bio-detail-label">Experience</span>
-                  <span className="bio-detail-value">20+ years clinical practice, teaching, research & supervision</span>
+                <div style={{ marginTop: "var(--s-md)", display: "flex", gap: "var(--s-sm)", flexWrap: "wrap" }}>
+                  <button className="btn-rose" onClick={() => router.push("/therapists/nicole-walton")}>Full Profile</button>
+                  <button className="btn-outline" onClick={() => router.push("/contact")}>Request Appointment</button>
                 </div>
               </div>
-              <div style={{ marginTop: "var(--s-lg)", display: "flex", gap: "var(--s-sm)" }}>
-                <button className="btn-rose" onClick={() => router.push("/therapists/nicole-walton")}>Full Profile</button>
-                <button className="btn-outline" onClick={() => router.push("/contact")}>Request Appointment</button>
+            </div>
+            <div className="founder-card">
+              <div className="bio-photo-wrap" style={{ background: "#d8dfe2" }}>
+                <img className="bio-photo" src="/images/therapists/Jeffrey_Sellers.jpeg" alt="Jeffrey Sellers" onError={e => { e.target.style.background = "#d8dfe2"; e.target.style.minHeight = "16rem"; }} />
+                <div className="bio-photo-bar" style={{ background: "var(--earth)" }} />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* JEFF BIO */}
-      <section className="phi-section" style={{ background: "var(--mist)" }}>
-        <div className="phi-wrap">
-          <p className="eyebrow" style={{ marginBottom: "var(--s-lg)" }}>The Team</p>
-          <div className="bio-grid">
-            <div className="bio-photo-wrap" style={{ background: "#d8dfe2" }}>
-              <img className="bio-photo" src="/images/therapists/Jeffrey_Sellers.jpeg" alt="Jeffrey Sellers" onError={e => { e.target.style.background = "#d8dfe2"; e.target.style.minHeight = "23.54rem"; }} />
-              <div className="bio-photo-bar" style={{ background: "var(--earth)" }} />
-            </div>
-            <div>
-              <p className="eyebrow" style={{ color: "var(--earth)" }}>Founder & Business Manager</p>
-              <h2 className="bio-name">Jeffrey Sellers</h2>
-              <hr className="phi-rule" style={{ background: "var(--earth)" }} />
-              <p className="bio-p">
-                Jeffrey Sellers brings 17 years of experience in education to his role as Business Manager at NGU Wellness. As a former teacher, he understands firsthand how circumstance, support, and the right environment shape what people are able to become.
-              </p>
-              <p className="bio-p">
-                Jeffrey manages client intake, insurance verification, provider matching, and the day-to-day administrative coordination that keeps NGU running smoothly across both locations. He also serves as a fierce advocate for clients navigating the insurance process.
-              </p>
-              <p className="bio-blockquote">
-                "Circumstances and the support we receive in life shape who we become. The right support at the right time changes everything."
-              </p>
-              <div className="bio-details">
-                <div className="bio-detail">
-                  <span className="bio-detail-label">Role</span>
-                  <span className="bio-detail-value">Business Manager, NGU Wellness</span>
-                </div>
-                <div className="bio-detail">
-                  <span className="bio-detail-label">Education</span>
-                  <span className="bio-detail-value">BA, Miami University · MA, University of Dayton</span>
-                </div>
-                <div className="bio-detail">
-                  <span className="bio-detail-label">Background</span>
-                  <span className="bio-detail-value">17 years in education · 5+ years healthcare business management</span>
-                </div>
-                <div className="bio-detail">
-                  <span className="bio-detail-label">Leadership</span>
-                  <span className="bio-detail-value">Board of Directors, The Gem Project Dayton</span>
-                </div>
-                <div className="bio-detail">
-                  <span className="bio-detail-label">Community</span>
-                  <span className="bio-detail-value">That Day in May · Oakwood suicide prevention & awareness</span>
+              <div className="founder-info">
+                <p className="eyebrow" style={{ color: "var(--earth)" }}>Founder & Business Manager</p>
+                <h2 className="founder-name">Jeffrey Sellers</h2>
+                <p className="bio-creds">&nbsp;</p>
+                <hr className="phi-rule" style={{ background: "var(--earth)" }} />
+                <p className="bio-p">
+                  Jeffrey Sellers brings 17 years of experience in education to his role as Business Manager at NGU Wellness. As a former teacher, he understands firsthand how circumstance, support, and the right environment shape what people are able to become.
+                </p>
+                <p className="bio-p">
+                  Jeffrey manages client intake, insurance verification, provider matching, and the day-to-day administrative coordination that keeps NGU running smoothly across both locations. He also serves as a fierce advocate for clients navigating the insurance process.
+                </p>
+                <p className="bio-blockquote">
+                  "Circumstances and the support we receive in life shape who we become. The right support at the right time changes everything."
+                </p>
+                <div className="bio-details">
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">Role</span>
+                    <span className="bio-detail-value">Business Manager, NGU Wellness</span>
+                  </div>
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">Education</span>
+                    <span className="bio-detail-value">BA, Miami University · MA, University of Dayton</span>
+                  </div>
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">Background</span>
+                    <span className="bio-detail-value">17 years in education · 5+ years healthcare business management</span>
+                  </div>
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">Leadership</span>
+                    <span className="bio-detail-value">Board of Directors, The Gem Project Dayton</span>
+                  </div>
+                  <div className="bio-detail">
+                    <span className="bio-detail-label">Community</span>
+                    <span className="bio-detail-value">That Day in May · Oakwood suicide prevention & awareness</span>
+                  </div>
                 </div>
               </div>
             </div>
