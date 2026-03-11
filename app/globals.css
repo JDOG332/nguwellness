@@ -188,7 +188,7 @@ a:hover { color: var(--rose); }
 
 .nav-link {
   font-family: var(--font-body);
-  font-size: var(--t-base);
+  font-size: var(--t-md);
   font-weight: 400;
   letter-spacing: 0.0618em;
   color: var(--warm-gray);
@@ -204,7 +204,7 @@ a:hover { color: var(--rose); }
 
 .nav-cta {
   font-family: var(--font-body);
-  font-size: var(--t-base);
+  font-size: var(--t-md);
   font-weight: 400;
   letter-spacing: 0.0618em;
   text-transform: uppercase;

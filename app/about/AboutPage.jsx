@@ -642,6 +642,58 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── STATS BAR ── */}
+      <section style={{ display: "flex", gap: "var(--s-2xl)", justifyContent: "center", padding: "var(--s-xl) var(--s-lg)", borderTop: "0.0618rem solid var(--divider)", borderBottom: "0.0618rem solid var(--divider)" }}>
+        <div style={{ textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-xl)", fontWeight: 900, lineHeight: 1 }}>2021</p>
+          <p style={{ fontSize: "var(--t-xs)", fontWeight: 400, color: "var(--warm-gray)", marginTop: "var(--s-3xs)", letterSpacing: "0.0618em" }}>Founded</p>
+        </div>
+        <div style={{ textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-xl)", fontWeight: 900, lineHeight: 1 }}>2</p>
+          <p style={{ fontSize: "var(--t-xs)", fontWeight: 400, color: "var(--warm-gray)", marginTop: "var(--s-3xs)", letterSpacing: "0.0618em" }}>Ohio Locations</p>
+        </div>
+        <div style={{ textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-xl)", fontWeight: 900, lineHeight: 1 }}>595+</p>
+          <p style={{ fontSize: "var(--t-xs)", fontWeight: 400, color: "var(--warm-gray)", marginTop: "var(--s-3xs)", letterSpacing: "0.0618em" }}>Years of Life Experience</p>
+        </div>
+        <div style={{ textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-xl)", fontWeight: 900, lineHeight: 1 }}>14+</p>
+          <p style={{ fontSize: "var(--t-xs)", fontWeight: 400, color: "var(--warm-gray)", marginTop: "var(--s-3xs)", letterSpacing: "0.0618em" }}>Insurance Plans Accepted</p>
+        </div>
+      </section>
+
+      {/* ── WHY NGU ── */}
+      <section className="phi-section">
+        <div className="phi-wrap">
+          <p className="eyebrow">Why NGU Wellness</p>
+          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-2xl))", marginBottom: "var(--s-sm)" }}>
+            A practice built differently.
+          </h2>
+          <hr className="phi-rule" />
+          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-xl)" }}>
+            We built NGU Wellness with a team-based model so more people get matched with
+            the right therapist, the right approach, and the right fit — faster.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "var(--s-md)" }}>
+            <div style={{ padding: "var(--s-lg)", border: "0.0618rem solid var(--divider)" }}>
+              <span style={{ fontSize: "var(--t-xl)", marginBottom: "var(--s-md)", display: "block", opacity: 0.618 }}>⟡</span>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, marginBottom: "var(--s-xs)" }}>Evidence-Based Care</p>
+              <p style={{ fontSize: "var(--t-sm)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>Every therapist is licensed, vetted, and trained in proven approaches — CBT, EMDR, DBT, ACT, and more.</p>
+            </div>
+            <div style={{ padding: "var(--s-lg)", border: "0.0618rem solid var(--divider)" }}>
+              <span style={{ fontSize: "var(--t-xl)", marginBottom: "var(--s-md)", display: "block", opacity: 0.618 }}>◈</span>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, marginBottom: "var(--s-xs)" }}>Collaborative Approach</p>
+              <p style={{ fontSize: "var(--t-sm)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>We work with you, not at you. Together, we identify goals, build skills, and address challenges creatively.</p>
+            </div>
+            <div style={{ padding: "var(--s-lg)", border: "0.0618rem solid var(--divider)" }}>
+              <span style={{ fontSize: "var(--t-xl)", marginBottom: "var(--s-md)", display: "block", opacity: 0.618 }}>◇</span>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, marginBottom: "var(--s-xs)" }}>Flexible Access</p>
+              <p style={{ fontSize: "var(--t-sm)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>Two Ohio locations, statewide telehealth, evenings available. We accept most major insurance and Medicaid.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* THE FOUNDERS */}
       <section className="phi-section">
         <div className="phi-wrap">
