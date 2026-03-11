@@ -752,9 +752,27 @@ export default function AboutPage() {
               <div className="tl-entries">
                 <div className="tl-entry">
                   <div className="tl-entry-left">
+                    <p className="tl-entry-date">March 31, 2021</p>
+                    <p className="tl-entry-title">NGU Wellness LLC founded</p>
+                    <p className="tl-entry-desc">Articles of Organization filed with the State of Ohio.</p>
+                  </div>
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div>
+                  <div className="tl-entry-right" />
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left" />
+                  <div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div>
+                  <div className="tl-entry-right">
+                    <p className="tl-entry-date">Summer 2021</p>
+                    <p className="tl-entry-title">Building the practice</p>
+                    <p className="tl-entry-desc">Insurance paneling, planning, location scouting, space remodeling, and furnishing.</p>
+                  </div>
+                </div>
+                <div className="tl-entry">
+                  <div className="tl-entry-left">
                     <p className="tl-entry-date">August 1, 2021</p>
-                    <p className="tl-entry-title">NGU Wellness founded</p>
-                    <p className="tl-entry-desc">Doors open at 453 Patterson Rd., Suite A, Dayton, Ohio. A multi-therapist practice built on collaborative, evidence-based care.</p>
+                    <p className="tl-entry-title">Doors open</p>
+                    <p className="tl-entry-desc">453 Patterson Rd., Suite A, Dayton, Ohio. A multi-therapist practice built on collaborative, evidence-based care.</p>
                   </div>
                   <div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div>
                   <div className="tl-entry-right" />
