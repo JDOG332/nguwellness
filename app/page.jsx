@@ -166,78 +166,6 @@ const homeStyles = `
     line-height: 1.618;
   }
 
-  /* ── SERVICES PREVIEW ── */
-  .services-grid {
-    display: grid;
-    grid-template-columns: 1.618fr 1fr;
-    gap: var(--s-xl);
-    align-items: start;
-  }
-
-  .service-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .service-item {
-    padding: var(--s-md) 0;
-    border-bottom: 0.0618rem solid var(--divider);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    transition: all var(--duration) var(--ease-phi);
-    cursor: default;
-  }
-
-  .service-item:first-child {
-    border-top: 0.0618rem solid var(--divider);
-  }
-
-  .service-item:hover {
-    padding-left: var(--s-xs);
-  }
-
-  .service-name {
-    font-family: var(--font-display);
-    font-size: var(--t-md);
-    font-weight: 400;
-  }
-
-  .service-arrow {
-    font-size: var(--t-sm);
-    color: var(--rose);
-    opacity: 0;
-    transition: opacity var(--duration) var(--ease-phi);
-  }
-
-  .service-item:hover .service-arrow {
-    opacity: 1;
-  }
-
-  .services-aside {
-    padding: var(--s-lg);
-    background: var(--mist);
-  }
-
-  .services-aside p {
-    font-family: var(--font-accent);
-    font-size: var(--t-lg);
-    font-style: italic;
-    line-height: 1.618;
-    color: var(--ink);
-    margin-bottom: var(--s-md);
-  }
-
-  .services-aside cite {
-    font-family: var(--font-body);
-    font-size: var(--t-xs);
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.236em;
-    text-transform: uppercase;
-    color: var(--warm-gray);
-  }
-
   /* ── LOCATIONS ── */
   .locations-grid {
     display: grid;
@@ -311,7 +239,6 @@ const homeStyles = `
     .hero h1 { font-size: clamp(2.618rem, 8vw, 4.236rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
     .why-grid { grid-template-columns: 1fr; }
-    .services-grid { grid-template-columns: 1fr; }
     .locations-grid { grid-template-columns: 1fr; }
   }
 `;
@@ -396,42 +323,6 @@ export default function HomePage() {
               <p className="why-desc">
                 Two Ohio locations, statewide telehealth, evenings available. We accept most major insurance and Medicaid.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SERVICES PREVIEW ── */}
-      <section className="phi-section" style={{ background: "var(--mist)" }}>
-        <div className="phi-wrap">
-          <div className="services-grid">
-            <div>
-              <p className="eyebrow">What We Treat</p>
-              <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-2xl))", marginBottom: "var(--s-lg)" }}>
-                What brings people to us.
-              </h2>
-              <ul className="service-list">
-                {["Anxiety & Panic", "Depression & Mood", "Trauma & PTSD", "Grief & Loss",
-                  "Relationship Concerns", "Life Transitions", "OCD & Avoidance", "Work Burnout",
-                  "Teen & Adolescent Issues", "Self-Esteem & Identity"].map(s => (
-                  <li key={s} className="service-item" onClick={() => router.push("/services")}>
-                    <span className="service-name">{s}</span>
-                    <span className="service-arrow">→</span>
-                  </li>
-                ))}
-              </ul>
-              <div style={{ marginTop: "var(--s-lg)" }}>
-                <button className="btn-outline" onClick={() => router.push("/services")}>
-                  View All Services
-                </button>
-              </div>
-            </div>
-            <div className="services-aside">
-              <p>
-                "We started NGU Wellness because we envision a world where all people can
-                experience healing and transformation with the right help and support."
-              </p>
-              <cite>Dr. Nicole Walton, Founder</cite>
             </div>
           </div>
         </div>
