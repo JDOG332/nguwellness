@@ -560,7 +560,7 @@ export default function AboutPage() {
             Never Give Up.
           </h2>
           <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", textAlign: "center" }}>
-            Never give up on hope. Never give up on life. Never Give Up Wellness.
+            Never give up hope. Never give up on life. Never Give Up Wellness.
           </p>
         </div>
       </section>
