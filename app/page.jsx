@@ -7,7 +7,7 @@ const homeStyles = `
   .hero-logo {
     display: flex;
     justify-content: center;
-    padding: var(--s-md) var(--s-lg) 0;
+    padding: var(--s-lg) var(--s-lg) var(--s-md);
     max-width: var(--max-w);
     margin: 0 auto;
   }
@@ -20,7 +20,7 @@ const homeStyles = `
 
   .hero-content {
     text-align: center;
-    padding: 0 var(--s-lg) var(--s-xs);
+    padding: var(--s-sm) var(--s-lg) var(--s-sm);
     max-width: var(--max-w);
     margin: 0 auto;
     animation: fadeIn 0.618s var(--ease-phi) both;
@@ -36,7 +36,7 @@ const homeStyles = `
   }
 
   .hero h1 {
-    font-size: clamp(2.618rem, 6.18vw, 6.854rem);
+    font-size: clamp(4.236rem, 10vw, 11.09rem);
     font-weight: 900;
     line-height: 1.0;
     letter-spacing: -0.0382em;
@@ -236,7 +236,7 @@ const homeStyles = `
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .hero-logo img { max-width: 26.18rem; }
-    .hero h1 { font-size: clamp(2.618rem, 8vw, 4.236rem); }
+    .hero h1 { font-size: clamp(2.618rem, 10vw, 6.854rem); }
     .hero-stats { gap: var(--s-xl); flex-wrap: wrap; }
     .promise { padding: var(--s-sm) var(--s-md); }
     .promise h2 { margin-bottom: var(--s-3xs); }
@@ -251,17 +251,8 @@ export default function HomePage() {
   return (
     <div>
       <style>{homeStyles}</style>
-      <Nav hideLogo />
 
-      {/* ── NEVER GIVE UP — TOP OF PAGE ── */}
-      <section className="promise">
-        <h2>Never Give Up.</h2>
-        <p className="promise-sub">
-          Never give up hope. Never give up on life. Never Give Up Wellness.
-        </p>
-      </section>
-
-      {/* ── LOGO — AS WIDE AS POSSIBLE ── */}
+      {/* ── LOGO — FIRST THING YOU SEE ── */}
       <div className="hero-logo">
         <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
       </div>
@@ -270,6 +261,17 @@ export default function HomePage() {
       <div className="hero-content">
         <h1>Real help. <span className="hero-change">Real change.</span></h1>
       </div>
+
+      {/* ── NEVER GIVE UP ── */}
+      <section className="promise">
+        <h2>Never Give Up.</h2>
+        <p className="promise-sub">
+          Never give up hope. Never give up on life. Never Give Up Wellness.
+        </p>
+      </section>
+
+      {/* ── NAV — BELOW THE STRIP ── */}
+      <Nav hideLogo />
 
       {/* ── STATS ── */}
       <div className="hero-stats">
