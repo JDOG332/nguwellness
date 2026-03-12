@@ -35,7 +35,7 @@ const homeStyles = `
   }
 
   .hero h1 {
-    font-size: clamp(11.09rem, 20vw, 75.99rem);
+    font-size: clamp(11.09rem, 24vw, 122.97rem);
     font-weight: 900;
     line-height: 1.0;
     letter-spacing: -0.0382em;
@@ -100,7 +100,7 @@ const homeStyles = `
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .hero-logo img { max-width: 26.18rem; }
-    .hero h1 { font-size: clamp(6.854rem, 20vw, 46.97rem); }
+    .hero h1 { font-size: clamp(6.854rem, 24vw, 75.99rem); }
     .promise { padding: var(--s-sm) var(--s-md); }
     .promise h2 { margin-bottom: var(--s-3xs); }
   }
