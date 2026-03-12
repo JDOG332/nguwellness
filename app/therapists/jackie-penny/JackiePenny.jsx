@@ -56,7 +56,7 @@ const DATA = {
     {"s": "Session format:", "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio. Hybrid scheduling available."}
   ],
   "faithText": "",
-  "credentials": [
+  "credentialDetails": [
     {"s": "License:", "t": "LPCC-S (Licensed Professional Clinical Counselor – Supervisor), Ohio E.2102614-SUPV"},
     {"s": "Education:", "t": "Master's in Clinical Mental Health Counseling, University of Dayton (2016–2019). Chi Sigma Iota Counseling Honor Society."},
     {"s": "Specialized Training:", "t": "Dialectical Behavior Therapy (DBT). Advanced Cognitive Behavioral Therapy. CBT for Psychosis (CBTp). Assessing and Managing Suicide Risk (AMSR)."},
