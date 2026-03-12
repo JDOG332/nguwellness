@@ -31,12 +31,22 @@ const DATA = {
   "specialtiesFull": ["Anxiety & Panic", "Depression", "Grief & Loss", "Life Transitions", "Stress & Burnout", "Relationship Issues", "Self-Esteem", "Avoidance Patterns", "OCD", "Faith & Spirituality"],
   "approachText": "Kim uses proven, research-backed approaches tailored to each client. As a Certified Clinical Anxiety Treatment Professional (CCATP), she brings specialized expertise to anxiety disorders. She draws from multiple modalities depending on what fits you best.",
   "modalities": [
-    {"abbr": "CBT", "name": "Cognitive Behavioral Therapy", "desc": "Restructures thought patterns driving anxiety, depression, and low mood."},
+    {"abbr": "CBT", "name": "Cognitive Behavioral Therapy", "desc": "Restructures thought patterns driving anxiety, depression, and low mood. Kim has advanced CBT training including CBT for Psychosis."},
+    {"abbr": "DBT", "name": "Dialectical Behavior Therapy", "desc": "Skills for emotional regulation and distress tolerance."},
     {"abbr": "ACT", "name": "Acceptance & Commitment Therapy", "desc": "Builds psychological flexibility to move toward what matters."},
     {"abbr": "ERP", "name": "Exposure & Response Prevention", "desc": "Gold-standard treatment for OCD and avoidance-driven anxiety."},
-    {"abbr": "DBT", "name": "Dialectical Behavior Therapy", "desc": "Skills for emotional regulation and distress tolerance."},
     {"abbr": "MI", "name": "Motivational Interviewing", "desc": "Clarifies personal values and builds internal motivation."},
-    {"abbr": "SFBT", "name": "Solution-Focused Brief Therapy", "desc": "Focuses on strengths and solutions rather than problems."}
+    {"abbr": "SFBT", "name": "Solution-Focused Brief Therapy", "desc": "Focuses on strengths and solutions rather than problems."},
+    {"abbr": "TF-CBT", "name": "Trauma-Focused CBT", "desc": "Evidence-based treatment for processing trauma and PTSD."},
+    {"abbr": "CFT", "name": "Compassion-Focused Therapy", "desc": "Develops self-compassion to counter shame, self-criticism, and emotional distress."},
+    {"abbr": "PC", "name": "Person-Centered Therapy", "desc": "Creating a warm, empathetic environment where you guide the direction of your growth."},
+    {"abbr": "NAR", "name": "Narrative Therapy", "desc": "Separates the person from the problem. Helps reauthor personal stories."},
+    {"abbr": "MBCT", "name": "Mindfulness-Based Therapy", "desc": "Cultivating present-moment awareness to reduce stress and improve well-being."},
+    {"abbr": "BA", "name": "Behavioral Activation", "desc": "Breaks goals into smaller, achievable steps to build momentum and counter depression."},
+    {"abbr": "GES", "name": "Gestalt Therapy", "desc": "Focuses on present-moment awareness and personal responsibility to understand patterns."},
+    {"abbr": "RT", "name": "Reality Therapy", "desc": "Empowers you to take control of your choices and actions to meet your needs."},
+    {"abbr": "GT", "name": "Grief Therapy", "desc": "Specialized support for processing loss, bereavement, and life transitions."},
+    {"abbr": "IPT", "name": "Interpersonal Psychotherapy", "desc": "Improves communication patterns and relationship functioning."}
   ],
   "expectations": [
     {"s": "First session:", "t": "A thorough assessment where Kim learns about you, your history, and what you want from therapy."},
