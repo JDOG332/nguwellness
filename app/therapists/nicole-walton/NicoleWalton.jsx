@@ -14,39 +14,68 @@ const DATA = {
   "colorTint": "#EFF8F2",
   "colorBorder": "#B0D4BE",
   "status": "accepting",
-  "badges": ["Founder & Owner", "20+ Yrs", "PhD"],
+  "badges": ["Founder & Owner", "20+ Yrs", "PhD", "Clinical Supervisor"],
   "formats": ["In-Person", "Telehealth"],
-  "locationDetail": "Dayton & Rocky River offices · Telehealth statewide",
-  "ages": "Adults 18+",
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Teens · Adults · Elders 65+",
   "faith": false,
-  "quote": "I provide a nonjudgmental, warm, and collaborative environment to hear and address client needs. I want to inspire individuals to live their best life.",
-  "calloutQuote": "Nicole provides a nonjudgmental, warm, and collaborative environment. She works with people from a wellness perspective — meeting them exactly where they are.",
+  "quote": "I believe therapy can be a beneficial tool to assist those who are hurting, dissatisfied, or filled with uncertainty. I envision a world where all people can experience healing and transformation.",
+  "calloutQuote": "Sometimes we find ourselves struggling in our relationships. We may have persistent sadness or worries that get in the way of life. We may have losses that are too difficult to process on our own. Or we may feel our life has just gotten off track. There are many reasons to seek therapy — I can help.",
   "whoHelps": [
-    {"s": "Adults 18+", "t": "individuals and couples dealing with a wide range of emotional and relational concerns."},
-    {"s": "People processing trauma", "t": "including PTSD, complex trauma, abuse, and unresolved painful experiences."},
-    {"s": "People with depression", "t": "emotional numbness, hopelessness, or persistent low mood."},
-    {"s": "Couples", "t": "working through relationship difficulties, communication breakdowns, or life transitions together."},
-    {"s": "People in transition", "t": "navigating career changes, divorce, loss, retirement, or identity shifts."}
+    {"s": "Adults dealing with depression, anxiety, or persistent worry", "t": "who want an experienced clinician with a warm, collaborative approach."},
+    {"s": "People processing trauma and PTSD", "t": "including complex trauma, abuse, and unresolved painful experiences."},
+    {"s": "Couples", "t": "working through communication breakdowns, infidelity, premarital concerns, or major life transitions together."},
+    {"s": "Individuals navigating grief and loss", "t": "including divorce, death, career loss, and other life-altering changes."},
+    {"s": "People struggling with addiction or substance use", "t": "including alcohol, drugs, gambling, and dual diagnosis concerns."},
+    {"s": "Families in conflict", "t": "seeking to improve communication, resolve tension, and strengthen relationships."},
+    {"s": "Teens and older adults", "t": "dealing with mood disorders, identity, stress, or life transitions at any stage."}
   ],
-  "specialtiesFull": ["Trauma & PTSD", "Depression", "Anxiety", "Relationship Issues", "Life Transitions", "Couples Therapy", "Grief & Loss", "Self-Esteem", "Stress & Burnout", "Identity"],
-  "approachText": "Nicole draws from multiple proven approaches, tailoring treatment to each individual. With 20+ years of experience spanning community mental health, pediatric social work, and outpatient therapy, she integrates techniques fluidly based on what serves you best.",
+  "specialtiesFull": [
+    "Depression", "Anxiety", "Relationship Issues", "Trauma & PTSD",
+    "Grief & Loss", "Life Transitions", "Couples Therapy", "Marital & Premarital",
+    "Infidelity", "Divorce", "Family Conflict", "Parenting",
+    "Addiction", "Substance Use", "Alcohol Use", "Gambling",
+    "Dual Diagnosis", "Bipolar Disorder", "Mood Disorders", "OCD",
+    "Stress & Burnout", "Self-Esteem", "Codependency", "Coping Skills",
+    "Peer Relationships", "Spirituality", "Women's Issues",
+    "Weight Management", "Obesity", "Identity"
+  ],
+  "approachText": "Nicole draws from 20+ years of clinical experience spanning community mental health crisis work, pediatric medical social work, and outpatient therapy. Her work is informed by continued education, participation in research, and leadership in the field. She collaborates with each client to develop treatment goals and works from a wellness perspective — meeting people exactly where they are and tailoring her approach to what serves them best.",
   "modalities": [
     {"abbr": "CBT", "name": "Cognitive Behavioral Therapy", "desc": "Restructures thought patterns driving anxiety, depression, and low mood."},
-    {"abbr": "EMDR", "name": "EMDR", "desc": "Processes traumatic memories through bilateral stimulation. Evidence-based trauma treatment."},
-    {"abbr": "ACT", "name": "Acceptance & Commitment Therapy", "desc": "Builds psychological flexibility to move toward what matters."},
-    {"abbr": "NAR", "name": "Narrative Therapy", "desc": "Separates the person from the problem. Reauthors personal stories."},
-    {"abbr": "HUM", "name": "Humanistic Therapy", "desc": "Centers the whole person: values, potential, and the drive toward growth."},
-    {"abbr": "SOM", "name": "Somatic Approaches", "desc": "Works with the body's role in storing and releasing stress and trauma."}
+    {"abbr": "FAM", "name": "Family Systems Therapy", "desc": "Examines relationship patterns and family dynamics to understand how they shape individual behavior."},
+    {"abbr": "MI", "name": "Motivational Interviewing", "desc": "Clarifies personal values and builds internal motivation for lasting change."},
+    {"abbr": "NAR", "name": "Narrative Therapy", "desc": "Separates the person from the problem and helps reauthor personal stories."},
+    {"abbr": "PC", "name": "Person-Centered Therapy", "desc": "Creates a nonjudgmental, warm space where the client leads their own healing process."},
+    {"abbr": "STR", "name": "Strength-Based Therapy", "desc": "Identifies and builds on existing strengths and resources for sustainable growth."},
+    {"abbr": "ACT", "name": "Acceptance & Commitment Therapy", "desc": "Builds psychological flexibility to move toward what matters most."},
+    {"abbr": "HUM", "name": "Humanistic Therapy", "desc": "Centers the whole person: values, potential, and the innate drive toward growth."},
+    {"abbr": "SOM", "name": "Somatic Approaches", "desc": "Works with the body's role in storing and releasing stress and trauma."},
+    {"abbr": "SUP", "name": "Clinical Supervision", "desc": "Licensed supervisor (LISW-S) providing clinical oversight, training, and mentorship to developing therapists."}
   ],
   "expectations": [
-    {"s": "First session:", "t": "A thorough assessment — Nicole takes time to understand your history, your goals, and what kind of support would help most."},
-    {"s": "Ongoing work:", "t": "Warm, collaborative sessions focused on building insight, skills, and real progress between sessions."},
-    {"s": "Nicole's style:", "t": "Nonjudgmental, warm, and wellness-oriented. She meets you where you are."},
-    {"s": "Session length:", "t": "Standard 50-minute individual sessions. Intake may be slightly longer."}
+    {"s": "First session:", "t": "A thorough assessment — Nicole takes time to understand your history, your goals, and what kind of support would help most. Together you'll develop treatment goals to guide the process."},
+    {"s": "Ongoing work:", "t": "Warm, collaborative sessions focused on building insight, learning new coping skills, improving relationships, and making real progress between sessions."},
+    {"s": "Nicole's style:", "t": "Nonjudgmental, warm, and wellness-oriented. Twenty years of diverse clinical experience mean she adapts fluidly to what each client needs."},
+    {"s": "Session length:", "t": "Standard 50-minute individual sessions. Intake may be slightly longer."},
+    {"s": "Session format:", "t": "Individual, couples, and family therapy. In-person at the Dayton office or secure telehealth video across Ohio. Evening availability."}
   ],
   "faithText": "",
+  "credentialDetails": [
+    {"s": "License:", "t": "LISW-S (Licensed Independent Social Worker – Supervisor), Ohio I.0700277-SUPV · LPC (Licensed Professional Counselor)"},
+    {"s": "Education:", "t": "Master of Social Work, The Ohio State University (2005). Doctor of Philosophy in Counselor Education & Supervision, Regent University (2023). Dissertation: Faculty Experiences with the CACREP Accreditation Process — A Qualitative Study."},
+    {"s": "Clinical Experience:", "t": "20+ years spanning community mental health crisis work, pediatric medical social work, and outpatient therapy with individuals, couples, and families."},
+    {"s": "Leadership:", "t": "Founder, Owner & Clinical Director of NGU Wellness (est. 2021). Clinical supervisor providing oversight and mentorship to developing therapists across both locations."},
+    {"s": "Additional:", "t": "Continued education, participation in research, teaching experience, and recognized leader in the behavioral health field."}
+  ],
   "schedule": {
-    "available": [{"day": "Monday", "time": "Available"}, {"day": "Tuesday", "time": "Available"}, {"day": "Wednesday", "time": "Available"}, {"day": "Thursday", "time": "Available"}, {"day": "Friday", "time": "Available"}],
+    "available": [
+      {"day": "Monday", "time": "1:00 PM – 7:15 PM · In-Person or Telehealth · Dayton"},
+      {"day": "Tuesday", "time": "5:15 PM – 7:15 PM · Telehealth Only"},
+      {"day": "Wednesday", "time": "12:00 PM – 3:00 PM · Telehealth Only"},
+      {"day": "Thursday", "time": "9:00 AM – 3:00 PM · In-Person or Telehealth · Dayton"},
+      {"day": "Friday", "time": "9:00 AM – 3:00 PM · In-Person or Telehealth · Dayton"}
+    ],
     "unavailable": ["Weekends"]
   }
 };
