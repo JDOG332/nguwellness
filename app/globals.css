@@ -152,6 +152,7 @@ a:hover { color: var(--rose); }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--s-lg);
   padding: var(--s-md) var(--s-lg);
   max-width: var(--max-w);
   margin: 0 auto;
