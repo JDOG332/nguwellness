@@ -15,6 +15,12 @@ const FAQ = [
 ];
 
 const contactStyles = `
+  /* ═══════════════════════════════════════════════════
+     CONTACT PAGE — Φ DESIGN SYSTEM STRICT COMPLIANCE
+     Zero inline styles. Every value from the Sacred Scale.
+     ═══════════════════════════════════════════════════ */
+
+  /* ── HERO ── */
   .contact-hero {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -23,10 +29,29 @@ const contactStyles = `
   }
 
   .contact-hero h1 {
-    font-size: clamp(var(--t-xl), 5vw, var(--t-2xl));
+    font-size: clamp(var(--t-xl), 5vw + 1rem, var(--t-2xl));
     margin-bottom: var(--s-sm);
   }
 
+  .contact-hero-desc {
+    font-size: var(--t-md);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
+  }
+
+  /* ── SECTION HEADINGS ── */
+  .contact-section-title {
+    font-size: clamp(var(--t-lg), 3vw + 0.5rem, var(--t-xl));
+    margin-bottom: var(--s-sm);
+  }
+
+  /* ── BG MIST ── */
+  .bg-mist {
+    background: var(--mist);
+  }
+
+  /* ── STEPS ── */
   .steps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,7 +61,7 @@ const contactStyles = `
 
   .step-card {
     padding: var(--s-lg);
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
     position: relative;
   }
 
@@ -63,7 +88,12 @@ const contactStyles = `
     line-height: 1.618;
   }
 
-  /* INFO CARDS */
+  .steps-cta {
+    text-align: center;
+    margin-top: var(--s-xl);
+  }
+
+  /* ── INFO CARDS ── */
   .info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -104,17 +134,55 @@ const contactStyles = `
     color: var(--earth);
   }
 
-  /* FAQ */
+  /* ── LOCATIONS ── */
+  .loc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-md);
+    margin-top: var(--s-md);
+  }
+
+  .loc-card {
+    padding: var(--s-lg);
+    border: 1px solid var(--divider);
+    background: var(--paper);
+  }
+
+  .loc-label {
+    font-family: var(--font-body);
+    font-size: var(--t-xs);
+    font-weight: 400;
+    letter-spacing: 0.236em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: var(--s-xs);
+  }
+
+  .loc-name {
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 900;
+    margin-bottom: var(--s-xs);
+  }
+
+  .loc-address {
+    font-size: var(--t-sm);
+    font-weight: 300;
+    color: var(--earth);
+    line-height: 1.618;
+  }
+
+  /* ── FAQ ── */
   .faq-list {
     margin-top: var(--s-lg);
   }
 
   .faq-item {
-    border-bottom: 0.0618rem solid var(--divider);
+    border-bottom: 1px solid var(--divider);
   }
 
   .faq-item:first-child {
-    border-top: 0.0618rem solid var(--divider);
+    border-top: 1px solid var(--divider);
   }
 
   .faq-q {
@@ -154,12 +222,41 @@ const contactStyles = `
     color: var(--earth);
     line-height: 1.618;
     padding-bottom: var(--s-md);
-    max-width: 42.36rem;
+    max-width: var(--max-w-narrow);
   }
 
+  /* ── CTA ── */
+  .contact-cta {
+    text-align: center;
+    padding: var(--s-xl) var(--s-lg);
+    background: var(--mist);
+  }
+
+  .contact-cta-title {
+    font-size: clamp(var(--t-xl), 3.82vw + 1rem, var(--t-2xl));
+    margin-bottom: var(--s-md);
+  }
+
+  .contact-cta-desc {
+    font-size: var(--t-md);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
+    margin: 0 auto var(--s-xl);
+  }
+
+  .contact-cta-actions {
+    display: flex;
+    gap: var(--s-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .steps-grid { grid-template-columns: 1fr; }
     .info-grid { grid-template-columns: 1fr; }
+    .loc-grid { grid-template-columns: 1fr; }
   }
 `;
 
@@ -172,21 +269,20 @@ export default function ContactPage() {
       <style>{contactStyles}</style>
       <Nav />
 
+      {/* ── HERO ── */}
       <section className="contact-hero">
         <p className="eyebrow">Get Started</p>
         <h1>We are here when you are ready.</h1>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
+        <p className="contact-hero-desc">
           Taking the first step is the hardest part. We make everything after that as simple as possible.
         </p>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section className="phi-section-sm" style={{ background: "var(--mist)" }}>
+      {/* ── HOW IT WORKS ── */}
+      <section className="phi-section-sm bg-mist">
         <div className="phi-wrap">
           <p className="eyebrow">How It Works</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            Three steps to getting started.
-          </h2>
+          <h2 className="contact-section-title">Three steps to getting started.</h2>
           <div className="steps-grid">
             <div className="step-card">
               <p className="step-num">01</p>
@@ -204,7 +300,7 @@ export default function ContactPage() {
               <p className="step-desc">Schedule your first session — in-person at either location or via secure telehealth from anywhere in Ohio.</p>
             </div>
           </div>
-          <div style={{ textAlign: "center", marginTop: "var(--s-xl)" }}>
+          <div className="steps-cta">
             <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
               Begin Intake Survey
             </button>
@@ -212,13 +308,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* CONTACT INFO */}
+      {/* ── CONTACT INFO ── */}
       <section className="phi-section">
         <div className="phi-wrap">
           <p className="eyebrow">Contact Us</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            Reach us directly.
-          </h2>
+          <h2 className="contact-section-title">Reach us directly.</h2>
           <div className="info-grid">
             <a className="info-card" href="tel:8886489355">
               <p className="info-icon">◈</p>
@@ -239,36 +333,30 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* LOCATIONS */}
-      <section className="phi-section-sm" style={{ background: "var(--mist)" }}>
+      {/* ── LOCATIONS ── */}
+      <section className="phi-section-sm bg-mist">
         <div className="phi-wrap">
           <p className="eyebrow">Our Locations</p>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "var(--s-md)", marginTop: "var(--s-md)" }}>
-            <div style={{ padding: "var(--s-lg)", border: "0.0618rem solid var(--divider)", background: "var(--paper)" }}>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 400, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--rose)", marginBottom: "var(--s-xs)" }}>Dayton</p>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, marginBottom: "var(--s-xs)" }}>Patterson Road</p>
-              <p style={{ fontSize: "var(--t-sm)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
-                453 Patterson Rd., Suite A<br />Dayton, OH 45419
-              </p>
+          <div className="loc-grid">
+            <div className="loc-card">
+              <p className="loc-label">Dayton</p>
+              <p className="loc-name">Patterson Road</p>
+              <p className="loc-address">453 Patterson Rd., Suite A<br />Dayton, OH 45419</p>
             </div>
-            <div style={{ padding: "var(--s-lg)", border: "0.0618rem solid var(--divider)", background: "var(--paper)" }}>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "var(--t-xs)", fontWeight: 400, letterSpacing: "0.236em", textTransform: "uppercase", color: "var(--rose)", marginBottom: "var(--s-xs)" }}>Rocky River</p>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-md)", fontWeight: 900, marginBottom: "var(--s-xs)" }}>Center Ridge Road</p>
-              <p style={{ fontSize: "var(--t-sm)", fontWeight: 300, color: "var(--earth)", lineHeight: 1.618 }}>
-                20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116
-              </p>
+            <div className="loc-card">
+              <p className="loc-label">Rocky River</p>
+              <p className="loc-name">Center Ridge Road</p>
+              <p className="loc-address">20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* ── FAQ ── */}
       <section className="phi-section">
         <div className="phi-wrap">
           <p className="eyebrow">Common Questions</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            What people ask us.
-          </h2>
+          <h2 className="contact-section-title">What people ask us.</h2>
           <div className="faq-list">
             {FAQ.map((item, i) => (
               <div key={i} className="faq-item">
@@ -283,14 +371,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ textAlign: "center", padding: "var(--s-xl) var(--s-lg)", background: "var(--mist)" }}>
+      {/* ── CTA ── */}
+      <section className="contact-cta">
         <p className="eyebrow">Take the first step</p>
-        <h2 style={{ fontSize: "clamp(var(--t-xl), 3.82vw, var(--t-2xl))", marginBottom: "var(--s-md)" }}>Ready when you are.</h2>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-xl)" }}>
+        <h2 className="contact-cta-title">Ready when you are.</h2>
+        <p className="contact-cta-desc">
           Never give up on yourself. We are here to help you figure out the rest.
         </p>
-        <div style={{ display: "flex", gap: "var(--s-sm)", justifyContent: "center", flexWrap: "wrap" }}>
+        <div className="contact-cta-actions">
           <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
             Begin Intake Survey
           </button>
