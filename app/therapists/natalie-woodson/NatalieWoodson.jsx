@@ -79,9 +79,10 @@ const DATA = {
       {"day": "Monday", "time": "8:30 AM – 6:30 PM"},
       {"day": "Tuesday", "time": "8:30 AM – 7:30 PM"},
       {"day": "Wednesday", "time": "8:00 AM – 7:00 PM"},
-      {"day": "Thursday", "time": "8:00 AM – 4:00 PM"}
+      {"day": "Thursday", "time": "8:00 AM – 4:00 PM"},
+      {"day": "Friday", "time": "10:00 AM – 4:00 PM (Telehealth Only)"}
     ],
-    "unavailable": ["Friday", "Weekends"]
+    "unavailable": ["Weekends"]
   }
 };
 
