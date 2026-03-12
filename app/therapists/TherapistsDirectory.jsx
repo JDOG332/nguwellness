@@ -66,6 +66,13 @@ const STATUS = {
 
 /* ── STYLES ──────────────────────────────────────────────── */
 const dirStyles = `
+  /* ═══════════════════════════════════════════════════
+     THERAPISTS DIRECTORY — Φ DESIGN SYSTEM STRICT
+     Dynamic per-therapist colors stay inline.
+     Everything else: CSS classes only.
+     ═══════════════════════════════════════════════════ */
+
+  /* ── HERO ── */
   .dir-hero {
     padding: var(--s-md) var(--s-lg) var(--s-md);
     max-width: var(--max-w);
@@ -74,20 +81,20 @@ const dirStyles = `
   }
 
   .dir-hero h1 {
-    font-size: clamp(var(--t-2xl), 6.18vw, var(--t-3xl));
+    font-size: clamp(var(--t-2xl), 6.18vw + 1rem, var(--t-3xl));
     margin-bottom: 0;
     line-height: 1.0;
   }
 
-  /* STICKY FILTER BAR */
+  /* ── STICKY FILTER BAR ── */
   .dir-filter {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 8;
     background: var(--paper);
-    border-bottom: 0.0618rem solid var(--divider);
+    border-bottom: 1px solid var(--divider);
     padding: var(--s-md) var(--s-lg);
-    box-shadow: 0 0.236rem 1.618rem rgba(26,23,20,0.0382);
+    box-shadow: 0 var(--s-3xs) var(--s-md) rgba(26,23,20,0.0382);
   }
 
   .dir-filter-inner {
@@ -121,7 +128,7 @@ const dirStyles = `
     font-family: var(--font-body);
     font-size: var(--t-base);
     font-weight: 300;
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
     background: var(--mist);
     color: var(--ink);
     outline: none;
@@ -144,10 +151,15 @@ const dirStyles = `
     font-weight: 400;
     color: var(--warm-gray);
     background: none;
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
     padding: var(--s-2xs) var(--s-xs);
     cursor: pointer;
     white-space: nowrap;
+  }
+
+  .dir-hints-wrap {
+    max-width: var(--max-w);
+    margin: 0 auto;
   }
 
   .dir-hints {
@@ -156,7 +168,7 @@ const dirStyles = `
     margin-top: var(--s-xs);
     overflow-x: auto;
     scrollbar-width: none;
-    padding-bottom: 0.236rem;
+    padding-bottom: var(--s-3xs);
   }
 
   .dir-hints::-webkit-scrollbar { display: none; }
@@ -167,7 +179,7 @@ const dirStyles = `
     font-size: var(--t-xs);
     font-weight: 400;
     padding: var(--s-3xs) var(--s-xs);
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
     color: var(--earth);
     background: var(--paper);
     cursor: pointer;
@@ -180,11 +192,11 @@ const dirStyles = `
     color: var(--rose);
   }
 
-  /* PHILOSOPHY SECTION */
+  /* ── PHILOSOPHY SECTION ── */
   .dir-phil {
     padding: var(--s-md) var(--s-lg);
     background: var(--mist);
-    border-bottom: 0.0618rem solid var(--divider);
+    border-bottom: 1px solid var(--divider);
   }
 
   .dir-phil-inner {
@@ -200,6 +212,15 @@ const dirStyles = `
     display: flex;
     flex-direction: column;
     gap: var(--s-3xs);
+  }
+
+  .dir-phil-heading {
+    font-family: var(--font-display);
+    font-size: var(--t-xl);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.0382em;
+    white-space: nowrap;
   }
 
   .dir-phil-cols {
@@ -232,7 +253,7 @@ const dirStyles = `
     line-height: 1.618;
   }
 
-  /* GRID */
+  /* ── GRID ── */
   .dir-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -252,7 +273,7 @@ const dirStyles = `
     margin-bottom: 0;
   }
 
-  /* CARD */
+  /* ── CARD ── */
   .th-card {
     transition: opacity 0.382s var(--ease-phi), transform 0.382s var(--ease-phi), filter 0.382s var(--ease-phi);
     cursor: pointer;
@@ -318,7 +339,7 @@ const dirStyles = `
     top: 0;
     left: 0;
     right: 0;
-    height: 0.382rem;
+    height: var(--s-2xs);
   }
 
   .th-status {
@@ -358,10 +379,7 @@ const dirStyles = `
   .th-spec {
     font-size: var(--t-xs);
     font-weight: 400;
-    color: var(--rose);
-    padding: 0.236rem var(--s-2xs);
-    background: rgba(245,10,84,0.0618);
-    border: 0.0618rem solid rgba(245,10,84,0.236);
+    padding: var(--s-3xs) var(--s-2xs);
   }
 
   .th-chips {
@@ -373,7 +391,7 @@ const dirStyles = `
   .th-chip {
     font-size: var(--t-xs);
     font-weight: 400;
-    padding: 0.236rem var(--s-2xs);
+    padding: var(--s-3xs) var(--s-2xs);
     background: var(--mist);
     color: var(--warm-gray);
   }
@@ -381,6 +399,7 @@ const dirStyles = `
   .th-chip.faith { background: rgba(245,145,63,0.1); color: var(--gold); }
   .th-chip.couples { background: rgba(245,10,84,0.0618); color: var(--rose); }
 
+  /* ── EMPTY STATE ── */
   .dir-empty {
     grid-column: 1 / -1;
     text-align: center;
@@ -395,9 +414,54 @@ const dirStyles = `
     margin-bottom: var(--s-xs);
   }
 
+  .dir-empty-desc {
+    font-size: var(--t-base);
+    font-weight: 300;
+    color: var(--earth);
+  }
+
+  .dir-empty-link {
+    color: var(--rose);
+    font-weight: 400;
+  }
+
+  /* ── CTA ── */
+  .dir-cta {
+    padding: var(--s-xl) var(--s-lg);
+    background: var(--mist);
+    border-top: 1px solid var(--divider);
+    text-align: center;
+  }
+
+  .dir-cta-inner {
+    max-width: var(--max-w-narrow);
+    margin: 0 auto;
+  }
+
+  .dir-cta-title {
+    font-size: clamp(var(--t-md), 3vw + 0.5rem, var(--t-xl));
+    margin-bottom: var(--s-xs);
+  }
+
+  .dir-cta-desc {
+    font-size: var(--t-base);
+    font-weight: 300;
+    color: var(--earth);
+    margin-bottom: var(--s-md);
+  }
+
+  .dir-cta-actions {
+    display: flex;
+    gap: var(--s-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
-    .dir-hero h1 { font-size: clamp(var(--t-xl), 8vw, var(--t-2xl)); }
+    .dir-hero h1 { font-size: clamp(var(--t-xl), 8vw + 1rem, var(--t-2xl)); }
     .dir-phil-inner { grid-template-columns: 1fr; gap: var(--s-sm); }
+    .dir-phil-heading { white-space: normal; }
     .dir-phil-cols { flex-direction: column; }
     .dir-grid { grid-template-columns: 1fr 1fr; gap: var(--s-md); }
   }
@@ -442,9 +506,7 @@ export default function TherapistsDirectory() {
         <div className="dir-phil-inner">
           <div className="dir-phil-title">
             <p className="eyebrow">Our Philosophy</p>
-            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "var(--t-xl)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-0.0382em", whiteSpace: "nowrap" }}>
-              Our therapists focus on you.
-            </h2>
+            <h2 className="dir-phil-heading">Our therapists focus on you.</h2>
           </div>
           <div className="dir-phil-cols">
             {[
@@ -492,7 +554,7 @@ export default function TherapistsDirectory() {
         </div>
 
         {!query && (
-          <div style={{ maxWidth: "var(--max-w)", margin: "0 auto" }}>
+          <div className="dir-hints-wrap">
             <div className="dir-hints">
               {HINTS.map(h => (
                 <button key={h} className="dir-hint" onClick={() => setQuery(h)}>{h}</button>
@@ -541,7 +603,7 @@ export default function TherapistsDirectory() {
               {t.formats.includes("in-person") && <span className="th-chip">In-Person</span>}
               {t.formats.includes("telehealth") && <span className="th-chip">Telehealth</span>}
               {t.faith && <span className="th-chip faith">Faith-Friendly</span>}
-              {t.couples && <span className="th-chip couples">Couples & Family</span>}
+              {t.couples && <span className="th-chip couples">Couples &amp; Family</span>}
             </div>
           </a>
         ))}
@@ -549,9 +611,9 @@ export default function TherapistsDirectory() {
         {matchCount === 0 && tokens.length > 0 && (
           <div className="dir-empty">
             <p className="dir-empty-title">No exact match found.</p>
-            <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)" }}>
+            <p className="dir-empty-desc">
               Try broader terms or{" "}
-              <a href="tel:+18886489355" style={{ color: "var(--rose)", fontWeight: 400 }}>call us</a>
+              <a href="tel:+18886489355" className="dir-empty-link">call us</a>
               {" "}— we will help you find the right fit.
             </p>
           </div>
@@ -559,15 +621,13 @@ export default function TherapistsDirectory() {
       </div>
 
       {/* ── CTA ── */}
-      <section style={{ padding: "var(--s-xl) var(--s-lg)", background: "var(--mist)", borderTop: "0.0618rem solid var(--divider)", textAlign: "center" }}>
-        <div style={{ maxWidth: "var(--max-w-narrow)", margin: "0 auto" }}>
-          <h3 style={{ fontSize: "clamp(var(--t-md), 3vw, var(--t-xl))", marginBottom: "var(--s-xs)" }}>
-            Not sure who to choose?
-          </h3>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", marginBottom: "var(--s-md)" }}>
+      <section className="dir-cta">
+        <div className="dir-cta-inner">
+          <h3 className="dir-cta-title">Not sure who to choose?</h3>
+          <p className="dir-cta-desc">
             Call or text us. We will ask a few questions and match you to the right therapist ourselves.
           </p>
-          <div style={{ display: "flex", gap: "var(--s-sm)", justifyContent: "center", flexWrap: "wrap" }}>
+          <div className="dir-cta-actions">
             <a href="tel:+18886489355" className="btn-rose">Call or Text 888-648-9355</a>
             <a href="mailto:info@nguwellness.com" className="btn-outline">Email Us</a>
           </div>
