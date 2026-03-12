@@ -42,6 +42,12 @@ const MEDICAID = [
 const EAPS = ["Lyra Health", "Optum / UHC EAP", "Spring Health", "Carelon"];
 
 const svcStyles = `
+  /* ═══════════════════════════════════════════════════
+     SERVICES PAGE — Φ DESIGN SYSTEM STRICT COMPLIANCE
+     Zero inline styles. Every value from the Sacred Scale.
+     ═══════════════════════════════════════════════════ */
+
+  /* ── HERO ── */
   .svc-hero {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -50,7 +56,7 @@ const svcStyles = `
   }
 
   .svc-hero h1 {
-    font-size: clamp(var(--t-xl), 5vw, var(--t-2xl));
+    font-size: clamp(var(--t-xl), 5vw + 1rem, var(--t-2xl));
     margin-bottom: var(--s-sm);
   }
 
@@ -60,7 +66,95 @@ const svcStyles = `
     color: var(--rose);
   }
 
-  /* SPECIALTIES */
+  .svc-hero-desc {
+    font-size: var(--t-md);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
+  }
+
+  /* ── PROMISE STRIP ── */
+  .promise-accent {
+    font-family: var(--font-accent);
+    font-size: var(--t-lg);
+    font-style: italic;
+    color: var(--paper);
+    opacity: var(--alpha-phi);
+    max-width: var(--max-w-narrow);
+    margin: 0 auto var(--s-sm);
+  }
+
+  .promise-title {
+    font-family: var(--font-display);
+    font-size: clamp(var(--t-lg), 3.82vw + 1rem, var(--t-xl));
+    color: var(--paper);
+    margin-bottom: var(--s-xs);
+  }
+
+  .promise-sub {
+    font-family: var(--font-accent);
+    font-size: var(--t-md);
+    font-style: italic;
+    color: var(--paper);
+    opacity: var(--alpha-ghost);
+  }
+
+  /* ── SECTION HEADINGS (reusable pattern) ── */
+  .svc-section-title {
+    font-size: clamp(var(--t-lg), 3.82vw + 1rem, var(--t-xl));
+    margin-bottom: var(--s-sm);
+  }
+
+  .svc-section-desc {
+    font-size: var(--t-base);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
+  }
+
+  .svc-section-desc-spaced {
+    font-size: var(--t-base);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
+    margin-bottom: var(--s-lg);
+  }
+
+  /* ── FORMATS ── */
+  .format-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-md);
+    margin-top: var(--s-lg);
+  }
+
+  .format-card {
+    padding: var(--s-lg);
+    border: 1px solid var(--divider);
+    text-align: center;
+  }
+
+  .format-icon {
+    font-size: var(--t-xl);
+    margin-bottom: var(--s-sm);
+    opacity: var(--alpha-phi);
+  }
+
+  .format-title {
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 900;
+    margin-bottom: var(--s-2xs);
+  }
+
+  .format-desc {
+    font-size: var(--t-sm);
+    font-weight: 300;
+    color: var(--earth);
+    line-height: 1.618;
+  }
+
+  /* ── SPECIALTIES ── */
   .spec-grid {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +167,7 @@ const svcStyles = `
     font-weight: 400;
     color: var(--earth);
     padding: var(--s-2xs) var(--s-xs);
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
     transition: all var(--duration) var(--ease-phi);
   }
 
@@ -82,7 +176,7 @@ const svcStyles = `
     color: var(--rose-deep);
   }
 
-  /* MODALITIES */
+  /* ── MODALITIES ── */
   .mod-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -92,7 +186,7 @@ const svcStyles = `
 
   .mod-card {
     padding: var(--s-md);
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
     transition: all var(--duration) var(--ease-phi);
   }
 
@@ -125,7 +219,7 @@ const svcStyles = `
     line-height: 1.618;
   }
 
-  /* INSURANCE */
+  /* ── INSURANCE ── */
   .ins-tabs {
     display: flex;
     gap: var(--s-xs);
@@ -137,7 +231,7 @@ const svcStyles = `
     font-size: var(--t-sm);
     font-weight: 400;
     padding: var(--s-2xs) var(--s-sm);
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
     background: transparent;
     cursor: pointer;
     transition: all var(--duration) var(--ease-phi);
@@ -169,40 +263,44 @@ const svcStyles = `
     background: var(--divider);
   }
 
-  /* FORMATS */
-  .format-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--s-md);
-    margin-top: var(--s-lg);
+  .ins-disclaimer {
+    margin-top: var(--s-md);
+    font-size: var(--t-sm);
+    color: var(--warm-gray);
+    font-style: italic;
   }
 
-  .format-card {
-    padding: var(--s-lg);
-    border: 0.0618rem solid var(--divider);
+  /* ── BG MIST (shared utility) ── */
+  .bg-mist {
+    background: var(--mist);
+  }
+
+  /* ── CTA ── */
+  .cta-center {
     text-align: center;
   }
 
-  .format-icon {
-    font-size: var(--t-xl);
-    margin-bottom: var(--s-sm);
-    opacity: var(--alpha-phi);
+  .cta-title {
+    font-size: clamp(var(--t-lg), 3.82vw + 1rem, var(--t-xl));
+    margin-bottom: var(--s-md);
   }
 
-  .format-title {
-    font-family: var(--font-display);
+  .cta-desc {
     font-size: var(--t-md);
-    font-weight: 900;
-    margin-bottom: var(--s-2xs);
-  }
-
-  .format-desc {
-    font-size: var(--t-sm);
     font-weight: 300;
     color: var(--earth);
-    line-height: 1.618;
+    max-width: var(--max-w-narrow);
+    margin: 0 auto var(--s-lg);
   }
 
+  .cta-actions {
+    display: flex;
+    gap: var(--s-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .mod-grid { grid-template-columns: 1fr; }
     .format-grid { grid-template-columns: 1fr; }
@@ -220,35 +318,30 @@ export default function ServicesPage() {
       <style>{svcStyles}</style>
       <Nav />
 
+      {/* ── HERO ── */}
       <section className="svc-hero">
         <p className="eyebrow">Our Services</p>
         <h1>Real help. <em>Real tools.</em> Real change.</h1>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
+        <p className="svc-hero-desc">
           Individual therapy for children, teens, and adults ready for real support.
           In-person in Dayton and Rocky River. Telehealth across all of Ohio.
         </p>
       </section>
 
-      {/* PROMISE STRIP */}
+      {/* ── PROMISE STRIP ── */}
       <section className="dark-strip">
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-lg)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-sm)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-sm)" }}>
+        <p className="promise-accent">
           No matter what happens. No matter how difficult life gets. No matter how alone you feel.
         </p>
-        <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", color: "var(--paper)", marginBottom: "var(--s-xs)" }}>
-          Never give up.
-        </h2>
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-md)", fontStyle: "italic", color: "var(--paper)", opacity: "var(--alpha-ghost)" }}>
-          Let us help.
-        </p>
+        <h2 className="promise-title">Never give up.</h2>
+        <p className="promise-sub">Let us help.</p>
       </section>
 
-      {/* FORMAT */}
+      {/* ── HOW WE WORK ── */}
       <section className="phi-section">
         <div className="phi-wrap">
           <p className="eyebrow">How We Work</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            Three ways to connect.
-          </h2>
+          <h2 className="svc-section-title">Three ways to connect.</h2>
           <hr className="phi-rule" />
           <div className="format-grid">
             <div className="format-card">
@@ -270,14 +363,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SPECIALTIES */}
-      <section className="phi-section" style={{ background: "var(--mist)" }}>
+      {/* ── SPECIALTIES ── */}
+      <section className="phi-section bg-mist">
         <div className="phi-wrap">
           <p className="eyebrow">What We Treat</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            Concerns we specialize in.
-          </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
+          <h2 className="svc-section-title">Concerns we specialize in.</h2>
+          <p className="svc-section-desc">
             Our team covers a broad range of concerns. If you do not see yours listed, reach out — we can likely help or refer you to someone who can.
           </p>
           <div className="spec-grid">
@@ -286,14 +377,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* MODALITIES */}
+      {/* ── MODALITIES ── */}
       <section className="phi-section">
         <div className="phi-wrap">
           <p className="eyebrow">Our Approaches</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            Evidence-based modalities.
-          </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
+          <h2 className="svc-section-title">Evidence-based modalities.</h2>
+          <p className="svc-section-desc">
             Every therapist at NGU is trained in proven, research-backed approaches. Your therapist will tailor the approach to fit you.
           </p>
           <div className="mod-grid">
@@ -308,14 +397,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* INSURANCE */}
-      <section className="phi-section" style={{ background: "var(--mist)" }}>
+      {/* ── INSURANCE ── */}
+      <section className="phi-section bg-mist">
         <div className="phi-wrap">
-          <p className="eyebrow">Insurance & Payment</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            We work with your plan.
-          </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", marginBottom: "var(--s-lg)" }}>
+          <p className="eyebrow">Insurance &amp; Payment</p>
+          <h2 className="svc-section-title">We work with your plan.</h2>
+          <p className="svc-section-desc-spaced">
             NGU Wellness accepts most major insurance, Medicaid, and EAP plans. Not sure about your coverage? We will verify it for you — free.
           </p>
           <div className="ins-tabs">
@@ -326,23 +413,21 @@ export default function ServicesPage() {
           <div className="ins-list">
             {insData.map(i => <span key={i} className="ins-pill">{i}</span>)}
           </div>
-          <p style={{ marginTop: "var(--s-md)", fontSize: "var(--t-sm)", color: "var(--warm-gray)", fontStyle: "italic" }}>
+          <p className="ins-disclaimer">
             Coverage varies by plan. We verify benefits before your first session at no charge.
           </p>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="phi-section" style={{ textAlign: "center" }}>
+      {/* ── CTA ── */}
+      <section className="phi-section cta-center">
         <div className="phi-wrap">
           <p className="eyebrow">Get Started</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3.82vw, var(--t-xl))", marginBottom: "var(--s-md)" }}>
-            Your first step is the hardest. We will take it with you.
-          </h2>
-          <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-lg)" }}>
+          <h2 className="cta-title">Your first step is the hardest. We will take it with you.</h2>
+          <p className="cta-desc">
             Complete our brief intake survey and we will match you with the right therapist for your needs.
           </p>
-          <div style={{ display: "flex", gap: "var(--s-sm)", justifyContent: "center", flexWrap: "wrap" }}>
+          <div className="cta-actions">
             <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>Begin Intake Survey</button>
             <button className="btn-outline" onClick={() => router.push("/therapists")}>Browse Therapists</button>
           </div>
