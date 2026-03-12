@@ -55,6 +55,12 @@ const DATA = {
     {"s": "Session length:", "t": "Standard 50-minute individual sessions."}
   ],
   "faithText": "Kim is comfortable integrating faith and spirituality into therapy for clients who want it. This can include exploring how your beliefs support your healing, working through spiritual struggles, or simply having a therapist who understands that dimension of your life. Faith is never pushed or assumed.",
+  "credentialDetails": [
+    {"s": "License:", "t": "LPCC (Licensed Professional Clinical Counselor), Ohio E.2002021"},
+    {"s": "Certification:", "t": "CCATP (Certified Clinical Anxiety Treatment Professional)"},
+    {"s": "Experience:", "t": "19 years in clinical practice. Specialized expertise in anxiety disorders, depression, grief, and life transitions."},
+    {"s": "Current Role:", "t": "Therapist at NGU Wellness, Dayton office. In-person and telehealth."}
+  ],
   "schedule": {
     "available": [{"day": "Monday", "time": "8:00 AM – 1:00 PM"}, {"day": "Tuesday", "time": "10:00 AM – 6:00 PM"}, {"day": "Thursday", "time": "8:30 AM – 2:30 PM"}],
     "unavailable": ["Wednesday", "Friday", "Weekends"]

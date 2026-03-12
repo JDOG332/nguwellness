@@ -65,7 +65,7 @@ const DATA = {
   ],
   "faithText": "Pam identifies as Christian and welcomes faith-oriented clients who value spiritual integration in their healing process. This is always client-directed — faith is woven into sessions only when the client finds it meaningful.",
   "credentialDetails": [
-    {"s": "License:", "t": "LSW (Licensed Social Worker), Ohio 0600436"},
+    {"s": "License:", "t": "LSW (Licensed Social Worker), Ohio S.0600436"},
     {"s": "Education:", "t": "Bachelor of Social Work, Capital University (2006)."},
     {"s": "Experience:", "t": "20 years in clinical practice. Extensive work with grief and loss, suicide bereavement, domestic violence, women's issues, life transitions, and relationship concerns."},
     {"s": "Populations Served:", "t": "Teens, adults, and elders 65+. Individuals, families, groups, and couples. Special experience with single parents."},

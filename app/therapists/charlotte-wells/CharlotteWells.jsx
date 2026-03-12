@@ -57,7 +57,7 @@ const DATA = {
   ],
   "faithText": "Charlotte's holistic approach addresses mental, physical, and spiritual health. She is comfortable exploring how faith, spirituality, and personal values support your healing process. This is always client-directed and never assumed.",
   "credentialDetails": [
-    {"s": "License:", "t": "LISW (Licensed Independent Social Worker), Ohio"},
+    {"s": "License:", "t": "LISW (Licensed Independent Social Worker), Ohio I.2102938"},
     {"s": "Education:", "t": "Master of Arts in Social Work, Greater Miami Valley Joint MASW Program (Miami University of Ohio & Wright State University)."},
     {"s": "Additional Training:", "t": "Certificate from Healing Our Core Issues Institute (2020)."},
     {"s": "Background:", "t": "Case Manager and then Supervisor at the Area Agency on Aging. School-based counseling and outpatient therapy across a variety of settings."}

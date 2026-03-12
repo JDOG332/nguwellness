@@ -68,7 +68,7 @@ const DATA = {
   ],
   "faithText": "",
   "credentialDetails": [
-    {"s": "License:", "t": "LISW (Licensed Independent Social Worker), Ohio S.2208489"},
+    {"s": "License:", "t": "LISW (Licensed Independent Social Worker), Ohio I.2507176"},
     {"s": "Education:", "t": "Bachelor of Social Work, Defiance College (minor in Psychology). Master of Social Work, Wright State University (2021)."},
     {"s": "Specialized Training:", "t": "EMDR (Eye Movement Desensitization & Reprocessing). Disability Affirming Therapy. Culturally Sensitive Practice. Mindfulness-Based Cognitive Therapy (MBCT)."},
     {"s": "Clinical Experience:", "t": "Extensive work across diverse populations including individuals experiencing homelessness, poverty, physical and learning disabilities, human trafficking, and intimate partner violence."},
