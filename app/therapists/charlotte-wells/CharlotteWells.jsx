@@ -20,7 +20,7 @@ const DATA = {
   "ages": "Adults 20–65  ·  Primarily works with women (not exclusively)",
   "faith": true,
   "quote": "I provide a safe and compassionate space and would be honored to sit with you and hear your story. Collaboration is key in the therapeutic process.",
-  "calloutQuote": "I approach therapy first as a person and second as a therapist. Through my own experience as a client I recognize the importance of a calm and relaxed space to address vulnerable topics.",
+  "calloutQuote": "Affirm, Validate, Support. I approach therapy first as a person and second as a therapist. Through my own experience as a client I recognize the importance of a calm and relaxed space to address vulnerable topics.",
   "whoHelps": [
     {"s": "Adult women (primarily, not exclusively) ages 20–65", "t": "navigating life transitions, relationship dynamics, and self-care."},
     {"s": "People dealing with anxiety and depression", "t": "who need practical coping skills and a calm, non-judgmental space."},
@@ -32,7 +32,8 @@ const DATA = {
     "Anxiety", "Depression", "Grief & Loss", "Women's Issues",
     "Codependency", "Boundaries", "Self-Esteem", "Divorce",
     "Life Transitions", "Stress", "Trauma & PTSD", "ADHD",
-    "Coping Skills", "Relationship Issues", "Self-Care"
+    "Coping Skills", "Relationship Issues", "Self-Care",
+    "Adjustment Disorder", "Mood Disorders", "Communication Issues"
   ],
   "approachText": "Charlotte's approach is holistic, addressing mental, physical, and spiritual health. She is passionate about helping adults learn to navigate life transitions, teaching healthy coping skills, prioritizing effective self-care, and navigating changing relationship dynamics. She tailors her approach to each individual, drawing from attachment-based, compassion-focused, and culturally sensitive frameworks.",
   "modalities": [
@@ -43,7 +44,9 @@ const DATA = {
     {"abbr": "CFT", "name": "Compassion-Focused Therapy", "desc": "Developing self-compassion to counter shame, self-criticism, and emotional distress."},
     {"abbr": "PC", "name": "Person-Centered Therapy", "desc": "Creating a warm, empathetic environment where you guide the direction of your growth."},
     {"abbr": "SBT", "name": "Strengths-Based Therapy", "desc": "Identifying and building upon your inherent strengths."},
-    {"abbr": "TF", "name": "Trauma-Focused Therapy", "desc": "Evidence-based approaches for processing trauma and its lasting effects."}
+    {"abbr": "TF", "name": "Trauma-Focused Therapy", "desc": "Evidence-based approaches for processing trauma and its lasting effects."},
+    {"abbr": "EXP", "name": "Experiential Therapy", "desc": "Using activities, role-play, and guided exercises to process emotions beyond traditional talk therapy."},
+    {"abbr": "BT", "name": "Behavioral Therapy", "desc": "Identifying and changing specific behaviors that contribute to distress."}
   ],
   "expectations": [
     {"s": "First sessions:", "t": "Charlotte creates a calm, relaxed space from the start. She collaborates with you to identify goals and objectives appropriate for your individual needs."},
@@ -57,7 +60,7 @@ const DATA = {
     {"s": "License:", "t": "LISW (Licensed Independent Social Worker), Ohio"},
     {"s": "Education:", "t": "Master of Arts in Social Work, Greater Miami Valley Joint MASW Program (Miami University of Ohio & Wright State University)."},
     {"s": "Additional Training:", "t": "Certificate from Healing Our Core Issues Institute (2020)."},
-    {"s": "Background:", "t": "Case management services, school-based counseling, and outpatient therapy across a variety of settings."}
+    {"s": "Background:", "t": "Case Manager and then Supervisor at the Area Agency on Aging. School-based counseling and outpatient therapy across a variety of settings."}
   ],
   "schedule": {
     "available": [
