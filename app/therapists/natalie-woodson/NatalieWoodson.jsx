@@ -3,7 +3,7 @@ import TherapistProfile from "../TherapistProfile";
 
 const DATA = {
   "slug": "natalie-woodson",
-  "name": "Natalie Woodson",
+  "name": "Natalie Woodson-Booska",
   "firstName": "Natalie",
   "credentials": "LISW",
   "pronouns": "she / her",
