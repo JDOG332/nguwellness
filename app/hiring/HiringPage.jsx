@@ -4,6 +4,11 @@ import Nav from "../Nav";
 import Footer from "../Footer";
 
 const hiringStyles = `
+  /* ═══════════════════════════════════════════════════
+     HIRING PAGE — Φ DESIGN SYSTEM STRICT COMPLIANCE
+     Zero inline styles.
+     ═══════════════════════════════════════════════════ */
+
   .hire-hero {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -12,8 +17,29 @@ const hiringStyles = `
   }
 
   .hire-hero h1 {
-    font-size: clamp(var(--t-xl), 5vw, var(--t-2xl));
+    font-size: clamp(var(--t-xl), 5vw + 1rem, var(--t-2xl));
     margin-bottom: var(--s-sm);
+  }
+
+  .hire-hero-desc {
+    font-size: var(--t-md);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
+  }
+
+  .bg-mist { background: var(--mist); }
+
+  .hire-section-title {
+    font-size: clamp(var(--t-lg), 3vw + 0.5rem, var(--t-xl));
+    margin-bottom: var(--s-sm);
+  }
+
+  .hire-section-desc {
+    font-size: var(--t-base);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
   }
 
   .hire-values {
@@ -25,7 +51,7 @@ const hiringStyles = `
 
   .hire-value {
     padding: var(--s-lg);
-    border: 0.0618rem solid var(--divider);
+    border: 1px solid var(--divider);
   }
 
   .hire-value-title {
@@ -48,14 +74,14 @@ const hiringStyles = `
 
   .hire-req {
     padding: var(--s-md) 0;
-    border-bottom: 0.0618rem solid var(--divider);
+    border-bottom: 1px solid var(--divider);
     display: flex;
     align-items: baseline;
     gap: var(--s-sm);
   }
 
   .hire-req:first-child {
-    border-top: 0.0618rem solid var(--divider);
+    border-top: 1px solid var(--divider);
   }
 
   .hire-check {
@@ -71,34 +97,57 @@ const hiringStyles = `
     line-height: 1.618;
   }
 
+  /* CTA strip */
+  .hire-cta-accent {
+    font-family: var(--font-accent);
+    font-size: var(--t-lg);
+    font-style: italic;
+    color: var(--paper);
+    margin-bottom: var(--s-sm);
+    opacity: var(--alpha-phi);
+  }
+
+  .hire-cta-title {
+    font-family: var(--font-display);
+    font-size: clamp(var(--t-lg), 3vw + 0.5rem, var(--t-xl));
+    color: var(--paper);
+    margin-bottom: var(--s-md);
+  }
+
+  .hire-cta-desc {
+    font-size: var(--t-md);
+    font-weight: 300;
+    color: var(--paper);
+    opacity: var(--alpha-phi);
+    max-width: var(--max-w-narrow);
+    margin: 0 auto var(--s-lg);
+  }
+
   @media (max-width: 61.8rem) {
     .hire-values { grid-template-columns: 1fr; }
   }
 `;
 
 export default function HiringPage() {
-  const router = useRouter();
-
   return (
     <div>
       <style>{hiringStyles}</style>
       <Nav />
 
+      {/* ── HERO ── */}
       <section className="hire-hero">
         <p className="eyebrow">Careers</p>
         <h1>Join us.</h1>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
+        <p className="hire-hero-desc">
           NGU Wellness is always interested in connecting with skilled, compassionate therapists who share our commitment to quality care.
         </p>
       </section>
 
-      {/* VALUES */}
-      <section className="phi-section" style={{ background: "var(--mist)" }}>
+      {/* ── VALUES ── */}
+      <section className="phi-section bg-mist">
         <div className="phi-wrap">
           <p className="eyebrow">What We Value</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            What makes NGU different for clinicians.
-          </h2>
+          <h2 className="hire-section-title">What makes NGU different for clinicians.</h2>
           <div className="hire-values">
             <div className="hire-value">
               <p className="hire-value-title">Collaborative Culture</p>
@@ -116,14 +165,12 @@ export default function HiringPage() {
         </div>
       </section>
 
-      {/* WHO WE LOOK FOR */}
+      {/* ── REQUIREMENTS ── */}
       <section className="phi-section">
         <div className="phi-wrap">
           <p className="eyebrow">Who We Look For</p>
-          <h2 style={{ fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", marginBottom: "var(--s-sm)" }}>
-            Requirements.
-          </h2>
-          <p style={{ fontSize: "var(--t-base)", fontWeight: 300, color: "var(--earth)", maxWidth: "var(--max-w-narrow)" }}>
+          <h2 className="hire-section-title">Requirements.</h2>
+          <p className="hire-section-desc">
             We are always looking for licensed therapists who are passionate about their work and committed to evidence-based care.
           </p>
           <div className="hire-reqs">
@@ -144,15 +191,11 @@ export default function HiringPage() {
         </div>
       </section>
 
-      {/* APPLY CTA */}
+      {/* ── APPLY CTA ── */}
       <section className="dark-strip">
-        <p style={{ fontFamily: "var(--font-accent)", fontSize: "var(--t-lg)", fontStyle: "italic", color: "var(--paper)", marginBottom: "var(--s-sm)", opacity: "var(--alpha-phi)" }}>
-          Interested in joining NGU Wellness?
-        </p>
-        <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(var(--t-lg), 3vw, var(--t-xl))", color: "var(--paper)", marginBottom: "var(--s-md)" }}>
-          Send us your CV.
-        </h2>
-        <p style={{ fontSize: "var(--t-md)", fontWeight: 300, color: "var(--paper)", opacity: "var(--alpha-phi)", marginBottom: "var(--s-lg)", maxWidth: "var(--max-w-narrow)", margin: "0 auto var(--s-lg)" }}>
+        <p className="hire-cta-accent">Interested in joining NGU Wellness?</p>
+        <h2 className="hire-cta-title">Send us your CV.</h2>
+        <p className="hire-cta-desc">
           Email your resume and a brief introduction to info@nguwellness.com. We review every application personally.
         </p>
         <button className="btn-rose" onClick={() => window.open("mailto:info@nguwellness.com?subject=Therapist%20Application%20-%20NGU%20Wellness")}>
