@@ -61,6 +61,10 @@ const DATA = {
     {"s": "Session format:", "t": "Individual and family therapy. In-person at the Dayton office or secure telehealth video across Ohio. Evening hours available."}
   ],
   "faithText": "",
+  "teamSays": {
+    "text": "Katie is one of the most genuinely empathetic people you will ever meet — not just as a therapist, but as a human being. She has this rare ability to make children, teens, and adults feel truly seen and accepted from the very first session. Kids open up to her in ways that surprise even their parents. If you're looking for someone who will listen with their whole heart and meet you exactly where you are, Katie is that person.",
+    "author": "Nicole Walton, PhD & Jeffrey Sellers — NGU Wellness Leadership"
+  },
   "credentialDetails": [
     {"s": "License:", "t": "LSW (Licensed Social Worker), Ohio S.2309936"},
     {"s": "Education:", "t": "Bachelor's in Human Development & Family Science, The Ohio State University. Master of Social Work, The Ohio State University."},

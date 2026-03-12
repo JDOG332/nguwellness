@@ -459,6 +459,30 @@ const tpStyles = `
     background: var(--mist);
   }
 
+  /* Team Says */
+  .tp-team-says {
+    padding: var(--s-md);
+    border-left: var(--s-3xs) solid var(--tp-primary);
+    background: var(--tp-tint);
+  }
+
+  .tp-team-says-text {
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-size: var(--t-md);
+    line-height: 1.618;
+    color: var(--earth);
+    margin-bottom: var(--s-sm);
+  }
+
+  .tp-team-says-author {
+    font-size: var(--t-xs);
+    font-weight: 400;
+    letter-spacing: 0.236em;
+    text-transform: uppercase;
+    color: var(--tp-primary);
+  }
+
   .tp-faith-title {
     font-family: var(--font-display);
     font-size: var(--t-base);
@@ -558,6 +582,15 @@ export default function TherapistProfile({ data }) {
                 <div key={i} className="tp-check-item"><span className="tp-check-icon">✓</span><p className="tp-check-text"><strong>{item.s}</strong> {item.t}</p></div>
               ))}
             </Acc>
+
+            {t.teamSays && (
+              <Acc title={`What Our Team Says`} chip="From NGU Leadership">
+                <div className="tp-team-says">
+                  <p className="tp-team-says-text">{t.teamSays.text}</p>
+                  <p className="tp-team-says-author">— {t.teamSays.author}</p>
+                </div>
+              </Acc>
+            )}
 
             <Acc title="Specialties" chip="What We Work On">
               <div className="tp-spec-grid">
