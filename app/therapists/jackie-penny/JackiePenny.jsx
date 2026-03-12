@@ -56,6 +56,14 @@ const DATA = {
     {"s": "Session format:", "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio. Hybrid scheduling available."}
   ],
   "faithText": "",
+  "credentials": [
+    {"s": "License:", "t": "LPCC-S (Licensed Professional Clinical Counselor – Supervisor), Ohio E.2102614-SUPV"},
+    {"s": "Education:", "t": "Master's in Clinical Mental Health Counseling, University of Dayton (2016–2019). Chi Sigma Iota Counseling Honor Society."},
+    {"s": "Specialized Training:", "t": "Dialectical Behavior Therapy (DBT). Advanced Cognitive Behavioral Therapy. CBT for Psychosis (CBTp). Assessing and Managing Suicide Risk (AMSR)."},
+    {"s": "Current Role:", "t": "Contract Therapist at NGU Wellness (Sept 2025–present). Clinical Supervisor at Premier Outpatient Behavioral Health (Oct 2025–present)."},
+    {"s": "Previous Experience:", "t": "Mental Health Therapist at Premier/Samaritan Behavioral Health (Jan 2019–Oct 2025). Case Manager (Oct 2017–Jan 2019). Co-created and co-facilitates a DBT group."},
+    {"s": "Clinical Skills:", "t": "Group facilitation, crisis intervention, suicide risk assessment, dual diagnosis, treatment planning, DSM-5 diagnostic evaluation."}
+  ],
   "schedule": {
     "available": [{"day": "Friday", "time": "1:00 PM – 5:00 PM"}],
     "unavailable": ["Monday", "Tuesday", "Wednesday", "Thursday", "Weekends"]

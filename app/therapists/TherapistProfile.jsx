@@ -593,6 +593,14 @@ export default function TherapistProfile({ data }) {
               </Acc>
             )}
 
+            {t.credentials && (
+              <Acc title="Credentials & Education">
+                {t.credentials.map((item, i) => (
+                  <div key={i} className="tp-check-item"><span className="tp-check-icon">◈</span><p className="tp-check-text"><strong>{item.s}</strong> {item.t}</p></div>
+                ))}
+              </Acc>
+            )}
+
             <Acc title="Schedule & Availability">
               {t.schedule.available.length > 0 && (
                 <div className="tp-sched-grid">
