@@ -721,7 +721,6 @@ export default function AboutPage() {
             <div className="hero-stat"><p className="hero-stat-value">2021</p><p className="hero-stat-label">Founded</p></div>
             <div className="hero-stat"><p className="hero-stat-value">2</p><p className="hero-stat-label">Ohio Locations</p></div>
             <div className="hero-stat"><p className="hero-stat-value">12</p><p className="hero-stat-label">Therapists</p></div>
-            <div className="hero-stat"><p className="hero-stat-value">1</p><p className="hero-stat-label">Clinical Director</p></div>
             <div className="hero-stat"><p className="hero-stat-value">1</p><p className="hero-stat-label">Business Manager</p></div>
             <div className="hero-stat"><p className="hero-stat-value">595+</p><p className="hero-stat-label">Years of Life Experience</p></div>
           </div>
