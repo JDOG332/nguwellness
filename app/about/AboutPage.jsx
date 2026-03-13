@@ -900,15 +900,15 @@ export default function AboutPage() {
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">Spring 2023</p><p className="tl-entry-title">Dr. Walton earns her PhD</p><p className="tl-entry-desc">Doctorate in Counselor Education &amp; Supervision from Regent University.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
                 <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">September 27, 2023</p><p className="tl-entry-person">Kelly Salada</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 10, 2023</p><p className="tl-entry-person">Katie Grier</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
-                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right"><p className="tl-entry-date">2023</p><p className="tl-entry-title">Rocky River location opens</p><p className="tl-entry-desc">20525 Center Ridge Rd., Suite 604. NGU expands to serve the greater Cleveland area.</p></div></div>
               </div>
             </div>
             {/* 2024 */}
             <div className="tl-year-group">
-              <div className="tl-year-marker"><span className="tl-year-badge">2024</span></div>
+              <div className="tl-year-marker"><span className="tl-year-badge milestone">2024</span></div>
               <div className="tl-entries">
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">June 12, 2024</p><p className="tl-entry-person">Lisa Freeman</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
                 <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">June 26, 2024</p><p className="tl-entry-person">Anna Espy</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 1, 2024</p><p className="tl-entry-title">Rocky River location opens</p><p className="tl-entry-desc">20525 Center Ridge Rd., Suite 604. NGU expands to serve the greater Cleveland area.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
             {/* 2025 */}
