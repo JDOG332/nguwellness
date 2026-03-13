@@ -65,7 +65,7 @@ const DATA = {
     {"s": "License:", "t": "LISW-S (Licensed Independent Social Worker – Supervisor), Ohio I.0700277-SUPV · LPC (Licensed Professional Counselor)"},
     {"s": "Education:", "t": "Master of Social Work, The Ohio State University (2005). Doctor of Philosophy in Counselor Education & Supervision, Regent University (2023). Dissertation: Faculty Experiences with the CACREP Accreditation Process — A Qualitative Study."},
     {"s": "Clinical Experience:", "t": "20+ years spanning community mental health crisis work, pediatric medical social work, and outpatient therapy with individuals, couples, and families."},
-    {"s": "Leadership:", "t": "Founder, Owner & Clinical Director of NGU Wellness (est. 2021). Clinical supervisor providing oversight and mentorship to developing therapists across both locations."},
+    {"s": "Leadership:", "t": "Founder, Owner & Clinical Director of NGU Wellness (est. 2021). Clinical supervisor with over 1,000 hours of direct supervision, providing oversight and mentorship to developing therapists across both locations."},
     {"s": "Additional:", "t": "Continued education, participation in research, teaching experience, and recognized leader in the behavioral health field."}
   ],
   "schedule": {
