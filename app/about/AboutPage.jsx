@@ -911,6 +911,14 @@ export default function AboutPage() {
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 7, 2025</p><p className="tl-entry-person">Kim Brant</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
+            {/* 2026 */}
+            <div className="tl-year-group">
+              <div className="tl-year-marker"><span className="tl-year-badge milestone">2026</span></div>
+              <div className="tl-entries">
+                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">March 2026</p><p className="tl-entry-title">New website launch</p><p className="tl-entry-desc">A redesigned online home to celebrate five years of growth, connection, and care.</p></div></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">March 31, 2026</p><p className="tl-entry-title">5 Year Anniversary</p><p className="tl-entry-desc">Five years since NGU Wellness LLC was founded. From one therapist to a full team across two locations.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
+              </div>
+            </div>
             {/* Today */}
             <div className="tl-year-group">
               <div className="tl-year-marker"><span className="tl-year-badge milestone">Today</span></div>
