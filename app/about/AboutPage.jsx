@@ -879,6 +879,7 @@ export default function AboutPage() {
             <div className="tl-year-group">
               <div className="tl-year-marker"><span className="tl-year-badge">2022</span></div>
               <div className="tl-entries">
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">March 31, 2022</p><p className="tl-entry-title">$10,000 Grubhub grant awarded</p><p className="tl-entry-desc">On NGU Wellness' exact one-year anniversary, Business Manager Jeffrey Sellers is personally awarded a $10,000 grant by Grubhub COO Eric Ferguson to fuel the practice's growth and its mission of serving the community.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
                 <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">July 14, 2022</p><p className="tl-entry-person">Danielle Washington</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
               </div>
             </div>
