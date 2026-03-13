@@ -776,7 +776,7 @@ export default function AboutPage() {
           <p className="eyebrow">Why NGU Wellness</p>
           <h2 className="why-ngu-title">A practice built differently.</h2>
           <hr className="phi-rule" />
-          <p className="why-ngu-desc">We built NGU Wellness so more people get matched with the right therapist, the right approach, and the right fit faster and easier than ever.</p>
+          <p className="why-ngu-desc">We've built NGU Wellness so finding the right therapist with the right approach is faster and easier than ever.</p>
           <div className="pillar-grid">
             <div className="pillar">
               <div className="pillar-title-row"><span className="pillar-icon">⟡</span><p className="pillar-title">Evidence-Based</p></div>
