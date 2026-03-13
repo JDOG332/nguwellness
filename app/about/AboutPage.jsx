@@ -682,13 +682,21 @@ const aboutStyles = `
       grid-template-columns: var(--s-md) 1fr;
     }
     .tl-entry-left {
-      display: none;
+      text-align: left;
+      padding-left: var(--s-sm);
+      padding-right: 0;
+      grid-column: 2;
+      grid-row: 1;
     }
     .tl-entry-right {
       text-align: left;
       padding-left: var(--s-sm);
+      grid-column: 2;
+      grid-row: 1;
     }
     .tl-entry-dot-col {
+      grid-column: 1;
+      grid-row: 1;
       justify-content: center;
     }
     .tl-year-marker {
