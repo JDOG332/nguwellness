@@ -841,7 +841,7 @@ export default function AboutPage() {
                 <p className="bio-p">Jeffrey Sellers brings 17 years of experience in education to his role as Business Manager at NGU Wellness. As a former teacher, he understands firsthand how circumstance, support, and the right environment shape what people are able to become.</p>
                 <p className="bio-p">Jeffrey manages client intake and provider match, insurance and billing, and the day-to-day administrative coordination that keeps NGU running smoothly across both locations. He also serves as a fierce advocate for clients navigating the insurance process.</p>
                 <div className="bio-details">
-                  <div className="bio-detail"><span className="bio-detail-label">Education</span><span className="bio-detail-value">BA, Miami University · MA, University of Dayton · Post-Graduate, Ohio University</span></div>
+                  <div className="bio-detail"><span className="bio-detail-label">Education</span><span className="bio-detail-value">BA, Miami University · MA, University of Dayton · Post-Graduate Studies, Ohio University</span></div>
                   <div className="bio-detail"><span className="bio-detail-label">Background</span><span className="bio-detail-value">17 years in education · 5+ years healthcare business management</span></div>
                   <div className="bio-detail"><span className="bio-detail-label">Leadership</span><span className="bio-detail-value">Board of Directors, The Gem Project Dayton</span></div>
                 </div>
