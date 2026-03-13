@@ -915,7 +915,7 @@ export default function AboutPage() {
             <div className="tl-year-group">
               <div className="tl-year-marker"><span className="tl-year-badge milestone">Today</span></div>
               <div className="tl-entries">
-                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-title">Growing team. Same standard.</p><p className="tl-entry-desc">Licensed therapists serving adults, teens, children, couples, and families across Dayton and Cleveland.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-title">Growing practice. Same standards.</p><p className="tl-entry-desc">Licensed therapists serving adults, teens, children, couples, and families across Dayton and Cleveland.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
           </div>
