@@ -245,7 +245,7 @@ const aboutStyles = `
   }
 
   .pillar-desc {
-    font-size: var(--t-sm);
+    font-size: var(--t-base);
     font-weight: 300;
     color: var(--earth);
     line-height: 1.618;
@@ -353,7 +353,7 @@ const aboutStyles = `
   }
 
   .bio-creds {
-    font-size: var(--t-sm);
+    font-size: var(--t-base);
     font-weight: 400;
     color: var(--warm-gray);
     margin-bottom: var(--s-md);
@@ -394,7 +394,7 @@ const aboutStyles = `
   }
 
   .bio-detail-value {
-    font-size: var(--t-sm);
+    font-size: var(--t-base);
     color: var(--earth);
   }
 
@@ -543,14 +543,14 @@ const aboutStyles = `
   }
 
   .tl-entry-desc {
-    font-size: var(--t-sm);
+    font-size: var(--t-base);
     font-weight: 300;
     color: var(--earth);
     line-height: 1.618;
   }
 
   .tl-entry-person {
-    font-size: var(--t-sm);
+    font-size: var(--t-base);
     font-weight: 400;
     color: var(--ink);
   }
