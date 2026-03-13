@@ -774,17 +774,17 @@ export default function AboutPage() {
           <div className="pillar-grid">
             <div className="pillar">
               <span className="pillar-icon">⟡</span>
-              <p className="pillar-title">Evidence-Based Care</p>
+              <p className="pillar-title">Evidenced-Based</p>
               <p className="pillar-desc">Every therapist is licensed, vetted, and trained in proven approaches — CBT, EMDR, DBT, ACT, and more.</p>
             </div>
             <div className="pillar">
               <span className="pillar-icon">◈</span>
-              <p className="pillar-title">Collaborative Approach</p>
+              <p className="pillar-title">Collaborative</p>
               <p className="pillar-desc">We work with you, not at you. Together, we identify goals, build skills, and address challenges creatively.</p>
             </div>
             <div className="pillar">
               <span className="pillar-icon">◇</span>
-              <p className="pillar-title">Flexible Access</p>
+              <p className="pillar-title">Flexible</p>
               <p className="pillar-desc">Two Ohio locations, statewide telehealth, evenings available. We accept most major insurance and Medicaid.</p>
             </div>
           </div>
