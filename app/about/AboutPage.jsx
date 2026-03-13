@@ -745,7 +745,7 @@ export default function AboutPage() {
             </div>
             <div className="vmv-block">
               <h3 className="vmv-heading">Mission</h3>
-              <p className="vmv-text">Serving our community by embracing and supporting individuals and families by identifying their needs and working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.</p>
+              <p className="vmv-text">Serving our community by embracing and supporting individuals and families: identifying their needs, working collaboratively and creatively to address challenges, learn new skills and achieve enhanced health and wellness.</p>
             </div>
           </div>
           <div className="vmv-block vmv-values-block">
