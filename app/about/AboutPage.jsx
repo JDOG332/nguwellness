@@ -231,9 +231,7 @@ const aboutStyles = `
   }
 
   .pillar-icon {
-    font-size: var(--t-xl);
-    margin-bottom: var(--s-md);
-    display: block;
+    font-size: var(--t-md);
     opacity: var(--alpha-phi);
   }
 
@@ -241,6 +239,13 @@ const aboutStyles = `
     font-family: var(--font-display);
     font-size: var(--t-md);
     font-weight: 900;
+    margin-bottom: var(--s-xs);
+  }
+
+  .pillar-title-row {
+    display: flex;
+    align-items: center;
+    gap: var(--s-xs);
     margin-bottom: var(--s-xs);
   }
 
@@ -773,18 +778,15 @@ export default function AboutPage() {
           <p className="why-ngu-desc">We built NGU Wellness so more people get matched with the right therapist, the right approach, and the right fit faster and easier than ever.</p>
           <div className="pillar-grid">
             <div className="pillar">
-              <span className="pillar-icon">⟡</span>
-              <p className="pillar-title">Evidenced-Based</p>
+              <div className="pillar-title-row"><span className="pillar-icon">⟡</span><p className="pillar-title">Evidenced-Based</p></div>
               <p className="pillar-desc">Every therapist is licensed, vetted, and trained in proven approaches — CBT, EMDR, DBT, ACT, and more.</p>
             </div>
             <div className="pillar">
-              <span className="pillar-icon">◈</span>
-              <p className="pillar-title">Collaborative</p>
+              <div className="pillar-title-row"><span className="pillar-icon">◈</span><p className="pillar-title">Collaborative</p></div>
               <p className="pillar-desc">We work with you, not at you. Together, we identify goals, build skills, and address challenges creatively.</p>
             </div>
             <div className="pillar">
-              <span className="pillar-icon">◇</span>
-              <p className="pillar-title">Flexible</p>
+              <div className="pillar-title-row"><span className="pillar-icon">◇</span><p className="pillar-title">Flexible</p></div>
               <p className="pillar-desc">Two Ohio locations, statewide telehealth, evenings available. We accept most major insurance and Medicaid.</p>
             </div>
           </div>
