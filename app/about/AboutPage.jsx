@@ -40,6 +40,35 @@ const aboutStyles = `
     flex-wrap: wrap;
   }
 
+  .hero-stats {
+    display: flex;
+    gap: var(--s-md);
+    margin-top: var(--s-xl);
+    padding-top: var(--s-md);
+    border-top: 1px solid var(--divider);
+    flex-wrap: wrap;
+  }
+
+  .hero-stat {
+    text-align: center;
+  }
+
+  .hero-stat-value {
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.0382em;
+  }
+
+  .hero-stat-label {
+    font-size: var(--t-xs);
+    font-weight: 300;
+    color: var(--warm-gray);
+    margin-top: var(--s-3xs);
+    letter-spacing: 0.0618em;
+  }
+
   .ngu-box {
     background: var(--ink);
     padding: var(--s-xl);
@@ -625,6 +654,7 @@ const aboutStyles = `
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .about-hero { grid-template-columns: 1fr; }
+    .hero-stats { gap: var(--s-sm); }
     .vmv-top-row { grid-template-columns: 1fr; }
     .vmv-values-grid { grid-template-columns: 1fr; }
     .founders-header { flex-direction: column; text-align: center; }
@@ -687,6 +717,13 @@ export default function AboutPage() {
             <button className="btn-primary" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
             <button className="btn-outline" onClick={() => router.push("/contact")}>Get in Touch</button>
           </div>
+          <div className="hero-stats">
+            <div className="hero-stat"><p className="hero-stat-value">2021</p><p className="hero-stat-label">Founded</p></div>
+            <div className="hero-stat"><p className="hero-stat-value">12</p><p className="hero-stat-label">Therapists</p></div>
+            <div className="hero-stat"><p className="hero-stat-value">1</p><p className="hero-stat-label">Business Manager</p></div>
+            <div className="hero-stat"><p className="hero-stat-value">2</p><p className="hero-stat-label">Ohio Locations</p></div>
+            <div className="hero-stat"><p className="hero-stat-value">14+</p><p className="hero-stat-label">Insurance Plans</p></div>
+          </div>
         </div>
         <div className="ngu-box">
           <h2 className="ngu-box-title">Never Give Up.</h2>
@@ -725,14 +762,6 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* ── STATS BAR ── */}
-      <section className="stats-bar">
-        <div className="stat-item"><p className="stat-value">2021</p><p className="stat-label">Founded</p></div>
-        <div className="stat-item"><p className="stat-value">2</p><p className="stat-label">Ohio Locations</p></div>
-        <div className="stat-item"><p className="stat-value">595+</p><p className="stat-label">Years of Life Experience</p></div>
-        <div className="stat-item"><p className="stat-value">14+</p><p className="stat-label">Insurance Plans Accepted</p></div>
       </section>
 
       {/* ── WHY NGU ── */}
