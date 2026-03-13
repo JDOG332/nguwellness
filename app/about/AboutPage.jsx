@@ -220,7 +220,7 @@ const aboutStyles = `
   }
 
   .pillar {
-    padding: var(--s-lg);
+    padding: var(--s-xl) var(--s-lg);
     border: 1px solid var(--divider);
     transition: all var(--duration) var(--ease-phi);
   }
@@ -240,6 +240,7 @@ const aboutStyles = `
     font-size: var(--t-md);
     font-weight: 900;
     margin-bottom: var(--s-xs);
+    white-space: nowrap;
   }
 
   .pillar-title-row {
@@ -778,7 +779,7 @@ export default function AboutPage() {
           <p className="why-ngu-desc">We built NGU Wellness so more people get matched with the right therapist, the right approach, and the right fit faster and easier than ever.</p>
           <div className="pillar-grid">
             <div className="pillar">
-              <div className="pillar-title-row"><span className="pillar-icon">⟡</span><p className="pillar-title">Evidenced-Based</p></div>
+              <div className="pillar-title-row"><span className="pillar-icon">⟡</span><p className="pillar-title">Evidence-Based</p></div>
               <p className="pillar-desc">Every therapist is licensed, vetted, and trained in proven approaches — CBT, EMDR, DBT, ACT, and more.</p>
             </div>
             <div className="pillar">
