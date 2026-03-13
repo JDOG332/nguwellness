@@ -681,7 +681,7 @@ export default function AboutPage() {
           <p className="eyebrow">Our Story</p>
           <h1 className="about-hero-title">A practice built on belief.</h1>
           <p className="about-hero-desc">
-            Everyone deserves to be supported and feel accepted. Everyone deserves a second chance. Everyone deserves to have hope for a better life.
+            Everyone deserves to feel accepted, supported and hope for a better life.
           </p>
           <div className="about-hero-actions">
             <button className="btn-primary" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
