@@ -679,7 +679,7 @@ export default function AboutPage() {
       <section className="about-hero">
         <div>
           <p className="eyebrow">Our Story</p>
-          <h1 className="about-hero-title">A practice built on belief.</h1>
+          <h1 className="about-hero-title">We believe in you.</h1>
           <p className="about-hero-desc">
             Everyone deserves to feel accepted, supported and hope for a better life.
           </p>
