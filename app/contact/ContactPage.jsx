@@ -20,6 +20,39 @@ const contactStyles = `
      Zero inline styles. Every value from the Sacred Scale.
      ═══════════════════════════════════════════════════ */
 
+  /* ── GOOGLE FORM EMBED ── */
+  .form-embed-section {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: var(--s-2xl) var(--s-lg) var(--s-xl);
+    animation: fadeIn 0.618s var(--ease-phi) both;
+  }
+
+  .form-embed-section .eyebrow {
+    margin-bottom: var(--s-2xs);
+  }
+
+  .form-embed-title {
+    font-size: clamp(var(--t-xl), 5vw + 1rem, var(--t-2xl));
+    margin-bottom: var(--s-sm);
+  }
+
+  .form-embed-desc {
+    font-size: var(--t-md);
+    font-weight: 300;
+    color: var(--earth);
+    max-width: var(--max-w-narrow);
+    margin-bottom: var(--s-lg);
+  }
+
+  .form-embed-frame {
+    width: 100%;
+    min-height: 80vh;
+    border: 1px solid var(--divider);
+    border-radius: var(--s-2xs);
+    background: var(--paper);
+  }
+
   /* ── HERO ── */
   .contact-hero {
     max-width: var(--max-w);
@@ -268,6 +301,23 @@ export default function ContactPage() {
     <div>
       <style>{contactStyles}</style>
       <Nav />
+
+      {/* ── GOOGLE FORM ── */}
+      <section className="form-embed-section">
+        <p className="eyebrow">New Client Inquiry</p>
+        <h1 className="form-embed-title">Tell us a little about yourself.</h1>
+        <p className="form-embed-desc">
+          Fill out the form below and our team will reach out to get you started.
+        </p>
+        <iframe
+          className="form-embed-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?embedded=true"
+          title="NGU Wellness Inquiry Form"
+          loading="lazy"
+        >
+          Loading…
+        </iframe>
+      </section>
 
       {/* ── HERO ── */}
       <section className="contact-hero">
