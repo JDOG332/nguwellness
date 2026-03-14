@@ -305,9 +305,9 @@ export default function ContactPage() {
       {/* ── GOOGLE FORM ── */}
       <section className="form-embed-section">
         <p className="eyebrow">New Client Inquiry</p>
-        <h1 className="form-embed-title">Tell us a little about yourself.</h1>
+        <h1 className="form-embed-title">Tell us what you need.</h1>
         <p className="form-embed-desc">
-          Fill out the form below and our team will reach out to get you started.
+          Fill out the form below and our team will reach out to get you started. We always try to respond the same day.
         </p>
         <iframe
           className="form-embed-frame"
