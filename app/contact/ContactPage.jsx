@@ -443,8 +443,8 @@ export default function ContactPage() {
       <section className="form-layout">
         <div className="form-grid">
           <div className="form-left-col">
-            <p className="eyebrow">New Client Inquiry</p>
-            <h1 className="form-embed-title">Tell us what you need.</h1>
+            <p className="eyebrow">Client Inquiry</p>
+            <h1 className="form-embed-title">How can we help?</h1>
             <p className="form-embed-desc">
               We always try to respond the same day.
             </p>
