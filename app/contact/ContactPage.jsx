@@ -20,15 +20,19 @@ const contactStyles = `
      Zero inline styles. Every value from the Sacred Scale.
      ═══════════════════════════════════════════════════ */
 
-  /* ── GOOGLE FORM EMBED ── */
-  .form-embed-section {
+  /* ── GOOGLE FORM + SIDEBAR LAYOUT ── */
+  .form-layout {
     max-width: var(--max-w);
     margin: 0 auto;
     padding: var(--s-2xl) var(--s-lg) var(--s-xl);
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
-  .form-embed-section .eyebrow {
+  .form-layout-header {
+    margin-bottom: var(--s-lg);
+  }
+
+  .form-layout-header .eyebrow {
     margin-bottom: var(--s-2xs);
   }
 
@@ -42,7 +46,13 @@ const contactStyles = `
     font-weight: 300;
     color: var(--earth);
     max-width: var(--max-w-narrow);
-    margin-bottom: var(--s-lg);
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1.618fr 1fr;
+    gap: var(--s-lg);
+    align-items: start;
   }
 
   .form-embed-frame {
@@ -51,6 +61,54 @@ const contactStyles = `
     border: 1px solid var(--divider);
     border-radius: var(--s-2xs);
     background: var(--paper);
+  }
+
+  .contact-sidebar {
+    position: sticky;
+    top: var(--s-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-sm);
+  }
+
+  .sidebar-heading {
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 900;
+    margin-bottom: var(--s-2xs);
+  }
+
+  .sidebar-card {
+    padding: var(--s-md);
+    background: var(--mist);
+    transition: all var(--duration) var(--ease-phi);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .sidebar-card:hover {
+    transform: translateY(-0.146rem);
+    background: var(--light);
+  }
+
+  .sidebar-icon {
+    font-size: var(--t-base);
+    margin-bottom: var(--s-2xs);
+    opacity: var(--alpha-phi);
+  }
+
+  .sidebar-title {
+    font-family: var(--font-display);
+    font-size: var(--t-base);
+    font-weight: 900;
+    margin-bottom: var(--s-4xs);
+  }
+
+  .sidebar-value {
+    font-size: var(--t-sm);
+    font-weight: 300;
+    color: var(--earth);
   }
 
   /* ── HERO ── */
@@ -290,6 +348,12 @@ const contactStyles = `
     .steps-grid { grid-template-columns: 1fr; }
     .info-grid { grid-template-columns: 1fr; }
     .loc-grid { grid-template-columns: 1fr; }
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+    .contact-sidebar {
+      position: static;
+    }
   }
 `;
 
@@ -302,21 +366,48 @@ export default function ContactPage() {
       <style>{contactStyles}</style>
       <Nav />
 
-      {/* ── GOOGLE FORM ── */}
-      <section className="form-embed-section">
-        <p className="eyebrow">New Client Inquiry</p>
-        <h1 className="form-embed-title">Tell us what you need.</h1>
-        <p className="form-embed-desc">
-          Fill out the form below and our team will reach out to get you started. We always try to respond the same day.
-        </p>
-        <iframe
-          className="form-embed-frame"
-          src="https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?embedded=true"
-          title="NGU Wellness Inquiry Form"
-          loading="lazy"
-        >
-          Loading…
-        </iframe>
+      {/* ── GOOGLE FORM + SIDEBAR ── */}
+      <section className="form-layout">
+        <div className="form-layout-header">
+          <p className="eyebrow">New Client Inquiry</p>
+          <h1 className="form-embed-title">Tell us what you need.</h1>
+          <p className="form-embed-desc">
+            Fill out the form below and our team will reach out to get you started. We always try to respond the same day.
+          </p>
+        </div>
+        <div className="form-grid">
+          <iframe
+            className="form-embed-frame"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?embedded=true"
+            title="NGU Wellness Inquiry Form"
+            loading="lazy"
+          >
+            Loading…
+          </iframe>
+          <div className="contact-sidebar">
+            <p className="sidebar-heading">Reach us directly</p>
+            <a className="sidebar-card" href="tel:8886489355">
+              <p className="sidebar-icon">◈</p>
+              <p className="sidebar-title">Call or Text</p>
+              <p className="sidebar-value">888-648-9355</p>
+            </a>
+            <div className="sidebar-card">
+              <p className="sidebar-icon">⊞</p>
+              <p className="sidebar-title">Fax</p>
+              <p className="sidebar-value">888-648-9355</p>
+            </div>
+            <a className="sidebar-card" href="mailto:info@nguwellness.com">
+              <p className="sidebar-icon">◇</p>
+              <p className="sidebar-title">Email</p>
+              <p className="sidebar-value">info@nguwellness.com</p>
+            </a>
+            <a className="sidebar-card" href="https://therapyportal.com/p/nguwellness" target="_blank" rel="noopener noreferrer">
+              <p className="sidebar-icon">⟡</p>
+              <p className="sidebar-title">Client Portal</p>
+              <p className="sidebar-value">therapyportal.com</p>
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* ── HERO ── */}
@@ -354,31 +445,6 @@ export default function ContactPage() {
             <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
               Begin Intake Survey
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CONTACT INFO ── */}
-      <section className="phi-section">
-        <div className="phi-wrap">
-          <p className="eyebrow">Contact Us</p>
-          <h2 className="contact-section-title">Reach us directly.</h2>
-          <div className="info-grid">
-            <a className="info-card" href="tel:8886489355">
-              <p className="info-icon">◈</p>
-              <p className="info-title">Call or Text</p>
-              <p className="info-value">888-648-9355</p>
-            </a>
-            <a className="info-card" href="mailto:info@nguwellness.com">
-              <p className="info-icon">◇</p>
-              <p className="info-title">Email</p>
-              <p className="info-value">info@nguwellness.com</p>
-            </a>
-            <a className="info-card" href="https://therapyportal.com/p/nguwellness" target="_blank" rel="noopener noreferrer">
-              <p className="info-icon">⟡</p>
-              <p className="info-title">Client Portal</p>
-              <p className="info-value">therapyportal.com</p>
-            </a>
           </div>
         </div>
       </section>
