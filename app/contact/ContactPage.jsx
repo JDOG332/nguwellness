@@ -63,56 +63,109 @@ const contactStyles = `
     background: var(--paper);
   }
 
+  /* ── SIDEBAR PANEL ── */
   .contact-sidebar {
     position: sticky;
     top: var(--s-lg);
-    display: flex;
-    flex-direction: column;
-    gap: var(--s-sm);
   }
 
-  .sidebar-heading {
-    font-family: var(--font-display);
-    font-size: var(--t-md);
-    font-weight: 900;
-    margin-bottom: var(--s-2xs);
+  .sidebar-panel {
+    border: 1px solid var(--divider);
+    border-radius: var(--s-2xs);
+    overflow: hidden;
+    background: var(--paper);
   }
 
-  .sidebar-card {
+  .sidebar-accent {
+    height: var(--s-2xs);
+    background: var(--brand-grad);
+  }
+
+  .sidebar-section {
     padding: var(--s-md);
-    background: var(--mist);
-    transition: all var(--duration) var(--ease-phi);
+  }
+
+  .sidebar-section + .sidebar-section {
+    border-top: 1px solid var(--divider);
+  }
+
+  .sidebar-section-label {
+    font-family: var(--font-body);
+    font-size: var(--t-xs);
+    font-weight: 400;
+    letter-spacing: 0.236em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: var(--s-sm);
+  }
+
+  .sidebar-row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--s-sm);
+    padding: var(--s-xs) 0;
     text-decoration: none;
     color: inherit;
-    display: block;
+    transition: all var(--duration) var(--ease-phi);
   }
 
-  .sidebar-card:hover {
-    transform: translateY(-0.146rem);
-    background: var(--light);
+  a.sidebar-row:hover {
+    color: var(--rose-deep);
   }
 
-  .sidebar-icon {
+  a.sidebar-row:hover .sidebar-row-label {
+    color: var(--rose-deep);
+  }
+
+  .sidebar-row + .sidebar-row {
+    border-top: 1px solid var(--divider);
+  }
+
+  .sidebar-row-icon {
+    width: var(--s-lg);
+    height: var(--s-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--mist);
+    border-radius: var(--s-2xs);
+    flex-shrink: 0;
     font-size: var(--t-base);
-    margin-bottom: var(--s-2xs);
-    opacity: var(--alpha-phi);
+    color: var(--rose);
   }
 
-  .sidebar-title {
+  .sidebar-row-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3xs);
+    min-width: 0;
+  }
+
+  .sidebar-row-label {
     font-family: var(--font-display);
     font-size: var(--t-base);
     font-weight: 900;
-    margin-bottom: var(--s-4xs);
+    line-height: 1.1;
+    margin-bottom: 0;
   }
 
-  .sidebar-value {
+  .sidebar-row-value {
     font-size: var(--t-sm);
     font-weight: 300;
     color: var(--earth);
+    line-height: 1.618;
+    margin-bottom: 0;
   }
 
-  .sidebar-heading-locations {
-    margin-top: var(--s-xs);
+  .sidebar-response-note {
+    padding: var(--s-sm) var(--s-md);
+    background: var(--mist);
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-size: var(--t-base);
+    color: var(--earth);
+    text-align: center;
+    margin-bottom: 0;
   }
 
   /* ── HERO ── */
@@ -376,7 +429,7 @@ export default function ContactPage() {
           <p className="eyebrow">New Client Inquiry</p>
           <h1 className="form-embed-title">Tell us what you need.</h1>
           <p className="form-embed-desc">
-            Fill out the form below and our team will reach out to get you started. We always try to respond the same day.
+            We always try to respond the same day.
           </p>
         </div>
         <div className="form-grid">
@@ -389,37 +442,63 @@ export default function ContactPage() {
             Loading…
           </iframe>
           <div className="contact-sidebar">
-            <p className="sidebar-heading">Reach us directly</p>
-            <a className="sidebar-card" href="tel:8886489355">
-              <p className="sidebar-icon">◈</p>
-              <p className="sidebar-title">Call or Text</p>
-              <p className="sidebar-value">888-648-9355</p>
-            </a>
-            <div className="sidebar-card">
-              <p className="sidebar-icon">⊞</p>
-              <p className="sidebar-title">Fax</p>
-              <p className="sidebar-value">888-648-9355</p>
-            </div>
-            <a className="sidebar-card" href="mailto:info@nguwellness.com">
-              <p className="sidebar-icon">◇</p>
-              <p className="sidebar-title">Email</p>
-              <p className="sidebar-value">info@nguwellness.com</p>
-            </a>
-            <a className="sidebar-card" href="https://therapyportal.com/p/nguwellness" target="_blank" rel="noopener noreferrer">
-              <p className="sidebar-icon">⟡</p>
-              <p className="sidebar-title">Client Portal</p>
-              <p className="sidebar-value">therapyportal.com</p>
-            </a>
-            <p className="sidebar-heading sidebar-heading-locations">Our Locations</p>
-            <div className="sidebar-card">
-              <p className="sidebar-icon">◉</p>
-              <p className="sidebar-title">Dayton</p>
-              <p className="sidebar-value">453 Patterson Rd., Suite A<br />Dayton, OH 45419</p>
-            </div>
-            <div className="sidebar-card">
-              <p className="sidebar-icon">◉</p>
-              <p className="sidebar-title">Rocky River</p>
-              <p className="sidebar-value">20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116</p>
+            <div className="sidebar-panel">
+              <div className="sidebar-accent" />
+
+              {/* Contact */}
+              <div className="sidebar-section">
+                <p className="sidebar-section-label">Contact Us</p>
+                <a className="sidebar-row" href="tel:8886489355">
+                  <div className="sidebar-row-icon">✆</div>
+                  <div className="sidebar-row-content">
+                    <p className="sidebar-row-label">Call or Text</p>
+                    <p className="sidebar-row-value">888-648-9355</p>
+                  </div>
+                </a>
+                <div className="sidebar-row">
+                  <div className="sidebar-row-icon">⎙</div>
+                  <div className="sidebar-row-content">
+                    <p className="sidebar-row-label">Fax</p>
+                    <p className="sidebar-row-value">888-648-9355</p>
+                  </div>
+                </div>
+                <a className="sidebar-row" href="mailto:info@nguwellness.com">
+                  <div className="sidebar-row-icon">✉</div>
+                  <div className="sidebar-row-content">
+                    <p className="sidebar-row-label">Email</p>
+                    <p className="sidebar-row-value">info@nguwellness.com</p>
+                  </div>
+                </a>
+                <a className="sidebar-row" href="https://therapyportal.com/p/nguwellness" target="_blank" rel="noopener noreferrer">
+                  <div className="sidebar-row-icon">⊞</div>
+                  <div className="sidebar-row-content">
+                    <p className="sidebar-row-label">Client Portal</p>
+                    <p className="sidebar-row-value">therapyportal.com</p>
+                  </div>
+                </a>
+              </div>
+
+              {/* Locations */}
+              <div className="sidebar-section">
+                <p className="sidebar-section-label">Our Locations</p>
+                <div className="sidebar-row">
+                  <div className="sidebar-row-icon">◎</div>
+                  <div className="sidebar-row-content">
+                    <p className="sidebar-row-label">Dayton</p>
+                    <p className="sidebar-row-value">453 Patterson Rd., Suite A<br />Dayton, OH 45419</p>
+                  </div>
+                </div>
+                <div className="sidebar-row">
+                  <div className="sidebar-row-icon">◎</div>
+                  <div className="sidebar-row-content">
+                    <p className="sidebar-row-label">Rocky River</p>
+                    <p className="sidebar-row-value">20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Response note */}
+              <p className="sidebar-response-note">We always try to respond the same day.</p>
             </div>
           </div>
         </div>
