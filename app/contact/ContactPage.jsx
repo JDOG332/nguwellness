@@ -89,10 +89,13 @@ const contactStyles = `
 
   .sidebar-section-label {
     font-family: var(--font-display);
-    font-size: var(--t-md);
+    font-size: clamp(var(--t-md), 2vw + 0.5rem, var(--t-xl));
     font-weight: 900;
     color: var(--ink);
+    text-align: center;
     margin-bottom: var(--s-sm);
+    padding-bottom: var(--s-sm);
+    border-bottom: 1px solid var(--divider);
   }
 
   .sidebar-row {
