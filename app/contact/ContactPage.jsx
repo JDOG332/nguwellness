@@ -28,11 +28,14 @@ const contactStyles = `
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
-  .form-layout-header {
-    margin-bottom: var(--s-lg);
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1.618fr 1fr;
+    gap: var(--s-lg);
+    align-items: start;
   }
 
-  .form-layout-header .eyebrow {
+  .form-left-col .eyebrow {
     margin-bottom: var(--s-2xs);
   }
 
@@ -46,13 +49,7 @@ const contactStyles = `
     font-weight: 300;
     color: var(--earth);
     max-width: var(--max-w-narrow);
-  }
-
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1.618fr 1fr;
-    gap: var(--s-lg);
-    align-items: start;
+    margin-bottom: var(--s-lg);
   }
 
   .form-embed-frame {
@@ -74,15 +71,16 @@ const contactStyles = `
     border-radius: var(--s-2xs);
     overflow: hidden;
     background: var(--paper);
+    box-shadow: 0 0.382rem 1.618rem rgba(26, 23, 20, 0.1);
   }
 
   .sidebar-accent {
-    height: var(--s-2xs);
+    height: var(--s-xs);
     background: var(--brand-grad);
   }
 
   .sidebar-section {
-    padding: var(--s-md);
+    padding: var(--s-md) var(--s-lg);
   }
 
   .sidebar-section + .sidebar-section {
@@ -90,20 +88,18 @@ const contactStyles = `
   }
 
   .sidebar-section-label {
-    font-family: var(--font-body);
-    font-size: var(--t-xs);
-    font-weight: 400;
-    letter-spacing: 0.236em;
-    text-transform: uppercase;
-    color: var(--rose);
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 900;
+    color: var(--ink);
     margin-bottom: var(--s-sm);
   }
 
   .sidebar-row {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: var(--s-sm);
-    padding: var(--s-xs) 0;
+    padding: var(--s-sm) 0;
     text-decoration: none;
     color: inherit;
     transition: all var(--duration) var(--ease-phi);
@@ -111,10 +107,16 @@ const contactStyles = `
 
   a.sidebar-row:hover {
     color: var(--rose-deep);
+    transform: translateX(var(--s-3xs));
   }
 
   a.sidebar-row:hover .sidebar-row-label {
     color: var(--rose-deep);
+  }
+
+  a.sidebar-row:hover .sidebar-row-icon {
+    background: var(--rose);
+    color: var(--paper);
   }
 
   .sidebar-row + .sidebar-row {
@@ -127,29 +129,40 @@ const contactStyles = `
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--mist);
+    background: rgba(245, 10, 84, 0.08);
     border-radius: var(--s-2xs);
     flex-shrink: 0;
-    font-size: var(--t-base);
+    font-size: var(--t-md);
     color: var(--rose);
+    transition: all var(--duration) var(--ease-phi);
   }
 
   .sidebar-row-content {
     display: flex;
     flex-direction: column;
-    gap: var(--s-3xs);
+    gap: 0;
     min-width: 0;
   }
 
   .sidebar-row-label {
     font-family: var(--font-display);
-    font-size: var(--t-base);
+    font-size: var(--t-md);
     font-weight: 900;
     line-height: 1.1;
-    margin-bottom: 0;
+    margin-bottom: var(--s-3xs);
+    transition: color var(--duration) var(--ease-phi);
   }
 
   .sidebar-row-value {
+    font-family: var(--font-body);
+    font-size: var(--t-base);
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.618;
+    margin-bottom: 0;
+  }
+
+  .sidebar-row-value-sub {
     font-size: var(--t-sm);
     font-weight: 300;
     color: var(--earth);
@@ -158,7 +171,7 @@ const contactStyles = `
   }
 
   .sidebar-response-note {
-    padding: var(--s-sm) var(--s-md);
+    padding: var(--s-sm) var(--s-lg);
     background: var(--mist);
     font-family: var(--font-accent);
     font-style: italic;
@@ -425,22 +438,22 @@ export default function ContactPage() {
 
       {/* ── GOOGLE FORM + SIDEBAR ── */}
       <section className="form-layout">
-        <div className="form-layout-header">
-          <p className="eyebrow">New Client Inquiry</p>
-          <h1 className="form-embed-title">Tell us what you need.</h1>
-          <p className="form-embed-desc">
-            We always try to respond the same day.
-          </p>
-        </div>
         <div className="form-grid">
-          <iframe
-            className="form-embed-frame"
-            src="https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?embedded=true"
-            title="NGU Wellness Inquiry Form"
-            loading="lazy"
-          >
-            Loading…
-          </iframe>
+          <div className="form-left-col">
+            <p className="eyebrow">New Client Inquiry</p>
+            <h1 className="form-embed-title">Tell us what you need.</h1>
+            <p className="form-embed-desc">
+              We always try to respond the same day.
+            </p>
+            <iframe
+              className="form-embed-frame"
+              src="https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?embedded=true"
+              title="NGU Wellness Inquiry Form"
+              loading="lazy"
+            >
+              Loading…
+            </iframe>
+          </div>
           <div className="contact-sidebar">
             <div className="sidebar-panel">
               <div className="sidebar-accent" />
@@ -485,14 +498,16 @@ export default function ContactPage() {
                   <div className="sidebar-row-icon">◎</div>
                   <div className="sidebar-row-content">
                     <p className="sidebar-row-label">Dayton</p>
-                    <p className="sidebar-row-value">453 Patterson Rd., Suite A<br />Dayton, OH 45419</p>
+                    <p className="sidebar-row-value">453 Patterson Rd., Suite A</p>
+                    <p className="sidebar-row-value-sub">Dayton, OH 45419</p>
                   </div>
                 </div>
                 <div className="sidebar-row">
                   <div className="sidebar-row-icon">◎</div>
                   <div className="sidebar-row-content">
                     <p className="sidebar-row-label">Rocky River</p>
-                    <p className="sidebar-row-value">20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116</p>
+                    <p className="sidebar-row-value">20525 Center Ridge Rd., Suite 604</p>
+                    <p className="sidebar-row-value-sub">Rocky River, OH 44116</p>
                   </div>
                 </div>
               </div>
