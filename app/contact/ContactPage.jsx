@@ -111,6 +111,10 @@ const contactStyles = `
     color: var(--earth);
   }
 
+  .sidebar-heading-locations {
+    margin-top: var(--s-xs);
+  }
+
   /* ── HERO ── */
   .contact-hero {
     max-width: var(--max-w);
@@ -406,6 +410,17 @@ export default function ContactPage() {
               <p className="sidebar-title">Client Portal</p>
               <p className="sidebar-value">therapyportal.com</p>
             </a>
+            <p className="sidebar-heading sidebar-heading-locations">Our Locations</p>
+            <div className="sidebar-card">
+              <p className="sidebar-icon">◉</p>
+              <p className="sidebar-title">Dayton</p>
+              <p className="sidebar-value">453 Patterson Rd., Suite A<br />Dayton, OH 45419</p>
+            </div>
+            <div className="sidebar-card">
+              <p className="sidebar-icon">◉</p>
+              <p className="sidebar-title">Rocky River</p>
+              <p className="sidebar-value">20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116</p>
+            </div>
           </div>
         </div>
       </section>
@@ -445,25 +460,6 @@ export default function ContactPage() {
             <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
               Begin Intake Survey
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* ── LOCATIONS ── */}
-      <section className="phi-section-sm bg-mist">
-        <div className="phi-wrap">
-          <p className="eyebrow">Our Locations</p>
-          <div className="loc-grid">
-            <div className="loc-card">
-              <p className="loc-label">Dayton</p>
-              <p className="loc-name">Patterson Road</p>
-              <p className="loc-address">453 Patterson Rd., Suite A<br />Dayton, OH 45419</p>
-            </div>
-            <div className="loc-card">
-              <p className="loc-label">Rocky River</p>
-              <p className="loc-name">Center Ridge Road</p>
-              <p className="loc-address">20525 Center Ridge Rd., Suite 604<br />Rocky River, OH 44116</p>
-            </div>
           </div>
         </div>
       </section>
