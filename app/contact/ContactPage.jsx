@@ -24,7 +24,7 @@ const contactStyles = `
   .form-layout {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-2xl) var(--s-lg) var(--s-xl);
+    padding: var(--s-xl) var(--s-lg) var(--s-lg);
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
@@ -172,7 +172,7 @@ const contactStyles = `
   .contact-hero {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-2xl) var(--s-lg) var(--s-xl);
+    padding: var(--s-xl) var(--s-lg) var(--s-lg);
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
@@ -238,7 +238,7 @@ const contactStyles = `
 
   .steps-cta {
     text-align: center;
-    margin-top: var(--s-xl);
+    margin-top: var(--s-lg);
   }
 
   /* ── INFO CARDS ── */
@@ -376,7 +376,7 @@ const contactStyles = `
   /* ── CTA ── */
   .contact-cta {
     text-align: center;
-    padding: var(--s-xl) var(--s-lg);
+    padding: var(--s-lg) var(--s-lg);
     background: var(--mist);
   }
 
@@ -390,7 +390,7 @@ const contactStyles = `
     font-weight: 300;
     color: var(--earth);
     max-width: var(--max-w-narrow);
-    margin: 0 auto var(--s-xl);
+    margin: 0 auto var(--s-lg);
   }
 
   .contact-cta-actions {

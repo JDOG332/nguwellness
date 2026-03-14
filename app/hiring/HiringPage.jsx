@@ -12,7 +12,7 @@ const hiringStyles = `
   .hire-hero {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-2xl) var(--s-lg) var(--s-xl);
+    padding: var(--s-xl) var(--s-lg) var(--s-lg);
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 

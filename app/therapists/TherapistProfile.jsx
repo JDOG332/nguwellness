@@ -58,7 +58,7 @@ const tpStyles = `
     gap: var(--s-xl);
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-xl) var(--s-lg) var(--s-2xl);
+    padding: var(--s-lg) var(--s-lg) var(--s-xl);
     align-items: start;
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
@@ -68,7 +68,7 @@ const tpStyles = `
     position: sticky;
     top: var(--s-md);
     border-right: 1px solid var(--divider);
-    padding-right: var(--s-xl);
+    padding-right: var(--s-lg);
   }
 
   .tp-photo-wrap {
@@ -323,7 +323,7 @@ const tpStyles = `
     transition: grid-template-rows 0.382s cubic-bezier(0.382,0,0.618,1), opacity 0.382s;
   }
   .tp-acc-body.open { grid-template-rows: 1fr; opacity: 1; }
-  .tp-acc-inner { overflow: hidden; padding-bottom: var(--s-xl); }
+  .tp-acc-inner { overflow: hidden; padding-bottom: var(--s-lg); }
   .tp-acc-body:not(.open) .tp-acc-inner { padding-bottom: 0; }
 
   /* Checklist items */
@@ -496,7 +496,7 @@ const tpStyles = `
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
     .tp-layout { grid-template-columns: 1fr; }
-    .tp-sidebar { position: static; border-right: none; padding-right: 0; border-bottom: 1px solid var(--divider); padding-bottom: var(--s-xl); }
+    .tp-sidebar { position: static; border-right: none; padding-right: 0; border-bottom: 1px solid var(--divider); padding-bottom: var(--s-lg); }
     .tp-mod-grid { grid-template-columns: 1fr; }
     .tp-sched-grid { grid-template-columns: 1fr 1fr; }
   }

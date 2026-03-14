@@ -138,13 +138,13 @@ a:hover { color: var(--rose); }
 }
 
 .phi-section {
-  padding-top: var(--s-2xl);
-  padding-bottom: var(--s-2xl);
+  padding-top: var(--s-xl);
+  padding-bottom: var(--s-xl);
 }
 
 .phi-section-sm {
-  padding-top: var(--s-xl);
-  padding-bottom: var(--s-xl);
+  padding-top: var(--s-lg);
+  padding-bottom: var(--s-lg);
 }
 
 /* ─── NAV ─── */
@@ -322,7 +322,7 @@ a:hover { color: var(--rose); }
 /* ─── FOOTER ─── */
 .footer {
   border-top: 0.0618rem solid var(--divider);
-  padding: var(--s-xl) var(--s-lg) var(--s-2xl);
+  padding: var(--s-lg) var(--s-lg) var(--s-xl);
   max-width: var(--max-w);
   margin: 0 auto;
 }
@@ -330,8 +330,8 @@ a:hover { color: var(--rose); }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.618fr 1fr 1fr;
-  gap: var(--s-xl);
-  margin-bottom: var(--s-xl);
+  gap: var(--s-lg);
+  margin-bottom: var(--s-lg);
 }
 
 .footer-brand {
@@ -432,7 +432,7 @@ a:hover { color: var(--rose); }
 
 @media (max-width: 42.36rem) {
   .phi-wrap, .phi-wrap-narrow { padding-left: var(--s-sm); padding-right: var(--s-sm); }
-  .phi-section { padding-top: var(--s-xl); padding-bottom: var(--s-xl); }
+  .phi-section { padding-top: var(--s-lg); padding-bottom: var(--s-lg); }
   .nav { flex-wrap: wrap; gap: var(--s-xs); }
 }
 

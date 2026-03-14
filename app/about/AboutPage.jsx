@@ -13,10 +13,10 @@ const aboutStyles = `
   .about-hero {
     display: grid;
     grid-template-columns: 1.618fr 1fr;
-    gap: var(--s-xl);
+    gap: var(--s-lg);
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-xl) var(--s-lg);
+    padding: var(--s-lg) var(--s-lg);
     align-items: start;
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
@@ -43,7 +43,7 @@ const aboutStyles = `
   .hero-stats {
     display: flex;
     gap: var(--s-md);
-    margin-top: var(--s-xl);
+    margin-top: var(--s-lg);
     padding-top: var(--s-md);
     border-top: 1px solid var(--divider);
     flex-wrap: wrap;
@@ -71,7 +71,7 @@ const aboutStyles = `
 
   .ngu-box {
     background: var(--ink);
-    padding: var(--s-xl);
+    padding: var(--s-lg);
     border-radius: var(--s-2xs);
     display: flex;
     flex-direction: column;
@@ -97,12 +97,12 @@ const aboutStyles = `
   /* ── VISION MISSION VALUES ── */
   .vmv-section {
     background: var(--mist);
-    padding: var(--s-xl) var(--s-lg);
+    padding: var(--s-lg) var(--s-lg);
   }
 
   .vmv-header {
     text-align: center;
-    margin-bottom: var(--s-xl);
+    margin-bottom: var(--s-lg);
   }
 
   .vmv-title {
@@ -175,7 +175,7 @@ const aboutStyles = `
     display: flex;
     gap: var(--s-2xl);
     justify-content: center;
-    padding: var(--s-xl) var(--s-lg);
+    padding: var(--s-lg) var(--s-lg);
     border-top: 1px solid var(--divider);
     border-bottom: 1px solid var(--divider);
   }
@@ -210,7 +210,7 @@ const aboutStyles = `
     font-weight: 300;
     color: var(--earth);
     max-width: var(--max-w-narrow);
-    margin-bottom: var(--s-xl);
+    margin-bottom: var(--s-lg);
   }
 
   .pillar-grid {
@@ -220,7 +220,7 @@ const aboutStyles = `
   }
 
   .pillar {
-    padding: var(--s-xl) var(--s-lg);
+    padding: var(--s-lg) var(--s-lg);
     border: 1px solid var(--divider);
     transition: all var(--duration) var(--ease-phi);
   }
@@ -262,7 +262,7 @@ const aboutStyles = `
     display: flex;
     align-items: center;
     gap: var(--s-lg);
-    margin-bottom: var(--s-xl);
+    margin-bottom: var(--s-lg);
   }
 
   .founders-title {
@@ -295,7 +295,7 @@ const aboutStyles = `
   .founders-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--s-xl);
+    gap: var(--s-lg);
     align-items: stretch;
   }
 
@@ -416,7 +416,7 @@ const aboutStyles = `
   .origin-intro {
     text-align: center;
     max-width: var(--max-w-narrow);
-    margin: 0 auto var(--s-xl);
+    margin: 0 auto var(--s-lg);
   }
 
   .origin-title {
@@ -453,7 +453,7 @@ const aboutStyles = `
 
   .tl-year-group {
     position: relative;
-    margin-bottom: var(--s-xl);
+    margin-bottom: var(--s-lg);
   }
 
   .tl-year-group:last-child {
@@ -571,7 +571,7 @@ const aboutStyles = `
   .community-grid {
     display: grid;
     grid-template-columns: 1fr 1.618fr;
-    gap: var(--s-xl);
+    gap: var(--s-lg);
     align-items: start;
     text-align: left;
   }

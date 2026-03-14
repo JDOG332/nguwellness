@@ -260,7 +260,7 @@ const dirStyles = `
     gap: var(--s-lg);
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: var(--s-md) var(--s-lg) var(--s-2xl);
+    padding: var(--s-md) var(--s-lg) var(--s-xl);
   }
 
   .dir-grid-label {
@@ -403,7 +403,7 @@ const dirStyles = `
   .dir-empty {
     grid-column: 1 / -1;
     text-align: center;
-    padding: var(--s-2xl);
+    padding: var(--s-xl);
   }
 
   .dir-empty-title {
@@ -427,7 +427,7 @@ const dirStyles = `
 
   /* ── CTA ── */
   .dir-cta {
-    padding: var(--s-xl) var(--s-lg);
+    padding: var(--s-lg) var(--s-lg);
     background: var(--mist);
     border-top: 1px solid var(--divider);
     text-align: center;

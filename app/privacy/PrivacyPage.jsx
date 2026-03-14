@@ -11,7 +11,7 @@ const privacyStyles = `
   .privacy-wrap {
     max-width: var(--max-w-narrow);
     margin: 0 auto;
-    padding: var(--s-2xl) var(--s-lg);
+    padding: var(--s-xl) var(--s-lg);
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
@@ -23,7 +23,7 @@ const privacyStyles = `
   .privacy-date {
     font-size: var(--t-sm);
     color: var(--warm-gray);
-    margin-bottom: var(--s-xl);
+    margin-bottom: var(--s-lg);
   }
 
   .privacy-body {
@@ -38,7 +38,7 @@ const privacyStyles = `
     font-size: var(--t-lg);
     font-weight: 900;
     margin-bottom: var(--s-sm);
-    margin-top: var(--s-xl);
+    margin-top: var(--s-lg);
     letter-spacing: -0.0382em;
     color: var(--ink);
   }
