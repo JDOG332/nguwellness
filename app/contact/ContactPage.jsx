@@ -554,13 +554,13 @@ export default function ContactPage() {
             </div>
             <div className="step-card">
               <p className="step-num">02</p>
-              <p className="step-title">We match you</p>
+              <p className="step-title">Choose your Therapist</p>
               <p className="step-desc">We'll help you determine the best therapist fit based on your preferences, insurance and scheduling needs.</p>
             </div>
             <div className="step-card">
               <p className="step-num">03</p>
               <p className="step-title">Start therapy</p>
-              <p className="step-desc">Schedule your first session — in-person at either location or via secure telehealth from anywhere in Ohio.</p>
+              <p className="step-desc">Schedule your first in-person or video appointment via text message, email or phone call.</p>
             </div>
           </div>
           <div className="steps-cta">
