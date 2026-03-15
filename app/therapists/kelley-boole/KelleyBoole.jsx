@@ -24,7 +24,7 @@ const DATA = {
   "whoHelps": [
     {"s": "Teens 13+ and adults feeling overwhelmed by anxiety or depression", "t": "who need practical tools and a safe, non-judgmental space to rebuild stability."},
     {"s": "People struggling with relationships", "t": "who want to understand patterns, set boundaries, and build more fulfilling connections."},
-    {"s": "People coping with addiction or substance use", "t": "including dual diagnosis — Kelley has extensive experience with recovery and intensive outpatient work."},
+    {"s": "People coping with addiction or substance use", "t": "including dual diagnosis. Kelley has extensive experience with recovery and intensive outpatient work."},
     {"s": "People navigating grief, loss, or major life transitions", "t": "who need steady, empathetic support through difficult changes."},
     {"s": "People who feel emotionally stuck or disconnected", "t": "and want to rediscover their resilience and build confidence."},
     {"s": "Couples and families", "t": "working through communication challenges, conflict, or transitions together."}

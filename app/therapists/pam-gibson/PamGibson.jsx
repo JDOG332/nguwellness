@@ -23,7 +23,7 @@ const DATA = {
   "calloutQuote": "I believe that everyone has the capacity for growth and positive change. I strive to empower my clients to reach their full potential.",
   "whoHelps": [
     {"s": "Adults dealing with stress, anxiety, or depression", "t": "who need a warm, non-judgmental space with someone easy to relate to."},
-    {"s": "People processing grief and loss", "t": "including death, divorce, and loss of a loved one to suicide — one of Pam's deepest specialties."},
+    {"s": "People processing grief and loss", "t": "including death, divorce, and loss of a loved one to suicide, one of Pam's deepest specialties."},
     {"s": "Survivors of domestic violence", "t": "seeking safety, healing, and empowerment to rebuild."},
     {"s": "Women navigating life transitions", "t": "including relationship changes, career shifts, parenting challenges, and identity."},
     {"s": "Couples and families in conflict", "t": "working through communication breakdowns, trust issues, and relational stress."},
@@ -63,7 +63,7 @@ const DATA = {
     {"s": "Session length:", "t": "Standard 50-minute individual sessions."},
     {"s": "Session format:", "t": "Individual, family, and group therapy. In-person at the Dayton office or secure telehealth video across Ohio."}
   ],
-  "faithText": "Pam identifies as Christian and welcomes faith-oriented clients who value spiritual integration in their healing process. This is always client-directed — faith is woven into sessions only when the client finds it meaningful.",
+  "faithText": "Pam identifies as Christian and welcomes faith-oriented clients who value spiritual integration in their healing process. This is always client-directed. Faith is woven into sessions only when the client finds it meaningful.",
   "credentialDetails": [
     {"s": "License:", "t": "LSW (Licensed Social Worker), Ohio S.0600436"},
     {"s": "Education:", "t": "Bachelor of Social Work, Capital University (2006)."},

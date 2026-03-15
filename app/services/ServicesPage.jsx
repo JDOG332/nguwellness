@@ -369,7 +369,7 @@ export default function ServicesPage() {
           <p className="eyebrow">What We Treat</p>
           <h2 className="svc-section-title">Concerns we specialize in.</h2>
           <p className="svc-section-desc">
-            Our team covers a broad range of concerns. If you do not see yours listed, reach out — we can likely help or refer you to someone who can.
+            Our team covers a broad range of concerns. If you do not see yours listed, reach out. We can likely help or refer you to someone who can.
           </p>
           <div className="spec-grid">
             {SPECIALTIES.map(s => <span key={s} className="spec-pill">{s}</span>)}
@@ -403,7 +403,7 @@ export default function ServicesPage() {
           <p className="eyebrow">Insurance &amp; Payment</p>
           <h2 className="svc-section-title">We work with your plan.</h2>
           <p className="svc-section-desc-spaced">
-            NGU Wellness accepts most major insurance, Medicaid, and EAP plans. Not sure about your coverage? We will verify it for you — free.
+            NGU Wellness accepts most major insurance, Medicaid, and EAP plans. Not sure about your coverage? We will verify it for you, free.
           </p>
           <div className="ins-tabs">
             <button className={`ins-tab${insTab === "commercial" ? " active" : ""}`} onClick={() => setInsTab("commercial")}>Commercial</button>

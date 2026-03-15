@@ -26,7 +26,7 @@ const DATA = {
     {"s": "People dealing with anxiety and depression", "t": "who need practical coping skills and a calm, non-judgmental space."},
     {"s": "People working through grief", "t": "divorce, loss, or major life changes."},
     {"s": "People struggling with codependency and boundaries", "t": "in relationships with parents, friends, and partners."},
-    {"s": "Both experienced therapy clients and first-timers", "t": "— Charlotte has received positive feedback from both."}
+    {"s": "Both experienced therapy clients and first-timers", "t": "Charlotte has received positive feedback from both."}
   ],
   "specialtiesFull": [
     "Anxiety", "Depression", "Grief & Loss", "Women's Issues",
@@ -51,7 +51,7 @@ const DATA = {
   "expectations": [
     {"s": "First sessions:", "t": "Charlotte creates a calm, relaxed space from the start. She collaborates with you to identify goals and objectives appropriate for your individual needs."},
     {"s": "Ongoing work:", "t": "Holistic sessions addressing mental, physical, and spiritual wellness. You'll learn healthy coping skills, effective self-care, and how to navigate changing relationship dynamics."},
-    {"s": "Charlotte's style:", "t": "Safe, compassionate, and collaborative. She approaches therapy first as a person and second as a therapist — honoring your story with genuine warmth."},
+    {"s": "Charlotte's style:", "t": "Safe, compassionate, and collaborative. She approaches therapy first as a person and second as a therapist, honoring your story with genuine warmth."},
     {"s": "Session length:", "t": "Standard 50-minute individual sessions."},
     {"s": "Session format:", "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio."}
   ],

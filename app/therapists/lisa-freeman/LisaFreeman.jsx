@@ -22,11 +22,11 @@ const DATA = {
   "quote": "Each person is on a unique journey shaped by their circumstances, dreams, goals, beliefs and emotions. I believe we all benefit from someone willing to sit with us, identify what we want and support us as we move forward toward those goals.",
   "calloutQuote": "My role is to understand your background, beliefs and aspirations and provide the tools and support needed to improve your well-being. I'll help you embrace honesty, acceptance and self-reflection to maintain mental, physical and emotional wellness.",
   "whoHelps": [
-    {"s": "Children 5+ with anxiety, ADHD, or behavioral issues", "t": "— Lisa collaboratively works with kids and their parents, guardians, and families to identify triggers, understand emotions, and learn coping strategies."},
+    {"s": "Children 5+ with anxiety, ADHD, or behavioral issues", "t": "Lisa collaboratively works with kids and their parents, guardians, and families to identify triggers, understand emotions, and learn coping strategies."},
     {"s": "Adults dealing with anxiety, depression, or relationship issues", "t": "including spouses/partners, friends, coworkers, parent-child, siblings, and grandparent relationships."},
-    {"s": "People struggling with insomnia or sleep disorders", "t": "— Lisa has specialized CBTi training to assess sleep patterns, challenge negative thoughts, and implement sleep restriction and relaxation strategies."},
+    {"s": "People struggling with insomnia or sleep disorders", "t": "Lisa has specialized CBTi training to assess sleep patterns, challenge negative thoughts, and implement sleep restriction and relaxation strategies."},
     {"s": "Couples working through communication, conflict, or premarital concerns", "t": "practicing active listening, empathy, and conflict resolution to enhance understanding and connection."},
-    {"s": "People who have experienced trauma or abuse", "t": "including childhood trauma, domestic violence, and sexual abuse — Lisa has extensive specialized training in sensory-based and trauma-focused interventions."},
+    {"s": "People who have experienced trauma or abuse", "t": "including childhood trauma, domestic violence, and sexual abuse. Lisa has extensive specialized training in sensory-based and trauma-focused interventions."},
     {"s": "Families navigating parenting challenges", "t": "family conflict, divorce, adoption, or caregiver stress."}
   ],
   "specialtiesFull": [
@@ -41,7 +41,7 @@ const DATA = {
     "Education & Learning Disabilities", "Spirituality",
     "Parent-Child Relationships", "Abuse"
   ],
-  "approachText": "Lisa has three deep areas of specialized expertise: 1) Working with children while collaboratively engaging parents, guardians, and families. 2) Working on relationship issues across all types — spouses, partners, friends, coworkers, parent-child, siblings, and grandparents. 3) Treating insomnia and sleep disorders with CBTi. Before becoming a counselor, Lisa worked in the medical field, where she became frustrated with the lack of honest communication between providers and patients — this drove her to pursue counseling with a focus on fostering open, authentic dialogue.",
+  "approachText": "Lisa has three deep areas of specialized expertise: 1) Working with children while collaboratively engaging parents, guardians, and families. 2) Working on relationship issues across all types: spouses, partners, friends, coworkers, parent-child, siblings, and grandparents. 3) Treating insomnia and sleep disorders with CBTi. Before becoming a counselor, Lisa worked in the medical field, where she became frustrated with the lack of honest communication between providers and patients. This drove her to pursue counseling with a focus on fostering open, authentic dialogue.",
   "modalities": [
     {"abbr": "CBT", "name": "Cognitive Behavioral Therapy", "desc": "Identifying and changing unhelpful thought patterns and behaviors."},
     {"abbr": "CBTi", "name": "CBT for Insomnia", "desc": "Specialized treatment assessing sleep patterns, challenging negative thoughts, and implementing sleep restriction and relaxation strategies."},
@@ -66,12 +66,12 @@ const DATA = {
     {"s": "Session length:", "t": "Standard 50-minute sessions."},
     {"s": "Session format:", "t": "Individual, couples, and family therapy. In-person at the Dayton office or secure telehealth video across Ohio."}
   ],
-  "faithText": "Lisa's expertise includes spirituality and spiritual trauma. She is comfortable exploring how faith, beliefs, and spiritual experiences — both positive and painful — connect to your overall well-being. This is always client-directed.",
+  "faithText": "Lisa's expertise includes spirituality and spiritual trauma. She is comfortable exploring how faith, beliefs, and spiritual experiences, both positive and painful, connect to your overall well-being. This is always client-directed.",
   "credentialDetails": [
     {"s": "License:", "t": "LPC (Licensed Professional Counselor), Ohio C.1400530"},
     {"s": "Education:", "t": "Master's Degree in Professional Counseling, Liberty University (2014)."},
     {"s": "Specialized Training:", "t": "CBTi (insomnia treatment), Play Therapy, Sand Tray, Sensory Motor Arousal Regulation (SMART), TF-CBT, CPRT, PCIT, Art Therapy, BIPOC Affirming Therapy."},
-    {"s": "Previous Career:", "t": "Medical field — Lisa's frustration with the lack of honest provider-patient communication drove her to pursue counseling."},
+    {"s": "Previous Career:", "t": "Medical field. Lisa's frustration with the lack of honest provider-patient communication drove her to pursue counseling."},
     {"s": "Verified:", "t": "Psychology Today Verified with 5 professional endorsements."}
   ],
   "schedule": {

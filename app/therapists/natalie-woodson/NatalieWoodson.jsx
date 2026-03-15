@@ -20,11 +20,11 @@ const DATA = {
   "ages": "Preteens · Teens · Adults · Elders 65+",
   "faith": false,
   "quote": "I'll provide a safe and affirming environment that will allow you to make your own decisions. I will actively listen to your needs and concerns and provide guidance to address the root cause of your issue through healthy problem solving.",
-  "calloutQuote": "Mental health has great meaning in my own life and from a young age I dreamed of helping people as a therapist. My passion for helping others has only grown stronger with time — I believe it's my calling.",
+  "calloutQuote": "Mental health has great meaning in my own life and from a young age I dreamed of helping people as a therapist. My passion for helping others has only grown stronger with time. I believe it's my calling.",
   "whoHelps": [
     {"s": "Preteens & teens", "t": "dealing with anxiety, depression, anger, school stress, and life transitions."},
     {"s": "Adults overwhelmed by stress, anxiety, or depression", "t": "who want practical tools and a holistic approach that goes beyond talk therapy."},
-    {"s": "Survivors of trauma", "t": "including domestic violence, intimate partner violence, PTSD, and human trafficking — Natalie is EMDR-trained."},
+    {"s": "Survivors of trauma", "t": "including domestic violence, intimate partner violence, PTSD, and human trafficking. Natalie is EMDR-trained."},
     {"s": "People struggling with substance use or addiction", "t": "including alcohol, drugs, and behavioral addictions like video gaming."},
     {"s": "Individuals navigating grief, life transitions, or relationship conflict", "t": "who need a respectful, patient space to rebuild."},
     {"s": "People with chronic illness, chronic pain, or disabilities", "t": "seeking a disability-affirming therapist who honors the whole person."}
@@ -40,7 +40,7 @@ const DATA = {
     "Spirituality", "Video Game Addiction", "Weight Management",
     "Emotional Disturbance"
   ],
-  "approachText": "Natalie uses cognitive restructuring to help clients identify and challenge negative thought patterns, replacing them with more balanced, realistic, and positive ones. Her approach encompasses mind, body, and soul — a holistic perspective that considers each client's unique background and experiences. She is EMDR-trained for clients who need deeper trauma processing, and draws on her own life experiences to help clients eliminate self-judgment and express themselves as their true selves.",
+  "approachText": "Natalie uses cognitive restructuring to help clients identify and challenge negative thought patterns, replacing them with more balanced, realistic, and positive ones. Her approach encompasses mind, body, and soul: a holistic perspective that considers each client's unique background and experiences. She is EMDR-trained for clients who need deeper trauma processing, and draws on her own life experiences to help clients eliminate self-judgment and express themselves as their true selves.",
   "modalities": [
     {"abbr": "CBT", "name": "Cognitive Behavioral Therapy", "desc": "Restructures negative thought patterns into more balanced, realistic, and positive ones."},
     {"abbr": "EMDR", "name": "Eye Movement Desensitization & Reprocessing", "desc": "Evidence-based trauma processing for clients who need extra help overcoming past experiences."},
@@ -62,7 +62,7 @@ const DATA = {
   "expectations": [
     {"s": "First session:", "t": "A safe, non-judgmental space where Natalie actively listens to your needs and concerns. Together you'll identify the root cause of what's going on and map out a plan."},
     {"s": "Ongoing work:", "t": "Developing new skills and strategies to cope with challenges, reduce stress, make positive changes, enhance relationships, and improve overall well-being. Multiple routes to reach your goals."},
-    {"s": "Natalie's style:", "t": "Respectful, patient, and serene. She listens with compassion and persistently advocates for your needs. You won't be defined by a diagnosis or label — the goal is expressing your true self."},
+    {"s": "Natalie's style:", "t": "Respectful, patient, and serene. She listens with compassion and persistently advocates for your needs. You won't be defined by a diagnosis or label. The goal is expressing your true self."},
     {"s": "Session length:", "t": "Standard 50-minute individual sessions."},
     {"s": "Session format:", "t": "Individual and family therapy. In-person at the Dayton office or secure telehealth video across Ohio."}
   ],

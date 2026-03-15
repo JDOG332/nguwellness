@@ -55,7 +55,7 @@ const DATA = {
   "credentialDetails": [
     {"s": "License:", "t": "LISW-S (Licensed Independent Social Worker – Supervisor), Ohio I.1450751-SUPV"},
     {"s": "Education:", "t": "Master of Social Work, The Ohio State University (2011). Master of Rehabilitation Counseling, Wright State University (2018)."},
-    {"s": "Experience:", "t": "25+ years as a helping professional — clinical work, case management, supervision, community health, and hospital settings."},
+    {"s": "Experience:", "t": "25+ years as a helping professional: clinical work, case management, supervision, community health, and hospital settings."},
     {"s": "Verified:", "t": "Psychology Today Verified with 5 professional endorsements."}
   ],
   "schedule": {

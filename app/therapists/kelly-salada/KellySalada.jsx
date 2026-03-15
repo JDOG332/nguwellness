@@ -19,10 +19,10 @@ const DATA = {
   "locationDetail": "In-person: 20525 Center Ridge Rd., Suite 604, Rocky River, OH 44116 · Telehealth statewide",
   "ages": "Teens through Adults & Elders (65+)",
   "faith": false,
-  "quote": "I will work to create a nurturing, psychologically safe space — actively listening and witnessing your story. I will meet you where you are at, with compassion, while honoring you as the expert of your own experiences.",
+  "quote": "I will work to create a nurturing, psychologically safe space, actively listening and witnessing your story. I will meet you where you are at, with compassion, while honoring you as the expert of your own experiences.",
   "calloutQuote": "You're the expert on your life. I won't judge where you've been or where you're headed. My role is to provide the support and tools to make the changes you're ready to make at a pace that's comfortable to you.",
   "whoHelps": [
-    {"s": "People who have experienced significant trauma", "t": "abuse, or neglect — Kelly has dedicated her career to empowering people through recovery from adversity."},
+    {"s": "People who have experienced significant trauma", "t": "abuse, or neglect. Kelly has dedicated her career to empowering people through recovery from adversity."},
     {"s": "People dealing with anxiety, depression, or overwhelming emotions", "t": "who need practical, evidence-based strategies and a safe space to feel heard."},
     {"s": "People navigating relationship difficulties", "t": "self-esteem struggles, or adjustment issues who are ready for positive change."},
     {"s": "People with concerns related to neurodivergence", "t": "including ADHD, Asperger's, and related challenges."},
@@ -39,7 +39,7 @@ const DATA = {
     "Self-Esteem", "Stress", "Gender & Sexual Identity",
     "Adjustment Issues", "Abuse & Neglect"
   ],
-  "approachText": "Kelly decided to become a therapist after overcoming her own history of adversity and trauma. She has since dedicated her life to empowering others with the tools to confront the impact of their own experiences and positively grow. She has worked with diverse populations across several states — including as an outreach counselor in child welfare in Hawaii and a school-based therapist in Ohio. Her approach is rooted in empathy, practical evidence-based strategies, and meeting you exactly where you are.",
+  "approachText": "Kelly decided to become a therapist after overcoming her own history of adversity and trauma. She has since dedicated her life to empowering others with the tools to confront the impact of their own experiences and positively grow. She has worked with diverse populations across several states, including as an outreach counselor in child welfare in Hawaii and a school-based therapist in Ohio. Her approach is rooted in empathy, practical evidence-based strategies, and meeting you exactly where you are.",
   "modalities": [
     {"abbr": "TF-CBT", "name": "Trauma-Focused CBT", "desc": "Evidence-based treatment specifically designed for processing trauma and PTSD."},
     {"abbr": "CBT", "name": "Cognitive Behavioral Therapy", "desc": "Identifying and changing unhelpful thought patterns and behaviors."},
@@ -55,7 +55,7 @@ const DATA = {
     {"abbr": "REL", "name": "Relational Therapy", "desc": "Strengthening the capacity for healthy, authentic relationships."}
   ],
   "expectations": [
-    {"s": "First sessions:", "t": "Kelly creates a nurturing, psychologically safe space from the start. She actively listens and witnesses your story with compassion — you guide the therapeutic process."},
+    {"s": "First sessions:", "t": "Kelly creates a nurturing, psychologically safe space from the start. She actively listens and witnesses your story with compassion. You guide the therapeutic process."},
     {"s": "Ongoing work:", "t": "Developing new skills and strategies to cope with past trauma or current challenges, reducing stress, and making positive changes to improve your well-being and relationships."},
     {"s": "Kelly's style:", "t": "Understanding and supportive. Clients trust her because she's intentional about gently guiding them toward their goals. She honors you as the expert of your own experiences."},
     {"s": "Session length:", "t": "Standard 50-minute individual sessions. Evening and Saturday hours available."},

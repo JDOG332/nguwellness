@@ -20,9 +20,9 @@ const DATA = {
   "ages": "Adults 18–75",
   "faith": true,
   "quote": "I believe each person is valuable just as they are. We are all works in progress, and it takes courage just to come in the door.",
-  "calloutQuote": "The right therapist doesn't just listen — they help you build real, lasting tools for the life you actually want to be living.",
+  "calloutQuote": "The right therapist doesn't just listen. They help you build real, lasting tools for the life you actually want to be living.",
   "whoHelps": [
-    {"s": "Adults 18–75", "t": "who are ready for real, practical tools — not just venting."},
+    {"s": "Adults 18–75", "t": "who are ready for real, practical tools, not just venting."},
     {"s": "People with anxiety", "t": "including panic, OCD, generalized worry, and avoidance patterns."},
     {"s": "People dealing with depression", "t": "low motivation, emotional numbness, or hopelessness."},
     {"s": "People grieving a loss", "t": "or navigating major life transitions (career, divorce, retirement)."},

@@ -765,14 +765,14 @@ export default function AboutPage() {
           <div className="vmv-block vmv-values-block">
             <h3 className="vmv-heading">Our Values</h3>
             <div className="vmv-values-grid">
-              <div className="vmv-value-item"><span className="vmv-value-icon">⟡</span><div><strong>Serve</strong> — Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.</div></div>
-              <div className="vmv-value-item"><span className="vmv-value-icon">○</span><div><strong>Community</strong> — Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.</div></div>
-              <div className="vmv-value-item"><span className="vmv-value-icon">◈</span><div><strong>Embrace</strong> — We believe in welcoming all people. We realize we can be different from other people and still appreciate and respect them, learn from them and work together.</div></div>
-              <div className="vmv-value-item"><span className="vmv-value-icon">◇</span><div><strong>Support</strong> — We demonstrate support through acceptance, belief in a person's ability to change and by providing encouragement.</div></div>
-              <div className="vmv-value-item"><span className="vmv-value-icon">⟡</span><div><strong>Collaboration</strong> — Working together and sharing ideas increases the chance of reaching identified goals.</div></div>
-              <div className="vmv-value-item"><span className="vmv-value-icon">○</span><div><strong>Creativity</strong> — Creativity provides stress relief and enhances our ability to solve problems, change perspectives and express our thoughts and feelings.</div></div>
-              <div className="vmv-value-item"><span className="vmv-value-icon">◈</span><div><strong>Skill Building</strong> — Learning and implementing new skills is essential to change. We can learn new skills to cope with stress, to manage mental health symptoms, to repair our relationships and to take care of ourselves.</div></div>
-              <div className="vmv-value-item"><span className="vmv-value-icon">◇</span><div><strong>Wellness</strong> — We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">⟡</span><div><strong>Serve:</strong> Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">○</span><div><strong>Community:</strong> Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">◈</span><div><strong>Embrace:</strong> We believe in welcoming all people. We realize we can be different from other people and still appreciate and respect them, learn from them and work together.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">◇</span><div><strong>Support:</strong> We demonstrate support through acceptance, belief in a person's ability to change and by providing encouragement.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">⟡</span><div><strong>Collaboration:</strong> Working together and sharing ideas increases the chance of reaching identified goals.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">○</span><div><strong>Creativity:</strong> Creativity provides stress relief and enhances our ability to solve problems, change perspectives and express our thoughts and feelings.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">◈</span><div><strong>Skill Building:</strong> Learning and implementing new skills is essential to change. We can learn new skills to cope with stress, to manage mental health symptoms, to repair our relationships and to take care of ourselves.</div></div>
+              <div className="vmv-value-item"><span className="vmv-value-icon">◇</span><div><strong>Wellness:</strong> We believe making daily, healthy choices in all areas of our life allows us to thrive and live our best life.</div></div>
             </div>
           </div>
         </div>
@@ -788,7 +788,7 @@ export default function AboutPage() {
           <div className="pillar-grid">
             <div className="pillar">
               <div className="pillar-title-row"><span className="pillar-icon">⟡</span><p className="pillar-title">Evidence-Based</p></div>
-              <p className="pillar-desc">Every therapist is licensed, vetted, and trained in proven approaches — CBT, EMDR, DBT, ACT, and more.</p>
+              <p className="pillar-desc">Every therapist is licensed, vetted, and trained in proven approaches: CBT, EMDR, DBT, ACT, and more.</p>
             </div>
             <div className="pillar">
               <div className="pillar-title-row"><span className="pillar-icon">◈</span><p className="pillar-title">Collaborative</p></div>
@@ -880,7 +880,7 @@ export default function AboutPage() {
                 <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">Summer 2021</p><p className="tl-entry-title">Building the practice</p><p className="tl-entry-desc">Insurance paneling, planning, location scouting, space remodeling, and furnishing.</p></div></div>
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">August 1, 2021</p><p className="tl-entry-title">Doors open</p><p className="tl-entry-desc">453 Patterson Rd., Suite A, Dayton, Ohio. A multi-therapist practice built on collaborative, evidence-based care.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
                 <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">August 23, 2021</p><p className="tl-entry-person">Dr. Nicole Walton</p><p className="tl-entry-role">Founder &amp; Clinical Director sees her first NGU client</p></div></div>
-                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">December 3, 2021</p><p className="tl-entry-person">Charlotte Wells</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">December 3, 2021</p><p className="tl-entry-person">Charlotte Wells</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
             {/* 2022 */}
@@ -888,26 +888,26 @@ export default function AboutPage() {
               <div className="tl-year-marker"><span className="tl-year-badge">2022</span></div>
               <div className="tl-entries">
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">March 31, 2022</p><p className="tl-entry-title">$10,000 Grubhub grant awarded</p><p className="tl-entry-desc">On NGU Wellness' exact one-year anniversary, Business Manager Jeffrey Sellers is personally awarded a $10,000 grant by Grubhub COO Eric Ferguson to fuel the practice's growth and its mission of serving the community.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
-                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">July 14, 2022</p><p className="tl-entry-person">Danielle Washington</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
+                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">July 14, 2022</p><p className="tl-entry-person">Danielle Washington</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div></div>
               </div>
             </div>
             {/* 2023 */}
             <div className="tl-year-group">
               <div className="tl-year-marker"><span className="tl-year-badge milestone">2023</span></div>
               <div className="tl-entries">
-                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">February 21, 2023</p><p className="tl-entry-person">Pam Gibson</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
-                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">March 23, 2023</p><p className="tl-entry-person">Natalie Woodson-Booska</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">February 21, 2023</p><p className="tl-entry-person">Pam Gibson</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">March 23, 2023</p><p className="tl-entry-person">Natalie Woodson-Booska</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div></div>
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">Spring 2023</p><p className="tl-entry-title">Dr. Walton earns her PhD</p><p className="tl-entry-desc">Doctorate in Counselor Education &amp; Supervision from Regent University.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
-                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">September 27, 2023</p><p className="tl-entry-person">Kelly Salada</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
-                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 10, 2023</p><p className="tl-entry-person">Katie Grier</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">September 27, 2023</p><p className="tl-entry-person">Kelly Salada</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 10, 2023</p><p className="tl-entry-person">Katie Grier</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
             {/* 2024 */}
             <div className="tl-year-group">
               <div className="tl-year-marker"><span className="tl-year-badge milestone">2024</span></div>
               <div className="tl-entries">
-                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">June 12, 2024</p><p className="tl-entry-person">Lisa Freeman</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
-                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">June 26, 2024</p><p className="tl-entry-person">Anna Espy</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">June 12, 2024</p><p className="tl-entry-person">Lisa Freeman</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">June 26, 2024</p><p className="tl-entry-person">Anna Espy</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div></div>
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 1, 2024</p><p className="tl-entry-title">Rocky River location opens</p><p className="tl-entry-desc">20525 Center Ridge Rd., Suite 604. NGU expands to serve the greater Cleveland area.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
@@ -915,9 +915,9 @@ export default function AboutPage() {
             <div className="tl-year-group">
               <div className="tl-year-marker"><span className="tl-year-badge">2025</span></div>
               <div className="tl-entries">
-                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">January 11, 2025</p><p className="tl-entry-person">Kelley Boole</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
-                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">September 19, 2025</p><p className="tl-entry-person">Jackie Penny</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div></div>
-                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 7, 2025</p><p className="tl-entry-person">Kim Brant</p><p className="tl-entry-role">Joins the team — first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">January 11, 2025</p><p className="tl-entry-person">Kelley Boole</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">September 19, 2025</p><p className="tl-entry-person">Jackie Penny</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div></div>
+                <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">October 7, 2025</p><p className="tl-entry-person">Kim Brant</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
             {/* 2026 */}
@@ -947,11 +947,11 @@ export default function AboutPage() {
             <p className="community-headline">"Mental health doesn't stop at the door."</p>
           </div>
           <div>
-            <p className="community-intro">NGU Wellness is proud to be an active part of the communities we serve — not just as a therapy practice, but as neighbors, advocates, and supporters.</p>
+            <p className="community-intro">NGU Wellness is proud to be an active part of the communities we serve. Not just as a therapy practice, but as neighbors, advocates, and supporters.</p>
             <div className="community-items">
-              <div className="community-item"><div className="community-dot" /><p className="community-text"><strong>The Gem Project Dayton</strong> — Jeffrey Sellers serves on the Board of Directors, supporting youth development and community wellness.</p></div>
-              <div className="community-item"><div className="community-dot" /><p className="community-text"><strong>That Day in May</strong> — NGU Wellness is a proud annual sponsor of Oakwood's suicide prevention and awareness Pancake Breakfast.</p></div>
-              <div className="community-item"><div className="community-dot" /><p className="community-text"><strong>Local Youth Sports</strong> — We believe wellness starts young. NGU supports local youth sports programs in our communities.</p></div>
+              <div className="community-item"><div className="community-dot" /><p className="community-text"><strong>The Gem Project Dayton:</strong> Jeffrey Sellers serves on the Board of Directors, supporting youth development and community wellness.</p></div>
+              <div className="community-item"><div className="community-dot" /><p className="community-text"><strong>That Day in May:</strong> NGU Wellness is a proud annual sponsor of Oakwood's suicide prevention and awareness Pancake Breakfast.</p></div>
+              <div className="community-item"><div className="community-dot" /><p className="community-text"><strong>Local Youth Sports:</strong> We believe wellness starts young. NGU supports local youth sports programs in our communities.</p></div>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ const DATA = {
     "Body Image", "Addiction", "Coping Skills",
     "Trauma & PTSD", "Sexual Identity", "Transgender Support"
   ],
-  "approachText": "Katie understands that each individual is different and tailors her approach accordingly, even for clients with similar issues. She allows you to guide the therapeutic process and gives you a safe space to figure out and work through anything you might be struggling with. She believes having support early in life is critical to long-term well-being — addressing issues early helps individuals change patterns of thinking and develop healthy skills more easily.",
+  "approachText": "Katie understands that each individual is different and tailors her approach accordingly, even for clients with similar issues. She allows you to guide the therapeutic process and gives you a safe space to figure out and work through anything you might be struggling with. She believes having support early in life is critical to long-term well-being. Addressing issues early helps individuals change patterns of thinking and develop healthy skills more easily.",
   "modalities": [
     {"abbr": "CBT", "name": "Cognitive Behavioral Therapy", "desc": "Identifying and changing unhelpful thought patterns and behaviors."},
     {"abbr": "DBT", "name": "Dialectical Behavior Therapy", "desc": "Skills for managing emotions, improving relationships, and coping with stress."},
@@ -46,7 +46,7 @@ const DATA = {
     {"abbr": "SBT", "name": "Strengths-Based Therapy", "desc": "Identifying and building upon your inherent strengths."},
     {"abbr": "FS", "name": "Family Systems Therapy", "desc": "Understanding and improving dynamics within the family unit."},
     {"abbr": "PT", "name": "Play Therapy & Sandplay", "desc": "Evidence-based therapeutic approaches for children using play, sand, and creative expression."},
-    {"abbr": "ART", "name": "Therapy with Art", "desc": "Using creative expression to process emotions and build insight — especially effective with children and teens."},
+    {"abbr": "ART", "name": "Therapy with Art", "desc": "Using creative expression to process emotions and build insight, especially effective with children and teens."},
     {"abbr": "NAR", "name": "Narrative Therapy", "desc": "Separates the person from the problem. Helps reauthor personal stories."},
     {"abbr": "MI", "name": "Motivational Interviewing", "desc": "Finding your own internal motivation for meaningful change."},
     {"abbr": "EFT", "name": "Emotionally Focused Therapy", "desc": "Strengthening emotional bonds and attachment in relationships."},
@@ -63,7 +63,7 @@ const DATA = {
   "faithText": "",
   "teamSays": {
     "text": "Katie is one of the most genuinely empathetic people you will ever meet; not just as a therapist, but as a human being. She has a rare ability to make children, teens, and adults feel truly seen and accepted from the very first session. It's easy to open up to Katie because you can feel how much she cares and empathizes with your situation. If you're looking for someone who will listen with their whole heart and meet you exactly where you are, Katie is that person.",
-    "author": "Nicole Walton, PhD & Jeffrey Sellers — NGU Wellness Leadership"
+    "author": "Nicole Walton, PhD & Jeffrey Sellers, NGU Wellness Leadership"
   },
   "credentialDetails": [
     {"s": "License:", "t": "LSW (Licensed Social Worker), Ohio S.2309936"},

@@ -614,7 +614,7 @@ export default function TherapistsDirectory() {
             <p className="dir-empty-desc">
               Try broader terms or{" "}
               <a href="tel:+18886489355" className="dir-empty-link">call us</a>
-              {" "}— we will help you find the right fit.
+              {" "}, we will help you find the right fit.
             </p>
           </div>
         )}

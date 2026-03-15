@@ -587,7 +587,7 @@ export default function TherapistProfile({ data }) {
               <Acc title={`What Our Team Says`} chip="From NGU Leadership">
                 <div className="tp-team-says">
                   <p className="tp-team-says-text">{t.teamSays.text}</p>
-                  <p className="tp-team-says-author">— {t.teamSays.author}</p>
+                  <p className="tp-team-says-author">– {t.teamSays.author}</p>
                 </div>
               </Acc>
             )}
@@ -620,7 +620,7 @@ export default function TherapistProfile({ data }) {
             {t.faith && (
               <Acc title="Faith & Spirituality">
                 <div className="tp-faith-box">
-                  <p className="tp-faith-title">Faith-integrated therapy is available — never required.</p>
+                  <p className="tp-faith-title">Faith-integrated therapy is available, never required.</p>
                   <p className="tp-bio-text">{t.faithText}</p>
                 </div>
               </Acc>

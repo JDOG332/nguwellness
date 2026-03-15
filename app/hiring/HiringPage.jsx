@@ -155,7 +155,7 @@ export default function HiringPage() {
             </div>
             <div className="hire-value">
               <p className="hire-value-title">Administrative Support</p>
-              <p className="hire-value-desc">We handle intake, insurance verification, scheduling, and billing so you can focus on what you do best — therapy.</p>
+              <p className="hire-value-desc">We handle intake, insurance verification, scheduling, and billing so you can focus on what you do best: therapy.</p>
             </div>
             <div className="hire-value">
               <p className="hire-value-title">Flexibility</p>
