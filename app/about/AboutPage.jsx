@@ -24,6 +24,10 @@ const aboutStyles = `
   .about-hero-title {
     font-size: clamp(var(--t-xl), 5vw + 1rem, var(--t-2xl));
     margin-bottom: var(--s-md);
+    background: var(--brand-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .about-hero-desc {
@@ -70,7 +74,7 @@ const aboutStyles = `
   }
 
   .ngu-box {
-    background: var(--brand-grad);
+    background: var(--ink);
     padding: var(--s-lg);
     border-radius: var(--s-2xs);
     display: flex;
