@@ -525,9 +525,9 @@ export default function ContactPage() {
       {/* ── HERO ── */}
       <section className="contact-hero">
         <p className="eyebrow">Get Started</p>
-        <h1>We are here when you are ready.</h1>
+        <h1>We're here when you're ready.</h1>
         <p className="contact-hero-desc">
-          Taking the first step is the hardest part. We make everything after that as simple as possible.
+          Taking the first step is sometimes the hardest part. We help make everything as easy as possible.
         </p>
       </section>
 
