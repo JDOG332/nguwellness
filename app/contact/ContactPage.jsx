@@ -550,7 +550,7 @@ export default function ContactPage() {
             <div className="step-card">
               <p className="step-num">01</p>
               <p className="step-title">Complete the intake survey</p>
-              <p className="step-desc">A brief online questionnaire helps us understand your needs, preferences, and insurance information.</p>
+              <p className="step-desc">Completing the 2-minute survey helps us understand your needs and preferences.</p>
             </div>
             <div className="step-card">
               <p className="step-num">02</p>
