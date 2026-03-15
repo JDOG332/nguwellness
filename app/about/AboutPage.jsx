@@ -797,7 +797,7 @@ export default function AboutPage() {
             </div>
             <div className="pillar">
               <div className="pillar-title-row"><span className="pillar-icon">◈</span><p className="pillar-title">Collaborative</p></div>
-              <p className="pillar-desc">We work with you, not at you. Together, we identify goals, build skills, and address challenges creatively.</p>
+              <p className="pillar-desc">We work with you, not at you. Together, we'll identify goals, build skills, and creatively address challenges.</p>
             </div>
             <div className="pillar">
               <div className="pillar-title-row"><span className="pillar-icon">◇</span><p className="pillar-title">Flexible</p></div>
