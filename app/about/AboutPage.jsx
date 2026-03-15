@@ -70,7 +70,7 @@ const aboutStyles = `
   }
 
   .ngu-box {
-    background: var(--ink);
+    background: var(--brand-grad);
     padding: var(--s-lg);
     border-radius: var(--s-2xs);
     display: flex;
@@ -728,7 +728,7 @@ export default function AboutPage() {
             Everyone deserves to feel accepted, supported and hope for a better life.
           </p>
           <div className="about-hero-actions">
-            <button className="btn-primary" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
+            <button className="btn-rose" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
             <button className="btn-outline" onClick={() => router.push("/contact")}>Get in Touch</button>
           </div>
           <div className="hero-stats">
