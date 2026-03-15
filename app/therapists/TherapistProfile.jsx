@@ -542,7 +542,7 @@ export default function TherapistProfile({ data }) {
           <p className="tp-pronouns">{t.pronouns}</p>
           <p className="tp-quote">"{t.quote}"</p>
           <div className="tp-cta-col">
-            <button className="tp-btn-primary" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
+            <button className="tp-btn-primary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>
               {isAccepting ? "Schedule with " + t.firstName : `Join ${t.firstName}'s Waitlist`}
             </button>
             <a className="tp-btn-outline" href="tel:+18886489355">Call or Text: 888-648-9355</a>

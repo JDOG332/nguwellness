@@ -5,7 +5,7 @@ import Nav from "../Nav";
 import Footer from "../Footer";
 
 const FAQ = [
-  { q: "How do I get started?", a: "Complete our brief intake survey at therapyportal.com/p/nguwellness. We will review your information and match you with the right therapist. You can also call or text us at 888-648-9355." },
+  { q: "How do I get started?", a: "Fill out our quick contact form and we will reach out the same day. You can also call or text us at 888-648-9355." },
   { q: "Do you accept my insurance?", a: "We accept most major commercial insurance, Medicaid, and several EAP programs. We verify your benefits before your first session at no charge. Visit our Services page for the full list." },
   { q: "Can I do therapy over video?", a: "Yes. We offer secure telehealth sessions to anyone in Ohio. Same therapists, same quality care, from wherever you feel most comfortable." },
   { q: "How long are sessions?", a: "Standard individual sessions are 50 minutes. Intake sessions may run slightly longer to allow time for a thorough assessment." },
@@ -549,7 +549,7 @@ export default function ContactPage() {
           <div className="steps-grid">
             <div className="step-card">
               <p className="step-num">01</p>
-              <p className="step-title">Complete the intake survey</p>
+              <p className="step-title">Complete the contact form</p>
               <p className="step-desc">Completing the 2-minute survey helps us understand your needs and preferences.</p>
             </div>
             <div className="step-card">
@@ -564,8 +564,8 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="steps-cta">
-            <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
-              Begin Intake Survey
+            <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>
+              Get Started
             </button>
           </div>
         </div>
@@ -598,8 +598,8 @@ export default function ContactPage() {
           Never give up on yourself. We are here to help you figure out the rest.
         </p>
         <div className="contact-cta-actions">
-          <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>
-            Begin Intake Survey
+          <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>
+            Get Started
           </button>
           <button className="btn-outline" onClick={() => router.push("/therapists")}>
             Browse Therapists

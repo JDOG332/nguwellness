@@ -964,7 +964,7 @@ export default function AboutPage() {
           <h2 className="cta-title">Ready to take the first step?</h2>
           <p className="cta-desc">Never give up on yourself. We are here to help you figure out the rest.</p>
           <div className="cta-actions">
-            <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>Begin Intake Survey</button>
+            <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>Get Started</button>
             <button className="btn-outline" onClick={() => router.push("/therapists")}>Browse Therapists</button>
           </div>
         </div>

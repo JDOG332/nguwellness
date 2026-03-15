@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
           <p className="footer-col-title">Get Help</p>
           <div className="footer-links">
-            <button className="footer-link" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>New Client Intake</button>
+            <button className="footer-link" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>Get Started</button>
             <button className="footer-link" onClick={() => window.open("tel:8886489355")}>Call or Text</button>
             <button className="footer-link" onClick={() => window.open("mailto:info@nguwellness.com")}>Email Us</button>
             <button className="footer-link" onClick={() => router.push("/privacy")}>Privacy Policy</button>

@@ -74,7 +74,7 @@ export default function Nav({ hideLogo = false }) {
           <button className="nav-link" onClick={() => go("/services")}>Services</button>
           <button className="nav-link" onClick={() => go("/therapists")}>Therapists</button>
           <button className="nav-link" onClick={() => go("/contact")}>Contact</button>
-          <button className="nav-cta" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>Get Started</button>
+          <button className="nav-cta" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>Get Started</button>
         </div>
         <button className={`nav-hamburger${menuOpen ? " open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
           <span /><span /><span />
@@ -85,7 +85,7 @@ export default function Nav({ hideLogo = false }) {
         <button className="nav-link" onClick={() => go("/services")}>Services</button>
         <button className="nav-link" onClick={() => go("/therapists")}>Therapists</button>
         <button className="nav-link" onClick={() => go("/contact")}>Contact</button>
-        <button className="nav-cta" onClick={() => { setMenuOpen(false); window.open("https://therapyportal.com/p/nguwellness", "_blank"); }}>Get Started</button>
+        <button className="nav-cta" onClick={() => { setMenuOpen(false); window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank"); }}>Get Started</button>
       </div>
     </>
   );

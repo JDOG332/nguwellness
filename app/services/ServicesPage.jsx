@@ -425,10 +425,10 @@ export default function ServicesPage() {
           <p className="eyebrow">Get Started</p>
           <h2 className="cta-title">Your first step is the hardest. We will take it with you.</h2>
           <p className="cta-desc">
-            Complete our brief intake survey and we will match you with the right therapist for your needs.
+            Fill out our quick contact form and we will match you with the right therapist for your needs.
           </p>
           <div className="cta-actions">
-            <button className="btn-rose" onClick={() => window.open("https://therapyportal.com/p/nguwellness", "_blank")}>Begin Intake Survey</button>
+            <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>Get Started</button>
             <button className="btn-outline" onClick={() => router.push("/therapists")}>Browse Therapists</button>
           </div>
         </div>
