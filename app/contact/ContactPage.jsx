@@ -555,7 +555,7 @@ export default function ContactPage() {
             <div className="step-card">
               <p className="step-num">02</p>
               <p className="step-title">We match you</p>
-              <p className="step-desc">Our intake team reviews your information and matches you with the therapist best suited for your concerns.</p>
+              <p className="step-desc">We'll help you determine the best therapist fit based on your preferences, insurance and scheduling needs.</p>
             </div>
             <div className="step-card">
               <p className="step-num">03</p>
