@@ -24,12 +24,6 @@ const aboutStyles = `
   .about-hero-title {
     font-size: clamp(var(--t-xl), 5vw + 1rem, var(--t-2xl));
     margin-bottom: var(--s-md);
-    background: linear-gradient(90deg, #F50A54 0%, #E627A0 30%, #F5913F 60%, #A8A4A0 85%, #F50A54 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    padding-bottom: var(--s-3xs);
-    display: inline-block;
   }
 
   .about-hero-desc {
