@@ -220,20 +220,27 @@ const contactStyles = `
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--s-md);
-    margin-top: var(--s-lg);
+    margin-top: var(--s-md);
   }
 
   .step-card {
-    padding: var(--s-lg);
+    padding: var(--s-lg) var(--s-md);
     border: 1px solid var(--divider);
+    border-radius: var(--s-2xs);
     position: relative;
+    transition: all var(--duration) var(--ease-phi);
+  }
+
+  .step-card:hover {
+    border-color: var(--rose);
+    transform: translateY(-0.236rem);
   }
 
   .step-num {
     font-family: var(--font-display);
-    font-size: var(--t-xl);
+    font-size: var(--t-md);
     font-weight: 900;
-    color: var(--divider);
+    color: var(--rose);
     line-height: 1;
     margin-bottom: var(--s-sm);
   }
@@ -242,14 +249,17 @@ const contactStyles = `
     font-family: var(--font-display);
     font-size: var(--t-md);
     font-weight: 900;
-    margin-bottom: var(--s-2xs);
+    color: var(--ink);
+    margin-bottom: var(--s-xs);
+    line-height: 1.1;
   }
 
   .step-desc {
-    font-size: var(--t-sm);
+    font-size: var(--t-base);
     font-weight: 300;
     color: var(--earth);
     line-height: 1.618;
+    margin-bottom: 0;
   }
 
   .steps-cta {
