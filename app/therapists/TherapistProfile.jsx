@@ -162,7 +162,7 @@ const tpStyles = `
     text-align: center;
     font-family: var(--font-body);
     font-size: var(--t-xs);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0.0618em;
     text-transform: uppercase;
     color: var(--paper);
@@ -172,6 +172,7 @@ const tpStyles = `
     cursor: pointer;
     transition: all var(--duration) var(--ease-phi);
     text-decoration: none;
+    text-shadow: 0 1px 0.236rem rgba(0, 0, 0, 0.15);
   }
   .tp-btn-primary:hover { opacity: var(--alpha-phi); }
 

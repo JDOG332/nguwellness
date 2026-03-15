@@ -206,7 +206,7 @@ a:hover { color: var(--rose); }
 .nav-cta {
   font-family: var(--font-body);
   font-size: var(--t-md);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.0618em;
   text-transform: uppercase;
   color: var(--paper);
@@ -215,6 +215,7 @@ a:hover { color: var(--rose); }
   padding: var(--s-xs) var(--s-md);
   cursor: pointer;
   transition: opacity var(--duration) var(--ease-phi);
+  text-shadow: 0 1px 0.236rem rgba(0, 0, 0, 0.15);
 }
 
 .nav-cta:hover { opacity: var(--alpha-phi); }
@@ -267,7 +268,7 @@ a:hover { color: var(--rose); }
   display: inline-block;
   font-family: var(--font-body);
   font-size: var(--t-xs);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.0618em;
   text-transform: uppercase;
   color: var(--paper);
@@ -277,6 +278,7 @@ a:hover { color: var(--rose); }
   cursor: pointer;
   transition: all var(--duration) var(--ease-phi);
   text-decoration: none;
+  text-shadow: 0 1px 0.236rem rgba(0, 0, 0, 0.15);
 }
 
 .btn-rose:hover {
