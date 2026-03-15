@@ -203,6 +203,11 @@ const aboutStyles = `
   .why-ngu-title {
     font-size: clamp(var(--t-lg), 3.82vw + 1rem, var(--t-2xl));
     margin-bottom: var(--s-sm);
+    display: inline-block;
+  }
+
+  .why-ngu-title + .phi-rule {
+    width: 61.8%;
   }
 
   .why-ngu-desc {
