@@ -595,7 +595,7 @@ export default function ContactPage() {
         <p className="eyebrow">Take the first step</p>
         <h2 className="contact-cta-title">Ready when you are.</h2>
         <p className="contact-cta-desc">
-          Never give up on yourself. We are here to help you figure out the rest.
+          Never give up on yourself.<br />We'll help you figure out the rest.
         </p>
         <div className="contact-cta-actions">
           <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>
