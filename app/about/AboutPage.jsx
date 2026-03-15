@@ -768,7 +768,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="vmv-block vmv-values-block">
-            <h3 className="vmv-heading">Our Values</h3>
+            <h3 className="vmv-heading">Values</h3>
             <div className="vmv-values-grid">
               <div className="vmv-value-item"><span className="vmv-value-icon">⟡</span><div><strong>Serve:</strong> Our work is guided by an attitude of service. This includes a desire to give back, make a difference in our community and model caring for others.</div></div>
               <div className="vmv-value-item"><span className="vmv-value-icon">○</span><div><strong>Community:</strong> Connection and being part of something greater than ourselves contributes to resiliency, achievement, and adds meaning to our lives.</div></div>
