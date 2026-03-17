@@ -334,6 +334,30 @@ const dirStyles = `
     pointer-events: none;
   }
 
+  .th-photo-arrow {
+    position: absolute;
+    bottom: var(--s-xs);
+    right: var(--s-xs);
+    width: var(--s-lg);
+    height: var(--s-lg);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--t-sm);
+    color: var(--ink);
+    pointer-events: none;
+    transition: all var(--duration) var(--ease-phi);
+    box-shadow: 0 0.146rem 0.382rem rgba(0, 0, 0, 0.12);
+  }
+
+  .th-card:hover .th-photo-arrow {
+    background: var(--ink);
+    color: var(--paper);
+    transform: translateX(var(--s-3xs));
+  }
+
   .th-photo-line {
     position: absolute;
     top: 0;
@@ -512,7 +536,7 @@ export default function TherapistsDirectory() {
             {[
               { icon: "⟡", head: "Excellent therapists help people.", body: "Handpicked for their values, work ethic, and the way they think about care." },
               { icon: "◈", head: "Therapists' needs matter too.", body: "Well supported, fairly paid therapists can better meet the needs of their clients." },
-              { icon: "◇", head: "Matched to your needs.", body: "Every match is intentional based on specialty, schedule, personality and approach." },
+              { icon: "◇", head: "Matched to your needs.", body: "Every match is intentional, based on specialty, schedule, personality and approach." },
             ].map(({ icon, head, body }) => (
               <div key={head} className="dir-phil-col">
                 <p className="dir-phil-head"><span className="dir-phil-icon">{icon}</span>{head}</p>
@@ -588,6 +612,7 @@ export default function TherapistsDirectory() {
                 </div>
               )}
               <div className="th-photo-vignette" />
+              <div className="th-photo-arrow">→</div>
               <div className="th-photo-line" style={{ background: t.color }} />
             </div>
 
