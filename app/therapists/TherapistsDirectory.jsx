@@ -337,16 +337,17 @@ const dirStyles = `
   .th-learn-more {
     display: flex;
     align-items: center;
-    gap: var(--s-3xs);
-    margin-top: var(--s-xs);
-    font-size: var(--t-xs);
-    font-weight: 400;
-    color: var(--warm-gray);
+    gap: var(--s-2xs);
+    margin-top: var(--s-sm);
+    font-size: var(--t-base);
+    font-weight: 700;
+    color: var(--ink);
     transition: all var(--duration) var(--ease-phi);
   }
 
   .th-learn-more-arrow {
     display: inline-block;
+    font-size: var(--t-md);
     transition: transform var(--duration) var(--ease-phi);
   }
 
