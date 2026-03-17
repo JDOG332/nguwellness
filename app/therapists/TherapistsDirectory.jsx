@@ -334,27 +334,27 @@ const dirStyles = `
     pointer-events: none;
   }
 
-  .th-photo-arrow {
-    position: absolute;
-    bottom: var(--s-xs);
-    right: var(--s-xs);
-    width: var(--s-lg);
-    height: var(--s-lg);
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.9);
+  .th-learn-more {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: var(--t-sm);
-    color: var(--ink);
-    pointer-events: none;
+    gap: var(--s-3xs);
+    margin-top: var(--s-xs);
+    font-size: var(--t-xs);
+    font-weight: 400;
+    color: var(--warm-gray);
     transition: all var(--duration) var(--ease-phi);
-    box-shadow: 0 0.146rem 0.382rem rgba(0, 0, 0, 0.12);
   }
 
-  .th-card:hover .th-photo-arrow {
-    background: var(--ink);
-    color: var(--paper);
+  .th-learn-more-arrow {
+    display: inline-block;
+    transition: transform var(--duration) var(--ease-phi);
+  }
+
+  .th-card:hover .th-learn-more {
+    color: var(--rose-deep);
+  }
+
+  .th-card:hover .th-learn-more-arrow {
     transform: translateX(var(--s-3xs));
   }
 
@@ -612,7 +612,6 @@ export default function TherapistsDirectory() {
                 </div>
               )}
               <div className="th-photo-vignette" />
-              <div className="th-photo-arrow">→</div>
               <div className="th-photo-line" style={{ background: t.color }} />
             </div>
 
@@ -630,6 +629,7 @@ export default function TherapistsDirectory() {
               {t.faith && <span className="th-chip faith">Faith-Friendly</span>}
               {t.couples && <span className="th-chip couples">Couples &amp; Family</span>}
             </div>
+            <p className="th-learn-more">Learn more about {t.name.replace(/^Dr\.\s*/, "").split(" ")[0]} <span className="th-learn-more-arrow">→</span></p>
           </a>
         ))}
 
