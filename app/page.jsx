@@ -1,5 +1,3 @@
-"use client";
-import { useRouter } from "next/navigation";
 import Nav from "./Nav";
 
 const homeStyles = `
@@ -92,7 +90,7 @@ const homeStyles = `
     font-size: var(--t-base);
     font-style: italic;
     color: var(--paper);
-    opacity: var(--alpha-phi);
+    opacity: 0.85;
     max-width: var(--max-w-narrow);
     margin: 0 auto;
   }
@@ -107,26 +105,25 @@ const homeStyles = `
 `;
 
 export default function HomePage() {
-  const router = useRouter();
-
   return (
     <div>
       <style>{homeStyles}</style>
 
       {/* ── NEVER GIVE UP ── */}
-      <section className="promise">
+      <header className="promise">
         <h2>Never Give Up.</h2>
         <p className="promise-sub">
           Never give up hope. Never give up on life. Never Give Up Wellness.
         </p>
-      </section>
+      </header>
 
       {/* ── NAV ── */}
       <Nav hideLogo />
+      <main>
 
       {/* ── LOGO ── */}
       <div className="hero-logo">
-        <img src="/images/NGU Wellness.png" alt="NGU Wellness" />
+        <img src="/images/ngu-wellness-logo.webp" alt="NGU Wellness" width="1477" height="862" fetchPriority="high" />
       </div>
 
       {/* ── TAGLINE ── */}
@@ -134,6 +131,7 @@ export default function HomePage() {
         <h1>Real help. <span className="hero-change">Real change.</span></h1>
       </div>
 
+      </main>
     </div>
   );
 }

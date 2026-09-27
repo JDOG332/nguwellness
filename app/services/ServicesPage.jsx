@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { COMMERCIAL, MARKETPLACE, MEDICAID, MEDICARE_ADVANTAGE, EAP } from "../../data/insurance";
+import { INTAKE_FORM } from "../../data/site";
 import Nav from "../Nav";
 import Footer from "../Footer";
 
@@ -18,7 +20,6 @@ const MODALITIES = [
   { abbr: "CBT",  name: "Cognitive Behavioral Therapy",    desc: "Restructures thought patterns driving anxiety, depression, and low mood." },
   { abbr: "ACT",  name: "Acceptance & Commitment Therapy",  desc: "Builds psychological flexibility to move toward what matters." },
   { abbr: "DBT",  name: "Dialectical Behavior Therapy",     desc: "Develops skills in emotional regulation and distress tolerance." },
-  { abbr: "EMDR", name: "EMDR",                             desc: "Processes traumatic memories through bilateral stimulation." },
   { abbr: "ERP",  name: "Exposure & Response Prevention",   desc: "Gold-standard treatment for OCD and avoidance-driven anxiety." },
   { abbr: "MI",   name: "Motivational Interviewing",        desc: "Clarifies personal values and builds internal motivation for change." },
   { abbr: "SFBT", name: "Solution-Focused Brief Therapy",   desc: "Focuses on strengths and solutions rather than problems." },
@@ -27,19 +28,20 @@ const MODALITIES = [
   { abbr: "SOM",  name: "Somatic Approaches",               desc: "Works with the body's role in storing and releasing stress and trauma." },
 ];
 
-const INSURANCE = [
-  "Aetna", "Anthem / BCBS", "Ambetter", "CareSource", "Cigna",
-  "ComPsych", "Frontpath", "Humana", "Medical Mutual", "Optum",
-  "SummaCare", "UMR", "United Healthcare", "Wellfleet",
+const INS_TABS = [
+  ["commercial", "Commercial", COMMERCIAL],
+  ["marketplace", "Marketplace", MARKETPLACE],
+  ["medicaid", "Ohio Medicaid", MEDICAID],
+  ["medicare", "Medicare Advantage", MEDICARE_ADVANTAGE],
+  ["eap", "EAP", EAP],
 ];
 
-const MEDICAID = [
-  "AmeriHealth", "Anthem Ohio Medicaid", "Buckeye", "CareSource",
-  "Humana", "Molina", "Ohio Medicaid FFS", "OhioRISE",
-  "UHC Community Plan", "WellCare",
+const KINDS = [
+  { title: "Individual therapy", desc: "One-on-one sessions for adults, teens, and children, built around your goals.", href: "/therapists" },
+  { title: "Child & teen therapy", desc: "Therapists who work with children from age 5 and with preteens and teens.", href: "/therapy/children-and-teens" },
+  { title: "Couples & family therapy", desc: "Help with communication, conflict, and change. Couples and family sessions are self-pay.", href: "/therapy/couples" },
+  { title: "Telehealth", desc: "Secure video sessions from anywhere in Ohio.", href: "/telehealth" },
 ];
-
-const EAPS = ["Lyra Health", "Optum / UHC EAP", "Spring Health", "Carelon"];
 
 const svcStyles = `
   /* ═══════════════════════════════════════════════════
@@ -96,7 +98,7 @@ const svcStyles = `
     font-size: var(--t-md);
     font-style: italic;
     color: var(--paper);
-    opacity: var(--alpha-ghost);
+    opacity: 0.85;
   }
 
   /* ── SECTION HEADINGS (reusable pattern) ── */
@@ -200,7 +202,7 @@ const svcStyles = `
     font-size: var(--t-xs);
     font-weight: 900;
     letter-spacing: 0.236em;
-    color: var(--gold);
+    color: #A6520F;
     margin-bottom: var(--s-3xs);
   }
 
@@ -222,6 +224,7 @@ const svcStyles = `
   /* ── INSURANCE ── */
   .ins-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--s-xs);
     margin-bottom: var(--s-lg);
   }
@@ -300,30 +303,36 @@ const svcStyles = `
     flex-wrap: wrap;
   }
 
+  .kinds-grid { grid-template-columns: repeat(4, 1fr); }
+  .kind-card { text-decoration: none; color: inherit; display: block; transition: border-color var(--duration) var(--ease-phi); }
+  .kind-card:hover { border-color: var(--rose); }
+  .kind-more { margin-top: var(--s-xs); font-size: 0.875rem; font-weight: 700; color: var(--rose-deep); }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
+    .kinds-grid { grid-template-columns: 1fr 1fr; }
     .mod-grid { grid-template-columns: 1fr; }
     .format-grid { grid-template-columns: 1fr; }
   }
 `;
 
 export default function ServicesPage() {
-  const router = useRouter();
   const [insTab, setInsTab] = useState("commercial");
 
-  const insData = insTab === "commercial" ? INSURANCE : insTab === "medicaid" ? MEDICAID : EAPS;
+  const insData = INS_TABS.find(([k]) => k === insTab)[2];
 
   return (
     <div>
       <style>{svcStyles}</style>
       <Nav />
+      <main>
 
       {/* ── HERO ── */}
       <section className="svc-hero">
         <p className="eyebrow">Our Services</p>
         <h1>Real help. <em>Real tools.</em> Real change.</h1>
         <p className="svc-hero-desc">
-          Individual therapy for children, teens, and adults ready for real support.
+          Therapy for children, teens, adults, couples, and families.
           In-person in Dayton and Rocky River. Telehealth across all of Ohio.
         </p>
       </section>
@@ -363,8 +372,26 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ── SPECIALTIES ── */}
+      {/* ── KINDS OF THERAPY ── */}
       <section className="phi-section bg-mist">
+        <div className="phi-wrap">
+          <p className="eyebrow">What We Offer</p>
+          <h2 className="svc-section-title">Kinds of therapy.</h2>
+          <hr className="phi-rule" />
+          <div className="format-grid kinds-grid">
+            {KINDS.map(k => (
+              <Link key={k.title} href={k.href} className="format-card kind-card">
+                <p className="format-title">{k.title}</p>
+                <p className="format-desc">{k.desc}</p>
+                <p className="kind-more">Learn more →</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SPECIALTIES ── */}
+      <section className="phi-section">
         <div className="phi-wrap">
           <p className="eyebrow">What We Treat</p>
           <h2 className="svc-section-title">Concerns we specialize in.</h2>
@@ -378,12 +405,12 @@ export default function ServicesPage() {
       </section>
 
       {/* ── MODALITIES ── */}
-      <section className="phi-section">
+      <section className="phi-section bg-mist">
         <div className="phi-wrap">
           <p className="eyebrow">Our Approaches</p>
           <h2 className="svc-section-title">Evidence-based modalities.</h2>
           <p className="svc-section-desc">
-            Every therapist at NGU is trained in proven, research-backed approaches. Your therapist will tailor the approach to fit you.
+            Our therapists use proven, research-backed approaches. Each therapist's profile lists the ones they use, and your therapist will tailor the approach to fit you.
           </p>
           <div className="mod-grid">
             {MODALITIES.map(m => (
@@ -398,23 +425,23 @@ export default function ServicesPage() {
       </section>
 
       {/* ── INSURANCE ── */}
-      <section className="phi-section bg-mist">
+      <section className="phi-section">
         <div className="phi-wrap">
           <p className="eyebrow">Insurance &amp; Payment</p>
           <h2 className="svc-section-title">We work with your plan.</h2>
           <p className="svc-section-desc-spaced">
-            NGU Wellness accepts most major insurance, Medicaid, and EAP plans. Not sure about your coverage? We will verify it for you, free.
+            NGU Wellness accepts most major insurance, Ohio Medicaid plans, and several EAPs. Not sure about your coverage? We will check it for you, free.
           </p>
-          <div className="ins-tabs">
-            <button className={`ins-tab${insTab === "commercial" ? " active" : ""}`} onClick={() => setInsTab("commercial")}>Commercial</button>
-            <button className={`ins-tab${insTab === "medicaid" ? " active" : ""}`} onClick={() => setInsTab("medicaid")}>Medicaid</button>
-            <button className={`ins-tab${insTab === "eap" ? " active" : ""}`} onClick={() => setInsTab("eap")}>EAP</button>
+          <div className="ins-tabs" role="tablist">
+            {INS_TABS.map(([k, label]) => (
+              <button key={k} role="tab" aria-selected={insTab === k} className={`ins-tab${insTab === k ? " active" : ""}`} onClick={() => setInsTab(k)}>{label}</button>
+            ))}
           </div>
           <div className="ins-list">
             {insData.map(i => <span key={i} className="ins-pill">{i}</span>)}
           </div>
           <p className="ins-disclaimer">
-            Coverage varies by plan. We verify benefits before your first session at no charge.
+            Coverage varies by plan. We verify benefits before your first session at no charge. Self-pay rates and out-of-network options are on <Link href="/insurance">Insurance &amp; Fees</Link>.
           </p>
         </div>
       </section>
@@ -428,12 +455,13 @@ export default function ServicesPage() {
             Fill out our quick contact form and we will match you with the right therapist for your needs.
           </p>
           <div className="cta-actions">
-            <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>Get Started</button>
-            <button className="btn-outline" onClick={() => router.push("/therapists")}>Browse Therapists</button>
+            <a className="btn-rose" href={INTAKE_FORM} target="_blank" rel="noopener noreferrer">Get Started</a>
+            <Link className="btn-outline" href="/therapists">Browse Therapists</Link>
           </div>
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

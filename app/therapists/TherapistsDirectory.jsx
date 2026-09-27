@@ -1,24 +1,17 @@
 "use client";
 import { useState, useMemo } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Nav from "../Nav";
 import Footer from "../Footer";
+import { visibleClinicians } from "../../data/clinicians";
+import { SITE } from "../../data/site";
 
-/* ── THERAPIST DATA (all 12) ─────────────────────────────── */
-const THERAPISTS = [
-  { slug:"anna-espy", name:"Anna Espy", credentials:"LISW-S", title:"Licensed Social Worker", photo:"/images/therapists/Anna_Espy.jpeg", color:"#D4688A", status:"accepting", yrs:22, specialties:["Anxiety","Depression","Young Adults","Life Transitions"], formats:["in-person","telehealth"], locations:["dayton"], days:["monday","tuesday","thursday","friday"], faith:false, ages:"Ages 16–65+", quote:"I became a therapist to help others realize their inherent worth, value, and potential.", tags:["anxiety","depression","stress","selfesteem","grief","transition","trauma","ptsd","career","identity","relationship","parenting","school","chronic","cancer","selfharm","monday","tuesday","thursday","friday","inperson","telehealth","dayton","ohio","adults","young adults","teens"] },
-  { slug:"charlotte-wells", name:"Charlotte Wells", credentials:"LISW", title:"Licensed Social Worker", photo:"/images/therapists/Charlotte_Wells.jpeg", color:"#4A5568", status:"accepting", yrs:null, specialties:["Anxiety","Depression","Grief","Women's Issues"], formats:["in-person","telehealth"], locations:["dayton"], days:["friday"], faith:true, ages:"Adults 20–65", quote:"I approach therapy first as a person and second as a therapist.", tags:["anxiety","depression","grief","codependency","boundaries","selfesteem","divorce","transition","stress","trauma","ptsd","adhd","coping","relationship","womens","friday","inperson","telehealth","dayton","ohio","adults","faith","lgbtq"] },
-  { slug:"danielle-washington", name:"Danielle Washington", credentials:"LISW-S", title:"Licensed Social Worker", photo:"/images/therapists/Danielle_Washington.jpeg", color:"#7A6878", status:"accepting", yrs:25, specialties:["Depression","Stress","Women's Issues","Addiction"], formats:["in-person","telehealth"], locations:["dayton"], days:["monday","tuesday","wednesday","thursday"], faith:false, ages:"Adults 18+", quote:"We're partners in the development and success of your well-being.", tags:["depression","stress","womens","anxiety","addiction","alcohol","substance","dual diagnosis","codependency","coping","family","grief","transition","mood","relationship","conflict","monday","tuesday","wednesday","thursday","inperson","telehealth","dayton","ohio","adults","bipoc"] },
-  { slug:"jackie-penny", name:"Jackie Penny", credentials:"LPCC-S", title:"Licensed Professional Counselor", photo:"/images/therapists/Jackie_Penny.jpeg", color:"#9A4A7A", status:"accepting", yrs:7, specialties:["Anxiety","Depression","Grief","Emotional Regulation"], formats:["in-person","telehealth"], locations:["dayton"], days:["friday"], faith:false, ages:"Adults 18+", quote:"We'll figure things out together, even if you're not sure where to start.", tags:["anxiety","depression","grief","trauma","ptsd","stress","burnout","substance","addiction","selfesteem","anger","adhd","bipolar","sleep","insomnia","womens","veterans","lgbtq","friday","inperson","telehealth","dayton","ohio","adults","dbt","cbt","act"] },
-  { slug:"katie-grier", name:"Katie Grier", credentials:"LSW", title:"Licensed Social Worker", photo:"/images/therapists/Katie_Grier.jpeg", color:"#C4967A", status:"accepting", yrs:null, specialties:["Children & Teens","Anxiety","LGBTQ+","Depression"], formats:["in-person","telehealth"], locations:["dayton"], days:["monday","tuesday","wednesday","thursday"], faith:false, ages:"Ages 5+ through Adults", quote:"I'll be an attentive listener and work hard to understand what you need the most.", tags:["anxiety","depression","grief","children","kids","teens","adolescents","preteens","young adults","selfesteem","selfharm","school","peer","family","behavioral","adhd","ocd","odd","body image","addiction","coping","trauma","ptsd","lgbtq","transgender","identity","transition","monday","tuesday","wednesday","thursday","inperson","telehealth","dayton","ohio","adults"] },
-  { slug:"kelley-boole", name:"Kelley Boole", credentials:"LSW", title:"Licensed Social Worker", photo:"/images/therapists/Kelley_Boole.jpeg", color:"#B08A72", status:"accepting", yrs:11, specialties:["Anxiety","Depression","Relationships","Addiction"], formats:["in-person","telehealth"], locations:["rocky river"], days:["monday","tuesday","wednesday","thursday","friday","saturday"], faith:false, ages:"Teens 13+ & Adults", quote:"I believe in the inherent strength and goodness of people.", tags:["anxiety","depression","relationship","addiction","substance","alcohol","selfesteem","stress","grief","coping","transition","mood","bipolar","trauma","ptsd","adhd","ocd","anger","social anxiety","work stress","crisis","monday","tuesday","wednesday","thursday","friday","saturday","inperson","telehealth","rocky river","ohio","adults","teens"] },
-  { slug:"kelly-salada", name:"Kelly Salada", credentials:"LISW", title:"Licensed Social Worker", photo:"/images/therapists/Kelly_Salada.jpeg", color:"#4A7A74", status:"accepting", yrs:null, specialties:["Anxiety","Depression","Trauma & PTSD","Relationships"], formats:["in-person","telehealth"], locations:["rocky river"], days:["tuesday","wednesday","thursday","friday","saturday"], faith:false, ages:"Teens through Adults 65+", quote:"You're the expert on your life. I won't judge where you've been or where you're headed.", tags:["anxiety","depression","trauma","ptsd","addiction","adhd","aspergers","neurodivergence","bipolar","codependency","coping","dual diagnosis","grief","impulse","lgbtq","transition","mood","relationship","selfesteem","stress","gender","identity","abuse","tuesday","wednesday","thursday","friday","saturday","inperson","telehealth","rocky river","ohio","adults","teens"] },
-  { slug:"kim-brant", name:"Kim Brant", credentials:"LPCC · CCATP", title:"Licensed Counselor", photo:"/images/therapists/Kim_Brant.png", color:"#2A6BC6", status:"waitlisting", yrs:19, specialties:["Anxiety","Depression","Grief & Loss","Life Transitions"], formats:["in-person","telehealth"], locations:["dayton"], days:["monday","tuesday","thursday"], faith:true, ages:"Adults 18–75", quote:"Real, lasting relief from the things that keep you stuck.", tags:["anxiety","depression","grief","transition","relationship","stress","monday","tuesday","thursday","telehealth","inperson","dayton","ohio","faith","cbt","act","erp","adults","18"] },
-  { slug:"lisa-freeman", name:"Lisa Freeman", credentials:"LPC", title:"Licensed Professional Counselor", photo:"/images/therapists/Lisa_Freeman.jpeg", color:"#3A6868", status:"accepting", yrs:12, specialties:["Children","Insomnia & CBTi","Relationships","Trauma"], formats:["in-person","telehealth"], locations:["dayton"], days:["monday","tuesday","wednesday","friday"], faith:true, ages:"Children 5+ & Adults", couples:true, quote:"True healing occurs when we embrace honesty and acceptance of ourselves and others.", tags:["anxiety","depression","insomnia","sleep","children","kids","adhd","behavioral","relationship","couples","premarital","trauma","ptsd","childhood trauma","sexual abuse","domestic violence","family","parenting","adoption","caregivers","ocd","odd","selfesteem","coping","transition","stress","divorce","education","learning","spirituality","monday","tuesday","wednesday","friday","inperson","telehealth","dayton","ohio","adults","play therapy","cbti","sensory"] },
-  { slug:"natalie-woodson", name:"Natalie Woodson-Booska", credentials:"LISW", title:"Licensed Independent Social Worker", photo:"/images/therapists/Natalie_Woodson.jpeg", color:"#2A3A5A", status:"accepting", yrs:5, specialties:["Anxiety","Depression","Trauma & PTSD","EMDR"], formats:["in-person","telehealth"], locations:["dayton"], days:["monday","tuesday","wednesday","thursday","friday"], faith:false, ages:"Preteens · Teens · Adults · Elders 65+", couples:false, quote:"You're not broken. You're overwhelmed. There's a difference.", tags:["anxiety","depression","trauma","ptsd","emdr","stress","grief","relationship","substance","addiction","domestic violence","anger","disabilities","holistic","monday","tuesday","wednesday","thursday","friday","inperson","telehealth","dayton","ohio","preteens","teens","adults","elders","family","booska","woodson-booska"] },
-  { slug:"nicole-walton", name:"Dr. Nicole Walton", credentials:"PhD · LISW-S · LPC", title:"Founder, Owner & Clinical Director", photo:"/images/therapists/Nicole_Walton.jpg", color:"#2A7A48", status:"accepting", yrs:20, specialties:["Depression","Anxiety","Couples","Trauma & PTSD"], formats:["in-person","telehealth"], locations:["dayton"], days:["monday","tuesday","wednesday","thursday","friday"], faith:false, ages:"Teens · Adults · Elders 65+", couples:true, quote:"Every person deserves care that meets them exactly where they are.", tags:["depression","anxiety","trauma","ptsd","grief","relationship","couples","family","addiction","substance","alcohol","gambling","dual diagnosis","bipolar","ocd","mood","divorce","infidelity","parenting","codependency","stress","self-esteem","transition","spirituality","monday","tuesday","wednesday","thursday","friday","telehealth","inperson","dayton","ohio","teens","adults","elders","evening"] },
-  { slug:"pam-gibson", name:"Pam Gibson", credentials:"LSW", title:"Licensed Social Worker", photo:"/images/therapists/Pam_Gibson.jpeg", color:"#2A5A5A", status:"accepting", yrs:20, specialties:["Grief & Loss","Anxiety","Depression","Suicide Loss"], formats:["in-person","telehealth"], locations:["dayton"], days:["wednesday"], faith:true, ages:"Teens · Adults · Elders 65+", couples:true, quote:"Grief is not a problem to solve. It's a process to walk through.", tags:["grief","loss","suicide","anxiety","depression","stress","trauma","divorce","domestic violence","relationship","couples","family","parenting","single parent","anger","addiction","alcohol","career","transition","self-esteem","women","faith","christian","wednesday","inperson","telehealth","dayton","ohio","teens","adults","elders"] },
-];
+/* ── THERAPIST DATA: from data/clinicians.json ─────────── */
+const THERAPISTS = visibleClinicians.map(t => ({
+  ...t,
+  formats: t.formats.map(f => f.toLowerCase()),
+  tags: [...t.tags, ...(t.couples ? ["couples", "family"] : [])],
+}));
 
 /* ── NLP FILTER ENGINE ───────────────────────────────────── */
 const STOP = new Set(["i","my","am","is","are","a","an","the","and","or","but","for","with","to","in","on","at","do","need","want","looking","help","me","have","has","also","some","very","really","would","like","about","feel","feeling","been","get","can","see"]);
@@ -29,14 +22,15 @@ const SYNONYMS = {
   bereaved:"grief", grieving:"grief", loss:"grief", mourning:"grief",
   ocd:"ocd", burnout:"burnout", exhausted:"burnout", overwhelmed:"burnout",
   trauma:"trauma", traumatic:"trauma", ptsd:"trauma", abuse:"trauma",
-  mondays:"monday", tuesdays:"tuesday", wednesdays:"wednesday", thursdays:"thursday", fridays:"friday",
   virtual:"telehealth", online:"telehealth", video:"telehealth", remote:"telehealth",
   "in person":"inperson", "face to face":"inperson", office:"inperson",
   kettering:"dayton", centerville:"dayton", beavercreek:"dayton", oakwood:"dayton", miamisburg:"dayton", springboro:"dayton",
   cleveland:"rocky river", lakewood:"rocky river", westlake:"rocky river",
   columbus:"ohio", cincinnati:"ohio", akron:"ohio", toledo:"ohio",
   christian:"faith", spiritual:"faith", religion:"faith", religious:"faith",
-  relationship:"relationship", marriage:"relationship", couples:"relationship",
+  relationship:"relationship", marriage:"couples", marital:"couples", couple:"couples",
+  child:"children", kid:"children", kids:"children", teen:"teens", teenager:"teens", teenagers:"teens", adolescent:"teens", adolescents:"teens", tween:"preteens", tweens:"preteens",
+  sleep:"insomnia", cbti:"insomnia",
   "self esteem":"selfesteem", confidence:"selfesteem",
   postpartum:"postpartum", newborn:"postpartum",
   women:"womens", woman:"womens",
@@ -52,17 +46,16 @@ function tokenize(text) {
   return lower.split(/[\s,.\-!?;:]+/).map(w => SYNONYMS[w] || w).filter(w => w.length > 1 && !STOP.has(w));
 }
 
+const tagMatch = (tags, tok) => tags.some(tag => tag.startsWith(tok) || tok.startsWith(tag));
+
+// Every word someone types narrows the list. Words that match no therapist at all are ignored
+// rather than hiding everyone.
 function therapistMatches(t, tokens) {
-  if (tokens.length === 0) return true;
-  return tokens.some(tok => t.tags.some(tag => tag.startsWith(tok) || tok.startsWith(tag)));
+  const known = tokens.filter(tok => THERAPISTS.some(x => tagMatch(x.tags, tok)));
+  if (known.length === 0) return true;
+  return known.every(tok => tagMatch(t.tags, tok));
 }
 
-/* ── STATUS CONFIG ───────────────────────────────────────── */
-const STATUS = {
-  accepting:   { label:"Accepting Clients", color:"var(--sage)" },
-  waitlisting: { label:"Waitlist Open",     color:"var(--gold)" },
-  full:        { label:"Currently Full",    color:"var(--warm-gray)" },
-};
 
 /* ── STYLES ──────────────────────────────────────────────── */
 const dirStyles = `
@@ -369,6 +362,7 @@ const dirStyles = `
 
   .th-status {
     display: inline-block;
+    color: var(--earth);
     font-size: var(--t-xs);
     font-weight: 400;
     letter-spacing: 0.236em;
@@ -391,6 +385,12 @@ const dirStyles = `
     color: var(--warm-gray);
     letter-spacing: 0.236em;
     text-transform: uppercase;
+    margin-bottom: var(--s-2xs);
+  }
+
+  .th-ages {
+    font-size: 0.875rem;
+    color: var(--earth);
     margin-bottom: var(--s-2xs);
   }
 
@@ -421,8 +421,8 @@ const dirStyles = `
     color: var(--warm-gray);
   }
 
-  .th-chip.faith { background: rgba(245,145,63,0.1); color: var(--gold); }
-  .th-chip.couples { background: rgba(245,10,84,0.0618); color: var(--rose); }
+  .th-chip.faith { background: rgba(245,145,63,0.1); color: #A6520F; }
+  .th-chip.couples { background: rgba(245,10,84,0.0618); color: var(--rose-deep); }
 
   /* ── EMPTY STATE ── */
   .dir-empty {
@@ -497,10 +497,9 @@ const dirStyles = `
   }
 `;
 
-const HINTS = ["Anxiety","Depression","Trauma","Grief","Tuesday","Thursday","Telehealth","In-Person","Dayton","Rocky River","Faith","CBT"];
+const HINTS = ["Anxiety","Depression","Trauma","Grief","Children","Teens","Couples","Insomnia","Telehealth","Dayton","Rocky River","Faith"];
 
 export default function TherapistsDirectory() {
-  const router = useRouter();
   const [query, setQuery] = useState("");
 
   const tokens = useMemo(() => tokenize(query), [query]);
@@ -519,6 +518,7 @@ export default function TherapistsDirectory() {
     <div>
       <style>{dirStyles}</style>
       <Nav />
+      <main>
 
       {/* ── HERO ── */}
       <section className="dir-hero">
@@ -563,7 +563,8 @@ export default function TherapistsDirectory() {
               type="text"
               value={query}
               onChange={e => setQuery(e.target.value)}
-              placeholder="Type what you need: anxiety, Tuesday, telehealth, CBT..."
+              aria-label="Search therapists by concern, age, or location"
+              placeholder="Type what you need: anxiety, teens, telehealth..."
             />
           </div>
 
@@ -596,14 +597,14 @@ export default function TherapistsDirectory() {
         </p>
 
         {results.map(t => (
-          <a
+          <Link
             key={t.slug}
             href={`/therapists/${t.slug}`}
             className={`th-card${t.dimmed ? " dimmed" : ""}`}
           >
             <div className="th-photo">
               {t.photo ? (
-                <img src={t.photo} alt={t.name} />
+                <img src={t.photo} alt={`${t.name}, ${t.credentials}`} width="800" height="1000" loading="lazy" />
               ) : (
                 <div className="th-avatar">
                   <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
@@ -616,13 +617,12 @@ export default function TherapistsDirectory() {
               <div className="th-photo-line" style={{ background: t.color }} />
             </div>
 
-            <p className="th-status" style={{ color: STATUS[t.status].color }}>
-              {STATUS[t.status].label}
-            </p>
+            <p className="th-status">{t.office === "rocky-river" ? "Rocky River" : "Dayton"} · Telehealth</p>
             <p className="th-name">{t.name}</p>
             <p className="th-creds">{t.credentials}</p>
+            <p className="th-ages">{t.ages.split("·")[0].trim()}</p>
             <div className="th-specs">
-              {t.specialties.slice(0,3).map(s => <span key={s} className="th-spec" style={{ color: t.color, background: t.color + "0F", borderColor: t.color + "3D" }}>{s}</span>)}
+              {t.specialties.slice(0,3).map(s => <span key={s} className="th-spec" style={{ color: t.colorDark || t.color, background: t.color + "0F", borderColor: t.color + "3D" }}>{s}</span>)}
             </div>
             <div className="th-chips">
               {t.formats.includes("in-person") && <span className="th-chip">In-Person</span>}
@@ -630,8 +630,8 @@ export default function TherapistsDirectory() {
               {t.faith && <span className="th-chip faith">Faith-Friendly</span>}
               {t.couples && <span className="th-chip couples">Couples &amp; Family</span>}
             </div>
-            <p className="th-learn-more">Learn more about {t.name.replace(/^Dr\.\s*/, "").split(" ")[0]} <span className="th-learn-more-arrow">→</span></p>
-          </a>
+            <p className="th-learn-more">Learn more about {t.firstName} <span className="th-learn-more-arrow">→</span></p>
+          </Link>
         ))}
 
         {matchCount === 0 && tokens.length > 0 && (
@@ -639,7 +639,7 @@ export default function TherapistsDirectory() {
             <p className="dir-empty-title">No exact match found.</p>
             <p className="dir-empty-desc">
               Try broader terms or{" "}
-              <a href="tel:+18886489355" className="dir-empty-link">call us</a>
+              <a href={SITE.phoneHref} className="dir-empty-link">call us</a>
               {" "}, we will help you find the right fit.
             </p>
           </div>
@@ -651,15 +651,16 @@ export default function TherapistsDirectory() {
         <div className="dir-cta-inner">
           <h3 className="dir-cta-title">Not sure who to choose?</h3>
           <p className="dir-cta-desc">
-            Call or text us. We will ask a few questions and match you to the right therapist ourselves.
+            Call or text us. We will ask a few questions and match you to the right therapist ourselves. Availability changes often, so we'll tell you who can see you soonest.
           </p>
           <div className="dir-cta-actions">
-            <a href="tel:+18886489355" className="btn-rose">Call or Text 888-648-9355</a>
-            <a href="mailto:info@nguwellness.com" className="btn-outline">Email Us</a>
+            <a href={SITE.phoneHref} className="btn-rose">Call or Text {SITE.phone}</a>
+            <a href={`mailto:${SITE.email}`} className="btn-outline">Email Us</a>
           </div>
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

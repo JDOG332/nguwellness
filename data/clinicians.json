@@ -1,0 +1,2752 @@
+[
+ {
+  "slug": "anna-espy",
+  "name": "Anna Espy",
+  "firstName": "Anna",
+  "credentials": "LISW-S",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Anna_Espy.jpg",
+  "color": "#D4688A",
+  "colorDark": "#A84E6E",
+  "colorLight": "#E88DA6",
+  "colorTint": "#FBF0F3",
+  "colorBorder": "#E8C0CC",
+  "badges": [
+   "22 Yrs",
+   "Supervisor",
+   "Young Adult Specialist"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Adults 18+  ·  Specializing in young adults (18–30)",
+  "faith": false,
+  "quote": "I became a therapist to help others realize their inherent worth, value, and potential through connection and guidance. Together, we'll explore who you are and who you want to become.",
+  "calloutQuote": "The first ten or fifteen years of adulthood can bring some unique and complex challenges. I'm dedicated to creating a safe and non-judgmental environment where you can feel comfortable being yourself. I try to balance seriousness with humor, when appropriate.",
+  "whoHelps": [
+   {
+    "s": "Young adults 18–30",
+    "t": "navigating self-discovery, identity, independence, career uncertainty, and finding their purpose."
+   },
+   {
+    "s": "Adults of all ages",
+    "t": "working through anxiety, depression, or stress."
+   },
+   {
+    "s": "People navigating relationships",
+    "t": "including friendships, romantic relationships, and family dynamics."
+   },
+   {
+    "s": "People facing life transitions",
+    "t": "career changes, grief, chronic illness, or periods of uncertainty."
+   },
+   {
+    "s": "Goal-oriented clients",
+    "t": "who are willing to practice skills outside of sessions and invest in self-awareness and self-reflection."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Stress",
+   "Depression",
+   "Identity & Self-Discovery",
+   "Career Uncertainty",
+   "Relationship Issues",
+   "Life Transitions",
+   "Grief & Loss",
+   "Self-Esteem",
+   "Self-Harm",
+   "Suicidal Ideation",
+   "Trauma & PTSD",
+   "Parenting",
+   "Family Conflict",
+   "School Issues",
+   "Peer Relationships",
+   "Coping Skills",
+   "Chronic Illness & Pain",
+   "Cancer",
+   "Weight & Body Image",
+   "Sleep & Nutrition",
+   "Finding Purpose",
+   "Independence"
+  ],
+  "approachText": "Anna draws from a diverse range of evidence-based therapies, tailoring her approach to each individual's needs. With over 22 years of experience and a Master's from Ohio State, she empowers clients with skills to enhance self-awareness, self-reflection, and resilience. She may also explore how factors like sleep, nutrition, exercise, and self-care impact mental health to help clients find more balance and fulfillment.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Identifying and changing unhelpful thought patterns and behaviors."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focusing on solutions and building on your existing strengths."
+   },
+   {
+    "abbr": "DBT",
+    "name": "Dialectical Behavior Therapy",
+    "desc": "Developing skills for managing emotions, improving relationships, and coping with stress."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Finding your own motivation for change."
+   },
+   {
+    "abbr": "ACT",
+    "name": "Acceptance & Commitment Therapy",
+    "desc": "Accepting difficult experiences and committing to actions aligned with your values."
+   },
+   {
+    "abbr": "SBT",
+    "name": "Strengths-Based Therapy",
+    "desc": "Identifying and building upon your inherent strengths."
+   },
+   {
+    "abbr": "TF",
+    "name": "Trauma-Focused Therapy",
+    "desc": "Evidence-based approaches for processing trauma and PTSD."
+   },
+   {
+    "abbr": "MBCT",
+    "name": "Mindfulness-Based Therapy",
+    "desc": "Cultivating present-moment awareness to reduce stress and improve well-being."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Anna takes time to understand your specific needs and challenges. She creates a safe, non-judgmental space where you can be yourself from the start."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Sessions are tailored to your needs, equipping you with skills to boost resilience, self-awareness, and overall well-being. Anna will ask you to practice skills between sessions."
+   },
+   {
+    "s": "Anna's style:",
+    "t": "Friendly and laid-back, with a good sense of when to use humor. Clients say she's a great listener who balances seriousness with lightness. Professional yet approachable."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Dayton office, secure telehealth video across Ohio, or a hybrid of both."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LISW-S (Licensed Independent Social Worker – Supervisor), Ohio I.0700003-SUPV"
+   },
+   {
+    "s": "Education:",
+    "t": "Master's Degree in Social Work, The Ohio State University, 2004."
+   },
+   {
+    "s": "Experience:",
+    "t": "22+ years in the mental health field spanning clinical work, supervision, and supporting young adults through emerging adulthood."
+   },
+   {
+    "s": "Verified:",
+    "t": "Psychology Today Verified with 5 professional endorsements."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Young Adults",
+   "Life Transitions"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "stress",
+   "selfesteem",
+   "grief",
+   "transition",
+   "trauma",
+   "ptsd",
+   "career",
+   "identity",
+   "relationship",
+   "parenting",
+   "school",
+   "chronic",
+   "cancer",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults",
+   "young adults"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": 22,
+  "licenseTitle": "Licensed Independent Social Worker, Supervisor",
+  "lyra": false,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Anna Espy"
+ },
+ {
+  "slug": "charlotte-wells",
+  "name": "Charlotte Wells",
+  "firstName": "Charlotte",
+  "credentials": "LISW",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Charlotte_Wells.jpg",
+  "color": "#4A5568",
+  "colorDark": "#2D3748",
+  "colorLight": "#718096",
+  "colorTint": "#F0F1F3",
+  "colorBorder": "#C0C4CC",
+  "badges": [
+   "LISW",
+   "Holistic Approach",
+   "LGBTQ+ Allied"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Adults 20–65  ·  Primarily works with women (not exclusively)",
+  "faith": true,
+  "quote": "I provide a safe and compassionate space and would be honored to sit with you and hear your story. Collaboration is key in the therapeutic process.",
+  "calloutQuote": "Affirm, Validate, Support. I approach therapy first as a person and second as a therapist. Through my own experience as a client I recognize the importance of a calm and relaxed space to address vulnerable topics.",
+  "whoHelps": [
+   {
+    "s": "Adult women (primarily, not exclusively) ages 20–65",
+    "t": "navigating life transitions, relationship dynamics, and self-care."
+   },
+   {
+    "s": "People dealing with anxiety and depression",
+    "t": "who need practical coping skills and a calm, non-judgmental space."
+   },
+   {
+    "s": "People working through grief",
+    "t": "divorce, loss, or major life changes."
+   },
+   {
+    "s": "People struggling with codependency and boundaries",
+    "t": "in relationships with parents, friends, and partners."
+   },
+   {
+    "s": "Both experienced therapy clients and first-timers",
+    "t": "Charlotte has received positive feedback from both."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Depression",
+   "Grief & Loss",
+   "Women's Issues",
+   "Codependency",
+   "Boundaries",
+   "Self-Esteem",
+   "Divorce",
+   "Life Transitions",
+   "Stress",
+   "Trauma & PTSD",
+   "ADHD",
+   "Coping Skills",
+   "Relationship Issues",
+   "Self-Care",
+   "Adjustment Disorder",
+   "Mood Disorders",
+   "Communication Issues"
+  ],
+  "approachText": "Charlotte's approach is holistic, addressing mental, physical, and spiritual health. She is passionate about helping adults learn to navigate life transitions, teaching healthy coping skills, prioritizing effective self-care, and navigating changing relationship dynamics. She tailors her approach to each individual, drawing from attachment-based, compassion-focused, and culturally sensitive frameworks.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Identifying and changing unhelpful thought patterns driving anxiety and depression."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focusing on solutions and building on your existing strengths."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Finding your own internal motivation for meaningful change."
+   },
+   {
+    "abbr": "ATT",
+    "name": "Attachment-Based Therapy",
+    "desc": "Understanding how early relationships shape current patterns in connections and boundaries."
+   },
+   {
+    "abbr": "CFT",
+    "name": "Compassion-Focused Therapy",
+    "desc": "Developing self-compassion to counter shame, self-criticism, and emotional distress."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creating a warm, empathetic environment where you guide the direction of your growth."
+   },
+   {
+    "abbr": "SBT",
+    "name": "Strengths-Based Therapy",
+    "desc": "Identifying and building upon your inherent strengths."
+   },
+   {
+    "abbr": "TF",
+    "name": "Trauma-Focused Therapy",
+    "desc": "Evidence-based approaches for processing trauma and its lasting effects."
+   },
+   {
+    "abbr": "EXP",
+    "name": "Experiential Therapy",
+    "desc": "Using activities, role-play, and guided exercises to process emotions beyond traditional talk therapy."
+   },
+   {
+    "abbr": "BT",
+    "name": "Behavioral Therapy",
+    "desc": "Identifying and changing specific behaviors that contribute to distress."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Charlotte creates a calm, relaxed space from the start. She collaborates with you to identify goals and objectives appropriate for your individual needs."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Holistic sessions addressing mental, physical, and spiritual wellness. You'll learn healthy coping skills, effective self-care, and how to navigate changing relationship dynamics."
+   },
+   {
+    "s": "Charlotte's style:",
+    "t": "Safe, compassionate, and collaborative. She approaches therapy first as a person and second as a therapist, honoring your story with genuine warmth."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio."
+   }
+  ],
+  "faithText": "Charlotte's holistic approach addresses mental, physical, and spiritual health. She is comfortable exploring how faith, spirituality, and personal values support your healing process. This is always client-directed and never assumed.",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LISW (Licensed Independent Social Worker), Ohio I.2102938"
+   },
+   {
+    "s": "Education:",
+    "t": "Master of Arts in Social Work, Greater Miami Valley Joint MASW Program (Miami University of Ohio & Wright State University)."
+   },
+   {
+    "s": "Additional Training:",
+    "t": "Certificate from Healing Our Core Issues Institute (2020)."
+   },
+   {
+    "s": "Background:",
+    "t": "Case Manager and then Supervisor at the Area Agency on Aging. School-based counseling and outpatient therapy across a variety of settings."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Grief",
+   "Women's Issues"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "grief",
+   "codependency",
+   "boundaries",
+   "selfesteem",
+   "divorce",
+   "transition",
+   "stress",
+   "trauma",
+   "ptsd",
+   "adhd",
+   "coping",
+   "relationship",
+   "womens",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults",
+   "faith",
+   "lgbtq"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": null,
+  "licenseTitle": "Licensed Independent Social Worker",
+  "lyra": false,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Charlotte Wells"
+ },
+ {
+  "slug": "danielle-washington",
+  "name": "Danielle Washington",
+  "firstName": "Danielle",
+  "credentials": "LISW-S",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Danielle_Washington.jpg",
+  "color": "#7A6878",
+  "colorDark": "#5A4E58",
+  "colorLight": "#9A889A",
+  "colorTint": "#F5F0F4",
+  "colorBorder": "#C8B8C4",
+  "badges": [
+   "25 Yrs",
+   "Supervisor",
+   "Two Master's Degrees",
+   "BIPOC Affirming"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Adults 18+",
+  "faith": false,
+  "quote": "I provide a safe, supportive, and open setting to listen and to help you get on the path where you want to be. We're partners in the development and success of your well-being.",
+  "calloutQuote": "I am very well-educated and rely on my education and training. But I also rely on my many life experiences and my diverse career experiences as a helping professional for 25+ years to problem solve and meet my clients where they're at.",
+  "whoHelps": [
+   {
+    "s": "Adults 18+ with depression, anxiety, or persistent sadness",
+    "t": "who want practical coping skills and stress management tools."
+   },
+   {
+    "s": "People struggling with relationships",
+    "t": "family conflict, codependency, or communication breakdowns."
+   },
+   {
+    "s": "People navigating grief, loss, or major life transitions",
+    "t": "who need steady, empathetic support."
+   },
+   {
+    "s": "People dealing with addiction or substance use",
+    "t": "including dual diagnosis and alcohol/drug concerns."
+   },
+   {
+    "s": "People who want to make positive changes in their life",
+    "t": "and believe all challenges can be overcome with the proper attitude and support."
+   }
+  ],
+  "specialtiesFull": [
+   "Depression",
+   "Stress",
+   "Women's Issues",
+   "Anxiety",
+   "Addiction",
+   "Alcohol Use",
+   "Drug Abuse",
+   "Substance Use",
+   "Dual Diagnosis",
+   "Codependency",
+   "Coping Skills",
+   "Emotional Disturbance",
+   "Family Conflict",
+   "Grief & Loss",
+   "Life Transitions",
+   "Mood Disorders",
+   "Relationship Issues",
+   "Conflict Resolution"
+  ],
+  "approachText": "Danielle has worked as a helping professional for more than 25 years. Her diverse background includes skill development for persons with intellectual disabilities, community health care for underserved populations, hospital discharge planning, resource coordination for persons living with HIV/AIDS, and supporting individuals experiencing homelessness. She uses Narrative, Motivational Interviewing, Solution-Focused, and strengths-based approaches, and is committed to culturally sensitive, BIPOC-affirming care.",
+  "modalities": [
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Finding your own internal motivation for meaningful, lasting change."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focusing on solutions and building on your existing strengths."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creating a warm, empathetic environment where you guide the direction of your growth."
+   },
+   {
+    "abbr": "SBT",
+    "name": "Strengths-Based Therapy",
+    "desc": "Identifying and building upon your inherent strengths and resilience."
+   },
+   {
+    "abbr": "CS",
+    "name": "Culturally Sensitive Therapy",
+    "desc": "Honoring your cultural background, identity, and lived experience as part of the healing process."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Danielle creates a safe, supportive, and open setting. She listens attentively and works with you to identify your goals."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Partners with you to develop coping skills and stress management tools you can eventually use on your own. She helps you work through challenges while building toward your goals."
+   },
+   {
+    "s": "Danielle's style:",
+    "t": "Trustworthy, open-minded, and a good listener. She draws on 25+ years of diverse experience and education to meet you where you are."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio (all days). Evening hours available."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LISW-S (Licensed Independent Social Worker – Supervisor), Ohio I.1450751-SUPV"
+   },
+   {
+    "s": "Education:",
+    "t": "Master of Social Work, The Ohio State University (2011). Master of Rehabilitation Counseling, Wright State University (2018)."
+   },
+   {
+    "s": "Experience:",
+    "t": "25+ years as a helping professional: clinical work, case management, supervision, community health, and hospital settings."
+   },
+   {
+    "s": "Verified:",
+    "t": "Psychology Today Verified with 5 professional endorsements."
+   }
+  ],
+  "specialties": [
+   "Depression",
+   "Stress",
+   "Women's Issues",
+   "Addiction"
+  ],
+  "tags": [
+   "depression",
+   "stress",
+   "womens",
+   "anxiety",
+   "addiction",
+   "alcohol",
+   "substance",
+   "dual diagnosis",
+   "codependency",
+   "coping",
+   "family",
+   "grief",
+   "transition",
+   "mood",
+   "relationship",
+   "conflict",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults",
+   "bipoc"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": 25,
+  "licenseTitle": "Licensed Independent Social Worker, Supervisor",
+  "lyra": true,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Danielle Washington"
+ },
+ {
+  "slug": "jackie-penny",
+  "name": "Jackie Penny",
+  "firstName": "Jackie",
+  "credentials": "LPCC-S",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Jackie_Penny.jpg",
+  "color": "#9A4A7A",
+  "colorDark": "#7A3A60",
+  "colorLight": "#BA6A9A",
+  "colorTint": "#F8EFF5",
+  "colorBorder": "#D4B0C8",
+  "badges": [
+   "7 Yrs",
+   "Supervisor",
+   "DBT Trained",
+   "LGBTQ+ Allied"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Adults 18+",
+  "faith": false,
+  "quote": "We'll use proven strategies to shift unhelpful thoughts, manage intense emotions, and take change one step at a time. Some days you may leave with a new skill to practice, other days you may simply need space to talk.",
+  "calloutQuote": "People don't ask for help when life feels easy. It's after months of stress, heartache, or habits that won't let go. If it's all starting to feel like too much to handle alone, I'd like to help. You won't need to pretend you're okay or worry about being judged.",
+  "whoHelps": [
+   {
+    "s": "Adults 18+ weighed down by stress, anxiety, or depression",
+    "t": "who are ready to build practical tools, not just vent."
+   },
+   {
+    "s": "People navigating grief",
+    "t": "relationship struggles, or major life changes who need a steady, non-judgmental space."
+   },
+   {
+    "s": "People carrying the weight of past trauma",
+    "t": "childhood abuse or neglect, or substance use challenges."
+   },
+   {
+    "s": "Goal-oriented adults",
+    "t": "who appreciate homework, skill-building, and someone who celebrates small wins along the way."
+   },
+   {
+    "s": "Young adults navigating adulthood",
+    "t": "and older adults adjusting to health changes. Jackie connects well across life stages."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety & Panic",
+   "Depression",
+   "Grief & Loss",
+   "Trauma & PTSD",
+   "Emotional Regulation",
+   "Substance Use & Dual Diagnosis",
+   "Addiction",
+   "Life Transitions",
+   "Stress & Burnout",
+   "Self-Esteem & Confidence",
+   "Anger Management",
+   "ADHD",
+   "Bipolar Disorder",
+   "Self-Harm",
+   "Suicidal Ideation",
+   "Sleep & Insomnia",
+   "Women's Issues",
+   "Childhood Abuse & Neglect",
+   "Sexual Abuse",
+   "Codependency",
+   "Work-Life Balance",
+   "Veterans",
+   "LGBTQ+"
+  ],
+  "approachText": "Jackie is trained in DBT, advanced CBT, and CBT for Psychosis (CBTp), with specialized training in Assessing and Managing Suicide Risk (AMSR). She has 7+ years of experience in outpatient behavioral health including group facilitation, crisis intervention, and dual-diagnosis work. Your goals guide the work. She balances practical tools with lasting change, clarifying goals through Motivational Interviewing, breaking them into smaller steps with Behavioral Activation, and using CBT and DBT to shift unhelpful thoughts and steady strong emotions.",
+  "modalities": [
+   {
+    "abbr": "ACT",
+    "name": "Acceptance & Commitment Therapy",
+    "desc": "Builds psychological flexibility so you can move toward what matters, even with hard thoughts and feelings."
+   },
+   {
+    "abbr": "IFS",
+    "name": "Internal Family Systems",
+    "desc": "Helps you understand and care for the different parts of yourself that drive your reactions."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Jackie builds rapport by learning your strengths, hobbies, and who matters in your life. She educates you about what therapy will look like at every step and welcomes your questions."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Practical, skill-based sessions structured around your goals. Jackie revisits goals regularly and adjusts when something isn't working. Expect homework, reading, and real tools between sessions."
+   },
+   {
+    "s": "Jackie's style:",
+    "t": "Calm, warm, and genuine, with humor always welcome. She describes therapy like being in the passenger seat helping with navigation while you drive. She'll gently challenge you while celebrating every win."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio. Hybrid scheduling available."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LPCC-S (Licensed Professional Clinical Counselor – Supervisor), Ohio E.2102614-SUPV"
+   },
+   {
+    "s": "Education:",
+    "t": "Master's in Clinical Mental Health Counseling, University of Dayton (2016–2019). Chi Sigma Iota Counseling Honor Society."
+   },
+   {
+    "s": "Specialized Training:",
+    "t": "Dialectical Behavior Therapy (DBT). Advanced Cognitive Behavioral Therapy. CBT for Psychosis (CBTp). Assessing and Managing Suicide Risk (AMSR)."
+   },
+   {
+    "s": "Current Role:",
+    "t": "Contract Therapist at NGU Wellness (Sept 2025–present). Clinical Supervisor at Premier Outpatient Behavioral Health (Oct 2025–present)."
+   },
+   {
+    "s": "Previous Experience:",
+    "t": "Mental Health Therapist at Premier/Samaritan Behavioral Health (Jan 2019–Oct 2025). Case Manager (Oct 2017–Jan 2019). Co-created and co-facilitates a DBT group."
+   },
+   {
+    "s": "Clinical Skills:",
+    "t": "Group facilitation, crisis intervention, suicide risk assessment, dual diagnosis, treatment planning, DSM-5 diagnostic evaluation."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Grief",
+   "Emotional Regulation"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "grief",
+   "trauma",
+   "ptsd",
+   "stress",
+   "burnout",
+   "substance",
+   "addiction",
+   "selfesteem",
+   "anger",
+   "adhd",
+   "bipolar",
+   "sleep",
+   "insomnia",
+   "womens",
+   "veterans",
+   "lgbtq",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults",
+   "act",
+   "ifs"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": 7,
+  "licenseTitle": "Licensed Professional Clinical Counselor, Supervisor",
+  "lyra": false,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Jackie Penny"
+ },
+ {
+  "slug": "katie-grier",
+  "name": "Katie Grier",
+  "firstName": "Katie",
+  "credentials": "LSW",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Katie_Grier.jpg",
+  "color": "#C4967A",
+  "colorDark": "#855C44",
+  "colorLight": "#D8B09A",
+  "colorTint": "#FBF5F0",
+  "colorBorder": "#E0CCC0",
+  "badges": [
+   "Children & Teens",
+   "LGBTQ+ Allied"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Ages 5+ through Adults  ·  Specializing in children, teens & young adults (18–35)",
+  "faith": false,
+  "quote": "When you or your child works with me, I'll be an attentive listener and work hard to understand what you or your child needs the most and how I can best meet those needs. You will feel safe and supported.",
+  "calloutQuote": "The most important thing to know about me is that I listen attentively and ask questions to fully understand each of my client's unique situations. Once I fully understand my client's needs, I tailor my approaches to meet their individual needs.",
+  "whoHelps": [
+   {
+    "s": "Children ages 5+",
+    "t": "dealing with anxiety, depression, behavioral issues, school stress, and peer relationships."
+   },
+   {
+    "s": "Preteens and teens",
+    "t": "navigating identity, self-esteem, family conflict, self-harm, and those exploring or struggling to accept their sexuality."
+   },
+   {
+    "s": "Young adults 18–35",
+    "t": "working through anxiety, depression, grief, life transitions, and relationship challenges."
+   },
+   {
+    "s": "LGBTQ+ youth and adults",
+    "t": "who need an open-minded, affirming, and accepting therapist."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Depression",
+   "LGBTQ+ Identity & Support",
+   "Children (5+)",
+   "Preteens",
+   "Teens & Adolescents",
+   "Self-Esteem",
+   "Self-Harm",
+   "Grief & Loss",
+   "Family Conflict",
+   "Family Relationships",
+   "School Issues",
+   "Peer Relationships",
+   "Life Transitions",
+   "Behavioral Issues",
+   "ADHD",
+   "OCD",
+   "ODD (Oppositional Defiance)",
+   "Body Image",
+   "Addiction",
+   "Coping Skills",
+   "Trauma & PTSD",
+   "Sexual Identity",
+   "Transgender Support"
+  ],
+  "approachText": "Katie understands that each individual is different and tailors her approach accordingly, even for clients with similar issues. She allows you to guide the therapeutic process and gives you a safe space to figure out and work through anything you might be struggling with. She believes having support early in life is critical to long-term well-being. Addressing issues early helps individuals change patterns of thinking and develop healthy skills more easily.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Identifying and changing unhelpful thought patterns and behaviors."
+   },
+   {
+    "abbr": "DBT",
+    "name": "Dialectical Behavior Therapy",
+    "desc": "Skills for managing emotions, improving relationships, and coping with stress."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creating a warm, empathetic environment where you guide the direction of your growth."
+   },
+   {
+    "abbr": "SBT",
+    "name": "Strengths-Based Therapy",
+    "desc": "Identifying and building upon your inherent strengths."
+   },
+   {
+    "abbr": "FS",
+    "name": "Family Systems Therapy",
+    "desc": "Understanding and improving dynamics within the family unit."
+   },
+   {
+    "abbr": "PT",
+    "name": "Play Therapy & Sandplay",
+    "desc": "Evidence-based therapeutic approaches for children using play, sand, and creative expression."
+   },
+   {
+    "abbr": "ART",
+    "name": "Therapy with Art",
+    "desc": "Using creative expression to process emotions and build insight, especially effective with children and teens."
+   },
+   {
+    "abbr": "NAR",
+    "name": "Narrative Therapy",
+    "desc": "Separates the person from the problem. Helps reauthor personal stories."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Finding your own internal motivation for meaningful change."
+   },
+   {
+    "abbr": "EFT",
+    "name": "Emotionally Focused Therapy",
+    "desc": "Strengthening emotional bonds and attachment in relationships."
+   },
+   {
+    "abbr": "TF",
+    "name": "Trauma-Focused Therapy",
+    "desc": "Evidence-based approaches for processing trauma and its lasting effects."
+   },
+   {
+    "abbr": "CFT",
+    "name": "Compassion-Focused Therapy",
+    "desc": "Developing self-compassion to counter shame and self-criticism."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Katie listens attentively and strives to understand your unique situation and life experiences. Together you'll set goals and she'll tailor her approach to meet them."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Developing skills, overcoming negative patterns of thinking, and navigating issues like anxiety, depression, school stress, family relationships, or identity concerns."
+   },
+   {
+    "s": "Katie's style:",
+    "t": "Incredibly attentive listener. Empathetic, thoughtful, kind, open-minded, dependable, and helpful. She fully accepts you for who you are as a person."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio. Evening hours available."
+   }
+  ],
+  "faithText": "",
+  "teamSays": {
+   "text": "Katie is one of the most genuinely empathetic people you will ever meet; not just as a therapist, but as a human being. She has a rare ability to make children, teens, and adults feel truly seen and accepted from the very first session. It's easy to open up to Katie because you can feel how much she cares and empathizes with your situation. If you're looking for someone who will listen with their whole heart and meet you exactly where you are, Katie is that person.",
+   "author": "Nicole Walton, PhD & Jeffrey Sellers, NGU Wellness Leadership"
+  },
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LSW (Licensed Social Worker), Ohio S.2309936"
+   },
+   {
+    "s": "Education:",
+    "t": "Bachelor's in Human Development & Family Science, The Ohio State University. Master of Social Work, The Ohio State University."
+   },
+   {
+    "s": "Background:",
+    "t": "Residential and outpatient care, private practice individual and family therapy, patient care coordinator at several area hospitals."
+   },
+   {
+    "s": "Verified:",
+    "t": "Psychology Today Verified with 7 professional endorsements."
+   }
+  ],
+  "specialties": [
+   "Children & Teens",
+   "Anxiety",
+   "LGBTQ+",
+   "Depression"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "grief",
+   "children",
+   "kids",
+   "teens",
+   "adolescents",
+   "preteens",
+   "young adults",
+   "selfesteem",
+   "school",
+   "peer",
+   "family",
+   "behavioral",
+   "adhd",
+   "ocd",
+   "odd",
+   "body image",
+   "addiction",
+   "coping",
+   "trauma",
+   "ptsd",
+   "lgbtq",
+   "transgender",
+   "identity",
+   "transition",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": null,
+  "licenseTitle": "Licensed Social Worker",
+  "lyra": false,
+  "insuranceTier": "lsw",
+  "hidden": false,
+  "formName": "Katie Grier"
+ },
+ {
+  "slug": "kelley-boole",
+  "name": "Kelley Boole",
+  "firstName": "Kelley",
+  "credentials": "LSW",
+  "pronouns": "she / her / hers",
+  "photo": "/images/therapists/Kelley_Boole.jpg",
+  "color": "#B08A72",
+  "colorDark": "#7A5C4B",
+  "colorLight": "#C8A890",
+  "colorTint": "#F8F3EF",
+  "colorBorder": "#D8C8B8",
+  "badges": [
+   "11 Yrs",
+   "Crisis Trained",
+   "Certified Foster Care Assessor",
+   "Rape Crisis Counselor"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 20525 Center Ridge Rd., Suite 604, Rocky River, OH 44116 · Telehealth statewide",
+  "ages": "Teens and adults",
+  "faith": false,
+  "quote": "I believe in a collaborative approach where we work as a team. With empathy and honesty, I'll listen as you tap into your inner strengths so you can grow and make positive changes for a healthy and happy life.",
+  "calloutQuote": "I take a strength-based approach and will help you uncover your inner resilience and tools to face challenges. With empathy and honesty, I'll listen to your story and work with you to create practical steps toward the meaningful change you deserve.",
+  "whoHelps": [
+   {
+    "s": "Teens 13+ and adults feeling overwhelmed by anxiety or depression",
+    "t": "who need practical tools and a safe, non-judgmental space to rebuild stability."
+   },
+   {
+    "s": "People struggling with relationships",
+    "t": "who want to understand patterns, set boundaries, and build more fulfilling connections."
+   },
+   {
+    "s": "People coping with addiction or substance use",
+    "t": "including dual diagnosis. Kelley has extensive experience with recovery and intensive outpatient work."
+   },
+   {
+    "s": "People navigating grief, loss, or major life transitions",
+    "t": "who need steady, empathetic support through difficult changes."
+   },
+   {
+    "s": "People who feel emotionally stuck or disconnected",
+    "t": "and want to rediscover their resilience and build confidence."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Depression",
+   "Relationship Issues",
+   "Addiction",
+   "Substance Use & Dual Diagnosis",
+   "Alcohol Use",
+   "Self-Esteem",
+   "Stress Management",
+   "Grief & Loss",
+   "Coping Skills",
+   "Life Transitions",
+   "Mood Disorders",
+   "Bipolar Disorder",
+   "Trauma & PTSD",
+   "ADHD",
+   "OCD",
+   "Anger Management",
+   "Social Anxiety",
+   "Work Stress",
+   "Academic Challenges",
+   "Adjustment Disorders",
+   "Crisis Intervention"
+  ],
+  "approachText": "Kelley's therapeutic style is warm, down-to-earth, and strengths-based. She integrates a trauma-informed, sex-positive, and body-positive perspective. Her diverse background includes facilitating intensive outpatient groups for substance use recovery, providing crisis intervention as part of a mobile response unit, and conducting psychosocial assessments. She helps clients identify patterns, develop coping strategies, and move toward clarity and growth.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Identifying and changing unhelpful thought patterns and behaviors."
+   },
+   {
+    "abbr": "DBT",
+    "name": "Dialectical Behavior Therapy",
+    "desc": "Skills for managing emotions, improving relationships, and coping with stress."
+   },
+   {
+    "abbr": "ACT",
+    "name": "Acceptance & Commitment Therapy",
+    "desc": "Accepting difficult experiences and committing to actions aligned with your values."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Finding your own internal motivation for meaningful change."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focusing on solutions and building on your existing strengths."
+   },
+   {
+    "abbr": "REBT",
+    "name": "Rational Emotive Behavior Therapy",
+    "desc": "Challenging irrational beliefs that drive emotional distress."
+   },
+   {
+    "abbr": "NAR",
+    "name": "Narrative Therapy",
+    "desc": "Separates the person from the problem. Helps reauthor personal stories."
+   },
+   {
+    "abbr": "FS",
+    "name": "Family Systems",
+    "desc": "Understanding and improving dynamics within the family unit."
+   },
+   {
+    "abbr": "SBT",
+    "name": "Strengths-Based Therapy",
+    "desc": "Identifying and building upon your inherent strengths and resilience."
+   },
+   {
+    "abbr": "PD",
+    "name": "Psychodynamic Therapy",
+    "desc": "Exploring deeper patterns and unconscious processes that shape current behavior."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Kelley creates a space where you can show up exactly as you are. No need to have anything figured out. She listens, learns your story, and collaboratively sets goals."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Discovering your inner resilience and developing practical coping skills. You'll explore feelings, build confidence, and make the changes you want in your life."
+   },
+   {
+    "s": "Kelley's style:",
+    "t": "Empathetic, relatable, kind, and down-to-earth. Clients feel seen and supported as they explore challenges and discover their inner strengths. She brings honest feedback with genuine warmth."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at Rocky River or secure telehealth across Ohio. Saturday hours available."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LSW (Licensed Social Worker), Ohio S.2411046"
+   },
+   {
+    "s": "Education:",
+    "t": "Master's Degree in Social Work, Cleveland State University (2024). Bachelor's Degree, Ohio University (2015)."
+   },
+   {
+    "s": "Certifications:",
+    "t": "Certified Adoption and Foster Care Assessor. Rape Crisis Counselor. Training in CBT, DBT, Motivational Interviewing, and trauma-informed care."
+   },
+   {
+    "s": "Experience:",
+    "t": "11 years. Intensive outpatient group facilitation for substance use recovery. Crisis intervention on a mobile response unit. Psychosocial assessments."
+   },
+   {
+    "s": "Verified:",
+    "t": "Psychology Today Verified with 1 endorsement. Listed on Zencare."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Relationships",
+   "Addiction"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "relationship",
+   "addiction",
+   "substance",
+   "alcohol",
+   "selfesteem",
+   "stress",
+   "grief",
+   "coping",
+   "transition",
+   "mood",
+   "bipolar",
+   "trauma",
+   "ptsd",
+   "adhd",
+   "ocd",
+   "anger",
+   "social anxiety",
+   "work stress",
+   "crisis",
+   "inperson",
+   "telehealth",
+   "rocky river",
+   "ohio",
+   "adults",
+   "teens"
+  ],
+  "office": "rocky-river",
+  "couples": false,
+  "yrs": 11,
+  "licenseTitle": "Licensed Social Worker",
+  "lyra": false,
+  "insuranceTier": "lsw",
+  "hidden": false,
+  "formName": "Kelley Boole"
+ },
+ {
+  "slug": "kelly-salada",
+  "name": "Kelly Salada",
+  "firstName": "Kelly",
+  "credentials": "LISW",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Kelly_Salada.jpg",
+  "color": "#4A7A74",
+  "colorDark": "#3A5E58",
+  "colorLight": "#6A9A94",
+  "colorTint": "#EFF6F5",
+  "colorBorder": "#B0D0CC",
+  "badges": [
+   "LISW",
+   "Trauma Specialist",
+   "Multi-State Experience",
+   "LGBTQ+ Allied"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 20525 Center Ridge Rd., Suite 604, Rocky River, OH 44116 · Telehealth statewide",
+  "ages": "Ages 7 to 99: children, teens, adults and older adults",
+  "faith": false,
+  "quote": "I will work to create a nurturing, psychologically safe space, actively listening and witnessing your story. I will meet you where you are at, with compassion, while honoring you as the expert of your own experiences.",
+  "calloutQuote": "You're the expert on your life. I won't judge where you've been or where you're headed. My role is to provide the support and tools to make the changes you're ready to make at a pace that's comfortable to you.",
+  "whoHelps": [
+   {
+    "s": "People who have experienced significant trauma",
+    "t": "abuse, or neglect. Kelly has dedicated her career to empowering people through recovery from adversity."
+   },
+   {
+    "s": "People dealing with anxiety, depression, or overwhelming emotions",
+    "t": "who need practical, evidence-based strategies and a safe space to feel heard."
+   },
+   {
+    "s": "People navigating relationship difficulties",
+    "t": "self-esteem struggles, or adjustment issues who are ready for positive change."
+   },
+   {
+    "s": "People with concerns related to neurodivergence",
+    "t": "including ADHD, Asperger's, and related challenges."
+   },
+   {
+    "s": "People exploring gender identity or sexual identity",
+    "t": "who need an affirming, non-judgmental therapist."
+   },
+   {
+    "s": "Children 7+, teens, and adults",
+    "t": "of every age through older adulthood."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Depression",
+   "Trauma & PTSD",
+   "Addiction",
+   "ADHD",
+   "Asperger's & Neurodivergence",
+   "Bipolar Disorder",
+   "Codependency",
+   "Coping Skills",
+   "Dual Diagnosis",
+   "Emotional Disturbance",
+   "Grief & Loss",
+   "Impulse Control",
+   "LGBTQ+ Identity & Support",
+   "Life Transitions",
+   "Mood Disorders",
+   "Peer Relationships",
+   "Relationship Issues",
+   "Self-Esteem",
+   "Stress",
+   "Gender & Sexual Identity",
+   "Adjustment Issues",
+   "Abuse & Neglect"
+  ],
+  "approachText": "Kelly decided to become a therapist after overcoming her own history of adversity and trauma. She has since dedicated her life to empowering others with the tools to confront the impact of their own experiences and positively grow. She has worked with diverse populations across several states, including as an outreach counselor in child welfare in Hawaii and a school-based therapist in Ohio. Her approach is rooted in empathy, practical evidence-based strategies, and meeting you exactly where you are.",
+  "modalities": [
+   {
+    "abbr": "TF-CBT",
+    "name": "Trauma-Focused CBT",
+    "desc": "Evidence-based treatment specifically designed for processing trauma and PTSD."
+   },
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Identifying and changing unhelpful thought patterns and behaviors."
+   },
+   {
+    "abbr": "DBT",
+    "name": "Dialectical Behavior Therapy",
+    "desc": "Skills for managing emotions, improving relationships, and coping with stress."
+   },
+   {
+    "abbr": "FS",
+    "name": "Family Systems",
+    "desc": "Understanding and improving dynamics within the family unit."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Finding your own internal motivation for meaningful change."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focusing on solutions and building on your existing strengths."
+   },
+   {
+    "abbr": "NAR",
+    "name": "Narrative Therapy",
+    "desc": "Separates the person from the problem. Helps reauthor personal stories."
+   },
+   {
+    "abbr": "RCT",
+    "name": "Relational Cultural Therapy",
+    "desc": "Healing through authentic connection and understanding relational patterns."
+   },
+   {
+    "abbr": "PD",
+    "name": "Psychodynamic Therapy",
+    "desc": "Exploring deeper patterns and unconscious processes that shape current behavior."
+   },
+   {
+    "abbr": "MBCT",
+    "name": "Mindfulness-Based Therapy",
+    "desc": "Cultivating present-moment awareness to reduce stress and improve well-being."
+   },
+   {
+    "abbr": "TF",
+    "name": "Trauma-Focused Therapy",
+    "desc": "Comprehensive trauma-informed approaches beyond TF-CBT."
+   },
+   {
+    "abbr": "REL",
+    "name": "Relational Therapy",
+    "desc": "Strengthening the capacity for healthy, authentic relationships."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Kelly creates a nurturing, psychologically safe space from the start. She actively listens and witnesses your story with compassion. You guide the therapeutic process."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Developing new skills and strategies to cope with past trauma or current challenges, reducing stress, and making positive changes to improve your well-being and relationships."
+   },
+   {
+    "s": "Kelly's style:",
+    "t": "Understanding and supportive. Clients trust her because she's intentional about gently guiding them toward their goals. She honors you as the expert of your own experiences."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Rocky River office or secure telehealth video across Ohio. Hybrid scheduling available."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LISW (Licensed Independent Social Worker), Ohio I.2506227"
+   },
+   {
+    "s": "Education:",
+    "t": "Bachelor of Arts in Psychology, Michigan State University (1995). Master's in Education, University of New Mexico. Master of Social Work, Case Western Reserve University."
+   },
+   {
+    "s": "Background:",
+    "t": "Outreach counselor in child welfare (Hawaii). School-based therapist (Ohio). Worked with diverse populations across multiple states. Specializes in trauma, abuse, and neglect."
+   },
+   {
+    "s": "Verified:",
+    "t": "Psychology Today Verified with 7 professional endorsements."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Trauma & PTSD",
+   "Relationships"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "trauma",
+   "ptsd",
+   "addiction",
+   "adhd",
+   "aspergers",
+   "neurodivergence",
+   "bipolar",
+   "codependency",
+   "coping",
+   "dual diagnosis",
+   "grief",
+   "impulse",
+   "lgbtq",
+   "transition",
+   "mood",
+   "relationship",
+   "selfesteem",
+   "stress",
+   "gender",
+   "identity",
+   "abuse",
+   "inperson",
+   "telehealth",
+   "rocky river",
+   "ohio",
+   "adults",
+   "teens",
+   "children",
+   "kids",
+   "preteens"
+  ],
+  "office": "rocky-river",
+  "couples": false,
+  "yrs": null,
+  "licenseTitle": "Licensed Independent Social Worker",
+  "lyra": true,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Kelly Salada"
+ },
+ {
+  "slug": "kim-brant",
+  "name": "Kim Brant",
+  "firstName": "Kim",
+  "credentials": "LPCC, CCATP",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Kim_Brant.jpg",
+  "color": "#2A6BC6",
+  "colorDark": "#1B4A8A",
+  "colorLight": "#4A8BE0",
+  "colorTint": "#EFF4FB",
+  "colorBorder": "#C0D4EC",
+  "badges": [
+   "CCATP Certified",
+   "19 Yrs",
+   "Faith-Friendly"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "453 Patterson Rd., Suite A, Dayton, OH 45419",
+  "ages": "Adults 18+",
+  "faith": true,
+  "quote": "I believe each person is valuable just as they are. We are all works in progress, and it takes courage just to come in the door.",
+  "calloutQuote": "The right therapist doesn't just listen. They help you build real, lasting tools for the life you actually want to be living.",
+  "whoHelps": [
+   {
+    "s": "Adults 18+",
+    "t": "who are ready for real, practical tools, not just venting."
+   },
+   {
+    "s": "People with anxiety",
+    "t": "including panic, OCD, generalized worry, and avoidance patterns."
+   },
+   {
+    "s": "People dealing with depression",
+    "t": "low motivation, emotional numbness, or hopelessness."
+   },
+   {
+    "s": "People grieving a loss",
+    "t": "or navigating major life transitions (career, divorce, retirement)."
+   },
+   {
+    "s": "Faith-oriented clients",
+    "t": "who want therapy that respects and integrates their spiritual life."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety & Panic",
+   "Depression",
+   "Grief & Loss",
+   "Life Transitions",
+   "Stress & Burnout",
+   "Relationship Issues",
+   "Self-Esteem",
+   "Avoidance Patterns",
+   "OCD",
+   "Faith & Spirituality"
+  ],
+  "approachText": "Kim uses proven, research-backed approaches tailored to each client. As a Certified Clinical Anxiety Treatment Professional (CCATP), she brings specialized expertise to anxiety disorders. She draws from multiple modalities depending on what fits you best.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Restructures thought patterns driving anxiety, depression, and low mood. Kim has advanced CBT training including CBT for Psychosis."
+   },
+   {
+    "abbr": "DBT",
+    "name": "Dialectical Behavior Therapy",
+    "desc": "Skills for emotional regulation and distress tolerance."
+   },
+   {
+    "abbr": "ACT",
+    "name": "Acceptance & Commitment Therapy",
+    "desc": "Builds psychological flexibility to move toward what matters."
+   },
+   {
+    "abbr": "ERP",
+    "name": "Exposure & Response Prevention",
+    "desc": "Gold-standard treatment for OCD and avoidance-driven anxiety."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Clarifies personal values and builds internal motivation."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focuses on strengths and solutions rather than problems."
+   },
+   {
+    "abbr": "TF-CBT",
+    "name": "Trauma-Focused CBT",
+    "desc": "Evidence-based treatment for processing trauma and PTSD."
+   },
+   {
+    "abbr": "CFT",
+    "name": "Compassion-Focused Therapy",
+    "desc": "Develops self-compassion to counter shame, self-criticism, and emotional distress."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creating a warm, empathetic environment where you guide the direction of your growth."
+   },
+   {
+    "abbr": "NAR",
+    "name": "Narrative Therapy",
+    "desc": "Separates the person from the problem. Helps reauthor personal stories."
+   },
+   {
+    "abbr": "MBCT",
+    "name": "Mindfulness-Based Therapy",
+    "desc": "Cultivating present-moment awareness to reduce stress and improve well-being."
+   },
+   {
+    "abbr": "BA",
+    "name": "Behavioral Activation",
+    "desc": "Breaks goals into smaller, achievable steps to build momentum and counter depression."
+   },
+   {
+    "abbr": "GES",
+    "name": "Gestalt Therapy",
+    "desc": "Focuses on present-moment awareness and personal responsibility to understand patterns."
+   },
+   {
+    "abbr": "RT",
+    "name": "Reality Therapy",
+    "desc": "Empowers you to take control of your choices and actions to meet your needs."
+   },
+   {
+    "abbr": "GT",
+    "name": "Grief Therapy",
+    "desc": "Specialized support for processing loss, bereavement, and life transitions."
+   },
+   {
+    "abbr": "IPT",
+    "name": "Interpersonal Psychotherapy",
+    "desc": "Improves communication patterns and relationship functioning."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First session:",
+    "t": "A thorough assessment where Kim learns about you, your history, and what you want from therapy."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Practical, skill-based sessions. You will leave with tools you can use between sessions."
+   },
+   {
+    "s": "Kim's style:",
+    "t": "Warm, direct, and practical. She meets you where you are and helps you move forward."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   }
+  ],
+  "faithText": "Kim is comfortable integrating faith and spirituality into therapy for clients who want it. This can include exploring how your beliefs support your healing, working through spiritual struggles, or simply having a therapist who understands that dimension of your life. Faith is never pushed or assumed.",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LPCC (Licensed Professional Clinical Counselor), Ohio E.2002021"
+   },
+   {
+    "s": "Certification:",
+    "t": "CCATP (Certified Clinical Anxiety Treatment Professional)"
+   },
+   {
+    "s": "Experience:",
+    "t": "19 years in clinical practice. Specialized expertise in anxiety disorders, depression, grief, and life transitions."
+   },
+   {
+    "s": "Current Role:",
+    "t": "Therapist at NGU Wellness, Dayton office. In-person and telehealth."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Grief & Loss",
+   "Life Transitions"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "grief",
+   "transition",
+   "relationship",
+   "stress",
+   "telehealth",
+   "inperson",
+   "dayton",
+   "ohio",
+   "faith",
+   "cbt",
+   "act",
+   "erp",
+   "adults"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": 19,
+  "licenseTitle": "Licensed Professional Clinical Counselor",
+  "lyra": false,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Kim Brant"
+ },
+ {
+  "slug": "lisa-freeman",
+  "name": "Lisa Freeman",
+  "firstName": "Lisa",
+  "credentials": "LPCC",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Lisa_Freeman.jpg",
+  "color": "#3A6868",
+  "colorDark": "#2A4E4E",
+  "colorLight": "#5A8888",
+  "colorTint": "#EFF5F5",
+  "colorBorder": "#B0CCCC",
+  "badges": [
+   "12 Yrs",
+   "CBTi Specialist",
+   "Play Therapy",
+   "Children & Adults"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Children 5–10 and adults",
+  "faith": true,
+  "quote": "Each person is on a unique journey shaped by their circumstances, dreams, goals, beliefs and emotions. I believe we all benefit from someone willing to sit with us, identify what we want and support us as we move forward toward those goals.",
+  "calloutQuote": "My role is to understand your background, beliefs and aspirations and provide the tools and support needed to improve your well-being. I'll help you embrace honesty, acceptance and self-reflection to maintain mental, physical and emotional wellness.",
+  "whoHelps": [
+   {
+    "s": "Children ages 5–10",
+    "t": "with anxiety, ADHD, or behavioral issues."
+   },
+   {
+    "s": "Adults dealing with anxiety, depression, or relationship issues",
+    "t": "including spouses/partners, friends, coworkers, parent-child, siblings, and grandparent relationships."
+   },
+   {
+    "s": "People struggling with insomnia or sleep disorders",
+    "t": "Lisa has specialized CBTi training to assess sleep patterns, challenge negative thoughts, and implement sleep restriction and relaxation strategies."
+   },
+   {
+    "s": "Couples working through communication, conflict, or premarital concerns",
+    "t": "practicing active listening, empathy, and conflict resolution to enhance understanding and connection."
+   },
+   {
+    "s": "People who have experienced trauma or abuse",
+    "t": "including childhood trauma, domestic violence, and sexual abuse. Lisa has extensive specialized training in sensory-based and trauma-focused interventions."
+   },
+   {
+    "s": "Families navigating parenting challenges",
+    "t": "family conflict, divorce, adoption, or caregiver stress."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Depression",
+   "Insomnia & Sleep Disorders",
+   "Children (5+)",
+   "ADHD",
+   "Behavioral Issues",
+   "Relationship Issues",
+   "Couples & Premarital",
+   "Trauma & PTSD",
+   "Childhood Trauma",
+   "Sexual Abuse",
+   "Domestic Abuse & Violence",
+   "Family Conflict",
+   "Parenting",
+   "Adoption",
+   "Caregivers",
+   "OCD",
+   "ODD",
+   "Peer Relationships",
+   "Self-Esteem",
+   "Coping Skills",
+   "Life Transitions",
+   "Stress",
+   "Divorce",
+   "Education & Learning Disabilities",
+   "Spirituality",
+   "Parent-Child Relationships",
+   "Abuse"
+  ],
+  "approachText": "Lisa has three deep areas of specialized expertise: 1) Working with children while collaboratively engaging parents, guardians, and families. 2) Working on relationship issues across all types: spouses, partners, friends, coworkers, parent-child, siblings, and grandparents. 3) Treating insomnia and sleep disorders with CBTi. Before becoming a counselor, Lisa worked in the medical field, where she became frustrated with the lack of honest communication between providers and patients. This drove her to pursue counseling with a focus on fostering open, authentic dialogue.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Identifying and changing unhelpful thought patterns and behaviors."
+   },
+   {
+    "abbr": "CBTi",
+    "name": "CBT for Insomnia",
+    "desc": "Specialized treatment assessing sleep patterns, challenging negative thoughts, and implementing sleep restriction and relaxation strategies."
+   },
+   {
+    "abbr": "TF-CBT",
+    "name": "Trauma-Focused CBT",
+    "desc": "Evidence-based treatment specifically designed for processing trauma, especially childhood trauma."
+   },
+   {
+    "abbr": "PT",
+    "name": "Play Therapy & Sand Tray",
+    "desc": "Evidence-based approaches for children using play, sand, and creative expression to identify triggers and learn coping strategies."
+   },
+   {
+    "abbr": "ART",
+    "name": "Art Therapy",
+    "desc": "Using creative expression to process emotions and build insight."
+   },
+   {
+    "abbr": "SMART",
+    "name": "Sensory Motor Arousal Regulation",
+    "desc": "Neurological and sensory-based interventions for regulating the body's stress response."
+   },
+   {
+    "abbr": "CPRT",
+    "name": "Child-Parent Relationship Therapy",
+    "desc": "Strengthening the parent-child bond through structured therapeutic play."
+   },
+   {
+    "abbr": "PCIT",
+    "name": "Parent-Child Interaction Therapy",
+    "desc": "Real-time coaching to improve parent-child interactions and reduce behavioral issues."
+   },
+   {
+    "abbr": "ATT",
+    "name": "Attachment-Based Therapy",
+    "desc": "Understanding how early relationships shape current patterns in connections."
+   },
+   {
+    "abbr": "FS",
+    "name": "Family Systems Therapy",
+    "desc": "Understanding and improving dynamics within the family unit."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Finding your own internal motivation for meaningful change."
+   },
+   {
+    "abbr": "NAR",
+    "name": "Narrative Therapy",
+    "desc": "Separates the person from the problem. Helps reauthor personal stories."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creating a warm, empathetic environment where you guide your growth."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focusing on solutions and building on your existing strengths."
+   },
+   {
+    "abbr": "MBCBT",
+    "name": "Mindfulness-Based CBT",
+    "desc": "Integrating mindfulness with cognitive strategies for deeper awareness and change."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Lisa sits with you, helps you identify what you want, and supports you as you work toward your goals. You can be unapologetically yourself, free from judgment."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Developing a strong therapeutic relationship to improve communication, interpersonal skills, and self-awareness. Using insightful questioning to explore challenges, gain new perspectives, and identify practical strategies."
+   },
+   {
+    "s": "Lisa's style:",
+    "t": "Accepting and honest. Clients value the safe, judgment-free space she creates for open conversation and personal growth. She believes a good therapeutic relationship is built on openness, kindness, safety, and honesty."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual, couples, and family therapy. In-person at the Dayton office or secure telehealth video across Ohio."
+   }
+  ],
+  "faithText": "Lisa's expertise includes spirituality and spiritual trauma. She is comfortable exploring how faith, beliefs, and spiritual experiences, both positive and painful, connect to your overall well-being. This is always client-directed.",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LPCC (Licensed Professional Clinical Counselor), Ohio E.2607059"
+   },
+   {
+    "s": "Education:",
+    "t": "Master's Degree in Professional Counseling, Liberty University (2014)."
+   },
+   {
+    "s": "Specialized Training:",
+    "t": "CBTi (insomnia treatment), Play Therapy, Sand Tray, Sensory Motor Arousal Regulation (SMART), TF-CBT, CPRT, PCIT, Art Therapy, BIPOC Affirming Therapy."
+   },
+   {
+    "s": "Previous Career:",
+    "t": "Medical field. Lisa's frustration with the lack of honest provider-patient communication drove her to pursue counseling."
+   },
+   {
+    "s": "Verified:",
+    "t": "Psychology Today Verified with 5 professional endorsements."
+   }
+  ],
+  "specialties": [
+   "Children",
+   "Insomnia & CBTi",
+   "Relationships",
+   "Trauma"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "insomnia",
+   "sleep",
+   "children",
+   "kids",
+   "adhd",
+   "behavioral",
+   "relationship",
+   "couples",
+   "premarital",
+   "trauma",
+   "ptsd",
+   "childhood trauma",
+   "sexual abuse",
+   "domestic violence",
+   "family",
+   "parenting",
+   "adoption",
+   "caregivers",
+   "ocd",
+   "odd",
+   "selfesteem",
+   "coping",
+   "transition",
+   "stress",
+   "divorce",
+   "education",
+   "learning",
+   "spirituality",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults",
+   "play therapy",
+   "cbti",
+   "sensory"
+  ],
+  "office": "dayton",
+  "couples": true,
+  "yrs": 12,
+  "licenseTitle": "Licensed Professional Clinical Counselor",
+  "lyra": false,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Lisa Freeman"
+ },
+ {
+  "slug": "nicole-walton",
+  "name": "Dr. Nicole Walton",
+  "firstName": "Nicole",
+  "credentials": "PhD, LISW-S, LPC",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Nicole_Walton.jpg",
+  "color": "#2A7A48",
+  "colorDark": "#1A5A32",
+  "colorLight": "#4A9A68",
+  "colorTint": "#EFF8F2",
+  "colorBorder": "#B0D4BE",
+  "badges": [
+   "Founder & Owner",
+   "26 Yrs",
+   "PhD",
+   "Clinical Supervisor"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Adults and older adults",
+  "faith": false,
+  "quote": "I believe therapy can be a beneficial tool to assist those who are hurting, dissatisfied, or filled with uncertainty. I envision a world where all people can experience healing and transformation.",
+  "calloutQuote": "Sometimes we find ourselves struggling in our relationships. We may have persistent sadness or worries that get in the way of life. We may have losses that are too difficult to process on our own. Or we may feel our life has just gotten off track. There are many reasons to seek therapy. I can help.",
+  "whoHelps": [
+   {
+    "s": "Adults dealing with depression, anxiety, or persistent worry",
+    "t": "who want an experienced clinician with a warm, collaborative approach."
+   },
+   {
+    "s": "People processing trauma and PTSD",
+    "t": "including complex trauma, abuse, and unresolved painful experiences."
+   },
+   {
+    "s": "Couples",
+    "t": "working through communication breakdowns, infidelity, premarital concerns, or major life transitions together."
+   },
+   {
+    "s": "Individuals navigating grief and loss",
+    "t": "including divorce, death, career loss, and other life-altering changes."
+   },
+   {
+    "s": "People struggling with addiction or substance use",
+    "t": "including alcohol, drugs, gambling, and dual diagnosis concerns."
+   },
+   {
+    "s": "Families in conflict",
+    "t": "seeking to improve communication, resolve tension, and strengthen relationships."
+   },
+   {
+    "s": "Older adults",
+    "t": "navigating later-life transitions."
+   }
+  ],
+  "specialtiesFull": [
+   "Depression",
+   "Anxiety",
+   "Relationship Issues",
+   "Trauma & PTSD",
+   "Grief & Loss",
+   "Life Transitions",
+   "Couples Therapy",
+   "Marital & Premarital",
+   "Infidelity",
+   "Divorce",
+   "Family Conflict",
+   "Parenting",
+   "Addiction",
+   "Substance Use",
+   "Alcohol Use",
+   "Gambling",
+   "Dual Diagnosis",
+   "Bipolar Disorder",
+   "Mood Disorders",
+   "OCD",
+   "Stress & Burnout",
+   "Self-Esteem",
+   "Codependency",
+   "Coping Skills",
+   "Peer Relationships",
+   "Spirituality",
+   "Women's Issues",
+   "Weight Management",
+   "Obesity",
+   "Identity"
+  ],
+  "approachText": "Nicole draws from 26 years of clinical experience spanning community mental health crisis work, pediatric medical social work, and outpatient therapy. Her work is informed by continued education, participation in research, and leadership in the field. She collaborates with each client to develop treatment goals and works from a wellness perspective, meeting people exactly where they are and tailoring her approach to what serves them best.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Restructures thought patterns driving anxiety, depression, and low mood."
+   },
+   {
+    "abbr": "FAM",
+    "name": "Family Systems Therapy",
+    "desc": "Examines relationship patterns and family dynamics to understand how they shape individual behavior."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Clarifies personal values and builds internal motivation for lasting change."
+   },
+   {
+    "abbr": "NAR",
+    "name": "Narrative Therapy",
+    "desc": "Separates the person from the problem and helps reauthor personal stories."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creates a nonjudgmental, warm space where the client leads their own healing process."
+   },
+   {
+    "abbr": "STR",
+    "name": "Strength-Based Therapy",
+    "desc": "Identifies and builds on existing strengths and resources for sustainable growth."
+   },
+   {
+    "abbr": "ACT",
+    "name": "Acceptance & Commitment Therapy",
+    "desc": "Builds psychological flexibility to move toward what matters most."
+   },
+   {
+    "abbr": "HUM",
+    "name": "Humanistic Therapy",
+    "desc": "Centers the whole person: values, potential, and the innate drive toward growth."
+   },
+   {
+    "abbr": "SOM",
+    "name": "Somatic Approaches",
+    "desc": "Works with the body's role in storing and releasing stress and trauma."
+   },
+   {
+    "abbr": "SUP",
+    "name": "Clinical Supervision",
+    "desc": "Licensed supervisor (LISW-S) providing clinical oversight, training, and mentorship to developing therapists."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First session:",
+    "t": "A thorough assessment. Nicole takes time to understand your history, your goals, and what kind of support would help most. Together you'll develop treatment goals to guide the process."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Warm, collaborative sessions focused on building insight, learning new coping skills, improving relationships, and making real progress between sessions."
+   },
+   {
+    "s": "Nicole's style:",
+    "t": "Nonjudgmental, warm, and wellness-oriented. Twenty-six years of diverse clinical experience mean she adapts fluidly to what each client needs."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual, couples, and family therapy. In-person at the Dayton office or secure telehealth video across Ohio. Evening availability."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LISW-S (Licensed Independent Social Worker – Supervisor), Ohio I.0700277-SUPV · LPC (Licensed Professional Counselor)"
+   },
+   {
+    "s": "Education:",
+    "t": "Master of Social Work, The Ohio State University (2005). Doctor of Philosophy in Counselor Education & Supervision, Regent University (2023). Dissertation: Faculty Experiences with the CACREP Accreditation Process: A Qualitative Study."
+   },
+   {
+    "s": "Clinical Experience:",
+    "t": "26 years spanning community mental health crisis work, pediatric medical social work, and outpatient therapy with individuals, couples, and families."
+   },
+   {
+    "s": "Leadership:",
+    "t": "Founder, Owner & Clinical Director of NGU Wellness (est. 2021). Clinical supervisor with over 1,000 hours of direct supervision, providing oversight and mentorship to developing therapists across both locations."
+   },
+   {
+    "s": "Additional:",
+    "t": "Continued education, participation in research, teaching experience, and recognized leader in the behavioral health field."
+   }
+  ],
+  "specialties": [
+   "Depression",
+   "Anxiety",
+   "Couples",
+   "Trauma & PTSD"
+  ],
+  "tags": [
+   "depression",
+   "anxiety",
+   "trauma",
+   "ptsd",
+   "grief",
+   "relationship",
+   "couples",
+   "family",
+   "addiction",
+   "substance",
+   "alcohol",
+   "gambling",
+   "dual diagnosis",
+   "bipolar",
+   "ocd",
+   "mood",
+   "divorce",
+   "infidelity",
+   "parenting",
+   "codependency",
+   "stress",
+   "self-esteem",
+   "transition",
+   "spirituality",
+   "telehealth",
+   "inperson",
+   "dayton",
+   "ohio",
+   "adults",
+   "elders"
+  ],
+  "office": "dayton",
+  "couples": true,
+  "yrs": 26,
+  "licenseTitle": "Founder, Owner & Clinical Director",
+  "lyra": true,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Dr. Nicole Walton"
+ },
+ {
+  "slug": "pam-gibson",
+  "name": "Pam Gibson",
+  "firstName": "Pam",
+  "credentials": "LSW",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Pam_Gibson.jpg",
+  "color": "#2A5A5A",
+  "colorDark": "#1A4242",
+  "colorLight": "#4A7A7A",
+  "colorTint": "#EFF5F5",
+  "colorBorder": "#B0CDCD",
+  "badges": [
+   "20 Yrs",
+   "Suicide Loss"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Adults and older adults",
+  "faith": false,
+  "quote": "I've always had a strong desire to be my best self, build healthy relationships, overcome personal and interpersonal issues, and help others do the same. Helping others become their best selves drives my passion for this work.",
+  "calloutQuote": "I believe that everyone has the capacity for growth and positive change. I strive to empower my clients to reach their full potential.",
+  "whoHelps": [
+   {
+    "s": "Adults dealing with stress, anxiety, or depression",
+    "t": "who need a warm, non-judgmental space with someone easy to relate to."
+   },
+   {
+    "s": "People processing grief and loss",
+    "t": "including death, divorce, and loss of a loved one to suicide, one of Pam's deepest specialties."
+   },
+   {
+    "s": "Survivors of domestic violence",
+    "t": "seeking safety, healing, and empowerment to rebuild."
+   },
+   {
+    "s": "Women navigating life transitions",
+    "t": "including relationship changes, career shifts, parenting challenges, and identity."
+   },
+   {
+    "s": "Older adults",
+    "t": "facing loss, loneliness, or major life changes."
+   },
+   {
+    "s": "Single parents",
+    "t": "managing the unique pressures of raising children while navigating personal challenges."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Depression",
+   "Stress",
+   "Grief & Loss",
+   "Death & Dying",
+   "Suicide Loss & Bereavement",
+   "Divorce",
+   "Relationship Issues",
+   "Couples Therapy",
+   "Family Conflict",
+   "Domestic Violence",
+   "Domestic Abuse",
+   "Women's Issues",
+   "Life Transitions",
+   "Parenting",
+   "Single Parents",
+   "Self-Esteem",
+   "Anger Management",
+   "Coping Skills",
+   "Trauma & PTSD",
+   "Addiction",
+   "Alcohol Use",
+   "Substance Abuse",
+   "Career Counseling",
+   "Peer Relationships",
+   "Sadness",
+   "Faith & Spirituality"
+  ],
+  "approachText": "Pam has a client-centered approach, focusing on the individual needs and concerns of each person she works with. She uses evidence-based interventions to reduce symptoms, promote recovery, and develop optimal health and well-being. She prioritizes creating a warm, non-judgmental, and comfortable environment where clients feel heard and respected. Her genuine warmth and gentle sense of humor allow clients to feel at ease and engage in more open, honest communication.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Restructures thought patterns driving anxiety, depression, and low mood."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creates an atmosphere of dignity and respect where the client's individual needs guide every session."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution Focused Brief Therapy",
+    "desc": "Targets practical solutions and builds on existing strengths to achieve goals."
+   },
+   {
+    "abbr": "TF",
+    "name": "Trauma-Focused Therapy",
+    "desc": "Structured treatment addressing the root causes and effects of traumatic experiences."
+   },
+   {
+    "abbr": "ART",
+    "name": "Art Therapy",
+    "desc": "Uses creative expression as a therapeutic tool for processing emotions and experiences."
+   },
+   {
+    "abbr": "MBCT",
+    "name": "Mindfulness-Based Cognitive Therapy",
+    "desc": "Combines mindfulness practices with cognitive techniques to reduce reactivity and prevent relapse."
+   },
+   {
+    "abbr": "PP",
+    "name": "Positive Psychology",
+    "desc": "Focuses on strengths, resilience, and what makes life fulfilling rather than just treating symptoms."
+   },
+   {
+    "abbr": "STR",
+    "name": "Strength-Based Therapy",
+    "desc": "Identifies and builds on the client's existing strengths and resources for sustainable growth."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First session:",
+    "t": "A warm, comfortable conversation to understand your needs, concerns, and goals. Pam's priority is establishing trust so you feel heard and respected from the start."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Discussing and processing relationships, anxiety, depression, trauma, grief, self-esteem, stress, substance abuse, anger, or other life struggles. Evidence-based tools to reduce symptoms and build wellness."
+   },
+   {
+    "s": "Pam's style:",
+    "t": "Easy to relate to, non-judgmental, trustworthy, and comfortable to talk with. Genuine warmth and a gentle sense of humor. Clients feel at ease and communicate more openly."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LSW (Licensed Social Worker), Ohio S.0600436"
+   },
+   {
+    "s": "Education:",
+    "t": "Bachelor of Social Work, Capital University (2006)."
+   },
+   {
+    "s": "Experience:",
+    "t": "20 years in clinical practice. Extensive work with grief and loss, suicide bereavement, domestic violence, women's issues, life transitions, and relationship concerns."
+   },
+   {
+    "s": "Populations Served:",
+    "t": "Adults and older adults. Special experience with single parents."
+   },
+   {
+    "s": "Current Role:",
+    "t": "Therapist at NGU Wellness, Dayton office. In-person and telehealth."
+   }
+  ],
+  "specialties": [
+   "Grief & Loss",
+   "Anxiety",
+   "Depression",
+   "Suicide Loss"
+  ],
+  "tags": [
+   "grief",
+   "loss",
+   "suicide",
+   "anxiety",
+   "depression",
+   "stress",
+   "trauma",
+   "divorce",
+   "domestic violence",
+   "relationship",
+   "parenting",
+   "single parent",
+   "anger",
+   "addiction",
+   "alcohol",
+   "career",
+   "transition",
+   "self-esteem",
+   "women",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults",
+   "elders"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": 20,
+  "licenseTitle": "Licensed Social Worker",
+  "lyra": false,
+  "insuranceTier": "medicaid-only",
+  "hidden": false,
+  "formName": "Pam Gibson"
+ },
+ {
+  "slug": "shea-kvachuk",
+  "name": "Shea Kvachuk",
+  "firstName": "Shea",
+  "credentials": "LPCC",
+  "licenseTitle": "Licensed Professional Clinical Counselor",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Shea_Kvachuk.jpg",
+  "color": "#8A6A3A",
+  "colorDark": "#6B5230",
+  "colorLight": "#A9884F",
+  "colorTint": "#F8F4EC",
+  "colorBorder": "#E2D5BC",
+  "badges": [
+   "Functional Family Therapy Certified",
+   "Faith-Friendly"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Adults and older adults",
+  "faith": true,
+  "quote": "I believe seeking support takes an act of courage. No one should have to face difficult times alone.",
+  "calloutQuote": "My goal is to walk alongside you, providing a collaborative and empathetic environment where you can feel safe to explore challenges, recognize your strengths, and acquire new skills.",
+  "whoHelps": [
+   {
+    "s": "Adults carrying anxiety, depression, or stress",
+    "t": "that has quietly built up over time."
+   },
+   {
+    "s": "People in strained relationships",
+    "t": "or stuck in patterns they keep landing in."
+   },
+   {
+    "s": "People facing hard transitions or grief",
+    "t": "who want steady, practical support."
+   },
+   {
+    "s": "Parents",
+    "t": "managing the everyday pressures of family life."
+   },
+   {
+    "s": "Christian clients",
+    "t": "who want their faith integrated into therapy."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety",
+   "Depression",
+   "Parenting",
+   "Stress & Burnout",
+   "Relationship Issues",
+   "Life Transitions",
+   "Grief",
+   "Self-Esteem",
+   "Coping Skills",
+   "Women's Issues",
+   "ADHD",
+   "Spirituality"
+  ],
+  "approachText": "Shea draws primarily on Cognitive Behavioral Therapy, Solution-Focused Brief Therapy, and person-centered approaches, tailoring her approach to the person in front of her. For clients who want it, she integrates their Christian faith into the work.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Restructures thought patterns driving anxiety, depression, and low mood."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution-Focused Brief Therapy",
+    "desc": "Focuses on strengths and solutions rather than problems."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "A warm, empathetic space where you guide the direction of your growth."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First sessions:",
+    "t": "Shea takes time to understand what brought you in and what you hope to gain."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Building practical skills together and celebrating progress at every step."
+   },
+   {
+    "s": "Shea's style:",
+    "t": "Warm, approachable, and easy to talk to, with a calm and nonjudgmental presence."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual therapy. In-person at the Dayton office or secure telehealth anywhere in Ohio."
+   }
+  ],
+  "faithText": "Shea integrates Christian faith into therapy for clients who want it. Faith is never required and never assumed.",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LPCC (Licensed Professional Clinical Counselor), Ohio E.2606842"
+   },
+   {
+    "s": "Education:",
+    "t": "Master of Arts in Clinical Mental Health Counseling, Liberty University. Bachelor of Social Work, Eastern Kentucky University."
+   },
+   {
+    "s": "Training:",
+    "t": "Certified in Functional Family Therapy."
+   },
+   {
+    "s": "Background:",
+    "t": "Outpatient behavioral health, with strengths in diagnostic assessment, treatment planning, and evidence-based care."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Parenting",
+   "Life Transitions"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "parenting",
+   "stress",
+   "burnout",
+   "relationship",
+   "transition",
+   "grief",
+   "selfesteem",
+   "coping",
+   "womens",
+   "adhd",
+   "faith",
+   "christian",
+   "spirituality",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "adults",
+   "elders",
+   "cbt"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": null,
+  "lyra": false,
+  "insuranceTier": "independent",
+  "hidden": false,
+  "formName": "Shea Kvachuk"
+ },
+ {
+  "slug": "natalie-woodson",
+  "name": "Natalie Woodson-Booska",
+  "firstName": "Natalie",
+  "credentials": "LISW",
+  "pronouns": "she / her",
+  "photo": "/images/therapists/Natalie_Woodson.jpg",
+  "color": "#2A3A5A",
+  "colorDark": "#1A2A42",
+  "colorLight": "#4A5A7A",
+  "colorTint": "#EFF2F7",
+  "colorBorder": "#B0BCCF",
+  "badges": [
+   "EMDR Trained",
+   "Holistic",
+   "Culturally Sensitive"
+  ],
+  "formats": [
+   "In-Person",
+   "Telehealth"
+  ],
+  "locationDetail": "In-person: 453 Patterson Rd., Suite A, Dayton, OH 45419 · Telehealth statewide",
+  "ages": "Preteens · Teens · Adults · Elders 65+",
+  "faith": false,
+  "quote": "I'll provide a safe and affirming environment that will allow you to make your own decisions. I will actively listen to your needs and concerns and provide guidance to address the root cause of your issue through healthy problem solving.",
+  "calloutQuote": "Mental health has great meaning in my own life and from a young age I dreamed of helping people as a therapist. My passion for helping others has only grown stronger with time. I believe it's my calling.",
+  "whoHelps": [
+   {
+    "s": "Preteens & teens",
+    "t": "dealing with anxiety, depression, anger, school stress, and life transitions."
+   },
+   {
+    "s": "Adults overwhelmed by stress, anxiety, or depression",
+    "t": "who want practical tools and a holistic approach that goes beyond talk therapy."
+   },
+   {
+    "s": "Survivors of trauma",
+    "t": "including domestic violence, intimate partner violence, PTSD, and human trafficking. Natalie is EMDR-trained."
+   },
+   {
+    "s": "People struggling with substance use or addiction",
+    "t": "including alcohol, drugs, and behavioral addictions like video gaming."
+   },
+   {
+    "s": "Individuals navigating grief, life transitions, or relationship conflict",
+    "t": "who need a respectful, patient space to rebuild."
+   },
+   {
+    "s": "People with chronic illness, chronic pain, or disabilities",
+    "t": "seeking a disability-affirming therapist who honors the whole person."
+   }
+  ],
+  "specialtiesFull": [
+   "Anxiety & Panic Attacks",
+   "Depression",
+   "Stress",
+   "Trauma & PTSD",
+   "Grief & Loss",
+   "Relationship Issues",
+   "Life Transitions",
+   "Self-Esteem",
+   "Domestic Violence",
+   "Intimate Partner Violence",
+   "Human Trafficking",
+   "Substance Use & Addiction",
+   "Alcohol Use",
+   "Anger Management",
+   "Codependency",
+   "Coping Skills",
+   "Family Conflict",
+   "Mood Disorders",
+   "Women's Issues",
+   "Chronic Illness & Pain",
+   "Physical Disabilities",
+   "Learning Disabilities",
+   "Homelessness & Poverty",
+   "School Issues",
+   "Spirituality",
+   "Video Game Addiction",
+   "Weight Management",
+   "Emotional Disturbance"
+  ],
+  "approachText": "Natalie uses cognitive restructuring to help clients identify and challenge negative thought patterns, replacing them with more balanced, realistic, and positive ones. Her approach encompasses mind, body, and soul: a holistic perspective that considers each client's unique background and experiences. She is EMDR-trained for clients who need deeper trauma processing, and draws on her own life experiences to help clients eliminate self-judgment and express themselves as their true selves.",
+  "modalities": [
+   {
+    "abbr": "CBT",
+    "name": "Cognitive Behavioral Therapy",
+    "desc": "Restructures negative thought patterns into more balanced, realistic, and positive ones."
+   },
+   {
+    "abbr": "EMDR",
+    "name": "Eye Movement Desensitization & Reprocessing",
+    "desc": "Evidence-based trauma processing for clients who need extra help overcoming past experiences."
+   },
+   {
+    "abbr": "PC",
+    "name": "Person-Centered Therapy",
+    "desc": "Creates a safe, affirming environment where the client leads their own healing process."
+   },
+   {
+    "abbr": "SFBT",
+    "name": "Solution Focused Brief Therapy",
+    "desc": "Targets practical solutions and builds on existing strengths to achieve goals quickly."
+   },
+   {
+    "abbr": "MI",
+    "name": "Motivational Interviewing",
+    "desc": "Strengthens internal motivation and commitment to change."
+   },
+   {
+    "abbr": "FAM",
+    "name": "Family Systems Therapy",
+    "desc": "Examines relationship patterns and family dynamics that shape individual behavior."
+   },
+   {
+    "abbr": "STR",
+    "name": "Strength-Based Therapy",
+    "desc": "Identifies and builds on the client's existing strengths and resources."
+   },
+   {
+    "abbr": "TF",
+    "name": "Trauma-Focused Therapy",
+    "desc": "Structured treatment addressing the root causes and effects of traumatic experiences."
+   },
+   {
+    "abbr": "NAR",
+    "name": "Narrative Therapy",
+    "desc": "Separates the person from the problem and helps reauthor their personal story."
+   },
+   {
+    "abbr": "CFT",
+    "name": "Compassion-Focused Therapy",
+    "desc": "Develops self-compassion and counters shame and self-criticism."
+   },
+   {
+    "abbr": "MBCT",
+    "name": "Mindfulness-Based Cognitive Therapy",
+    "desc": "Combines mindfulness practices with cognitive techniques to prevent relapse and reduce reactivity."
+   },
+   {
+    "abbr": "DAT",
+    "name": "Disability Affirming Therapy",
+    "desc": "Honors the whole person while addressing the intersection of disability and mental health."
+   },
+   {
+    "abbr": "BM",
+    "name": "Behavior Modification",
+    "desc": "Targets specific behaviors through structured reinforcement and skill-building."
+   },
+   {
+    "abbr": "CS",
+    "name": "Culturally Sensitive Therapy",
+    "desc": "Adapts treatment to honor each client's cultural background and lived experience."
+   },
+   {
+    "abbr": "IP",
+    "name": "Interpersonal Therapy",
+    "desc": "Focuses on improving communication patterns and relationship functioning."
+   },
+   {
+    "abbr": "REL",
+    "name": "Relational Therapy",
+    "desc": "Explores how past and present relationships shape thoughts, feelings, and behavior."
+   }
+  ],
+  "expectations": [
+   {
+    "s": "First session:",
+    "t": "A safe, non-judgmental space where Natalie actively listens to your needs and concerns. Together you'll identify the root cause of what's going on and map out a plan."
+   },
+   {
+    "s": "Ongoing work:",
+    "t": "Developing new skills and strategies to cope with challenges, reduce stress, make positive changes, enhance relationships, and improve overall well-being. Multiple routes to reach your goals."
+   },
+   {
+    "s": "Natalie's style:",
+    "t": "Respectful, patient, and serene. She listens with compassion and persistently advocates for your needs. You won't be defined by a diagnosis or label. The goal is expressing your true self."
+   },
+   {
+    "s": "Session length:",
+    "t": "Sessions are about 55 minutes."
+   },
+   {
+    "s": "Session format:",
+    "t": "Individual and family therapy. In-person at the Dayton office or secure telehealth video across Ohio."
+   }
+  ],
+  "faithText": "",
+  "credentialDetails": [
+   {
+    "s": "License:",
+    "t": "LISW (Licensed Independent Social Worker), Ohio I.2507176"
+   },
+   {
+    "s": "Education:",
+    "t": "Bachelor of Social Work, Defiance College (minor in Psychology). Master of Social Work, Wright State University (2021)."
+   },
+   {
+    "s": "Specialized Training:",
+    "t": "EMDR (Eye Movement Desensitization & Reprocessing). Disability Affirming Therapy. Culturally Sensitive Practice. Mindfulness-Based Cognitive Therapy (MBCT)."
+   },
+   {
+    "s": "Clinical Experience:",
+    "t": "Extensive work across diverse populations including individuals experiencing homelessness, poverty, physical and learning disabilities, human trafficking, and intimate partner violence."
+   },
+   {
+    "s": "Current Role:",
+    "t": "Therapist at NGU Wellness, Dayton office. In-person and telehealth."
+   }
+  ],
+  "specialties": [
+   "Anxiety",
+   "Depression",
+   "Trauma & PTSD",
+   "EMDR"
+  ],
+  "tags": [
+   "anxiety",
+   "depression",
+   "trauma",
+   "ptsd",
+   "emdr",
+   "stress",
+   "grief",
+   "relationship",
+   "substance",
+   "addiction",
+   "domestic violence",
+   "anger",
+   "disabilities",
+   "holistic",
+   "inperson",
+   "telehealth",
+   "dayton",
+   "ohio",
+   "preteens",
+   "teens",
+   "adults",
+   "elders",
+   "family",
+   "booska",
+   "woodson-booska"
+  ],
+  "office": "dayton",
+  "couples": false,
+  "yrs": 5,
+  "licenseTitle": "Licensed Independent Social Worker",
+  "lyra": false,
+  "insuranceTier": "independent",
+  "hidden": true,
+  "formName": "Natalie Woodson-Booska"
+ }
+]

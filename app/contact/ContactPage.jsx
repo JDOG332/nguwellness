@@ -1,18 +1,12 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { FAQ as ALL_FAQ } from "../../data/faq";
+import { SITE, INTAKE_FORM } from "../../data/site";
 import Nav from "../Nav";
 import Footer from "../Footer";
 
-const FAQ = [
-  { q: "How do I get started?", a: "Fill out our quick contact form and we will reach out the same day. You can also call or text us at 888-648-9355." },
-  { q: "Do you accept my insurance?", a: "We accept most major commercial insurance, Medicaid, and several EAP programs. We verify your benefits before your first session at no charge. Visit our Services page for the full list." },
-  { q: "Can I do therapy over video?", a: "Yes. We offer secure telehealth sessions to anyone in Ohio. Same therapists, same quality care, from wherever you feel most comfortable." },
-  { q: "How long are sessions?", a: "Standard individual sessions are 50 minutes. Intake sessions may run slightly longer to allow time for a thorough assessment." },
-  { q: "What if I am not sure which therapist is right for me?", a: "That is what we are here for. Call, text, or email us and our intake team will match you based on your concerns, schedule, location preference, and insurance." },
-  { q: "Do you prescribe medication?", a: "NGU Wellness provides therapy only. If medication may be appropriate, your therapist can coordinate with your prescriber or refer you to one." },
-  { q: "What ages do you serve?", a: "We see children (5+), tweens, teens, young adults, adults, older adults, couples, and families. Each therapist has specific age ranges listed on their profile." },
-];
+const FAQ = ALL_FAQ.filter((f) => f.short);
 
 const contactStyles = `
   /* ═══════════════════════════════════════════════════
@@ -192,11 +186,12 @@ const contactStyles = `
     animation: fadeIn 0.618s var(--ease-phi) both;
   }
 
-  .contact-hero h1 {
+  .contact-hero h1, .contact-hero .contact-h2 {
     font-size: clamp(var(--t-xl), 5vw + 1rem, var(--t-2xl));
     margin-bottom: var(--s-sm);
   }
 
+  .faq-more { margin-top: var(--s-md); font-weight: 700; }
   .contact-hero-desc {
     font-size: var(--t-md);
     font-weight: 300;
@@ -441,13 +436,13 @@ const contactStyles = `
 `;
 
 export default function ContactPage() {
-  const router = useRouter();
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
     <div>
       <style>{contactStyles}</style>
       <Nav />
+      <main>
 
       {/* ── GOOGLE FORM + SIDEBAR ── */}
       <section className="form-layout">
@@ -456,7 +451,7 @@ export default function ContactPage() {
             <p className="eyebrow">Client Inquiry</p>
             <h1 className="form-embed-title">How can we help?</h1>
             <p className="form-embed-desc">
-              We always try to respond the same day.
+              We reply within one business day.
             </p>
             <iframe
               className="form-embed-frame"
@@ -474,7 +469,7 @@ export default function ContactPage() {
               {/* Contact */}
               <div className="sidebar-section">
                 <p className="sidebar-section-label">Contact Us</p>
-                <a className="sidebar-row" href="tel:8886489355">
+                <a className="sidebar-row" href={SITE.phoneHref}>
                   <div className="sidebar-row-icon">✆</div>
                   <div className="sidebar-row-content">
                     <p className="sidebar-row-label">Call or Text</p>
@@ -495,7 +490,7 @@ export default function ContactPage() {
                     <p className="sidebar-row-value">info@nguwellness.com</p>
                   </div>
                 </a>
-                <a className="sidebar-row" href="https://therapyportal.com/p/nguwellness" target="_blank" rel="noopener noreferrer">
+                <a className="sidebar-row" href={SITE.portalUrl} target="_blank" rel="noopener noreferrer">
                   <div className="sidebar-row-icon">⊞</div>
                   <div className="sidebar-row-content">
                     <p className="sidebar-row-label">Client Portal</p>
@@ -526,7 +521,7 @@ export default function ContactPage() {
               </div>
 
               {/* Response note */}
-              <p className="sidebar-response-note">We always try to respond the same day.</p>
+              <p className="sidebar-response-note">We reply within one business day.</p>
             </div>
           </div>
         </div>
@@ -535,7 +530,7 @@ export default function ContactPage() {
       {/* ── HERO ── */}
       <section className="contact-hero">
         <p className="eyebrow">Get Started</p>
-        <h1>We're here when you're ready.</h1>
+        <h2 className="contact-h2">We're here when you're ready.</h2>
         <p className="contact-hero-desc">
           Taking the first step is sometimes the hardest part. We help make everything as easy as possible.
         </p>
@@ -550,7 +545,7 @@ export default function ContactPage() {
             <div className="step-card">
               <p className="step-num">01</p>
               <p className="step-title">Complete the contact form</p>
-              <p className="step-desc">Completing the 2-minute survey helps us understand your needs and preferences.</p>
+              <p className="step-desc">The short form takes about three minutes and helps us understand your needs and preferences.</p>
             </div>
             <div className="step-card">
               <p className="step-num">02</p>
@@ -564,9 +559,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="steps-cta">
-            <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>
-              Get Started
-            </button>
+            <a className="btn-rose" href={INTAKE_FORM} target="_blank" rel="noopener noreferrer">Get Started</a>
           </div>
         </div>
       </section>
@@ -587,6 +580,7 @@ export default function ContactPage() {
               </div>
             ))}
           </div>
+          <p className="faq-more"><Link href="/faq">See all questions →</Link></p>
         </div>
       </section>
 
@@ -598,15 +592,12 @@ export default function ContactPage() {
           Never give up on yourself.<br />We'll help you figure out the rest.
         </p>
         <div className="contact-cta-actions">
-          <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>
-            Get Started
-          </button>
-          <button className="btn-outline" onClick={() => router.push("/therapists")}>
-            Browse Therapists
-          </button>
+          <a className="btn-rose" href={INTAKE_FORM} target="_blank" rel="noopener noreferrer">Get Started</a>
+          <Link className="btn-outline" href="/therapists">Browse Therapists</Link>
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

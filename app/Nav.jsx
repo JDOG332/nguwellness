@@ -1,12 +1,19 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { INTAKE_FORM } from "../data/site";
+
+const LINKS = [
+  ["/about", "About"],
+  ["/services", "Services"],
+  ["/therapists", "Therapists"],
+  ["/insurance", "Insurance & Fees"],
+  ["/contact", "Contact"],
+];
 
 export default function Nav({ hideLogo = false }) {
-  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const go = (path) => { setMenuOpen(false); router.push(path); };
+  const close = () => setMenuOpen(false);
 
   return (
     <>
@@ -56,36 +63,40 @@ export default function Nav({ hideLogo = false }) {
           padding: var(--s-2xs) var(--s-md);
         }
 
-        @media (max-width: 61.8rem) {
+        @media (max-width: 68rem) {
           .nav-hamburger { display: block; }
           .nav-links { display: none !important; }
         }
       `}</style>
-      <nav className="nav">
+      <nav className="nav" aria-label="Main">
         {!hideLogo && (
-          <a className="nav-logo" onClick={() => go("/")}>
-            <img src="/images/NGU Wellness -lotus only.png" alt="NGU Wellness" />
+          <Link className="nav-logo" href="/" onClick={close}>
+            <img src="/images/lotus-192.png" alt="" width="84" height="48" />
             <span className="nav-logo-text">NGU Wellness</span>
-          </a>
+          </Link>
         )}
         {hideLogo && <div />}
         <div className="nav-links">
-          <button className="nav-link" onClick={() => go("/about")}>About</button>
-          <button className="nav-link" onClick={() => go("/services")}>Services</button>
-          <button className="nav-link" onClick={() => go("/therapists")}>Therapists</button>
-          <button className="nav-link" onClick={() => go("/contact")}>Contact</button>
-          <button className="nav-cta" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>Get Started</button>
+          {LINKS.map(([href, label]) => (
+            <Link key={href} className="nav-link" href={href}>{label}</Link>
+          ))}
+          <a className="nav-cta" href={INTAKE_FORM} target="_blank" rel="noopener noreferrer">Get Started</a>
         </div>
-        <button className={`nav-hamburger${menuOpen ? " open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className={`nav-hamburger${menuOpen ? " open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+        >
           <span /><span /><span />
         </button>
       </nav>
-      <div className={`nav-mobile-menu${menuOpen ? " open" : ""}`}>
-        <button className="nav-link" onClick={() => go("/about")}>About</button>
-        <button className="nav-link" onClick={() => go("/services")}>Services</button>
-        <button className="nav-link" onClick={() => go("/therapists")}>Therapists</button>
-        <button className="nav-link" onClick={() => go("/contact")}>Contact</button>
-        <button className="nav-cta" onClick={() => { setMenuOpen(false); window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank"); }}>Get Started</button>
+      <div id="mobile-menu" className={`nav-mobile-menu${menuOpen ? " open" : ""}`}>
+        {LINKS.map(([href, label]) => (
+          <Link key={href} className="nav-link" href={href} onClick={close}>{label}</Link>
+        ))}
+        <a className="nav-cta" href={INTAKE_FORM} target="_blank" rel="noopener noreferrer" onClick={close}>Get Started</a>
       </div>
     </>
   );

@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects: old nguwellness.com (Wix) addresses and retired pages.
+# (/about#name links are forwarded by a script on the About page; the #part never reaches the server.)
+/rocky-river-in-person-therapy   /rocky-river        301
+/careers                         /hiring             301
+/insurance-and-fees              /insurance          301
+/therapists/natalie-woodson      /therapists         302
+/get-started                     https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform   302

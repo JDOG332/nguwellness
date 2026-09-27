@@ -1,15 +1,11 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Nav from "../Nav";
 import Footer from "../Footer";
+import { plansFor } from "../../data/insurance";
+import { SITE, intakeUrl } from "../../data/site";
 
-/* ── SHARED INSURANCE DATA ────────────────────────────────── */
-const INS = {
-  "Commercial & Marketplace": ["Aetna","Anthem/BCBS","Ambetter","CareSource","Cigna","ComPsych","Frontpath","Humana","Medical Mutual","Optum","SummaCare","UMR","United Healthcare","Wellfleet"],
-  "Medicaid": ["AmeriHealth","Anthem Ohio Medicaid","Buckeye","CareSource Medicaid","Humana Medicaid","Molina","Ohio Medicaid","OhioRISE","UHC Community Plan","WellCare"],
-  "EAP Programs": ["Lyra","Optum/UHC EAP","Spring Health","Carelon"],
-};
 
 /* ── ACCORDION ────────────────────────────────────────────── */
 const Acc = ({ title, chip, children, defaultOpen = false }) => {
@@ -107,11 +103,11 @@ const tpStyles = `
     text-transform: uppercase;
     padding: var(--s-3xs) var(--s-2xs);
     border: 1px solid var(--tp-primary);
-    color: var(--tp-primary);
+    color: var(--tp-dark);
   }
 
   .tp-badge.primary {
-    background: var(--tp-primary);
+    background: var(--tp-dark);
     color: var(--paper);
     border-color: var(--tp-primary);
   }
@@ -166,7 +162,7 @@ const tpStyles = `
     letter-spacing: 0.0618em;
     text-transform: uppercase;
     color: var(--paper);
-    background: var(--tp-primary);
+    background: var(--tp-dark);
     border: none;
     padding: var(--s-sm) var(--s-lg);
     cursor: pointer;
@@ -175,6 +171,8 @@ const tpStyles = `
     text-shadow: 0 1px 0.236rem rgba(0, 0, 0, 0.15);
   }
   .tp-btn-primary:hover { opacity: var(--alpha-phi); }
+  .tp-avail-note { font-size: 0.875rem; line-height: 1.5; color: var(--earth); margin-top: var(--s-2xs); }
+  .tp-license-title { font-size: 0.875rem; color: var(--earth); margin-top: 0.15rem; }
 
   .tp-btn-outline {
     display: block;
@@ -185,7 +183,7 @@ const tpStyles = `
     font-weight: 400;
     letter-spacing: 0.0618em;
     text-transform: uppercase;
-    color: var(--tp-primary);
+    color: var(--tp-dark);
     background: transparent;
     border: 1px solid var(--tp-primary);
     padding: var(--s-sm) var(--s-lg);
@@ -207,7 +205,7 @@ const tpStyles = `
     font-weight: 400;
     letter-spacing: 0.236em;
     text-transform: uppercase;
-    color: var(--tp-primary);
+    color: var(--tp-dark);
   }
 
   .tp-meta-value {
@@ -228,7 +226,7 @@ const tpStyles = `
     font-weight: 400;
     padding: var(--s-3xs) var(--s-2xs);
     background: var(--tp-tint);
-    color: var(--tp-primary);
+    color: var(--tp-dark);
     border: 1px solid var(--tp-border);
   }
 
@@ -256,7 +254,7 @@ const tpStyles = `
     font-weight: 400;
     letter-spacing: 0.236em;
     text-transform: uppercase;
-    color: var(--tp-primary);
+    color: var(--tp-dark);
     margin-bottom: var(--s-2xs);
   }
 
@@ -304,7 +302,7 @@ const tpStyles = `
     letter-spacing: 0.236em;
     text-transform: uppercase;
     background: var(--tp-tint);
-    color: var(--tp-primary);
+    color: var(--tp-dark);
     padding: var(--s-3xs) var(--s-2xs);
   }
 
@@ -342,7 +340,7 @@ const tpStyles = `
     height: var(--s-md);
     border-radius: var(--s-2xl);
     border: 1px solid var(--tp-primary);
-    color: var(--tp-primary);
+    color: var(--tp-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,7 +369,7 @@ const tpStyles = `
     font-size: var(--t-xs);
     padding: var(--s-3xs) var(--s-xs);
     border: 1px solid var(--tp-border);
-    color: var(--tp-primary);
+    color: var(--tp-dark);
     background: var(--tp-tint);
   }
 
@@ -395,7 +393,7 @@ const tpStyles = `
     font-weight: 400;
     letter-spacing: 0.236em;
     text-transform: uppercase;
-    color: var(--tp-primary);
+    color: var(--tp-dark);
     margin-bottom: var(--s-3xs);
   }
 
@@ -481,7 +479,7 @@ const tpStyles = `
     font-weight: 400;
     letter-spacing: 0.236em;
     text-transform: uppercase;
-    color: var(--tp-primary);
+    color: var(--tp-dark);
   }
 
   .tp-faith-title {
@@ -496,6 +494,7 @@ const tpStyles = `
 
   /* ── RESPONSIVE ── */
   @media (max-width: 61.8rem) {
+    .tp-photo { aspect-ratio: 4 / 5; max-height: 28rem; object-position: center 25%; }
     .tp-layout { grid-template-columns: 1fr; }
     .tp-sidebar { position: static; border-right: none; padding-right: 0; border-bottom: 1px solid var(--divider); padding-bottom: var(--s-lg); }
     .tp-mod-grid { grid-template-columns: 1fr; }
@@ -504,7 +503,6 @@ const tpStyles = `
 `;
 
 export default function TherapistProfile({ data }) {
-  const router = useRouter();
   const t = data;
 
   const paletteVars = {
@@ -515,16 +513,15 @@ export default function TherapistProfile({ data }) {
     "--tp-border": t.colorBorder || `${t.color}3D`,
   };
 
-  const isAccepting = t.status === "accepting";
-
   return (
     <div style={paletteVars}>
       <style>{tpStyles}</style>
       <Nav />
+      <main>
 
       <div className="tp-breadcrumb">
-        <a href="/">Home</a><span className="tp-breadcrumb-sep">/</span>
-        <a href="/therapists">Therapists</a><span className="tp-breadcrumb-sep">/</span>
+        <Link href="/">Home</Link><span className="tp-breadcrumb-sep">/</span>
+        <Link href="/therapists">Therapists</Link><span className="tp-breadcrumb-sep">/</span>
         <span className="tp-breadcrumb-current">{t.name}</span>
       </div>
 
@@ -532,7 +529,7 @@ export default function TherapistProfile({ data }) {
         {/* ── SIDEBAR ── */}
         <aside className="tp-sidebar">
           <div className="tp-photo-wrap">
-            <img className="tp-photo" src={t.photo} alt={t.name} />
+            <img className="tp-photo" src={t.photo} alt={`${t.name}, ${t.credentials}`} width="800" height="1000" fetchPriority="high" />
             <div className="tp-photo-line" />
           </div>
           <div className="tp-badges">
@@ -540,19 +537,15 @@ export default function TherapistProfile({ data }) {
           </div>
           <h1 className="tp-name">{t.name}</h1>
           <p className="tp-creds">{t.credentials}</p>
+          <p className="tp-license-title">{t.licenseTitle}</p>
           <p className="tp-pronouns">{t.pronouns}</p>
           <p className="tp-quote">"{t.quote}"</p>
           <div className="tp-cta-col">
-            <button className="tp-btn-primary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>
-              {isAccepting ? "Schedule with " + t.firstName : `Join ${t.firstName}'s Waitlist`}
-            </button>
-            <a className="tp-btn-outline" href="tel:+18886489355">Call or Text: 888-648-9355</a>
-          </div>
-          <div className="tp-meta-row">
-            <span className="tp-meta-label">Availability</span>
-            <span className={`tp-status-badge tp-status-${t.status}`}>
-              {isAccepting ? "Accepting Clients" : "Currently Waitlisting"}
-            </span>
+            <a className="tp-btn-primary" href={intakeUrl(t.formName)} target="_blank" rel="noopener noreferrer">
+              Request {t.firstName}
+            </a>
+            <a className="tp-btn-outline" href={SITE.phoneHref}>Call or Text: {SITE.phone}</a>
+            <p className="tp-avail-note">Availability changes often. Tell us you'd like to see {t.firstName} and we'll reply {SITE.replyPromise} with the next opening or waitlist spot.</p>
           </div>
           <div className="tp-meta-row">
             <span className="tp-meta-label">Session Format</span>
@@ -571,7 +564,7 @@ export default function TherapistProfile({ data }) {
         </aside>
 
         {/* ── MAIN ── */}
-        <main>
+        <div className="tp-main">
           <div className="tp-callout">
             <p className="tp-callout-label">About {t.firstName}</p>
             <p className="tp-callout-quote">"{t.calloutQuote}"</p>
@@ -618,7 +611,7 @@ export default function TherapistProfile({ data }) {
               ))}
             </Acc>
 
-            {t.faith && (
+            {t.faith && t.faithText && (
               <Acc title="Faith & Spirituality">
                 <div className="tp-faith-box">
                   <p className="tp-faith-title">Faith-integrated therapy is available, never required.</p>
@@ -635,25 +628,10 @@ export default function TherapistProfile({ data }) {
               </Acc>
             )}
 
-            <Acc title="Schedule & Availability">
-              {t.schedule.available.length > 0 && (
-                <div className="tp-sched-grid">
-                  {t.schedule.available.map(s => (
-                    <div key={s.day} className="tp-sched-card"><p className="tp-sched-day">{s.day}</p><p className="tp-sched-time">{s.time}</p></div>
-                  ))}
-                </div>
-              )}
-              {t.schedule.unavailable.length > 0 && (
-                <div className="tp-sched-grid">
-                  {t.schedule.unavailable.map(d => (
-                    <div key={d} className="tp-sched-na"><p className="tp-sched-na-day">{d}</p><p className="tp-sched-na-text">Not available</p></div>
-                  ))}
-                </div>
-              )}
-            </Acc>
 
             <Acc title="Insurance & Fees">
-              {Object.entries(INS).map(([cat, plans]) => (
+              <p className="tp-bio-text">Coverage varies by plan. We check your benefits before your first session at no charge. Self-pay and out-of-network options are on our <Link href="/insurance">Insurance &amp; Fees</Link> page.</p>
+              {plansFor(t).map(([cat, plans]) => (
                 <div key={cat} className="tp-ins-category">
                   <p className="tp-ins-cat-label">{cat}</p>
                   <div className="tp-ins-pills">{plans.map(p => <span key={p} className="tp-ins-pill">{p}</span>)}</div>
@@ -661,8 +639,9 @@ export default function TherapistProfile({ data }) {
               ))}
             </Acc>
           </div>
-        </main>
+        </div>
       </div>
+      </main>
       <Footer />
     </div>
   );

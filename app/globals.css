@@ -6,7 +6,6 @@
    Fonts: Playfair Display 900 / Inter 300,400 / Cormorant Garamond Italic
    ═══════════════════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Inter:wght@300;400&family=Cormorant+Garamond:ital@1&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -29,8 +28,8 @@
   --s-2xl: 6.854rem;
 
   /* ─── TYPOGRAPHY SCALE (every value from the 8) ─── */
-  --t-xs:   0.618rem;  /* φ^-1 — eyebrows, labels */
-  --t-sm:   0.618rem;  /* φ^-1 — small body (alias) */
+  --t-xs:   0.8125rem; /* eyebrows, labels (13px floor for readability) */
+  --t-sm:   0.875rem;  /* small body (14px) */
   --t-base: 1.000rem;  /* base — body copy */
   --t-md:   1.618rem;  /* φ^1  — subheads */
   --t-lg:   1.618rem;  /* φ^1  — large text (alias) */
@@ -52,7 +51,7 @@
   --gold:      #F5913F;
   --sage:      #7A8B7A;
   --earth:     #6B6560;
-  --warm-gray: #87827F;
+  --warm-gray: #6F6A67; /* text gray; brand gray #87827F stays in the logo (4.5:1 contrast) */
   --light:     #F5F5F5;
   --divider:   #EBEBEB;
   --mist:      #FAFAFA;
@@ -109,6 +108,7 @@ a {
   transition: color var(--duration) var(--ease-phi);
 }
 a:hover { color: var(--rose); }
+p a, li a, dd a, td a { text-decoration: underline; text-underline-offset: 0.15em; }
 
 /* ─── ANIMATIONS (delays from the 8 values) ─── */
 @keyframes fadeIn {
@@ -184,12 +184,13 @@ a:hover { color: var(--rose); }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--s-lg);
+  gap: var(--s-md);
 }
 
 .nav-link {
   font-family: var(--font-body);
-  font-size: var(--t-md);
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  white-space: nowrap;
   font-weight: 400;
   letter-spacing: 0.0618em;
   color: var(--warm-gray);
@@ -205,7 +206,10 @@ a:hover { color: var(--rose); }
 
 .nav-cta {
   font-family: var(--font-body);
-  font-size: var(--t-md);
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
   font-weight: 700;
   letter-spacing: 0.0618em;
   text-transform: uppercase;
@@ -294,7 +298,7 @@ a:hover { color: var(--rose); }
   font-weight: 400;
   letter-spacing: 0.236em;
   text-transform: uppercase;
-  color: var(--rose);
+  color: var(--rose-deep);
   margin-bottom: var(--s-xs);
 }
 
@@ -329,9 +333,22 @@ a:hover { color: var(--rose); }
   margin: 0 auto;
 }
 
+.footer-crisis {
+  max-width: var(--max-w);
+  margin: 0 auto var(--s-lg);
+  padding: var(--s-sm) var(--s-md);
+  border: 1px solid var(--divider);
+  border-left: 3px solid var(--rose-deep);
+  background: var(--mist);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.footer-crisis a { color: var(--rose-deep); font-weight: 700; }
+
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.618fr 1fr 1fr;
+  grid-template-columns: 1.618fr 1fr 1fr 1fr;
   gap: var(--s-lg);
   margin-bottom: var(--s-lg);
 }

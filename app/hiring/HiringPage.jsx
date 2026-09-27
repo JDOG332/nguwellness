@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from "next/navigation";
 import Nav from "../Nav";
 import Footer from "../Footer";
 
@@ -133,6 +132,7 @@ export default function HiringPage() {
     <div>
       <style>{hiringStyles}</style>
       <Nav />
+      <main>
 
       {/* ── HERO ── */}
       <section className="hire-hero">
@@ -198,11 +198,12 @@ export default function HiringPage() {
         <p className="hire-cta-desc">
           Email your resume and a brief introduction to info@nguwellness.com. We review every application personally.
         </p>
-        <button className="btn-rose" onClick={() => window.open("mailto:info@nguwellness.com?subject=Therapist%20Application%20-%20NGU%20Wellness")}>
+        <a className="btn-rose" href="mailto:info@nguwellness.com?subject=Therapist%20Application%20-%20NGU%20Wellness">
           Email Your Application
-        </button>
+        </a>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

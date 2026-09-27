@@ -1,7 +1,19 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import Link from "next/link";
 import Nav from "../Nav";
 import Footer from "../Footer";
+import { visibleClinicians } from "../../data/clinicians";
+import { SITE, INTAKE_FORM } from "../../data/site";
+
+// Old nguwellness.com links pointed at /about#anna, /about#kelley and so on (directory
+// profiles still use them). Forward those to the therapist's own page.
+const OLD_ANCHORS = {
+  anna: "anna-espy", charlotte: "charlotte-wells", danielle: "danielle-washington",
+  jackie: "jackie-penny", katie: "katie-grier", kelley: "kelley-boole", kelly: "kelly-salada",
+  kim: "kim-brant", lisa: "lisa-freeman", nicole: "nicole-walton", pam: "pam-gibson",
+  shea: "shea-kvachuk", natalie: null,
+};
 
 const aboutStyles = `
   /* ═══════════════════════════════════════════════════
@@ -294,7 +306,7 @@ const aboutStyles = `
     font-size: clamp(var(--t-base), 2vw + 0.5rem, var(--t-md));
     color: var(--earth);
     line-height: 1.618;
-    opacity: var(--alpha-phi);
+    
   }
 
   .founders-row {
@@ -583,7 +595,7 @@ const aboutStyles = `
 
   .community-eyebrow {
     color: var(--gold);
-    opacity: var(--alpha-phi);
+    opacity: 1 !important;
   }
 
   .community-headline {
@@ -717,12 +729,18 @@ const aboutStyles = `
 `;
 
 export default function AboutPage() {
-  const router = useRouter();
+  useEffect(() => {
+    const key = window.location.hash.replace("#", "").toLowerCase();
+    if (!(key in OLD_ANCHORS)) return;
+    const slug = OLD_ANCHORS[key];
+    window.location.replace(slug && visibleClinicians.some((t) => t.slug === slug) ? `/therapists/${slug}` : "/therapists");
+  }, []);
 
   return (
     <div>
       <style>{aboutStyles}</style>
       <Nav />
+      <main>
 
       {/* ── HERO ── */}
       <section className="about-hero">
@@ -733,15 +751,14 @@ export default function AboutPage() {
             Everyone deserves to feel accepted, supported and hope for a better life.
           </p>
           <div className="about-hero-actions">
-            <button className="btn-rose" onClick={() => router.push("/therapists")}>Meet Our Therapists</button>
-            <button className="btn-outline" onClick={() => router.push("/contact")}>Get in Touch</button>
+            <Link className="btn-rose" href="/therapists">Meet Our Therapists</Link>
+            <Link className="btn-outline" href="/contact">Get in Touch</Link>
           </div>
           <div className="hero-stats">
             <div className="hero-stat"><p className="hero-stat-value">2021</p><p className="hero-stat-label">Founded</p></div>
             <div className="hero-stat"><p className="hero-stat-value">2</p><p className="hero-stat-label">Ohio Locations</p></div>
-            <div className="hero-stat"><p className="hero-stat-value">12</p><p className="hero-stat-label">Therapists</p></div>
+            <div className="hero-stat"><p className="hero-stat-value">{visibleClinicians.length}</p><p className="hero-stat-label">Therapists</p></div>
             <div className="hero-stat"><p className="hero-stat-value">1</p><p className="hero-stat-label">Business Manager</p></div>
-            <div className="hero-stat"><p className="hero-stat-value">595+</p><p className="hero-stat-label">Years of Life Experience</p></div>
           </div>
         </div>
         <div className="ngu-box">
@@ -793,7 +810,7 @@ export default function AboutPage() {
           <div className="pillar-grid">
             <div className="pillar">
               <div className="pillar-title-row"><span className="pillar-icon">⟡</span><p className="pillar-title">Evidence-Based</p></div>
-              <p className="pillar-desc">Every therapist is licensed, vetted, and trained in proven approaches: CBT, EMDR, DBT, ACT, and more.</p>
+              <p className="pillar-desc">Every therapist is licensed and vetted, and uses research-backed approaches such as CBT and ACT.</p>
             </div>
             <div className="pillar">
               <div className="pillar-title-row"><span className="pillar-icon">◈</span><p className="pillar-title">Collaborative</p></div>
@@ -827,23 +844,23 @@ export default function AboutPage() {
                 <h2 className="founder-name">Dr. Nicole Walton</h2>
                 <p className="bio-creds">PhD · LISW-S · LPC &nbsp;·&nbsp; she / her</p>
                 <hr className="phi-rule" />
-                <p className="bio-p">Nicole built NGU Wellness on 20 years of clinical experience spanning community mental health crisis work, pediatric medical social work, and outpatient therapy with individuals, couples, and families.</p>
+                <p className="bio-p">Nicole built NGU Wellness on more than 25 years of clinical experience spanning community mental health crisis work, pediatric medical social work, and outpatient therapy with individuals, couples, and families.</p>
                 <p className="bio-p">She holds a Master of Social Work from The Ohio State University and a Doctorate in Counselor Education and Supervision from Regent University (2023).</p>
                 <p className="bio-p">Nicole provides a nonjudgmental, warm, and collaborative environment, specializing in depression, anxiety, and relationship concerns across all life stages.</p>
                 <div className="bio-details">
                   <div className="bio-detail"><span className="bio-detail-label">License</span><span className="bio-detail-value">LISW-S, Ohio I.0700277-SUPV · LPC</span></div>
                   <div className="bio-detail"><span className="bio-detail-label">Education</span><span className="bio-detail-value">MSW, Ohio State, 2005 · PhD, Regent University, 2023</span></div>
-                  <div className="bio-detail"><span className="bio-detail-label">Experience</span><span className="bio-detail-value">20+ years clinical practice, teaching, research &amp; supervision</span></div>
+                  <div className="bio-detail"><span className="bio-detail-label">Experience</span><span className="bio-detail-value">26 years clinical practice, teaching, research &amp; supervision</span></div>
                 </div>
                 <div className="founder-actions">
-                  <button className="btn-rose" onClick={() => router.push("/therapists/nicole-walton")}>View Profile</button>
+                  <Link className="btn-rose" href="/therapists/nicole-walton">View Profile</Link>
                 </div>
               </div>
             </div>
             {/* Jeffrey */}
             <div className="founder-card">
               <div className="bio-photo-wrap">
-                <img className="bio-photo" src="/images/therapists/Jeffrey_Sellers.jpeg" alt="Jeffrey Sellers" />
+                <img className="bio-photo" src="/images/therapists/Jeffrey_Sellers.jpg" alt="Jeffrey Sellers" />
                 <div className="bio-photo-bar bio-photo-bar-earth" />
               </div>
               <div className="founder-info">
@@ -859,7 +876,7 @@ export default function AboutPage() {
                   <div className="bio-detail"><span className="bio-detail-label">Leadership</span><span className="bio-detail-value">Board of Directors, The Gem Project Dayton</span></div>
                 </div>
                 <div className="founder-actions">
-                  <a className="btn-rose" href="mailto:jeffrey@nguwellness.com">Email Jeffrey</a>
+                  <a className="btn-rose" href={`mailto:${SITE.email}`}>Email Jeffrey</a>
                 </div>
               </div>
             </div>
@@ -929,7 +946,6 @@ export default function AboutPage() {
             <div className="tl-year-group">
               <div className="tl-year-marker"><span className="tl-year-badge milestone">2026</span></div>
               <div className="tl-entries">
-                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">March 2026</p><p className="tl-entry-title">New website launch</p><p className="tl-entry-desc">A redesigned online home to celebrate five years of growth, connection, and care.</p></div></div>
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">March 31, 2026</p><p className="tl-entry-title">5 Year Anniversary</p><p className="tl-entry-desc">Five years since NGU Wellness LLC was founded. From one therapist to a full team across two locations.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
               </div>
             </div>
@@ -969,12 +985,13 @@ export default function AboutPage() {
           <h2 className="cta-title">Ready to take the first step?</h2>
           <p className="cta-desc">Never give up on yourself.<br />We'll help you figure out the rest.</p>
           <div className="cta-actions">
-            <button className="btn-rose" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScRT05N8MswuXUXtYCaD-m6j4XUWKKDlTYuNSaLS6Pfy_8f6w/viewform?usp=header", "_blank")}>Get Started</button>
-            <button className="btn-outline" onClick={() => router.push("/therapists")}>Browse Therapists</button>
+            <a className="btn-rose" href={INTAKE_FORM} target="_blank" rel="noopener noreferrer">Get Started</a>
+            <Link className="btn-outline" href="/therapists">Browse Therapists</Link>
           </div>
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

@@ -53,12 +53,13 @@ export default function PrivacyPage() {
     <div>
       <style>{privacyStyles}</style>
       <Nav />
+      <main>
 
       <section className="privacy-wrap">
         <p className="eyebrow">Legal</p>
         <h1 className="privacy-title">Privacy Policy</h1>
         <hr className="phi-rule" />
-        <p className="privacy-date">Last updated: March 2026</p>
+        <p className="privacy-date">Last updated: October 2026</p>
 
         <div className="privacy-body">
           <h2 className="privacy-h2">Your Privacy Matters</h2>
@@ -78,21 +79,22 @@ export default function PrivacyPage() {
 
           <h2 className="privacy-h2">HIPAA Compliance</h2>
           <p className="privacy-p">
-            NGU Wellness complies with the Health Insurance Portability and Accountability Act (HIPAA). All protected health information (PHI) is handled in accordance with HIPAA Privacy and Security Rules. Your clinical records are maintained securely and are never shared without your written consent except as required by law.
+            NGU Wellness complies with the Health Insurance Portability and Accountability Act (HIPAA). How we may use and share your health information, and your rights, are explained in our <a href="/privacy-notice">Notice of Privacy Practices</a>.
           </p>
 
           <h2 className="privacy-h2">Third-Party Services</h2>
           <p className="privacy-p">
-            Our website may use third-party services for analytics and functionality. These services may collect non-personally identifiable information about your visit. We do not sell or rent your personal information to third parties.
+            We use a privacy-friendly analytics tool that counts visits without cookies and without tracking you across other websites. We do not use advertising or retargeting pixels. Our Get Started form is hosted by Google Workspace under a HIPAA business associate agreement. We do not sell or rent your personal information.
           </p>
 
           <h2 className="privacy-h2">Contact Us</h2>
           <p className="privacy-p">
-            If you have questions about this privacy policy or how your information is handled, please contact us at info@nguwellness.com or call 888-648-9355.
+            If you have questions about this privacy policy or how your information is handled, please contact us at info@nguwellness.com or call 888-648-9355. Use of this website is also governed by our <a href="/docs/website-terms.pdf">Website Terms and Conditions</a>.
           </p>
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );
