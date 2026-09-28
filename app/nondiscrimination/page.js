@@ -44,13 +44,13 @@ export default function NondiscriminationPage() {
             </ul>
           </li>
         </ul>
-        <p>If you need reasonable modifications, appropriate auxiliary aids and services, or language assistance services, contact {CIVIL_RIGHTS_CONTACT.name}, {CIVIL_RIGHTS_CONTACT.title}, at <a href={SITE.phoneHref}>{SITE.phone}</a> or <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+        <p>If you need reasonable modifications, appropriate auxiliary aids and services, or language assistance services, contact {CIVIL_RIGHTS_CONTACT.name} at <a href={SITE.phoneHref}>{SITE.phone}</a> or <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
       </Section>
 
       <Section title="How to file a grievance">
         <p>If you believe that {SITE.name} has failed to provide these services or discriminated in another way on the basis of race, color, national origin, age, disability, or sex, you can file a grievance with:</p>
         <p>
-          {CIVIL_RIGHTS_CONTACT.name}, {CIVIL_RIGHTS_CONTACT.title}<br />
+          {CIVIL_RIGHTS_CONTACT.name}<br />
           {SITE.legalName}, {dayton.street}, {dayton.city}, {dayton.state} {dayton.zip}<br />
           Phone and fax: <a href={SITE.phoneHref}>{SITE.phone}</a><br />
           Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>

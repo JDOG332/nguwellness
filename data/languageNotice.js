@@ -8,10 +8,9 @@
 //   https://www.cms.gov/cciio/resources/regulations-and-guidance/downloads/appendix-a-top-15.pdf
 // Romanian has no 2024 HHS version; its text is HHS's older Appendix B tagline.
 
-// Who handles 1557 grievances. Change here and the page follows.
+// Who handles 1557 grievances (no title, per Jeff). Change here and the page follows.
 export const CIVIL_RIGHTS_CONTACT = {
   name: "Nicole Walton, PhD, LISW-S, LPC",
-  title: "Civil Rights Coordinator",
 };
 
 export const LANGUAGE_TAGLINES = [
