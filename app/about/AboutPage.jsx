@@ -947,6 +947,7 @@ export default function AboutPage() {
               <div className="tl-year-marker"><span className="tl-year-badge milestone">2026</span></div>
               <div className="tl-entries">
                 <div className="tl-entry"><div className="tl-entry-left"><p className="tl-entry-date">March 31, 2026</p><p className="tl-entry-title">5 Year Anniversary</p><p className="tl-entry-desc">Five years since NGU Wellness LLC was founded. From one therapist to a full team across two locations.</p></div><div className="tl-entry-dot-col"><div className="tl-entry-dot major" /></div><div className="tl-entry-right" /></div>
+                <div className="tl-entry"><div className="tl-entry-left" /><div className="tl-entry-dot-col"><div className="tl-entry-dot" /></div><div className="tl-entry-right"><p className="tl-entry-date">August 6, 2026</p><p className="tl-entry-person">Shea Kvachuk</p><p className="tl-entry-role">Joins the team, first client at NGU</p></div></div>
               </div>
             </div>
             {/* Today */}

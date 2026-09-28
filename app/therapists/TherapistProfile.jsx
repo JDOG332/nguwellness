@@ -630,7 +630,7 @@ export default function TherapistProfile({ data }) {
 
 
             <Acc title="Insurance & Fees">
-              <p className="tp-bio-text">Coverage varies by plan. We check your benefits before your first session at no charge. Self-pay and out-of-network options are on our <Link href="/insurance">Insurance &amp; Fees</Link> page.</p>
+              <p className="tp-bio-text">Coverage varies by plan. We check your benefits before your first session at no charge. Self-pay and out-of-network options are on our <Link href="/insurance">Insurance &amp; Fees</Link> page.{(t.couples || t.family) && ` ${t.couples ? "Couples and family" : "Family"} sessions are self-pay only.`}</p>
               {plansFor(t).map(([cat, plans]) => (
                 <div key={cat} className="tp-ins-category">
                   <p className="tp-ins-cat-label">{cat}</p>

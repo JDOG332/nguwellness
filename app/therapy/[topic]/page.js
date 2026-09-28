@@ -31,6 +31,17 @@ export default async function TopicPage({ params }) {
       </Section>
       <Section title="Therapists who work with this">
         <People people={people} />
+        {t.slug === "couples" && (() => {
+          const familyOnly = visibleClinicians.filter((c) => c.family && !c.couples);
+          return familyOnly.length > 0 && (
+            <p className="cp-note" style={{ marginTop: "1.5rem" }}>
+              Family therapy (not couples) is also available with{" "}
+              {familyOnly.map((c, i) => (
+                <span key={c.slug}>{i > 0 && (i === familyOnly.length - 1 ? " and " : ", ")}<Link href={`/therapists/${c.slug}`}>{c.name}</Link></span>
+              ))}.
+            </p>
+          );
+        })()}
         <p className="cp-note" style={{ marginTop: "1.5rem" }}>Availability changes often. Tell us who you&apos;d like to see, or ask us to match you, and we&apos;ll reply with the soonest option. <Link href="/insurance">Insurance &amp; fees</Link></p>
       </Section>
     </ContentPage>

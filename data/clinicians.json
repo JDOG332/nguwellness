@@ -192,7 +192,8 @@
   "lyra": false,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Anna Espy"
+  "formName": "Anna Espy",
+  "family": false
  },
  {
   "slug": "charlotte-wells",
@@ -393,7 +394,8 @@
   "lyra": false,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Charlotte Wells"
+  "formName": "Charlotte Wells",
+  "family": false
  },
  {
   "slug": "danielle-washington",
@@ -570,7 +572,8 @@
   "lyra": true,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Danielle Washington"
+  "formName": "Danielle Washington",
+  "family": false
  },
  {
   "slug": "jackie-penny",
@@ -748,7 +751,8 @@
   "lyra": false,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Jackie Penny"
+  "formName": "Jackie Penny",
+  "family": false
  },
  {
   "slug": "katie-grier",
@@ -764,6 +768,7 @@
   "colorBorder": "#E0CCC0",
   "badges": [
    "Children & Teens",
+   "Family Therapy",
    "LGBTQ+ Allied"
   ],
   "formats": [
@@ -787,6 +792,10 @@
    {
     "s": "Young adults 18–35",
     "t": "working through anxiety, depression, grief, life transitions, and relationship challenges."
+   },
+   {
+    "s": "Families",
+    "t": "seeking support for parent-child relationships, communication, and family dynamics."
    },
    {
     "s": "LGBTQ+ youth and adults",
@@ -901,7 +910,7 @@
    },
    {
     "s": "Session format:",
-    "t": "Individual therapy. In-person at the Dayton office or secure telehealth video across Ohio. Evening hours available."
+    "t": "Individual and family therapy. In-person at the Dayton office or secure telehealth video across Ohio. Evening hours available."
    }
   ],
   "faithText": "",
@@ -973,7 +982,8 @@
   "lyra": false,
   "insuranceTier": "lsw",
   "hidden": false,
-  "formName": "Katie Grier"
+  "formName": "Katie Grier",
+  "family": true
  },
  {
   "slug": "kelley-boole",
@@ -1188,7 +1198,8 @@
   "lyra": false,
   "insuranceTier": "lsw",
   "hidden": false,
-  "formName": "Kelley Boole"
+  "formName": "Kelley Boole",
+  "family": false
  },
  {
   "slug": "kelly-salada",
@@ -1419,7 +1430,8 @@
   "lyra": true,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Kelly Salada"
+  "formName": "Kelly Salada",
+  "family": false
  },
  {
   "slug": "kim-brant",
@@ -1631,7 +1643,8 @@
   "lyra": false,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Kim Brant"
+  "formName": "Kim Brant",
+  "family": false
  },
  {
   "slug": "lisa-freeman",
@@ -1892,7 +1905,8 @@
   "lyra": false,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Lisa Freeman"
+  "formName": "Lisa Freeman",
+  "family": true
  },
  {
   "slug": "nicole-walton",
@@ -2126,7 +2140,8 @@
   "lyra": true,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Dr. Nicole Walton"
+  "formName": "Dr. Nicole Walton",
+  "family": true
  },
  {
   "slug": "pam-gibson",
@@ -2336,7 +2351,8 @@
   "lyra": false,
   "insuranceTier": "medicaid-only",
   "hidden": false,
-  "formName": "Pam Gibson"
+  "formName": "Pam Gibson",
+  "family": false
  },
  {
   "slug": "shea-kvachuk",
@@ -2380,6 +2396,10 @@
    {
     "s": "Parents",
     "t": "managing the everyday pressures of family life."
+   },
+   {
+    "s": "Families",
+    "t": "working through challenges together."
    },
    {
     "s": "Christian clients",
@@ -2437,7 +2457,7 @@
    },
    {
     "s": "Session format:",
-    "t": "Individual therapy. In-person at the Dayton office or secure telehealth anywhere in Ohio."
+    "t": "Individual and family therapy. In-person at the Dayton office or secure telehealth anywhere in Ohio."
    }
   ],
   "faithText": "Shea integrates Christian faith into therapy for clients who want it. Faith is never required and never assumed.",
@@ -2487,7 +2507,8 @@
    "ohio",
    "adults",
    "elders",
-   "cbt"
+   "cbt",
+   "family"
   ],
   "office": "dayton",
   "couples": false,
@@ -2495,7 +2516,8 @@
   "lyra": false,
   "insuranceTier": "independent",
   "hidden": false,
-  "formName": "Shea Kvachuk"
+  "formName": "Shea Kvachuk",
+  "family": true
  },
  {
   "slug": "natalie-woodson",
@@ -2747,6 +2769,7 @@
   "lyra": false,
   "insuranceTier": "independent",
   "hidden": true,
-  "formName": "Natalie Woodson-Booska"
+  "formName": "Natalie Woodson-Booska",
+  "family": false
  }
 ]

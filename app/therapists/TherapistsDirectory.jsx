@@ -10,7 +10,7 @@ import { SITE } from "../../data/site";
 const THERAPISTS = visibleClinicians.map(t => ({
   ...t,
   formats: t.formats.map(f => f.toLowerCase()),
-  tags: [...t.tags, ...(t.couples ? ["couples", "family"] : [])],
+  tags: [...t.tags, ...(t.couples ? ["couples"] : []), ...(t.family ? ["family"] : [])],
 }));
 
 /* ── NLP FILTER ENGINE ───────────────────────────────────── */
@@ -628,7 +628,7 @@ export default function TherapistsDirectory() {
               {t.formats.includes("in-person") && <span className="th-chip">In-Person</span>}
               {t.formats.includes("telehealth") && <span className="th-chip">Telehealth</span>}
               {t.faith && <span className="th-chip faith">Faith-Friendly</span>}
-              {t.couples && <span className="th-chip couples">Couples &amp; Family</span>}
+              {t.couples ? <span className="th-chip couples">Couples &amp; Family</span> : t.family ? <span className="th-chip couples">Family</span> : null}
             </div>
             <p className="th-learn-more">Learn more about {t.firstName} <span className="th-learn-more-arrow">→</span></p>
           </Link>
