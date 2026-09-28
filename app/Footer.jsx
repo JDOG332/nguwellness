@@ -20,7 +20,6 @@ const HELP = [
 const LEGAL = [
   ["/privacy-notice", "Notice of Privacy Practices"],
   ["/good-faith-estimate", "Good Faith Estimate"],
-  ["/nondiscrimination", "Nondiscrimination & Language Help"],
   ["/privacy", "Website Privacy"],
 ];
 
